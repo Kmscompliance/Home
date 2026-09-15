@@ -6,7 +6,15 @@ that tracks FCA legislative/consultation activity to find new consumer
 credit verticals beyond motor finance/car dealerships, with a South
 East/Essex sales focus.
 
-## Status: initial build done
+**Superseded by `CLAUDE.md`** (the live brief) and the current agents in
+`.claude/agents/`: `sales-outreach` (replaced `prospect-researcher` —
+now also drafts email via Companies House sourcing), `research-repository`
+(replaced `fca-policy-scout` — now a full knowledge base, not just an
+opportunity log, renamed in Notion to **📚 FCA & Consumer Credit Research
+Repository**), plus `pipeline-updater` and `pipeline-reporter` unchanged.
+The section below is kept as a historical record of the first pass.
+
+## Status: initial build done (historical — see note above)
 
 Confirmed decisions: the CRM stays in the existing **KMS Compliance — Lead
 CRM** Notion database (not a new store), KMS Compliance is the compliance
