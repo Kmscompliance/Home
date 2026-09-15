@@ -6,6 +6,35 @@ that tracks FCA legislative/consultation activity to find new consumer
 credit verticals beyond motor finance/car dealerships, with a South
 East/Essex sales focus.
 
+## Status: initial build done
+
+Confirmed decisions: the CRM stays in the existing **KMS Compliance — Lead
+CRM** Notion database (not a new store), KMS Compliance is the compliance
+*consultancy* advising other firms (not itself FCA-authorised, so
+"expansion" means new advisory work, not new permissions for KMS), the
+FCA digest is delivered as a Notion page, and both workstreams run on
+scheduled Routines rather than on demand. What's now in place:
+
+- `CLAUDE.md` — company/CRM context for any agent working in this repo.
+- `.claude/agents/` — four subagents: `prospect-researcher`,
+  `pipeline-updater`, `pipeline-reporter`, `fca-policy-scout`.
+- A new **📜 FCA Policy Watch** Notion database under `🏢 KMS Compliance —
+  HQ` for the policy scout's findings.
+- A new **📊 Weekly Pipeline Report** Notion page that the pipeline
+  Routine overwrites each run.
+- Two scheduled Routines: "FCA Policy Scout — Weekly" (Mondays 07:00 UTC)
+  and "Pipeline Health Check — Weekly" (Mondays 08:00 UTC).
+
+**Outstanding blocker:** both Routines were created without Notion (or
+web search) connector access — the API this session used to create them
+can't attach connectors for this organisation, so as configured they'll
+fire into a session with no Notion/`WebSearch` tools and fail. To fix:
+open each Routine in the claude.ai Routines UI and enable the Notion
+connector (and web search, for the FCA scout) — trigger IDs
+`trig_01CXa8QgSXa1offqpPN562j5` (FCA Policy Scout) and
+`trig_01QvnT1LZhMkPYkiKaq1mPBy` (Pipeline Health Check). Everything else
+about them (schedule, prompt) is already set correctly.
+
 ## 1. Local agents for the sales pipeline & CRM
 
 "Local agents" in Claude Code means a combination of:
