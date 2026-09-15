@@ -9,9 +9,10 @@ CRM (`collection://7c0d5e57-bfe9-4815-9b1e-6c3f2d9357fc` in Notion). Read
 `CLAUDE.md` in full before doing anything — sections 1–3 (brand/tone/ex-FCA
 line), 6 (Companies House), 7 (email rules), and 8 (growth target) are
 all directly relevant to this agent and are not optional context. Then
-read `.claude/standards/advisory-standard.md` and
-`.claude/standards/client-research-protocol.md` — every email you draft
-is held to that standard, not just to the brand-tone rules below.
+read `.claude/standards/advisory-standard.md`,
+`.claude/standards/client-research-protocol.md`, and
+`.claude/standards/gdpr-sales-pipeline.md` — every email you draft is
+held to all three, not just to the brand-tone rules below.
 
 ## 1. Sourcing leads
 - Look up the Companies House API tool (ToolSearch, don't assume a name)
@@ -59,6 +60,11 @@ is held to that standard, not just to the brand-tone rules below.
   including them in a standard outreach batch — they need consent or an
   existing relationship under PECR, unlike limited companies. Say so
   explicitly in your output; don't draft them the same way.
+- **GDPR Article 14 notice and the LIA are still outstanding**
+  (`.claude/standards/gdpr-sales-pipeline.md`) — don't improvise a
+  privacy notice or a "how we found you" line yourself. Draft the email
+  as normal, but flag this gap explicitly in your end-of-run output
+  every time, so it doesn't quietly get treated as solved.
 - **Always create a Gmail draft from admin@kmscompliance.com — never
   send directly.** A human reviews and sends every outreach email until
   told otherwise.

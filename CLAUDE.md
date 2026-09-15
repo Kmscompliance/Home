@@ -172,10 +172,17 @@ firm (outreach, a proposal, scoping advice):
   firm (regulatory profile, business profile, signals of change, fit
   across the three service lines, then and only then draft) before
   writing anything client-facing about them.
+- `gdpr-sales-pipeline.md` — how the pipeline itself must handle personal
+  data (lawful basis, the Article 14 notice, minimisation, retention,
+  objections/erasure) — separate from the PECR email rules in §7 below.
+  **Not verified by a data protection professional — treat it as a
+  working baseline, not settled legal advice**, and see its own
+  outstanding action items (an LIA and a privacy notice, both owed to
+  Matthew/Marc, not something an agent should draft and assume correct).
 
-`sales-outreach` must follow this before drafting any email. Any future
-agent that produces client-facing material (proposals, onboarding, a
-health-check report) should be pointed at these files too.
+`sales-outreach` must follow all three before drafting any email. Any
+future agent that produces client-facing material (proposals, onboarding,
+a health-check report) should be pointed at these files too.
 
 ## 10. Agents
 See `.claude/agents/`:
