@@ -159,7 +159,25 @@ well-targeted, personalised email that matches a firm's specific
 regulated activity outperforms a generic blast, and a damaged sending
 domain is much harder to fix than a slow start.
 
-## 9. Agents
+## 9. Standard of practice
+`.claude/standards/` is not optional background reading — it's the bar
+every agent is held to whenever it produces anything about a specific
+firm (outreach, a proposal, scoping advice):
+
+- `advisory-standard.md` — write and reason as a 20+ year UK compliance
+  partner would: grounded in the specific firm's facts, never a
+  template, no overselling, no false certainty on a live regulatory
+  question.
+- `client-research-protocol.md` — the five things to establish about a
+  firm (regulatory profile, business profile, signals of change, fit
+  across the three service lines, then and only then draft) before
+  writing anything client-facing about them.
+
+`sales-outreach` must follow this before drafting any email. Any future
+agent that produces client-facing material (proposals, onboarding, a
+health-check report) should be pointed at these files too.
+
+## 10. Agents
 See `.claude/agents/`:
 - `sales-outreach` — Companies House lead sourcing + CRM + drafted,
   brand-matched outreach email.
