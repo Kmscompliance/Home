@@ -11,9 +11,11 @@ guidance for small businesses) before treating it as settled, and
 definitely before volume scales up.
 
 This sits alongside `advisory-standard.md` and
-`client-research-protocol.md`. `CLAUDE.md` §7 already covers PECR
-(the email-specific opt-out rules) — this document is broader: it
-covers the personal data itself, not just the marketing email channel.
+`client-research-protocol.md`. `CLAUDE.md` §7 already covers PECR for
+both channels currently in use — email and telephone (no direct mail,
+no Gmail — that's a corrected assumption from an earlier draft) — this
+document is broader: it covers the personal data itself, not just the
+marketing channel rules.
 
 ## Why this applies at all
 A name, job title, or work email tied to an identifiable person is
@@ -97,11 +99,11 @@ Leads that go nowhere shouldn't sit in the CRM indefinitely.
 - A request to delete/erase their data entirely is a different, broader
   request than opting out of marketing — if one arrives, flag it for a
   human to handle rather than an agent silently deciding how far it
-  goes (it may need to be actioned across Notion, Gmail threads, and
-  anywhere else the data was copied).
+  goes (it may need to be actioned across Notion, Outlook/Microsoft 365,
+  call logs, and anywhere else the data was copied).
 
 ## 6. Security and processors
-Notion, Gmail/Google Workspace, and Canva are all acting as data
+Notion, Microsoft 365 (Outlook), and Canva are all acting as data
 processors for whatever personal data passes through them — standard
 enterprise terms from these vendors generally cover this, but no agent
 should copy lead data out to a fourth tool/service without checking that's

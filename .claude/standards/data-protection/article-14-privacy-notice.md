@@ -47,10 +47,11 @@ register of companies, which publishes this data as part of its
 statutory transparency function.
 
 ### 3. Why we process your data and our legal basis
-We use your business contact details to send you information about FCA
-authorisation and compliance support services relevant to your sector,
-specifically our FCA Launch Pad service for firms that may require FCA
-authorisation.
+We use your business contact details to contact you, by email or
+telephone, with information about FCA authorisation and compliance
+support services relevant to your sector — for example our FCA Launch
+Pad service for firms that may require FCA authorisation, or our FCA
+Guard and Health Check & Rescue services where relevant.
 
 Our legal basis for this processing is **legitimate interests**
 (Article 6(1)(f) UK GDPR). We have carried out a documented Legitimate
@@ -64,16 +65,16 @@ use your data for automated decision-making or profiling that produces
 legal or similarly significant effects.
 
 ### 4. Who we share it with
-We share limited data with trusted processors who act only on our
-instructions and under a data processing agreement, specifically our
-mailing/fulfilment providers (e.g. Docmail/Intelliprint) for direct
-mail **[CONFIRM: only include this if direct mail is actually in use —
-see the open issue in `outreach-lia.md`]**, and our CRM provider
-(Notion) for lead management. We do not sell your data or share it with
-unrelated third parties for their own marketing purposes.
+We contact you by email or telephone, both handled directly by KMS — we
+do not use a third-party mailing house or call centre. We share limited
+data with trusted processors who act only on our instructions and under
+a data processing agreement: our email provider (Microsoft 365/Outlook)
+and our CRM provider (Notion) for lead management. We do not sell your
+data or share it with unrelated third parties for their own marketing
+purposes.
 
 ### 5. International transfers
-[CONFIRM: if Notion or mailing providers store/process data outside the
+[CONFIRM: if Notion or Microsoft 365 store/process data outside the
 UK/EEA, state the safeguard here, e.g. "Some of our processors may store
 data outside the UK. Where this happens, we ensure appropriate
 safeguards are in place, such as the UK's International Data Transfer
@@ -91,8 +92,8 @@ again.
 Under UK GDPR, you have the right to:
 - **Object** to this processing at any time, including the right to
   stop direct marketing immediately and without needing to give a
-  reason (Article 21). Every marketing communication we send includes a
-  one-click opt-out.
+  reason (Article 21). Every marketing email includes a one-click
+  opt-out, and you can ask the same on a call — either way, we'll stop.
 - **Access** the personal data we hold about you.
 - **Rectify** inaccurate data.
 - **Erase** your data ("right to be forgotten") in certain
@@ -116,13 +117,11 @@ engage — you can simply opt out.
    number, ICO registration number, retention period, international
    transfer position) are facts only Matt/Marc hold; no agent should
    invent them.
-2. Confirm whether Section 4's direct-mail mention is real (see
-   `outreach-lia.md`'s open issues) before publishing — don't describe a
-   processing activity that isn't actually happening.
-3. Once live, update `sales-outreach.md` and `CLAUDE.md` §7 with the
+2. Once live, update `sales-outreach.md` and `CLAUDE.md` §7 with the
    real URL, and add one line to the first-touch email template:
    *"For details on how we hold and use your business contact
    information, including your right to opt out, see [link]."* — this
    sits alongside, not instead of, the existing PECR unsubscribe line.
-4. Get this reviewed by a solicitor/DPO before publishing — not just
+   For calls, the same information should be offered verbally if asked.
+3. Get this reviewed by a solicitor/DPO before publishing — not just
    before "high-volume scaling."

@@ -119,12 +119,16 @@ candidate firms across the activities in section 3, and to confirm a
 company is real, active, and trading (incorporation date, status,
 filing history, officers) before it goes in the CRM.
 
-## 7. Email outreach — rules that must never be skipped
-All outreach sends from **admin@kmscompliance.com** (Gmail).
+## 7. Email & telephone outreach — rules that must never be skipped
+Outreach currently runs on two channels only: email from
+**admin@kmscompliance.com** via **Outlook/Microsoft 365** (not Gmail —
+corrected 2026-09-16), and telephone calls made directly by
+Matthew/Marc. No direct mail, no third-party mailing house or call
+centre.
 
 - **Draft, don't auto-send**, until explicitly told otherwise. Every
-  outreach email is created as a Gmail draft for Matthew/Marc to review
-  and send, not sent automatically.
+  outreach email is created as an Outlook draft for Matthew/Marc to
+  review and send, not sent automatically.
 - **Every cold outreach email must include an opt-out line** — e.g. "Don't
   want to hear from us again? Reply 'unsubscribe' and we'll stop." — this
   is already standard in existing KMS templates and is a PECR
@@ -132,15 +136,25 @@ All outreach sends from **admin@kmscompliance.com** (Gmail).
   a style choice. Any reply containing "unsubscribe" (or similar) must
   immediately update that CRM record so it's excluded from all future
   outreach — never treat it as just a note.
+- **Calls need the same discipline as email.** No automated or recorded
+  calls. Before calling a sole trader or partnership, that number should
+  be checked against the Telephone Preference Service (TPS) — a limited
+  company's general business line has no TPS protection, but any verbal
+  "don't call again" during a call is actioned immediately and
+  suppresses that contact from *all* channels, not just future calls.
+  Agents can't place calls themselves — their role is call prep (see
+  `client-research-protocol.md`) and logging outcomes a human reports
+  back, including any objection.
 - **Sole traders and unincorporated partnerships are treated differently
-  under PECR than limited companies.** A limited company's generic
-  business contact is a "corporate subscriber" and can generally be
-  cold-emailed with an opt-out. A sole trader or partnership counts as an
-  "individual subscriber," which generally needs either consent or a
-  "soft opt-in" (an existing relationship) before cold marketing email is
-  sent — check Firm Type before adding a contact to an outreach batch,
-  and flag sole trader/partnership leads for human review rather than
-  emailing them the same way as limited companies.
+  under PECR than limited companies — for calls as well as email.** A
+  limited company's generic business contact is a "corporate subscriber"
+  and can generally be cold-contacted with an opt-out. A sole trader or
+  partnership counts as an "individual subscriber," which generally
+  needs either consent or a "soft opt-in" (an existing relationship)
+  before cold marketing email is sent, and TPS screening before a call —
+  check Firm Type before adding a contact to an outreach batch, and flag
+  sole trader/partnership leads for human review rather than contacting
+  them the same way as limited companies.
 - **Sending volume must ramp, not jump.** A brand-new or lightly-used
   sending address that suddenly sends a large batch of cold emails risks
   spam-filtering or a domain reputation hit that damages
@@ -178,11 +192,11 @@ firm (outreach, a proposal, scoping advice):
   **Not verified by a data protection professional — treat it as a
   working baseline, not settled legal advice.**
 - `data-protection/` — a drafted Legitimate Interests Assessment and
-  Article 14 privacy notice. **Not yet operative:** the LIA currently
-  only covers motor trade (narrower than the full activity list in §3),
-  neither has Matthew/Marc's sign-off or a solicitor's review, and the
-  notice isn't published anywhere. Until resolved, `sales-outreach`
-  stays confined to motor trade rather than the full activity list.
+  Article 14 privacy notice, now widened to the full activity list in
+  §3 and corrected to the real channels (Outlook email + telephone, no
+  direct mail). **Still not operative:** several factual placeholders
+  remain, and neither document has Matthew/Marc's sign-off or a
+  solicitor's review yet.
 
 `sales-outreach` must follow all three before drafting any email. Any
 future agent that produces client-facing material (proposals, onboarding,

@@ -1,9 +1,9 @@
 # KMS Compliance Ltd — Legitimate Interests Assessment (Outreach)
 
-**Status: DRAFT.** Not reviewed by a qualified solicitor/DPO. Contains
-unresolved placeholders and a scope mismatch flagged at the bottom of
-this file — do not treat as a valid, operative LIA until both are
-resolved and it's signed off by Matt/Marc.
+**Status: DRAFT.** Not reviewed by a qualified solicitor/DPO. Scope and
+channel have been corrected (see "Open issues" at the bottom), but
+factual placeholders remain and there's no director sign-off yet — do
+not treat as a valid, operative LIA until both are resolved.
 
 **Controller:** KMS Compliance Ltd
 **Registered office:** [REGISTERED ADDRESS]
@@ -14,26 +14,36 @@ resolved and it's signed off by Matt/Marc.
 **Review date:** [DATE + 12 MONTHS, or sooner if the outreach method/data source changes]
 
 ## Activity being assessed
-Direct marketing outreach (email and direct mail) to sole traders,
-partnerships, and small founder-led firms in the motor trade sector,
-sourced from Companies House public register data and held in KMS's
-Notion Lead CRM, promoting the FCA Launch Pad authorisation support
-service.
+Direct marketing outreach **by email (Outlook/Microsoft 365) and
+telephone** — no direct mail — to sole traders, partnerships, and small
+founder-led firms carrying out any of the consumer credit regulated
+activities in `CLAUDE.md` §3 (credit broking/motor finance, Hire
+Purchase, HCSTC, home-collected credit, logbook loans, guarantor loans,
+rent-to-own, consumer hire, debt-related activities, credit information
+services, and peer-to-peer lending), sourced from Companies House public
+register data and held in KMS's Notion Lead CRM, promoting the FCA
+Launch Pad authorisation support service (and, as relevant, FCA Guard /
+Health Check & Rescue).
 
-> **See "Open issues" at the bottom — this activity description is
-> narrower than what the rest of this repo is built for.**
+*(Widened from an earlier motor-trade-only draft, at Matthew's
+instruction, to match the scope the rest of this repo already operates
+to. Channel corrected from an earlier assumption of Gmail/direct mail to
+what's actually in use: Outlook and telephone.)*
 
 ## Step 1 — Purpose Test: What is the legitimate interest?
 - KMS Compliance Ltd has a genuine commercial interest in promoting FCA
-  authorisation support services to firms that plausibly need FCA
-  authorisation to trade lawfully (motor trade firms offering
-  finance/insurance arrangements typically require FCA permissions).
+  authorisation and compliance support services to firms that plausibly
+  carry out a regulated consumer credit activity (per `CLAUDE.md` §3)
+  and need FCA authorisation, a permission variation, or ongoing
+  compliance support to trade lawfully.
 - This is a legitimate business interest recognised under UK GDPR
   Recital 47, which specifically names direct marketing as a potential
   legitimate interest.
-- The interest is real and specific, not speculative: KMS has an
-  identifiable service (FCA Launch Pad) that addresses a genuine
-  regulatory need for a defined, identifiable segment of firms.
+- The interest is real and specific, not speculative: KMS has
+  identifiable services (FCA Launch Pad, FCA Guard, Health Check &
+  Rescue) that address a genuine regulatory need for a defined,
+  identifiable segment of firms — those carrying out the activities
+  listed in `CLAUDE.md` §3, not an unbounded population.
 - There is also a wider public-interest dimension worth recording:
   unauthorised trading in regulated activities is a harm the FCA itself
   seeks to prevent, so outreach that helps eligible firms get authorised
@@ -91,9 +101,20 @@ intrusive means reasonably achieves the same purpose.
   UK GDPR for the right to object).
 - No automated decision-making or profiling beyond simple sector/SIC-
   based list filtering.
-- Data is not sold, shared, or disclosed to third parties beyond
-  [DOCMAIL/INTELLIPRINT AS MAILING PROCESSOR — confirm DPA/data
-  processing agreement is in place].
+- No third-party mailing or call-centre processor is involved — outreach
+  is by email (Microsoft 365/Outlook, operated directly by KMS) and
+  telephone calls made directly by Matthew/Marc, not outsourced or
+  automated/recorded. Data is not sold, shared, or disclosed to third
+  parties beyond the CRM provider (Notion) and Microsoft 365 as the
+  email platform.
+- **Telephone-specific safeguards:** no automated or recorded calls; a
+  sole trader/partnership lead is checked against the Telephone
+  Preference Service (TPS) before calling, since individual subscribers
+  can register there under PECR (a limited company's general business
+  line has no TPS protection, but any verbal objection or "do not call"
+  request is actioned immediately regardless); call outcomes, including
+  any objection or do-not-call request, are logged in the CRM the same
+  way an email opt-out is.
 - Retention is time-bound: contact data is deleted or suppressed after
   [X months, e.g. 12] of no engagement, or immediately on
   opt-out/objection.
@@ -120,8 +141,9 @@ not overridden by the individual's interests, rights, or freedoms.
 provided the safeguards below remain operative.**
 
 ## Conditions attached to this LIA (must remain true for the assessment to hold)
-1. Every marketing email/letter contains a clear, no-cost, immediate
-   opt-out.
+1. Every marketing email contains a clear, no-cost, immediate opt-out,
+   and every marketing call gives the same opportunity to opt out
+   verbally, with the same effect.
 2. The Article 14 notice is linked/referenced in the first contact with
    any new lead.
 3. Opt-outs are actioned and suppressed within [ICO guidance suggests as
@@ -146,6 +168,11 @@ provided the safeguards below remain operative.**
    sole-trader leads requires consent rather than opt-out-only
    treatment.** (This matches — and doesn't loosen — the sole trader
    rule already in `CLAUDE.md` §7 and `gdpr-sales-pipeline.md`.)
+8. Sole trader/partnership numbers are checked against the TPS before
+   any marketing call; a limited company's general business line has no
+   such requirement, but any verbal opt-out or objection during a call
+   is actioned immediately and suppresses that contact from all
+   channels, not just future calls.
 
 **DPIA screening outcome:** This activity does not meet ICO high-risk
 triggers (no special category data, no large-scale systematic
@@ -162,27 +189,20 @@ assessment.
 | Marc Smart | Co-Director | |
 
 ## Open issues before this LIA is operative
-1. **Scope mismatch.** This LIA's "Activity being assessed" covers only
-   the motor trade sector. `CLAUDE.md` §3 scopes the whole business —
-   and this LIA — to the full consumer credit regulated-activity
-   perimeter (Hire Purchase, HCSTC, credit broking generally, debt
-   activities, P2P, etc.), not just motor trade. As written, this LIA
-   only provides lawful-basis cover for motor trade outreach. Either
-   widen "Activity being assessed" to the full list before
-   `sales-outreach` emails outside motor trade, or keep outreach
-   confined to motor trade until that's done — don't let the two drift
-   apart silently.
-2. **Direct mail is new.** This is the first mention of a direct-mail
-   channel (Docmail/Intelliprint) anywhere in this repo — everything
-   built so far (`CLAUDE.md` §7, `sales-outreach`) is email-only via
-   Gmail. Confirm whether direct mail is actually happening: if not,
-   strip it from this LIA rather than assessing an activity that isn't
-   real; if it is, a data processing agreement with that mailing
-   provider needs confirming (see the bracketed note above), and
-   `sales-outreach`'s scope needs updating to reflect it.
+1. ~~Scope mismatch~~ — **resolved 2026-09-16.** Widened to the full
+   consumer credit activity list in `CLAUDE.md` §3, at Matthew's
+   instruction, matching what the rest of this repo is built for.
+2. ~~Direct mail~~ — **resolved 2026-09-16.** Confirmed KMS is currently
+   reaching out by email (Outlook) and telephone only — no direct mail,
+   no Docmail/Intelliprint. All references to a mailing processor have
+   been removed and replaced with the telephone-specific safeguards
+   above (TPS check for individual subscribers, no automated/recorded
+   calls, immediate suppression on verbal opt-out).
 3. **Every `[SQUARE BRACKET]` placeholder** — registered address,
-   company number, ICO registration number, retention period, mailing
-   processor DPA status — is a fact only Matt/Marc hold. No agent should
-   fill these in; they need resolving before sign-off.
+   company number, ICO registration number, retention period — is a
+   fact only Matt/Marc hold. No agent should fill these in; they need
+   resolving before sign-off.
 4. **Still not reviewed by a solicitor/DPO.** The document's own status
-   line says this — treat that as accurate, not a formality.
+   line says this — treat that as accurate, not a formality. Widening
+   the scope of what this LIA covers is exactly the kind of change worth
+   a professional sanity check before relying on it, not less.
