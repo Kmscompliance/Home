@@ -27,9 +27,13 @@ base.
 
 Sources: FCA Handbook (CONC and related sourcebook changes), FCA
 Consultation Papers (CP) and Policy Statements (PS), FCA website news &
-publications, FCA social media (X/LinkedIn) for early signal ahead of
-formal publication, HM Treasury policy papers, and specialist
-consumer-credit trade press as secondary signal.
+publications, HM Treasury policy papers, and specialist consumer-credit
+trade press as secondary signal. FCA social media (X/LinkedIn) is
+**best-effort only** — generic web tools often can't retrieve usable
+content from login-gated or JS-rendered social platforms, so don't
+report social media as covered if nothing came back; treat the website
+and official publications as the reliable core and social as a bonus
+when it happens to work.
 
 ## What to log
 Add a row to the **📚 FCA & Consumer Credit Research Repository** Notion
