@@ -60,11 +60,14 @@ held to all three, not just to the brand-tone rules below.
   including them in a standard outreach batch — they need consent or an
   existing relationship under PECR, unlike limited companies. Say so
   explicitly in your output; don't draft them the same way.
-- **GDPR Article 14 notice and the LIA are still outstanding**
-  (`.claude/standards/gdpr-sales-pipeline.md`) — don't improvise a
-  privacy notice or a "how we found you" line yourself. Draft the email
-  as normal, but flag this gap explicitly in your end-of-run output
-  every time, so it doesn't quietly get treated as solved.
+- **GDPR Article 14 notice and the LIA exist as drafts but aren't
+  operative yet** (`.claude/standards/data-protection/`) — the LIA only
+  covers motor trade so far (narrower than the full activity list this
+  agent sources from), and the notice isn't published at a real URL.
+  Don't widen outreach beyond motor trade or link to a placeholder URL.
+  Draft the email as normal, but flag this gap explicitly in your
+  end-of-run output every time, so it doesn't quietly get treated as
+  solved.
 - **Always create a Gmail draft from admin@kmscompliance.com — never
   send directly.** A human reviews and sends every outreach email until
   told otherwise.

@@ -42,9 +42,12 @@ being able to show:
 
 Keep this simple and written down once as a short legitimate interests
 assessment (LIA) covering the sales-outreach agent's activity, rather
-than re-deriving it per lead. **This doesn't exist yet — flag it as an
-action item for Matthew/Marc rather than drafting it yourself; it should
-be signed off by them, not generated and assumed correct.**
+than re-deriving it per lead. **A draft now exists** at
+`data-protection/outreach-lia.md` — but it is not yet operative: it
+covers motor trade only (narrower than the full activity list in
+`CLAUDE.md` §3), has unresolved factual placeholders, and hasn't been
+signed off by Matthew/Marc or reviewed by a solicitor. Treat it as still
+outstanding until those are resolved — see that file's "Open issues."
 
 ## 2. Right to be informed — Article 14
 Because this data isn't collected *from* the individual directly (it's
@@ -57,11 +60,12 @@ object), and — notably — **where the data came from**.
 **Concretely: the first outreach email to a new contact should carry
 more than the PECR opt-out line already required by `CLAUDE.md` §7.** It
 should also say, briefly, how KMS found them (e.g. "via your company's
-Companies House filing") and link to a fuller privacy notice. **Check
-whether kmscompliance.com already has a privacy notice covering this —
-if not, that's a prerequisite to build, not something `sales-outreach`
-should improvise inline.** Until confirmed, `sales-outreach` should flag
-this gap in its output rather than silently omitting the notice.
+Companies House filing") and link to a fuller privacy notice. **A draft
+notice now exists** at `data-protection/article-14-privacy-notice.md` —
+but it is not yet published on kmscompliance.com at a real URL, and
+still has unresolved factual placeholders. Until it's live at a
+confirmed URL, `sales-outreach` should flag this gap in its output
+rather than linking to a placeholder or silently omitting the notice.
 
 ## 3. Data minimisation
 Only bring into the CRM what's actually needed to run the pipeline:
@@ -109,12 +113,24 @@ marketing/processing personal data for prospecting — this was already
 flagged as an open item in an earlier conversation and still needs
 Matthew/Marc to confirm, not something an agent can verify on its own.
 
+## 8. Data protection pack
+`data-protection/outreach-lia.md` and
+`data-protection/article-14-privacy-notice.md` are drafted but not yet
+operative — see each file's own open issues (scope mismatch with the
+full activity list, unresolved placeholders, the direct-mail channel
+that needs confirming as real or removing, no solicitor review yet, and
+the notice isn't published anywhere). Both need Matthew/Marc's input to
+finish; no agent should fill in a placeholder or decide the scope
+mismatch on its own.
+
 ## What this means for `sales-outreach` right now
-Until the LIA and privacy notice above exist:
+Until the LIA and privacy notice above are finalised, signed off, and
+(for the notice) actually published at a real URL:
 - Keep sourcing and CRM fields to the minimum in section 3.
 - Note in every batch of outreach drafts that the Article 14 notice
   and LIA are outstanding prerequisites — don't quietly proceed as if
-  they're solved.
+  they're solved, and don't widen outreach beyond motor trade until the
+  LIA's scope mismatch (section 8) is resolved.
 - Treat any reply that reads as an objection or erasure request (not
   just "unsubscribe") as needing immediate human handling, flagged
   clearly rather than filed as a routine CRM update.

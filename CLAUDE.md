@@ -176,9 +176,13 @@ firm (outreach, a proposal, scoping advice):
   data (lawful basis, the Article 14 notice, minimisation, retention,
   objections/erasure) — separate from the PECR email rules in §7 below.
   **Not verified by a data protection professional — treat it as a
-  working baseline, not settled legal advice**, and see its own
-  outstanding action items (an LIA and a privacy notice, both owed to
-  Matthew/Marc, not something an agent should draft and assume correct).
+  working baseline, not settled legal advice.**
+- `data-protection/` — a drafted Legitimate Interests Assessment and
+  Article 14 privacy notice. **Not yet operative:** the LIA currently
+  only covers motor trade (narrower than the full activity list in §3),
+  neither has Matthew/Marc's sign-off or a solicitor's review, and the
+  notice isn't published anywhere. Until resolved, `sales-outreach`
+  stays confined to motor trade rather than the full activity list.
 
 `sales-outreach` must follow all three before drafting any email. Any
 future agent that produces client-facing material (proposals, onboarding,
