@@ -12,8 +12,8 @@ const founders = [
   },
   {
     initials: "KM",
-    name: "Co-Director",
-    role: "Ex-FCA, Co-Director, KMS Compliance",
+    name: "Co-Founder",
+    role: "Ex-FCA, Co-Founder, KMS Compliance",
   },
 ];
 
