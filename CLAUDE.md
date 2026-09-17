@@ -112,12 +112,23 @@ Notion MCP tools (`notion-fetch`, `notion-query-data-sources`,
 CRM in this repo.
 
 ## 6. Lead sourcing — Companies House
-The Companies House API connection is already active in this
-environment (look it up via ToolSearch rather than assuming a name).
-Use it to search by SIC code and Essex/South East postcodes for
-candidate firms across the activities in section 3, and to confirm a
-company is real, active, and trading (incorporation date, status,
-filing history, officers) before it goes in the CRM.
+There is no dedicated connector — `sales-outreach` calls the real
+Companies House REST API directly over `Bash`, authenticated with a key
+the user stores locally in a `.env` file at the repo root (see
+`sales-outreach.md` for the exact mechanism; the key is never committed
+to this repo). This only works when run from an environment whose
+network isn't blocked to `api.company-information.service.gov.uk` —
+**as of 2026-09-17, this repo runs locally via Claude Code on a Windows
+PC for that reason** (the cloud session this was originally built in has
+that domain blocked by its own network policy and can't be used for
+Companies House work).
+
+The REST API only supports per-company lookups (profile, officers,
+status, filing history) — it does **not** support searching by SIC code
+or postcode. Finding candidates that way needs Companies House's free
+**Bulk Company Data** CSV download (no key required), filtered locally,
+with the REST API then used to verify each candidate before it goes in
+the CRM.
 
 ## 7. Email & telephone outreach — rules that must never be skipped
 Outreach currently runs on two channels only: email from
