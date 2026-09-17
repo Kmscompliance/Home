@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const stats = [
   { label: "Templates covering the full application", value: "13" },
   { label: "Editable Word (.docx) downloads", value: "100%" },
@@ -6,12 +8,12 @@ const stats = [
 
 const founders = [
   {
-    initials: "MK",
+    photo: "/brand/founder-matt.jpg",
     name: "Matt",
     role: "Co-Director, KMS Compliance",
   },
   {
-    initials: "KM",
+    photo: "/brand/founder-cofounder.jpg",
     name: "Co-Founder",
     role: "Ex-FCA, Co-Founder, KMS Compliance",
   },
@@ -46,18 +48,26 @@ export function TrustSignals() {
           {founders.map((person) => (
             <div
               key={person.name}
-              className="rounded-xl border border-kms-border bg-white p-5 shadow-sm"
+              className="overflow-hidden rounded-xl border border-kms-border bg-white shadow-sm"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-kms-navy text-sm font-semibold text-white">
-                {person.initials}
+              <div className="relative h-48 w-full bg-kms-surface">
+                <Image
+                  src={person.photo}
+                  alt={person.name}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(min-width: 640px) 260px, 100vw"
+                />
               </div>
-              <p className="mt-4 text-sm font-semibold text-kms-navy">{person.name}</p>
-              <p className="text-xs text-kms-text/70">{person.role}</p>
+              <div className="p-5">
+                <p className="text-sm font-semibold text-kms-navy">{person.name}</p>
+                <p className="text-xs text-kms-text/70">{person.role}</p>
+              </div>
             </div>
           ))}
           <div className="rounded-xl border border-dashed border-kms-border bg-kms-surface p-5 text-xs text-kms-text/60 sm:col-span-2">
-            Placeholder photos and bios — swap in real headshots and finalised
-            bio copy for Matt and his co-director before this goes live.
+            Real headshots — still need the co-founder&apos;s name and a
+            finalised bio for each before this goes live.
           </div>
         </div>
       </div>

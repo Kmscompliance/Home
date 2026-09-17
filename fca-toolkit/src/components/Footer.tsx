@@ -7,7 +7,12 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
           <div>
-            <Logo className="[&_span]:text-white" />
+            <span className="inline-flex items-center gap-2.5">
+              <Logo variant="icon" />
+              <span className="font-semibold tracking-[0.18em] text-white text-sm sm:text-base">
+                KMS COMPLIANCE
+              </span>
+            </span>
             <p className="mt-3 max-w-sm text-sm text-white/70">
               Plain-English FCA authorisation document templates for sole traders
               and small founder-led financial services firms.
