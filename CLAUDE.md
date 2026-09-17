@@ -84,6 +84,47 @@ Near-term priority (given the existing motor-finance base): Credit
 Broking, Hire Purchase, and HCSTC — but every agent should treat the
 full list above as in scope, not just those three.
 
+### SIC code mapping — Companies House sourcing
+Expanded 2026-09-17 at Matthew's request, beyond the original motor-trade
+codes, to cover more of the perimeter above. Pass all of these to
+`advanced-search`'s `sic_codes` parameter (comma-separated) when sourcing:
+
+- **Lenders / credit grantors** — `64921` (mortgage finance companies),
+  `64922` and `64929` (other credit granting institutions n.e.c. — HCSTC,
+  home-collected credit, logbook loans, guarantor loans, rent-to-own
+  credit, revolving credit, unsecured personal loans; Companies House
+  data shows both codes actively self-selected, not just one — added
+  `64922` 2026-09-17 after a live search turned up a strong-fit lender
+  using it that the original `64921`/`64929`-only list would have missed),
+  `64910` (financial leasing — hire purchase/finance lease providers).
+- **Credit brokers / mortgage brokers / other intermediaries** — `66190`
+  (activities auxiliary to financial intermediation n.e.c. — the code most
+  credit brokers and mortgage brokers/advisers self-classify under),
+  `64999` (financial intermediation n.e.c. — also used by some brokers and
+  P2P platforms, which have no dedicated SIC code).
+- **Debt-related / credit information** — `82910` (activities of
+  collection agencies and credit bureaus — debt collectors, debt
+  purchasers, credit reference agencies).
+- **Car dealerships** (existing base) — `45111` (sale of new cars and
+  light motor vehicles), `45112` (sale of used cars and light motor
+  vehicles), `45190` (sale of other motor vehicles), `45400` (motorcycle
+  dealers — also broke finance).
+- **Hire companies** (consumer hire) — `77110` (renting/leasing of cars
+  and light motor vehicles), `77120` (renting/leasing of trucks and other
+  heavy vehicles), `77299` (renting/leasing of other personal and
+  household goods n.e.c. — rent-to-own furniture/appliances/electronics),
+  `77390` (renting/leasing of other machinery, equipment and tangible
+  goods n.e.c.).
+
+**Insurance brokers/agents (`66220`, `66290`) are deliberately excluded**
+— insurance distribution isn't a consumer credit activity under RAO Part 2
+and isn't covered by the list above, so it sits outside this section's
+scope and outside the draft LIA/Article 14 notice too. Don't add it
+without Matthew/Marc confirming it as a new vertical first — that would
+need both this section and the data-protection drafts widened again, the
+same way motor-trade-only was widened to the full list above on
+2026-09-16.
+
 ## 4. Geography
 South East and Essex are the sales/prospecting focus for outreach and
 lead-sourcing. The research repository is national in scope, since FCA

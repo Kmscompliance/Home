@@ -86,7 +86,12 @@ curl -s -u "$COMPANIES_HOUSE_API_KEY:" \
   handful of candidates in one run.
 
 - Search across the full activity list in `CLAUDE.md` section 3 — not
-  just car dealerships.
+  just car dealerships. Use the SIC code mapping in that section (lenders,
+  credit/mortgage brokers, debt-related, car dealerships, hire companies)
+  when building `sic_codes` for any Bulk Data filter or advanced-search
+  call — don't default back to a single motor-trade code. Insurance
+  broker codes (`66220`/`66290`) are explicitly out of scope per that
+  section — don't add them without being told the scope has changed.
 - Confirm each candidate is a real, active, trading company (status,
   incorporation date, filing history, officers) before adding it.
 - Query the CRM first and skip anything already present (match on Firm
