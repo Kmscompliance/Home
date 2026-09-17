@@ -31,20 +31,50 @@ curl -s -u "$COMPANIES_HOUSE_API_KEY:" \
 If `.env` doesn't exist or the variable isn't set, say so plainly and
 stop — don't guess a key or proceed without one.
 
-**Two different jobs, two different tools:**
-- The REST API (above) is for **per-company lookups only** — profile,
-  officers, filing history, current status — once you already have a
-  candidate. It does **not** support searching by SIC code or postcode.
-- Finding candidates by SIC code + Essex/South East postcode requires
-  Companies House's free **Bulk Company Data** product (a monthly CSV of
-  every live company, no key needed) — download and filter that locally
-  to build your candidate list, then use the REST API above to verify
-  each one is still active before adding it to the CRM. If no local copy
-  of that CSV exists yet, say so and ask whether to fetch a fresh one
-  rather than falling back to a guess-based web search.
-- **Rate limit:** 600 requests per 5-minute rolling window on the REST
-  API — pace yourself if verifying more than a handful of candidates in
-  one run.
+**Finding candidates — the Advanced Search endpoint, not the CSV:**
+Use the Advanced Search endpoint to find candidates directly, filtered
+by SIC code, location, and status — confirmed working 2026-09-17:
+
+```
+curl -s -u "$COMPANIES_HOUSE_API_KEY:" \
+  "https://api.company-information.service.gov.uk/advanced-search/companies?sic_codes=<code>&location=<term>&company_status=active&size=100&start_index=<n>"
+```
+
+- **SIC codes to cover the activity list in `CLAUDE.md` §3** (query each
+  separately — SIC self-reporting is imperfect, so this is a starting
+  set to refine, not exhaustive): `64921` (credit granting by
+  non-deposit-taking finance houses — covers most lending: HP, HCSTC,
+  guarantor loans, logbook loans), `64929` (other credit granting n.e.c.),
+  `64999` (other financial service activities n.e.c.), `66190`
+  (activities auxiliary to financial intermediation — often used by
+  credit brokers/intermediaries), `45111`/`45112` (sale of new/used
+  cars — motor dealerships, our existing base), `82911` (debt collection
+  agencies), `82912` (credit bureaus/credit information services).
+- **`location` is a free-text match against the address, not a strict
+  postcode filter.** It works well for Essex and Kent (their
+  `registered_office_address.region` field literally says so — verified
+  live). It will **not** reliably catch "East London" as a concept,
+  since Companies House doesn't label a region that way — for that,
+  query more broadly (e.g. `location=London`) and then filter results
+  yourself by postcode prefix (`E`, `IG`, `RM`) before treating anything
+  as a candidate.
+- **Paginate** — one call only returns a page (`size`, default first
+  page); check the `hits` total in the response and page through with
+  `start_index` if there are more results than you've seen, rather than
+  assuming the first page is everything.
+- Once you have a candidate from Advanced Search, use the per-company
+  endpoint (below) to double-check it's still active before adding it to
+  the CRM — Advanced Search can lag slightly behind the live register.
+
+**Per-company verification (profile, officers, filing history):**
+```
+curl -s -u "$COMPANIES_HOUSE_API_KEY:" \
+  "https://api.company-information.service.gov.uk/company/<company_number>"
+```
+
+- **Rate limit:** 600 requests per 5-minute rolling window, shared
+  across both endpoints above — pace yourself if verifying more than a
+  handful of candidates in one run.
 
 - Search across the full activity list in `CLAUDE.md` section 3 — not
   just car dealerships.

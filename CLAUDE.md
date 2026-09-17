@@ -123,12 +123,16 @@ PC for that reason** (the cloud session this was originally built in has
 that domain blocked by its own network policy and can't be used for
 Companies House work).
 
-The REST API only supports per-company lookups (profile, officers,
-status, filing history) — it does **not** support searching by SIC code
-or postcode. Finding candidates that way needs Companies House's free
-**Bulk Company Data** CSV download (no key required), filtered locally,
-with the REST API then used to verify each candidate before it goes in
-the CRM.
+Candidates are found via Companies House's **Advanced Search** endpoint
+(`/advanced-search/companies`, filterable by SIC code, location, and
+company status — confirmed working live 2026-09-17 against real Essex
+consumer-credit firms), not a bulk CSV download. `location` is a
+free-text match against the address, reliable for county names like
+Essex/Kent but not for "East London" as a concept — that needs a
+broader query filtered afterwards by postcode prefix. The ordinary
+per-company endpoint is then used to verify each candidate is still
+active before it goes in the CRM. See `sales-outreach.md` for the exact
+SIC codes and mechanism.
 
 ## 7. Email & telephone outreach — rules that must never be skipped
 Outreach currently runs on two channels only: email from
