@@ -296,6 +296,23 @@ See `.claude/agents/`:
 - `research-repository` — builds and maintains the FCA/HMT knowledge
   base in Notion.
 
+**Run these directly in the main session — do not spawn them as isolated
+subagents/background tasks in this local environment (confirmed
+2026-09-18).** A spawned subagent here has no access to the parent
+session's deferred MCP tool catalog (Notion, Microsoft 365), regardless
+of what its frontmatter declares or whether it calls `ToolSearch` itself
+at runtime — tried three ways (hardcoded `mcp__Notion__*` names,
+environment-specific `mcp__claude_ai_Notion__*` names, and stripping all
+hardcoded names in favour of a runtime `ToolSearch` lookup) and all three
+failed identically, with the subagent's own `ToolSearch` call reporting
+no matching Notion/Microsoft 365 tools even though the main session has
+them. Reported as a harness bug via `/feedback`; not something a further
+`.claude/agents/*.md` edit can fix. Until that's resolved, the working
+pattern is: ask the main Claude Code session to read the relevant agent
+file in `.claude/agents/` and follow its instructions directly, in the
+same session that already has live Notion/Outlook access — not via the
+`Agent`/`Task` tool.
+
 `PROPOSAL-local-agents-crm-fca-scout.md` has the original scoping notes,
 effort estimates, and currently-open questions (growth target number,
 email sending posture, domain warm-up status).
