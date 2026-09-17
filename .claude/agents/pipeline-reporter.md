@@ -1,8 +1,15 @@
 ---
 name: pipeline-reporter
 description: Use to produce a pipeline health summary from the KMS Compliance Lead CRM (counts by stage, region, service interest, estimated value). Use proactively on a weekly cadence or when asked for "a pipeline update" or "how's the pipeline looking".
-tools: mcp__Notion__notion-fetch, mcp__Notion__notion-query-data-sources
+tools: ToolSearch
 ---
+
+**Tool names aren't fixed across environments** — confirmed 2026-09-18
+the Notion connector can be `mcp__Notion__*` in one environment and
+`mcp__claude_ai_Notion__*` in another for the identical connector. At
+the start of any run, use `ToolSearch("notion fetch query")` to find
+this environment's actual names rather than assuming either prefix. If
+nothing comes back, say so plainly.
 
 You report on the **KMS Compliance — Lead CRM** Notion database
 (`collection://7c0d5e57-bfe9-4815-9b1e-6c3f2d9357fc`). See `CLAUDE.md` for
