@@ -33,12 +33,21 @@ stop — don't guess a key or proceed without one.
 
 **Finding candidates — the Advanced Search endpoint, not the CSV:**
 Use the Advanced Search endpoint to find candidates directly, filtered
-by SIC code, location, and status — confirmed working 2026-09-17:
+by SIC code, location, status, and incorporation date — confirmed
+working live 2026-09-17:
 
 ```
+FROM_DATE=$(date -d "-12 months" +%Y-%m-%d)
 curl -s -u "$COMPANIES_HOUSE_API_KEY:" \
-  "https://api.company-information.service.gov.uk/advanced-search/companies?sic_codes=<code>&location=<term>&company_status=active&size=100&start_index=<n>"
+  "https://api.company-information.service.gov.uk/advanced-search/companies?sic_codes=<code>&location=<term>&company_status=active&incorporated_from=$FROM_DATE&size=100&start_index=<n>"
 ```
+
+- **Default to the last 12 months of incorporations** (`incorporated_from`,
+  computed dynamically each run — never hardcode a date) — the target
+  profile is newly incorporated firms in the activities below, since a
+  firm that's only just registered is exactly the "not yet
+  authorised, needs Launch Pad" segment this agent focuses on right
+  now. Only search outside that window if explicitly asked to.
 
 - **SIC codes to cover the activity list in `CLAUDE.md` §3** (query each
   separately — SIC self-reporting is imperfect, so this is a starting
@@ -111,10 +120,37 @@ curl -s -u "$COMPANIES_HOUSE_API_KEY:" \
   templated blast is both against KMS's positioning (proportionate,
   plain English, not mass-market) and worse for reply rates than a
   tailored one.
+- **Write a catchy subject line** — the "hook" — specific to the firm's
+  situation and activity, not generic ("FCA Compliance Support" is not
+  a hook). Lead with the cost/opportunity angle from the brand voice
+  above, in a handful of words.
+- **Build the email as HTML** (`outlook_create_draft`'s `htmlBody`
+  field, with a plain-text version in `body` as the fallback for
+  clients that don't render HTML) — matching the real layout and colours
+  from the existing Canva design, extracted directly from it, not
+  guessed: heading colour `#112f4f` (navy), body text `#000000` on a
+  white background, bold heading, sans-serif font stack (`Arial,
+  Helvetica, sans-serif` — email clients don't reliably render Canva's
+  actual font, so don't try to match it exactly). Structure:
+  1. Bold navy heading — the tagline or this email's specific hook.
+  2. Navy sub-line — "FCA authorisation support from KMS Compliance"
+     (or the relevant service line if not Launch Pad).
+  3. Black body paragraphs — the personalised pitch (research protocol
+     + brand voice, as above).
+  4. Contact block, opt-out line, and TikTok link (below) — visually
+     set apart from the body (e.g. a top border or muted colour), not
+     buried mid-paragraph.
+  Keep the HTML simple (inline styles, no external stylesheets, no
+  large embedded images) — this is a deliberate deliverability choice,
+  not a corner cut: image-heavy HTML email is more likely to be spam-
+  filtered and often arrives with images blocked by default.
 - **Every email must end with an opt-out line** (e.g. "Don't want to
-  hear from us again? Reply 'unsubscribe' and we'll stop.") and the
-  contact block (`admin@kmscompliance.com` · `07368 387972`). This is a
-  hard requirement, not a style choice — see `CLAUDE.md` section 7.
+  hear from us again? Reply 'unsubscribe' and we'll stop."), the
+  contact block (`admin@kmscompliance.com` · `07368 387972`), and a
+  link to KMS's TikTok (`https://www.tiktok.com/@kms_compliance`) —
+  e.g. "Follow us on TikTok for compliance tips: [link]". The opt-out
+  line is a hard requirement, not a style choice — see `CLAUDE.md`
+  section 7.
 - **Sole traders/partnerships:** flag these for human review rather than
   including them in a standard outreach batch — they need consent or an
   existing relationship under PECR, unlike limited companies. Say so

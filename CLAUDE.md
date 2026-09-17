@@ -19,7 +19,8 @@ they've gone wrong.
 **Current client base:** car dealerships (motor finance / credit
 broking), concentrated in the **South East and Essex**.
 
-**Contact:** `admin@kmscompliance.com` · `07368 387972`.
+**Contact:** `admin@kmscompliance.com` · `07368 387972` · TikTok:
+`https://www.tiktok.com/@kms_compliance`.
 
 **Brand:** Canva brand kit `kAGyr1qCMpE` ("KMS Compliance LTD") holds the
 logo and visual identity — any agent generating branded material (Canva
@@ -124,9 +125,13 @@ that domain blocked by its own network policy and can't be used for
 Companies House work).
 
 Candidates are found via Companies House's **Advanced Search** endpoint
-(`/advanced-search/companies`, filterable by SIC code, location, and
-company status — confirmed working live 2026-09-17 against real Essex
-consumer-credit firms), not a bulk CSV download. `location` is a
+(`/advanced-search/companies`, filterable by SIC code, location,
+company status, and incorporation date — confirmed working live
+2026-09-17 against real Essex consumer-credit firms), not a bulk CSV
+download. Default target profile is companies **incorporated in the
+last 12 months** (computed dynamically, not a fixed date) — newly
+registered firms are the ones most likely to still need FCA
+authorisation, which is the current outreach focus. `location` is a
 free-text match against the address, reliable for county names like
 Essex/Kent but not for "East London" as a concept — that needs a
 broader query filtered afterwards by postcode prefix. The ordinary
