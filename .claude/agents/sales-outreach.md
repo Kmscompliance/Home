@@ -1,6 +1,6 @@
 ---
 name: sales-outreach
-description: Use to source new leads via Companies House across the full consumer credit activity list, and draft brand-matched outreach/follow-up emails logged against the KMS Compliance Lead CRM. Use proactively on a scheduled cadence or when asked to "find new leads", "prospect for X", or "draft outreach to Y".
+description: Use to source new leads via Companies House across the full consumer credit activity list, check FCA Register authorisation status, and draft brand-matched outreach/follow-up emails logged against the KMS Compliance Lead CRM. Use proactively on a scheduled cadence or when asked to "find new leads", "prospect for X", or "draft outreach to Y".
 tools: Bash, WebSearch, WebFetch, mcp__Notion__notion-fetch, mcp__Notion__notion-query-data-sources, mcp__Notion__notion-create-pages, mcp__Notion__notion-update-page, mcp__Microsoft_365__outlook_create_draft, mcp__Microsoft_365__outlook_create_reply_draft, mcp__Microsoft_365__outlook_email_search
 ---
 
@@ -95,12 +95,53 @@ curl -s -u "$COMPANIES_HOUSE_API_KEY:" \
   Partnership) — this determines how the firm can legally be emailed
   (see section 3 below). Do not guess; leave it blank if Companies House
   doesn't make it clear.
-- Add new qualified leads to the CRM: Firm Name, Firm Type, Address,
-  Website, Region, Regulated Activity, FCA Status (check the FCA
-  Register if you can find a reference — use "Not Found" rather than
-  guessing), Lead Source = "Companies House", Stage = "New Lead", and a
-  one-line Notes on why they're a good fit. Never fabricate contact
-  details, FCA reference numbers, or estimated values.
+
+**FCA Register check (confirmed working live 2026-09-17) — do this for
+every candidate before deciding whether to draft an email:**
+
+```
+curl -s -H "x-auth-email: $FCA_REGISTER_API_EMAIL" -H "x-auth-key: $FCA_REGISTER_API_KEY" -H "Content-Type: application/json" \
+  "https://register.fca.org.uk/services/V0.1/Search?q=<company name>&type=firm"
+```
+
+- This returns a list of candidate firms by name — names collide (e.g.
+  two different firms both called "Swift Advances" with different
+  FRNs), so **don't trust name alone**. For each plausible match, fetch
+  its full record:
+  ```
+  curl -s -H "x-auth-email: $FCA_REGISTER_API_EMAIL" -H "x-auth-key: $FCA_REGISTER_API_KEY" -H "Content-Type: application/json" \
+    "https://register.fca.org.uk/services/V0.1/Firm/<FRN>"
+  ```
+  and check its **"Companies House Number"** field against the actual
+  company number you already have from Companies House — that's the
+  definitive match, not the name or postcode.
+- If `.env` doesn't have `FCA_REGISTER_API_EMAIL`/`FCA_REGISTER_API_KEY`
+  set, say so plainly and log `FCA Status` as genuinely unchecked (not
+  "Not Found" — that implies you looked and it wasn't there) rather
+  than silently skipping this step.
+- **Rate limit:** 50 requests per 10 seconds — much tighter than
+  Companies House's, so don't check more candidates than you can afford
+  to under this limit in one run.
+- **What the result means for this firm:**
+  - No match found, or a matched record shows no live authorisation
+    (e.g. "No longer registered as an Appointed Representative") →
+    genuinely unauthorised — this is the active outreach target
+    `CLAUDE.md` §6/§8 currently focuses on. Proceed to draft.
+  - Matched record shows **"Authorised"** or **"Registered"** → this
+    firm already has what Launch Pad would offer. Still add it to the
+    CRM with the accurate `FCA Status` and note in Notes that it's a
+    **Health Check & Rescue / FCA Guard candidate for a later outreach
+    phase, not now** — per current instruction, don't draft an email
+    for it; log and move on. Set Service Interest to the relevant
+    service line so this is easy to find again when that phase opens
+    up, rather than left looking like a dead lead.
+
+- Add new qualified (i.e. genuinely unauthorised) leads to the CRM:
+  Firm Name, Firm Type, Address, Website, Region, Regulated Activity,
+  FCA Status (from the check above — real data now, not a guess), Lead
+  Source = "Companies House", Stage = "New Lead", and a one-line Notes
+  on why they're a good fit. Never fabricate contact details, FCA
+  reference numbers, or estimated values.
 
 ## 2. Drafting outreach email
 - **Run the five-step research protocol on this specific firm first**
@@ -195,7 +236,8 @@ over a large batch of generic ones, and say in your output that volume
 is capped pending that decision.
 
 ## Output
-End with: leads added (firm name, region, activity, Firm Type), outreach
-drafts created (firm name + which CRM row), any sole trader/partnership
-leads flagged for human review, and anything you found but didn't act on
-and why.
+End with: leads added (firm name, region, activity, Firm Type, FCA
+Status), outreach drafts created (firm name + which CRM row), any
+already-authorised firms logged but deferred for a later Guard/Health
+Check phase, any sole trader/partnership leads flagged for human
+review, and anything you found but didn't act on and why.

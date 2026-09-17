@@ -139,6 +139,20 @@ per-company endpoint is then used to verify each candidate is still
 active before it goes in the CRM. See `sales-outreach.md` for the exact
 SIC codes and mechanism.
 
+**FCA Register check — confirmed working live 2026-09-17.** After a
+Companies House candidate is found, `sales-outreach` searches the FCA
+Register by name (`/Search?type=firm`) and matches the right result via
+its "Companies House Number" field (names collide — this is the only
+reliable match), not by name or postcode alone. Uses a separate account
+and key from Companies House, stored in `.env` as
+`FCA_REGISTER_API_EMAIL`/`FCA_REGISTER_API_KEY`
+(`x-auth-email`/`x-auth-key` headers, `Content-Type: application/json`,
+rate limit 50 requests/10 seconds — much tighter than Companies House's).
+Genuinely unauthorised firms are the active outreach target right now;
+already-authorised firms are still logged accurately in the CRM but
+deferred to a later FCA Guard/Health Check & Rescue outreach phase, per
+Matthew's instruction, rather than emailed now.
+
 ## 7. Email & telephone outreach — rules that must never be skipped
 Outreach currently runs on two channels only: email from
 **admin@kmscompliance.com** via **Outlook/Microsoft 365** (not Gmail —
