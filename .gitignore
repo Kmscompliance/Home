@@ -1,3 +1,17 @@
 .claude/settings.local.json
 .env
 .env.*
+
+# Claude Code's own local runtime state (credentials, history, cache) —
+# never shared, machine-specific. Only .claude/agents/ and
+# .claude/standards/ are meant to be tracked in this repo.
+.claude/.credentials.json
+.claude/.last-cleanup
+.claude/backups/
+.claude/cache/
+.claude/history.jsonl
+.claude/plugins/
+.claude/projects/
+.claude/sessions/
+.claude/settings.json
+.claude/shell-snapshots/
