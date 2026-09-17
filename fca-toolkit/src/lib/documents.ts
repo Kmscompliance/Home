@@ -1,4 +1,4 @@
-export type DocumentStatus = "available" | "coming-soon";
+export type DocumentStatus = "available" | "preview" | "coming-soon";
 
 export interface DocumentDefinition {
   slug: string;
@@ -21,7 +21,7 @@ export const documents: DocumentDefinition[] = [
     shortDescription:
       "Sets out how your firm identifies, assesses, manages and reports on risk — a core requirement of your FCA application.",
     priceGBP: 49,
-    status: "coming-soon",
+    status: "preview",
   },
   {
     slug: "risk-register",
@@ -96,11 +96,19 @@ export const documents: DocumentDefinition[] = [
     status: "coming-soon",
   },
   {
-    slug: "compliance-monitoring-policy",
-    title: "Compliance Monitoring Policy",
+    slug: "compliance-monitoring-programme-policy",
+    title: "Compliance Monitoring Programme Policy",
     shortDescription:
-      "Your firm's plan for reviewing and testing that it continues to meet its regulatory obligations day to day.",
+      "Your firm's policy for how it structures and governs ongoing compliance monitoring, reviewing and testing that it continues to meet its regulatory obligations.",
     priceGBP: 39,
+    status: "coming-soon",
+  },
+  {
+    slug: "compliance-monitoring-plan",
+    title: "Compliance Monitoring Plan",
+    shortDescription:
+      "The practical, scheduled plan of monitoring activity that puts your Compliance Monitoring Programme Policy into action.",
+    priceGBP: 29,
     status: "coming-soon",
   },
   {

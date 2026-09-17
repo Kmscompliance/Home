@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { documents } from "@/lib/documents";
 
 export function Hero() {
   return (
@@ -12,7 +13,7 @@ export function Hero() {
             FCA authorisation document templates, without the £000s consultancy bill
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-kms-text sm:text-lg">
-            Thirteen editable, plain-English templates covering everything a
+            {documents.length} editable, plain-English templates covering everything a
             sole trader or small founder-led firm needs to prepare a full FCA
             authorisation application — buy only the documents you need, edit
             them yourself, submit with confidence.

@@ -1,3 +1,5 @@
+import { documents } from "./documents";
+
 export interface Faq {
   question: string;
   answer: string;
@@ -22,7 +24,7 @@ export const faqs: Faq[] = [
   {
     question: "How do I know what to fill in?",
     answer:
-      "Every place you need to add your own details — firm name, FRN, regulated activities, SMF holder names, risk appetite, and so on — is highlighted with a bracketed label like [FIRM NAME], plus a short guidance note explaining what to insert and why. The same highlighting style is used consistently across all 13 documents.",
+      `Every place you need to add your own details — firm name, FRN, regulated activities, SMF holder names, risk appetite, and so on — is highlighted with a bracketed label like [FIRM NAME], plus a short guidance note explaining what to insert and why. The same highlighting style is used consistently across all ${documents.length} documents.`,
   },
   {
     question: "Can I preview a document before I buy it?",
@@ -32,7 +34,7 @@ export const faqs: Faq[] = [
   {
     question: "Is there a discount for buying multiple documents?",
     answer:
-      "A full toolkit bundle covering all 13 documents is planned — see the Pricing section for details. For now, each document is sold individually.",
+      `A full toolkit bundle covering all ${documents.length} documents is planned — see the Pricing section for details. For now, each document is sold individually.`,
   },
   {
     question: "Who is KMS Compliance?",

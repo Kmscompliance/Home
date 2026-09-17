@@ -37,7 +37,7 @@ export function Pricing() {
         <div className="rounded-xl border border-kms-navy bg-kms-navy p-6 text-white shadow-sm">
           <p className="text-sm font-semibold text-white/80">Full toolkit bundle</p>
           <p className="mt-2 text-3xl font-bold">£{bundlePriceGBP}</p>
-          <p className="mt-1 text-sm text-white/70">All 13 documents, one purchase</p>
+          <p className="mt-1 text-sm text-white/70">All {documents.length} documents, one purchase</p>
           <ul className="mt-5 space-y-2 text-sm text-white/90">
             <li>✓ Everything in the single document plan</li>
             <li>✓ Covers the full FCA application document set</li>

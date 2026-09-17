@@ -1,7 +1,8 @@
 import Image from "next/image";
+import { documents } from "@/lib/documents";
 
 const stats = [
-  { label: "Templates covering the full application", value: "13" },
+  { label: "Templates covering the full application", value: String(documents.length) },
   { label: "Editable Word (.docx) downloads", value: "100%" },
   { label: "Accounts required to buy", value: "0" },
 ];
