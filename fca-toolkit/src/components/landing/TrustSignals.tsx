@@ -14,7 +14,7 @@ const founders = [
   },
   {
     photo: "/brand/founder-cofounder.jpg",
-    name: "Co-Founder",
+    name: "Marc",
     role: "Ex-FCA, Co-Founder, KMS Compliance",
   },
 ];
@@ -50,7 +50,7 @@ export function TrustSignals() {
               key={person.name}
               className="overflow-hidden rounded-xl border border-kms-border bg-white shadow-sm"
             >
-              <div className="relative h-48 w-full bg-kms-surface">
+              <div className="relative aspect-[4/5] w-full bg-kms-surface">
                 <Image
                   src={person.photo}
                   alt={person.name}
@@ -66,8 +66,8 @@ export function TrustSignals() {
             </div>
           ))}
           <div className="rounded-xl border border-dashed border-kms-border bg-kms-surface p-5 text-xs text-kms-text/60 sm:col-span-2">
-            Real headshots — still need the co-founder&apos;s name and a
-            finalised bio for each before this goes live.
+            Still need finalised bio copy for Matt and Marc before this goes
+            live.
           </div>
         </div>
       </div>
