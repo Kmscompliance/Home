@@ -160,6 +160,16 @@ corrected 2026-09-16), and telephone calls made directly by
 Matthew/Marc. No direct mail, no third-party mailing house or call
 centre.
 
+**Outlook draft creation is currently blocked — confirmed a platform
+limitation, not a fixable config gap (2026-09-18).** The Microsoft 365
+connector's access is read-only (a custom `access_as_user` scope with
+no write access, and no user-facing option in either Entra or Claude's
+own connector settings to change it — checked both). Until Anthropic's
+connector supports write access, `sales-outreach` drafts the email
+content and saves it in the CRM row's Notes for Matthew/Marc to paste
+into a new Outlook email by hand — that's the standing process, not a
+temporary workaround to keep re-litigating.
+
 - **Draft, don't auto-send**, until explicitly told otherwise. Every
   outreach email is created as an Outlook draft for Matthew/Marc to
   review and send, not sent automatically.

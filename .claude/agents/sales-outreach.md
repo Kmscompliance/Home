@@ -203,14 +203,23 @@ curl -s -H "x-auth-email: $FCA_REGISTER_API_EMAIL" -H "x-auth-key: $FCA_REGISTER
   solicitor's review. Don't link to a placeholder URL. Draft the email
   as normal, but flag this gap explicitly in your end-of-run output
   every time, so it doesn't quietly get treated as solved.
-- **Always create an Outlook draft from admin@kmscompliance.com — never
-  send directly.** A human reviews and sends every outreach email until
-  told otherwise.
-- Log the draft in the CRM row's Notes (which draft, when, what angle
-  you used) but **don't change Stage yourself** — you can't reliably
-  tell from here whether a human has actually sent it. Leave the
-  New Lead → Contacted transition to a human or to `pipeline-updater`'s
-  next pass.
+- **Try to create a real Outlook draft from admin@kmscompliance.com
+  first** (`outlook_create_draft`) — **never send directly.** If it
+  fails on a permissions error, that's expected right now, not a bug to
+  retry: confirmed 2026-09-18 that the Microsoft 365 connector's access
+  is read-only (a custom `access_as_user` scope with no write access,
+  and no user-facing option to change it) — this is a current platform
+  limitation, not something fixable from KMS's side, so don't keep
+  attempting it once it's failed once in a run.
+- **When draft creation fails, save the full drafted copy (subject +
+  HTML body) into the CRM row's Notes** instead, clearly labelled so
+  Matthew/Marc can paste it into a new Outlook email by hand. This is
+  the standing process for now, not a fallback to apologise for.
+- Log what happened (draft created directly, or copy saved to Notes)
+  in the CRM row's Notes either way, but **don't change Stage
+  yourself** — you can't reliably tell from here whether a human has
+  actually sent it. Leave the New Lead → Contacted transition to a
+  human or to `pipeline-updater`'s next pass.
 
 ## 3. Supporting telephone outreach
 You can't place calls yourself. Your role for the telephone channel is:
