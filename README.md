@@ -18,13 +18,47 @@ products.html      FCA Authorisation Document Toolkit ("coming soon")
 contact.html       Contact form + details
 css/style.css       All styling, including brand colours as CSS variables
 js/main.js         Mobile menu toggle + footer year
-images/            Empty for now — logo and team photos go here
+images/            Logo, favicons, and Matt/Marc's photos
 ```
 
 Anything marked **[DRAFT — REVIEW NEEDED]** on a page is placeholder copy
 I wrote from what you've told me about the business — not final text.
-Anything marked **[PHOTO PLACEHOLDER]** or **[Service illustration/photo
-placeholder]** is a spot waiting for a real image.
+Anything marked **[Service illustration/photo placeholder]** is still a
+spot waiting for a real image.
+
+### About the logo and team photos
+
+You pointed me at the "kmscompliance images" Google Drive folder, where I
+found `KMS Compliance Ltd Logo.jpeg` and `Matt_Marc.jpg`. Both are now in
+`images/`, along with what I made from them:
+
+- `kms-icon.png` — just the butterfly mark, background removed, used in
+  the nav bar and footer on every page. The "KMS COMPLIANCE" text next to
+  it is real text (not part of the image), so it automatically shows navy
+  on light backgrounds and white on the dark footer.
+- `favicon-32.png` / `favicon-192.png` / `favicon-512.png` — the browser
+  tab icon, cropped from the same mark.
+- `kms-logo-full.png` — the full icon + wordmark lockup, background
+  removed, kept in case we need it somewhere else later (e.g. a shareable
+  preview image).
+- `kms-logo-original.jpeg` — the untouched file exactly as it came from
+  Drive, kept for reference.
+- `matt-headshot.jpg` / `marc-headshot.jpg` — individual headshots
+  cropped out of `Matt_Marc.jpg`, now on the About page. **I assumed left
+  = Matt, right = Marc based on the filename order — please double-check
+  that's correct, since I can't verify identities myself.**
+- `matt-marc.jpg` — the original combined photo, kept for reference.
+
+One thing to flag, as you asked: the logo's actual navy and green (as
+pulled from the image itself) read a little closer to what you described
+as the *older* palette (`#2C3E6B` / `#2EAE6E`) than the newer one
+(`#11304F` / `#068A53`) I'd guessed at first — though it's hard to be
+precise picking colours off a JPEG (compression softens them slightly).
+The site currently uses the logo image itself wherever the mark appears,
+so this only affects accent colours elsewhere on the site (buttons,
+links, headings). Worth confirming the exact values against the Canva
+brand kit rather than trusting my estimate — happy to update the CSS
+variables in `css/style.css` the moment you confirm.
 
 ## How to look at it yourself (no coding needed)
 
@@ -39,18 +73,17 @@ Matt asked for.
 
 ## What's still missing before this can go live
 
-1. **Logo** — currently a plain coloured square standing in for the real
-   KMS butterfly mark. Export the logo (ideally as an SVG, or a large
-   PNG with a transparent background) from the Canva brand kit
-   (`kAGyr1qCMpE`) and I'll drop it in.
-2. **Brand colours** — I used navy `#11304F` and green `#068A53` based on
-   what you described. Once you export the brand kit, I'll check these
-   against the actual values (and flag if the kit has both an old and
-   new palette, as you mentioned might be the case).
-3. **Matt and Marc's photos** — placeholders are on the About page.
-4. **Real copy** — go through each `[DRAFT]` section and tell me what to
+1. **Brand colours** — confirm the exact navy/green hex values from the
+   Canva brand kit (`kAGyr1qCMpE`) so I can update `css/style.css` — see
+   the flag above about old vs. new palette.
+2. **Confirm Matt/Marc photo assignment** — see above, I guessed based on
+   filename order and need that checked.
+3. **Real copy** — go through each `[DRAFT]` section and tell me what to
    change; I'll update it directly.
-5. **Resources content** — currently 3 empty placeholder cards.
+4. **Resources content** — currently 3 empty placeholder cards.
+5. **Service page images** — the three grey "[Service illustration/photo
+   placeholder]" boxes on the Services page could use real photos or
+   graphics if you have any, or I can leave them as simple graphics.
 
 ## What happens next (the phases, as a reminder)
 
