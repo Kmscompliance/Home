@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | KMS Compliance Ltd</title>
+  <meta name="description" content="Get in touch with KMS Compliance Ltd.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-mark" aria-hidden="true"></span>
+        KMS COMPLIANCE
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Get in touch</div>
+        <h1>Let's talk about your compliance needs.</h1>
+        <p style="max-width:640px;color:var(--color-text-muted);">Whether you're just starting out or need ongoing support, we're happy to have a no-obligation conversation.</p>
+
+        <div class="contact-grid">
+          <div>
+            <!--
+              This form is wired for Netlify Forms — Netlify's built-in form
+              handling, which needs no backend/database and is free on the
+              tier we're using. It only works once the site is actually
+              deployed on Netlify (it won't submit anywhere when opened as a
+              local file). Until then, the mailto link alongside it works
+              immediately as a fallback.
+            -->
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display:none;">
+                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+              </p>
+
+              <div class="form-field">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-field">
+                <label for="message">How can we help?*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </form>
+          </div>
+
+          <div>
+            <ul class="info-list">
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:admin@kmscompliance.com">admin@kmscompliance.com</a>
+              </li>
+              <li>
+                <strong>Hours</strong>
+                Monday–Friday, 09:00–17:00
+              </li>
+              <li>
+                <strong>Follow us</strong>
+                <div class="social-links" style="margin-top:8px;">
+                  <a href="#" aria-label="TikTok" style="background:var(--color-grey-bg);color:var(--color-navy);">TT</a>
+                  <a href="#" aria-label="LinkedIn" style="background:var(--color-grey-bg);color:var(--color-navy);">in</a>
+                  <a href="#" aria-label="Instagram" style="background:var(--color-grey-bg);color:var(--color-navy);">IG</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="nav__brand" style="color:#fff;margin-bottom:12px;">
+            <span class="nav__brand-mark" aria-hidden="true"></span>
+            KMS COMPLIANCE
+          </div>
+          <p style="max-width:280px;">Plain-English FCA compliance support for founders and sole traders, led by former FCA and industry experts.</p>
+          <div class="social-links">
+            <a href="#" aria-label="TikTok">TT</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:admin@kmscompliance.com">admin@kmscompliance.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> KMS Compliance Ltd. All rights reserved.</span>
+        <span>Company registered in the UK</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
