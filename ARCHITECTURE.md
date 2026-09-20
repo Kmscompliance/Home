@@ -450,6 +450,13 @@ unilaterally. It's meant to be read alongside this file, not folded into
 it, since it needs a different kind of review (yours and Marc's FCA
 judgement, not engineering).
 
+`PRE_LAUNCH_REVIEW.md` (repo root) is the broader version of the same
+idea — a running log of security, architecture, customer-experience, and
+cost concerns worth a deliberate decision before this is used with real
+users, gathered across every stage of the build rather than written once
+at the end. Add to it as new concerns surface; don't let flags accumulate
+only in conversation.
+
 ### Secrets audit
 
 Confirmed, not assumed: `ANTHROPIC_API_KEY`, `ADMIN_PASSWORD`, and

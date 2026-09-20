@@ -98,6 +98,15 @@ the full design.
 See [ARCHITECTURE.md](./ARCHITECTURE.md#stage-4--security--compliance-hardening)
 for the full design.
 
+## Before this goes live
+
+[PRE_LAUNCH_REVIEW.md](./PRE_LAUNCH_REVIEW.md) is a running log of open
+concerns and decisions worth making deliberately — security, architecture
+constraints, customer experience, and cost — before this is used with
+real users or real investment conversations. Nothing in it has been
+silently fixed; it's meant to be worked through together, not treated as
+a backlog.
+
 ## Insurer integration seam (Acturis-ready)
 
 Quotes now go through `POST /api/quote`, which delegates to whichever
