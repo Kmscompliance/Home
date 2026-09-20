@@ -242,3 +242,12 @@ on Vercel — that's flagged as Stage 3/4 work (swapping in a real datastore
 such as Vercel KV, Postgres, or Supabase) before the admin dashboard or any
 real lead data can rely on it. This matters more for `lead-log.jsonl` than
 the others, since it's the one file holding real personal data.
+
+## Planned / not yet built
+
+- **Phone-contact capture as a final questionnaire step.** Ask for name,
+  email, and phone number as the last step of the quote flow itself (not
+  just the Stage 2 leave-intent offer, which only captures an optional
+  email), so that if someone drops off before finishing, there's a real
+  phone number to follow up on rather than only an email. Deliberately
+  deferred — noted here so it isn't lost, not yet implemented.
