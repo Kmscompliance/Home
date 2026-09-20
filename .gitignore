@@ -43,3 +43,6 @@ next-env.d.ts
 
 # claude code
 .claude/settings.local.json
+
+# local quote log (dev only — see src/lib/store/quoteLog.ts)
+/data
