@@ -58,6 +58,10 @@ zero extra config:
    **Project Settings → Environment Variables** — never commit it to the repo.
 4. Deploy. Every push to `main` will auto-deploy from then on.
 
+See [ARCHITECTURE.md](./ARCHITECTURE.md) for the system design, the request
+flow for a quote, where to change the pricing numbers or the model, and how
+sandbox/test/live environments map onto Vercel.
+
 ## Project structure
 
 - `src/app/` — routes (App Router)
