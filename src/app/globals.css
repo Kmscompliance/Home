@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f8fa;
+  --foreground: #101828;
+
+  /* Brand palette — navy (primary), green (accent), neutral (everything else). */
+  --color-brand-navy-950: #0a1628;
+  --color-brand-navy-900: #101f38;
+  --color-brand-navy-800: #16304f;
+  --color-brand-navy-700: #1e4066;
+  --color-brand-navy-600: #2a5484;
+  --color-brand-navy-500: #3a6ba3;
+  --color-brand-navy-100: #e3ebf3;
+  --color-brand-navy-50: #f2f6fa;
+
+  --color-brand-green-700: #0f6e4f;
+  --color-brand-green-600: #14895f;
+  --color-brand-green-500: #1ba873;
+  --color-brand-green-100: #dcf3e7;
+  --color-brand-green-50: #eefaf3;
+
+  --color-brand-neutral-900: #171f2a;
+  --color-brand-neutral-700: #445064;
+  --color-brand-neutral-500: #6b7789;
+  --color-brand-neutral-300: #ccd3dd;
+  --color-brand-neutral-200: #e2e6ec;
+  --color-brand-neutral-100: #eef1f5;
+  --color-brand-neutral-50: #f7f8fa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-brand-navy-950: var(--color-brand-navy-950);
+  --color-brand-navy-900: var(--color-brand-navy-900);
+  --color-brand-navy-800: var(--color-brand-navy-800);
+  --color-brand-navy-700: var(--color-brand-navy-700);
+  --color-brand-navy-600: var(--color-brand-navy-600);
+  --color-brand-navy-500: var(--color-brand-navy-500);
+  --color-brand-navy-100: var(--color-brand-navy-100);
+  --color-brand-navy-50: var(--color-brand-navy-50);
+
+  --color-brand-green-700: var(--color-brand-green-700);
+  --color-brand-green-600: var(--color-brand-green-600);
+  --color-brand-green-500: var(--color-brand-green-500);
+  --color-brand-green-100: var(--color-brand-green-100);
+  --color-brand-green-50: var(--color-brand-green-50);
+
+  --color-brand-neutral-900: var(--color-brand-neutral-900);
+  --color-brand-neutral-700: var(--color-brand-neutral-700);
+  --color-brand-neutral-500: var(--color-brand-neutral-500);
+  --color-brand-neutral-300: var(--color-brand-neutral-300);
+  --color-brand-neutral-200: var(--color-brand-neutral-200);
+  --color-brand-neutral-100: var(--color-brand-neutral-100);
+  --color-brand-neutral-50: var(--color-brand-neutral-50);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
