@@ -29,19 +29,23 @@ import type { QuoteProviderResult } from "@/lib/quoteProvider/types";
 
 // ---------------------------------------------------------------------------
 // A fictional demo panel insurer, entirely invented for this prototype — a
-// stand-in for what a real Acturis-connected insurer would look like on
-// the other end of an integration. Its numbers are deliberately its OWN,
-// independent of BeesKnee's in-house engine (src/lib/pricing/*.ts), the
-// way two real panel insurers would genuinely quote differently for the
-// same risk. Any resemblance to a real insurer's name is unintentional —
-// pick a different one before this is ever shown outside a demo.
+// placeholder for what a real Acturis-connected insurer would look like on
+// the other end of an integration. Named after Acturis deliberately (this
+// is the demo narrative: "here's where a real Acturis-panel insurer would
+// plug in"), NOT because it's affiliated with, endorsed by, or a real
+// product of Acturis — it isn't, and the "(fictional...)" qualifier on
+// INSURER_NAME should stay wherever this name is shown, so nobody mistakes
+// it for a real Acturis product if this demo is ever shown outside the
+// team. Its numbers are deliberately its OWN, independent of BeesKnee's
+// in-house engine (src/lib/pricing/*.ts), the way two real panel insurers
+// would genuinely quote differently for the same risk.
 // ---------------------------------------------------------------------------
 
-const INSURER_NAME = "Fenwick & Vale Insurance (fictional demo panel insurer)";
+const INSURER_NAME = "Acturis Test Insurance Company (fictional placeholder, not a real Acturis product)";
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
 function quoteReference(): string {
-  return `FV-${new Date().getFullYear()}-${randomUUID().slice(0, 6).toUpperCase()}`;
+  return `ACT-${new Date().getFullYear()}-${randomUUID().slice(0, 6).toUpperCase()}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -130,7 +134,7 @@ export function underwriteTrades(answers: TradesAnswers): QuoteProviderResult {
     {
       id: "base",
       label: "Starting point for your turnover",
-      detail: `Fenwick & Vale's own rate card starts around £${base}/year for this turnover band.`,
+      detail: `This insurer's own rate card starts around £${base}/year for this turnover band.`,
       effect: "base",
       amountGBP: base,
     },
@@ -264,7 +268,7 @@ export function underwriteConsultants(answers: ConsultantsAnswers): QuoteProvide
     {
       id: "base",
       label: "Starting point for your revenue",
-      detail: `Fenwick & Vale's own rate card starts around £${base}/year for this revenue band.`,
+      detail: `This insurer's own rate card starts around £${base}/year for this revenue band.`,
       effect: "base",
       amountGBP: base,
     },

@@ -80,10 +80,12 @@ Quotes now go through `POST /api/quote`, which delegates to whichever
 
 - `local` (default) — BeesKnee's own pricing engine, wrapped with a quote
   reference, insurer name, and illustrative UK Insurance Premium Tax.
-- `mock-acturis` — a fictional demo insurer ("Fenwick & Vale Insurance",
-  `src/lib/mockInsurer/underwriting.ts`) with its own independent rates,
-  exposed as its own standalone endpoint (`POST /api/mock-insurer/quote`)
-  and able to **refer or decline** a risk, not just price it.
+- `mock-acturis` — a fictional demo insurer ("Acturis Test Insurance
+  Company" — named after Acturis as the demo narrative, not a real
+  Acturis product, `src/lib/mockInsurer/underwriting.ts`) with its own
+  independent rates, exposed as its own standalone endpoint
+  (`POST /api/mock-insurer/quote`) and able to **refer or decline** a
+  risk, not just price it.
 
 A real Acturis integration would be one new file implementing the same
 interface plus flipping the env var — see

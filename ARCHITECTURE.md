@@ -187,7 +187,7 @@ real insurer's API would actually respond — not just a price:
 | Provider | `QUOTE_PROVIDER` value | What it does |
 |---|---|---|
 | `localProvider` (`src/lib/quoteProvider/localProvider.ts`) | `local` (default) | Wraps BeesKnee's own deterministic pricing engine (`src/lib/pricing/*.ts`). Always returns `quoted` — it has no concept of underwriting appetite. |
-| `mockActurisProvider` (`src/lib/quoteProvider/mockActurisProvider.ts`) | `mock-acturis` | Calls a fictional demo insurer — "Fenwick & Vale Insurance" (`src/lib/mockInsurer/underwriting.ts`) — with its **own independent rates** (deliberately different numbers from our own engine) and its own decline/refer rules for edge-case risk profiles. |
+| `mockActurisProvider` (`src/lib/quoteProvider/mockActurisProvider.ts`) | `mock-acturis` | Calls a fictional demo insurer — "Acturis Test Insurance Company" (`src/lib/mockInsurer/underwriting.ts`) — with its **own independent rates** (deliberately different numbers from our own engine) and its own decline/refer rules for edge-case risk profiles. **Named after Acturis on purpose, as the demo narrative — it is not a real Acturis product or affiliated with Acturis**; the "(fictional placeholder...)" qualifier on its display name is there so nobody mistakes it for one. |
 
 Both are picked by `getQuoteProvider()` (`src/lib/quoteProvider/index.ts`),
 reading the `QUOTE_PROVIDER` env var. `POST /api/quote` — the one route
