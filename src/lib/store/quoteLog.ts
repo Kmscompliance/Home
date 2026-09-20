@@ -20,9 +20,12 @@ export type QuoteLogEntry = {
   id: string;
   timestamp: string;
   vertical: "trades" | "consultants";
-  annualGBP: number;
-  monthlyGBP: number;
-  factorCount: number;
+  status: "quoted" | "referred" | "declined";
+  insurerName: string | null;
+  /** Null for referred/declined — there's no price to log. */
+  annualGBP: number | null;
+  monthlyGBP: number | null;
+  factorCount: number | null;
 };
 
 export async function appendQuoteLog(entry: QuoteLogEntry): Promise<void> {

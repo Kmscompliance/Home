@@ -1,11 +1,13 @@
-import { randomUUID } from "crypto";
 import { NextResponse } from "next/server";
 import type { BreakdownFactor } from "@/lib/pricing/types";
 import { explainPremium } from "@/lib/pricing/explain";
-import { appendQuoteLog } from "@/lib/store/quoteLog";
+
+// Purely about generating the "why this price" text — logging a completed
+// quote is owned by /api/quote and the assistant chat route (via
+// src/lib/quoteProvider/logResult.ts), the two places a quote decision is
+// actually made. This route has no side effects.
 
 type ExplainBody = {
-  vertical: "trades" | "consultants";
   annualGBP: number;
   monthlyGBP: number;
   breakdown: BreakdownFactor[];
@@ -19,31 +21,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "invalid JSON body" }, { status: 400 });
   }
 
-  const { vertical, annualGBP, monthlyGBP, breakdown } = body;
+  const { annualGBP, breakdown } = body;
 
-  if (
-    (vertical !== "trades" && vertical !== "consultants") ||
-    typeof annualGBP !== "number" ||
-    typeof monthlyGBP !== "number" ||
-    !Array.isArray(breakdown)
-  ) {
-    return NextResponse.json(
-      { error: "vertical, annualGBP, monthlyGBP and breakdown are required" },
-      { status: 400 },
-    );
+  if (typeof annualGBP !== "number" || !Array.isArray(breakdown)) {
+    return NextResponse.json({ error: "annualGBP and breakdown are required" }, { status: 400 });
   }
 
   const explanation = await explainPremium(annualGBP, breakdown);
-
-  // Anonymised, best-effort — never blocks the response to the user.
-  await appendQuoteLog({
-    id: randomUUID(),
-    timestamp: new Date().toISOString(),
-    vertical,
-    annualGBP,
-    monthlyGBP,
-    factorCount: breakdown.length,
-  });
-
   return NextResponse.json({ explanation });
 }

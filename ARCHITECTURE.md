@@ -27,22 +27,24 @@ Browser (QuoteWizard — src/components/quote/QuoteWizard.tsx, all client-side)
   │      on mount               │                     "skip this or not?"
   │                             └─ on any failure ──► always ask (safe default)
   │
-  ├─ all 8 answered ──► calculateTradesPremium() / calculateConsultantsPremium()
-  │                      runs entirely in the browser, no network call,
-  │                      no LLM — src/lib/pricing/{trades,consultants}.ts
+  ├─ all 8 answered ──► POST /api/quote ──► getQuoteProvider().getQuote()
+  │                      the ONE call that turns finished answers into an
+  │                      actual quote — see "Insurer integration seam"
+  │                      below for what's behind it and why it's a
+  │                      network call rather than a local function now
   │
-  └─ result screen ──► POST /api/explain ──► Claude writes 2–3 sentence
-                           │                   "why this price" summary
-                           ├─ on any failure ─► offline template
-                           │                    (src/lib/pricing/explainFallback.ts)
-                           └─ also appends one anonymised line to the
-                              quote log (src/lib/store/quoteLog.ts)
+  └─ result screen (status: quoted) ──► POST /api/explain ──► Claude writes
+                           │              2–3 sentence "why this price" summary
+                           └─ on any failure ─► offline template
+                                                (src/lib/pricing/explainFallback.ts)
 ```
 
-The pricing calculation never leaves the browser and never touches Claude —
-it's a pure function of the answers you gave. Claude only ever sees the
-*inputs* (free text, the finished breakdown) — never produces the price
-itself.
+Whichever provider answers `/api/quote`, the pricing calculation itself
+never touches Claude — it's a deterministic function of the answers given.
+Claude only ever sees the *inputs* (free text, a finished breakdown) —
+never produces a price itself. Every quote decision (quoted, referred, or
+declined) is logged once, by `/api/quote` itself
+(`src/lib/quoteProvider/logResult.ts`), not by `/api/explain`.
 
 ## Why split it this way (rules vs. LLM)
 
@@ -67,7 +69,20 @@ src/lib/pricing/
   trades.ts              the trades rating engine — every multiplier/base
                           rate is a named, commented constant
   consultants.ts          same, for the consultants/freelancers vertical
-  explainFallback.ts      offline "why this price" text if Claude fails
+  explain.ts              the Claude call for "why this price" text
+  explainFallback.ts      offline version of the same, if Claude fails
+
+src/lib/quoteProvider/    the insurer integration seam — see below
+  types.ts                 QuoteProvider interface + result shapes
+  ipt.ts                    illustrative UK Insurance Premium Tax helper
+  localProvider.ts          wraps src/lib/pricing/* as a QuoteProvider
+  mockActurisProvider.ts    wraps the mock insurer as a QuoteProvider
+  logResult.ts              the one place a quote decision gets logged
+  index.ts                  getQuoteProvider() — reads QUOTE_PROVIDER
+
+src/lib/mockInsurer/
+  underwriting.ts          a fictional demo insurer's own independent
+                          rates + decline/refer rules
 
 src/lib/anthropic/
   client.ts               the one place the Anthropic SDK is constructed;
@@ -79,19 +94,24 @@ src/lib/classify/
                           Claude call in /api/classify fails
 
 src/lib/store/
-  quoteLog.ts             appends one anonymised line per completed quote
-                          to data/quote-log.jsonl (see caveat below)
+  quoteLog.ts             appends one line per quote decision (quoted,
+                          referred or declined) to data/quote-log.jsonl
 
 src/app/api/
   classify/route.ts       free text → category (forced Claude tool call)
   skip-check/route.ts     "skip this optional question?" (forced tool call)
-  explain/route.ts        writes the explanation + logs the completed quote
-                          — the only three server routes that call Claude
+  quote/route.ts          the ONE route the frontend calls for a quote —
+                          delegates to getQuoteProvider()
+  explain/route.ts        writes the "why this price" text — no side
+                          effects, doesn't log anything itself
+  mock-insurer/quote/route.ts   the fictional demo insurer's own,
+                          independently callable endpoint
 
 src/components/quote/     the wizard UI (one file per screen "shape":
                           RadioStep, FreeTextClassifyStep, HeadcountStep,
-                          OptionalStep, ResultScreen) + QuoteWizard.tsx,
-                          which is the state machine wiring them together
+                          OptionalStep, ResultScreen, LeadCaptureCard) +
+                          QuoteWizard.tsx, which is the state machine
+                          wiring them together
 
 src/components/ui/        design-system primitives (Button, Card,
                           ProgressBar) — brand-agnostic, reused everywhere
@@ -126,6 +146,92 @@ iterating, a specific pinned version once you're happy with it.
 **Environment variable changes need a redeploy to take effect** — Vercel's
 serverless functions don't pick up a changed env var on an already-running
 deployment.
+
+## Insurer integration seam (Acturis-ready)
+
+This app doesn't talk to any real insurer or broker platform — every
+price is either our own pricing engine or a fictional demo insurer, both
+running locally. But it's built so that plugging in a real one later
+(Acturis or otherwise) is a **config change, not a rewrite**.
+
+### The contract
+
+Every quote decision — however it's actually produced — implements the
+same interface (`src/lib/quoteProvider/types.ts`):
+
+```ts
+interface QuoteProvider {
+  id: string;
+  displayName: string;
+  getQuote(request: QuoteProviderRequest): Promise<QuoteProviderResult>;
+}
+```
+
+`QuoteProviderResult` is a three-way union, deliberately modelled on how a
+real insurer's API would actually respond — not just a price:
+
+- **`quoted`** — a price, with a quote reference, an insurer name, a
+  validity date, and an illustrative UK Insurance Premium Tax breakdown
+  (`src/lib/quoteProvider/ipt.ts` — a simplified 12% figure, **not tax
+  advice**; real IPT treatment varies by product and needs confirming
+  with a real insurer before it means anything outside this demo).
+- **`referred`** — the risk needs a human underwriter, with a plain-English
+  reason. Real insurer APIs genuinely have this state; it's not something
+  we invented for realism's sake.
+- **`declined`** — this insurer won't cover this risk, with a reason —
+  doesn't mean no insurer would, just that this one's appetite doesn't
+  stretch that far.
+
+### Two providers exist today
+
+| Provider | `QUOTE_PROVIDER` value | What it does |
+|---|---|---|
+| `localProvider` (`src/lib/quoteProvider/localProvider.ts`) | `local` (default) | Wraps BeesKnee's own deterministic pricing engine (`src/lib/pricing/*.ts`). Always returns `quoted` — it has no concept of underwriting appetite. |
+| `mockActurisProvider` (`src/lib/quoteProvider/mockActurisProvider.ts`) | `mock-acturis` | Calls a fictional demo insurer — "Fenwick & Vale Insurance" (`src/lib/mockInsurer/underwriting.ts`) — with its **own independent rates** (deliberately different numbers from our own engine) and its own decline/refer rules for edge-case risk profiles. |
+
+Both are picked by `getQuoteProvider()` (`src/lib/quoteProvider/index.ts`),
+reading the `QUOTE_PROVIDER` env var. `POST /api/quote` — the one route
+the frontend calls — never knows or cares which provider answered it.
+
+The fictional insurer is also exposed as its own, independently callable
+endpoint, `POST /api/mock-insurer/quote`, so it can be demoed and tested
+as a standalone "external system" in its own right — try it directly:
+
+```bash
+curl -X POST http://localhost:3000/api/mock-insurer/quote \
+  -H "Content-Type: application/json" \
+  -d '{"vertical":"trades","answers":{"tradeCategory":"roofing","turnoverBand":"25k_50k","hasEmployees":false,"yearsTradingBand":"3_to_10","claimsBand":"two_plus","highRiskWork":true,"liabilityLimit":"1m"}}'
+```
+
+(`mockActurisProvider` calls the same underwriting functions in-process
+rather than fetching that route over HTTP itself — simpler, no latency,
+no URL/env plumbing for a self-call. The route exists for exactly the
+demo/testing purpose above, and is where a real HTTP call to Acturis
+would eventually replace it.)
+
+### What a real Acturis integration would actually take
+
+This is genuinely separate work, not a small tweak — flagged here rather
+than overclaimed:
+
+1. **A commercial relationship with Acturis** — API/integration access is
+   provisioned to Acturis customers/partners, not something obtainable
+   from this codebase alone.
+2. **One new file**, `src/lib/quoteProvider/acturisProvider.ts`,
+   implementing the same `QuoteProvider` interface — its `getQuote()`
+   would make a real HTTP call to Acturis's API (auth, their request/
+   response shapes, error handling) instead of running local logic.
+3. **One line added** to the `PROVIDERS` map in
+   `src/lib/quoteProvider/index.ts`, and `QUOTE_PROVIDER=acturis` set as
+   the env var.
+4. **Nothing else changes** — not the form, not the assistant, not
+   `ResultScreen`, not the admin dashboard, not the lead capture. They
+   all already speak the `QuoteProviderResult` shape.
+5. **Separately**: real insurer/MGA integration brings its own
+   data-security and audit-trail requirements that don't exist yet in
+   this codebase — worth scoping deliberately once Acturis's actual
+   integration surface (auth model, data formats, e-trading interfaces)
+   is known, not folded into this seam silently.
 
 ## Environments: sandbox / test / live
 
@@ -247,7 +353,10 @@ built" below) to extend the same record rather than start a third one.
 `quoteLog` and `assistantEventLog` directly (no API round-trip needed —
 Server Components can just call the server-only lib functions) via
 `src/lib/admin/metrics.ts`, and shows: quotes completed today/total, split
-by vertical, average simulated premium, and the assistant's recovery rate
+by vertical, average simulated premium, underwriting decisions (quoted vs.
+referred vs. declined, and a straight-through rate — whichever quote
+provider is active, see "Insurer integration seam" above), and the
+assistant's recovery rate
 — how many sessions that got a rescue nudge (inactivity, clarify,
 confusion, or leave-intent) went on to complete a quote vs. were left
 incomplete. That last number comes from grouping `assistant-events.jsonl`

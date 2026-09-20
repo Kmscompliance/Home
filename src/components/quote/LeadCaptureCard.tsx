@@ -6,7 +6,8 @@ import { Card } from "@/components/ui/Card";
 
 type LeadCaptureCardProps = {
   vertical: "trades" | "consultants";
-  annualGBP: number;
+  /** Only present when the outcome was a price — omitted for referred/declined. */
+  annualGBP?: number;
 };
 
 export function LeadCaptureCard({ vertical, annualGBP }: LeadCaptureCardProps) {

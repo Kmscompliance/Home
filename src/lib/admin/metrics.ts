@@ -8,6 +8,13 @@ export type AdminMetrics = {
   byVertical: { trades: number; consultants: number };
   averageAnnualGBP: number | null;
   averageMonthlyGBP: number | null;
+  decisions: {
+    total: number;
+    quoted: number;
+    referred: number;
+    declined: number;
+    straightThroughRatePercent: number | null;
+  };
   rescue: {
     sessionsWithNudge: number;
     recovered: number;
@@ -28,18 +35,22 @@ const RESCUE_KINDS: AssistantEventKind[] = [
 const COMPLETION_KINDS: AssistantEventKind[] = ["post_quote_offer", "chat_quote_completed"];
 
 export async function getAdminMetrics(): Promise<AdminMetrics> {
-  const [quotes, events] = await Promise.all([readQuoteLog(), readAssistantEvents()]);
+  const [entries, events] = await Promise.all([readQuoteLog(), readAssistantEvents()]);
+
+  const quoted = entries.filter((e) => e.status === "quoted");
+  const referred = entries.filter((e) => e.status === "referred");
+  const declined = entries.filter((e) => e.status === "declined");
 
   const todayStr = new Date().toISOString().slice(0, 10);
-  const quotesToday = quotes.filter((q) => q.timestamp.slice(0, 10) === todayStr).length;
+  const quotesToday = quoted.filter((q) => q.timestamp.slice(0, 10) === todayStr).length;
 
   const byVertical = { trades: 0, consultants: 0 };
   let annualSum = 0;
   let monthlySum = 0;
-  for (const q of quotes) {
+  for (const q of quoted) {
     byVertical[q.vertical] += 1;
-    annualSum += q.annualGBP;
-    monthlySum += q.monthlyGBP;
+    annualSum += q.annualGBP ?? 0;
+    monthlySum += q.monthlyGBP ?? 0;
   }
 
   const nudgesByKind: Partial<Record<AssistantEventKind, number>> = {};
@@ -66,10 +77,17 @@ export async function getAdminMetrics(): Promise<AdminMetrics> {
 
   return {
     quotesToday,
-    quotesTotal: quotes.length,
+    quotesTotal: quoted.length,
     byVertical,
-    averageAnnualGBP: quotes.length ? Math.round(annualSum / quotes.length) : null,
-    averageMonthlyGBP: quotes.length ? Math.round(monthlySum / quotes.length) : null,
+    averageAnnualGBP: quoted.length ? Math.round(annualSum / quoted.length) : null,
+    averageMonthlyGBP: quoted.length ? Math.round(monthlySum / quoted.length) : null,
+    decisions: {
+      total: entries.length,
+      quoted: quoted.length,
+      referred: referred.length,
+      declined: declined.length,
+      straightThroughRatePercent: entries.length ? Math.round((quoted.length / entries.length) * 100) : null,
+    },
     rescue: {
       sessionsWithNudge,
       recovered,

@@ -10,7 +10,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import type { PremiumResult } from "@/lib/pricing/types";
+import type { QuoteProviderResult } from "@/lib/quoteProvider/types";
 
 type Vertical = "trades" | "consultants";
 
@@ -37,7 +37,7 @@ type AssistantContextValue = {
   setOpen: (open: boolean) => void;
   messages: ChatThreadMessage[];
   typing: boolean;
-  chatQuoteResult: { vertical: Vertical; premium: PremiumResult } | null;
+  chatQuoteResult: { vertical: Vertical; quote: QuoteProviderResult } | null;
   clearChatQuoteResult: () => void;
   reportStep: (vertical: Vertical, questionId: string, questionText: string) => void;
   reportClassifyStruggle: (vertical: Vertical, questionText: string, rawText: string) => void;
@@ -77,7 +77,7 @@ export function AssistantProvider({ children }: { children: ReactNode }) {
   const [typing, setTyping] = useState(false);
   const [chatQuoteResult, setChatQuoteResult] = useState<{
     vertical: Vertical;
-    premium: PremiumResult;
+    quote: QuoteProviderResult;
   } | null>(null);
   const [showSaveAndResume, setShowSaveAndResume] = useState(false);
 
@@ -300,7 +300,7 @@ export function AssistantProvider({ children }: { children: ReactNode }) {
           const data = (await res.json()) as {
             reply?: string;
             vertical?: Vertical;
-            quoteCompleted?: { vertical: Vertical; premium: PremiumResult };
+            quoteCompleted?: { vertical: Vertical; quote: QuoteProviderResult };
           };
           if (data.vertical) currentVerticalRef.current = data.vertical;
           setMessages((m) => [

@@ -73,6 +73,23 @@ the full design.
 - Mobile-responsive pass across the whole app (verified at 375px width:
   no horizontal overflow anywhere, including the assistant panel).
 
+## Insurer integration seam (Acturis-ready)
+
+Quotes now go through `POST /api/quote`, which delegates to whichever
+`QuoteProvider` is active (`QUOTE_PROVIDER` env var):
+
+- `local` (default) — BeesKnee's own pricing engine, wrapped with a quote
+  reference, insurer name, and illustrative UK Insurance Premium Tax.
+- `mock-acturis` — a fictional demo insurer ("Fenwick & Vale Insurance",
+  `src/lib/mockInsurer/underwriting.ts`) with its own independent rates,
+  exposed as its own standalone endpoint (`POST /api/mock-insurer/quote`)
+  and able to **refer or decline** a risk, not just price it.
+
+A real Acturis integration would be one new file implementing the same
+interface plus flipping the env var — see
+[ARCHITECTURE.md](./ARCHITECTURE.md#insurer-integration-seam-acturis-ready)
+for exactly what that would (and wouldn't) involve.
+
 ## Getting started
 
 ```bash

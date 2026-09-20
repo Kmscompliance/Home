@@ -50,6 +50,36 @@ export default async function AdminPage() {
         </div>
 
         <Card className="mt-6">
+          <p className="text-sm font-medium text-brand-neutral-700">Underwriting decisions</p>
+          <p className="mt-1 text-xs text-brand-neutral-500">
+            Every answer set submitted to a quote provider, whichever one is active — see{" "}
+            <span className="font-medium">QUOTE_PROVIDER</span> in ARCHITECTURE.md.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-8">
+            <div>
+              <p className="text-2xl font-semibold text-brand-green-700">{metrics.decisions.quoted}</p>
+              <p className="text-sm text-brand-neutral-500">Quoted</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-amber-600">{metrics.decisions.referred}</p>
+              <p className="text-sm text-brand-neutral-500">Referred</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-brand-navy-900">{metrics.decisions.declined}</p>
+              <p className="text-sm text-brand-neutral-500">Declined</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-brand-navy-900">
+                {metrics.decisions.straightThroughRatePercent !== null
+                  ? `${metrics.decisions.straightThroughRatePercent}%`
+                  : "—"}
+              </p>
+              <p className="text-sm text-brand-neutral-500">Straight-through rate</p>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="mt-6">
           <p className="text-sm font-medium text-brand-neutral-700">Quotes by vertical</p>
           <div className="mt-3 flex gap-8">
             <div>

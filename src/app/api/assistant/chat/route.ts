@@ -1,4 +1,3 @@
-import { randomUUID } from "crypto";
 import { NextResponse } from "next/server";
 import type Anthropic from "@anthropic-ai/sdk";
 import { claude, CLAUDE_MODEL } from "@/lib/anthropic/client";
@@ -10,13 +9,10 @@ import {
   parseTradesAnswers,
   parseConsultantsAnswers,
 } from "@/lib/assistant/tools";
-import { calculateTradesPremium } from "@/lib/pricing/trades";
-import { calculateConsultantsPremium } from "@/lib/pricing/consultants";
+import { getQuoteProvider } from "@/lib/quoteProvider";
+import { logQuoteResult } from "@/lib/quoteProvider/logResult";
 import { explainPremium } from "@/lib/pricing/explain";
-import { appendQuoteLog } from "@/lib/store/quoteLog";
-import type { PremiumResult } from "@/lib/pricing/types";
-
-type Vertical = "trades" | "consultants";
+import type { QuoteProviderResult, Vertical } from "@/lib/quoteProvider/types";
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
@@ -70,7 +66,7 @@ export async function POST(req: Request) {
     let replyText = textParts.join("\n\n").trim();
 
     let resolvedVertical: Vertical | undefined;
-    let quoteCompleted: { vertical: Vertical; premium: PremiumResult } | undefined;
+    let quoteCompleted: { vertical: Vertical; quote: QuoteProviderResult } | undefined;
 
     for (const block of response.content) {
       if (block.type !== "tool_use") continue;
@@ -85,46 +81,20 @@ export async function POST(req: Request) {
       if (block.name === "submit_trades_quote_answers") {
         const answers = parseTradesAnswers(block.input);
         if (answers) {
-          const premium = calculateTradesPremium(answers);
-          const explanation = await explainPremium(premium.annualGBP, premium.breakdown);
-          quoteCompleted = { vertical: "trades", premium };
-          replyText = [
-            replyText,
-            `Here's your simulated quote: £${premium.monthlyGBP}/month (£${premium.annualGBP}/year). ${explanation}`,
-          ]
-            .filter(Boolean)
-            .join("\n\n");
-          await appendQuoteLog({
-            id: randomUUID(),
-            timestamp: new Date().toISOString(),
-            vertical: "trades",
-            annualGBP: premium.annualGBP,
-            monthlyGBP: premium.monthlyGBP,
-            factorCount: premium.breakdown.length,
-          });
+          const quote = await getQuoteProvider().getQuote({ vertical: "trades", answers });
+          await logQuoteResult("trades", quote);
+          quoteCompleted = { vertical: "trades", quote };
+          replyText = [replyText, await describeQuote(quote)].filter(Boolean).join("\n\n");
         }
       }
 
       if (block.name === "submit_consultants_quote_answers") {
         const answers = parseConsultantsAnswers(block.input);
         if (answers) {
-          const premium = calculateConsultantsPremium(answers);
-          const explanation = await explainPremium(premium.annualGBP, premium.breakdown);
-          quoteCompleted = { vertical: "consultants", premium };
-          replyText = [
-            replyText,
-            `Here's your simulated quote: £${premium.monthlyGBP}/month (£${premium.annualGBP}/year). ${explanation}`,
-          ]
-            .filter(Boolean)
-            .join("\n\n");
-          await appendQuoteLog({
-            id: randomUUID(),
-            timestamp: new Date().toISOString(),
-            vertical: "consultants",
-            annualGBP: premium.annualGBP,
-            monthlyGBP: premium.monthlyGBP,
-            factorCount: premium.breakdown.length,
-          });
+          const quote = await getQuoteProvider().getQuote({ vertical: "consultants", answers });
+          await logQuoteResult("consultants", quote);
+          quoteCompleted = { vertical: "consultants", quote };
+          replyText = [replyText, await describeQuote(quote)].filter(Boolean).join("\n\n");
         }
       }
     }
@@ -143,4 +113,15 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ reply: FALLBACK_REPLY });
   }
+}
+
+async function describeQuote(quote: QuoteProviderResult): Promise<string> {
+  if (quote.status === "quoted") {
+    const explanation = await explainPremium(quote.grossAnnualGBP, quote.breakdown);
+    return `Here's your simulated quote from ${quote.insurerName}: £${quote.grossMonthlyGBP}/month (£${quote.grossAnnualGBP}/year, including illustrative insurance tax). ${explanation}`;
+  }
+  if (quote.status === "referred") {
+    return `${quote.insurerName} can't give you an instant price on this one — ${quote.reason.toLowerCase()} If you'd like, leave your details and we can follow up once it's been reviewed.`;
+  }
+  return `${quote.insurerName} isn't able to offer cover for this one — ${quote.reason.toLowerCase()} That doesn't mean no insurer would; it's just outside this particular insurer's appetite.`;
 }

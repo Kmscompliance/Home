@@ -9,13 +9,13 @@ import { FreeTextClassifyStep } from "./FreeTextClassifyStep";
 import { HeadcountStep } from "./HeadcountStep";
 import { OptionalStep } from "./OptionalStep";
 import { ResultScreen } from "./ResultScreen";
-import type { PremiumResult } from "@/lib/pricing/types";
+import { Card } from "@/components/ui/Card";
+import type { QuoteProviderResult } from "@/lib/quoteProvider/types";
 import {
   TURNOVER_BAND_OPTIONS,
   YEARS_TRADING_OPTIONS,
   CLAIMS_OPTIONS as TRADES_CLAIMS_OPTIONS,
   LIABILITY_LIMIT_OPTIONS,
-  calculateTradesPremium,
   type TradeCategory,
   type TurnoverBand,
   type YearsTradingBand,
@@ -29,7 +29,6 @@ import {
   CLAIMS_OPTIONS as CONSULTANTS_CLAIMS_OPTIONS,
   WORK_LOCATION_OPTIONS,
   PI_LIMIT_OPTIONS,
-  calculateConsultantsPremium,
   type ConsultingCategory,
   type RevenueBand,
   type ClientsBand,
@@ -91,7 +90,9 @@ export function QuoteWizard() {
   const [tradesAnswers, setTradesAnswers] = useState<Partial<TradesAnswers>>({});
   const [consultantsAnswers, setConsultantsAnswers] = useState<Partial<ConsultantsAnswers>>({});
   const [rawText, setRawText] = useState("");
-  const [result, setResult] = useState<{ vertical: Vertical; premium: PremiumResult } | null>(null);
+  const [result, setResult] = useState<{ vertical: Vertical; quote: QuoteProviderResult } | null>(null);
+  const [quoting, setQuoting] = useState(false);
+  const [quoteError, setQuoteError] = useState(false);
 
   // A quote can finish either through the form (setResult below) or through
   // the assistant's chat mode (assistant.chatQuoteResult) — whichever
@@ -100,17 +101,38 @@ export function QuoteWizard() {
   const activeResult = result ?? assistant.chatQuoteResult;
 
   useEffect(() => {
-    if (!vertical || activeResult) return;
+    if (!vertical || activeResult || quoting) return;
     const meta = vertical === "trades" ? TRADES_QUESTION_META[step] : CONSULTANTS_QUESTION_META[step];
     if (meta) assistant.reportStep(vertical, meta.id, meta.text);
     // reportStep is stable (useCallback) — only step/vertical should re-trigger this
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [vertical, step, activeResult]);
+  }, [vertical, step, activeResult, quoting]);
 
   useEffect(() => {
-    if (activeResult) assistant.reportQuoteCompleted(activeResult.vertical, activeResult.premium.annualGBP);
+    if (activeResult?.quote.status === "quoted") {
+      assistant.reportQuoteCompleted(activeResult.vertical, activeResult.quote.grossAnnualGBP);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeResult]);
+
+  async function submitQuote(v: Vertical, answers: TradesAnswers | ConsultantsAnswers) {
+    setQuoting(true);
+    setQuoteError(false);
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ vertical: v, answers }),
+      });
+      if (!res.ok) throw new Error("quote request failed");
+      const quote = (await res.json()) as QuoteProviderResult;
+      setResult({ vertical: v, quote });
+    } catch {
+      setQuoteError(true);
+    } finally {
+      setQuoting(false);
+    }
+  }
 
   function restart() {
     setVertical(null);
@@ -119,6 +141,7 @@ export function QuoteWizard() {
     setConsultantsAnswers({});
     setRawText("");
     setResult(null);
+    setQuoteError(false);
     assistant.clearChatQuoteResult();
   }
 
@@ -131,7 +154,15 @@ export function QuoteWizard() {
   }
 
   if (activeResult) {
-    return <ResultScreen vertical={activeResult.vertical} result={activeResult.premium} onRestart={restart} />;
+    return <ResultScreen vertical={activeResult.vertical} quote={activeResult.quote} onRestart={restart} />;
+  }
+
+  if (quoting) {
+    return (
+      <Card className="text-center">
+        <p className="text-brand-navy-900">Getting your quote…</p>
+      </Card>
+    );
   }
 
   if (!vertical) {
@@ -256,8 +287,7 @@ export function QuoteWizard() {
                 ...tradesAnswers,
                 toolsValueGBP: typeof value === "number" ? value : undefined,
               } as TradesAnswers;
-              const premium = calculateTradesPremium(finalAnswers);
-              setResult({ vertical: "trades", premium });
+              submitQuote("trades", finalAnswers);
             }}
           />
         );
@@ -379,8 +409,7 @@ export function QuoteWizard() {
                 ...consultantsAnswers,
                 usesSubcontractors: typeof value === "boolean" ? value : undefined,
               } as ConsultantsAnswers;
-              const premium = calculateConsultantsPremium(finalAnswers);
-              setResult({ vertical: "consultants", premium });
+              submitQuote("consultants", finalAnswers);
             }}
           />
         );
@@ -393,6 +422,11 @@ export function QuoteWizard() {
   return (
     <QuestionCard step={step + 1} totalSteps={TOTAL_STEPS} onBack={back}>
       {content}
+      {quoteError ? (
+        <p className="mt-4 text-sm text-red-600">
+          We couldn&rsquo;t get a quote just now — please try continuing again.
+        </p>
+      ) : null}
     </QuestionCard>
   );
 }
