@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
+import { useAssistant } from "@/components/assistant/AssistantProvider";
 
 type FreeTextClassifyStepProps = {
   vertical: "trades" | "consultants";
@@ -11,6 +12,9 @@ type FreeTextClassifyStepProps = {
   onContinue: (rawText: string, category: string, label: string) => void;
 };
 
+const CONFUSION_PATTERN = /not sure|don'?t know|doesn'?t apply|not applicable|n\/?a\b|skip/i;
+const LOW_CONFIDENCE_CATEGORIES = new Set(["other_trade", "other_consulting"]);
+
 export function FreeTextClassifyStep({
   vertical,
   question,
@@ -18,30 +22,51 @@ export function FreeTextClassifyStep({
   placeholder,
   onContinue,
 }: FreeTextClassifyStepProps) {
+  const assistant = useAssistant();
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [classification, setClassification] = useState<{ category: string; label: string } | null>(
     null,
   );
+  const [retryCount, setRetryCount] = useState(0);
 
   async function handleClassify() {
-    if (!text.trim()) return;
+    const trimmed = text.trim();
+    if (!trimmed) return;
+
+    if (CONFUSION_PATTERN.test(trimmed)) {
+      assistant.reportConfusion(vertical, question, trimmed);
+      return;
+    }
+
     setLoading(true);
     setError(null);
     try {
       const res = await fetch("/api/classify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ vertical, text }),
+        body: JSON.stringify({ vertical, text: trimmed }),
       });
       if (!res.ok) throw new Error("classify failed");
       const data = (await res.json()) as { category: string; label: string };
       setClassification(data);
+      if (LOW_CONFIDENCE_CATEGORIES.has(data.category)) {
+        assistant.reportClassifyStruggle(vertical, question, trimmed);
+      }
     } catch {
       setError("We couldn't read that just now — please try again in a moment.");
     } finally {
       setLoading(false);
+    }
+  }
+
+  function handleReject() {
+    const next = retryCount + 1;
+    setRetryCount(next);
+    setClassification(null);
+    if (next >= 2) {
+      assistant.reportClassifyStruggle(vertical, question, text);
     }
   }
 
@@ -55,7 +80,7 @@ export function FreeTextClassifyStep({
         <div className="mt-6 flex items-center justify-between">
           <button
             type="button"
-            onClick={() => setClassification(null)}
+            onClick={handleReject}
             className="text-sm text-brand-neutral-500 hover:text-brand-navy-900"
           >
             That&rsquo;s not quite right

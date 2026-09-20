@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useAssistant } from "@/components/assistant/AssistantProvider";
 import { QuestionCard } from "./QuestionCard";
 import { VerticalPicker } from "./VerticalPicker";
 import { RadioStep } from "./RadioStep";
@@ -41,6 +42,28 @@ import {
 type Vertical = "trades" | "consultants";
 const TOTAL_STEPS = 8;
 
+const TRADES_QUESTION_META = [
+  { id: "tradeCategory", text: "What's your trade?" },
+  { id: "turnoverBand", text: "Roughly, what's your annual turnover?" },
+  { id: "headcount", text: "Is it just you, or do you have people working with you?" },
+  { id: "yearsTradingBand", text: "How many years have you been trading?" },
+  { id: "claimsBand", text: "Any insurance claims in the last 5 years?" },
+  { id: "highRiskWork", text: "Does your work ever involve height, gas, or electrical installation?" },
+  { id: "liabilityLimit", text: "How much liability cover do you want?" },
+  { id: "toolsValueGBP", text: "Roughly what's your tools worth, if you'd like them covered too?" },
+];
+
+const CONSULTANTS_QUESTION_META = [
+  { id: "consultingCategory", text: "What kind of consulting or freelance work do you do?" },
+  { id: "revenueBand", text: "Roughly, what's your annual revenue?" },
+  { id: "concurrentClientsBand", text: "How many clients are you typically working with at once?" },
+  { id: "handlesSensitiveData", text: "Do you ever handle client data, financial information, or IP?" },
+  { id: "claimsBand", text: "Any claims or client complaints in the last 5 years?" },
+  { id: "workLocation", text: "Do you work from home, on client sites, or both?" },
+  { id: "piLimit", text: "What level of professional indemnity cover do you want?" },
+  { id: "usesSubcontractors", text: "Do you use subcontractors on your work?" },
+];
+
 function summariseTrades(a: Partial<TradesAnswers>): string {
   return [
     a.turnoverBand && `turnover ${a.turnoverBand}`,
@@ -62,12 +85,32 @@ function summariseConsultants(a: Partial<ConsultantsAnswers>): string {
 }
 
 export function QuoteWizard() {
+  const assistant = useAssistant();
   const [vertical, setVertical] = useState<Vertical | null>(null);
   const [step, setStep] = useState(0);
   const [tradesAnswers, setTradesAnswers] = useState<Partial<TradesAnswers>>({});
   const [consultantsAnswers, setConsultantsAnswers] = useState<Partial<ConsultantsAnswers>>({});
   const [rawText, setRawText] = useState("");
   const [result, setResult] = useState<{ vertical: Vertical; premium: PremiumResult } | null>(null);
+
+  // A quote can finish either through the form (setResult below) or through
+  // the assistant's chat mode (assistant.chatQuoteResult) — whichever
+  // finishes first is what's shown, derived at render time rather than
+  // synced into local state.
+  const activeResult = result ?? assistant.chatQuoteResult;
+
+  useEffect(() => {
+    if (!vertical || activeResult) return;
+    const meta = vertical === "trades" ? TRADES_QUESTION_META[step] : CONSULTANTS_QUESTION_META[step];
+    if (meta) assistant.reportStep(vertical, meta.id, meta.text);
+    // reportStep is stable (useCallback) — only step/vertical should re-trigger this
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vertical, step, activeResult]);
+
+  useEffect(() => {
+    if (activeResult) assistant.reportQuoteCompleted(activeResult.vertical, activeResult.premium.annualGBP);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeResult]);
 
   function restart() {
     setVertical(null);
@@ -76,6 +119,7 @@ export function QuoteWizard() {
     setConsultantsAnswers({});
     setRawText("");
     setResult(null);
+    assistant.clearChatQuoteResult();
   }
 
   function back() {
@@ -86,8 +130,8 @@ export function QuoteWizard() {
     setStep((s) => s - 1);
   }
 
-  if (result) {
-    return <ResultScreen vertical={result.vertical} result={result.premium} onRestart={restart} />;
+  if (activeResult) {
+    return <ResultScreen vertical={activeResult.vertical} result={activeResult.premium} onRestart={restart} />;
   }
 
   if (!vertical) {
@@ -97,6 +141,7 @@ export function QuoteWizard() {
           setVertical(v);
           setStep(0);
         }}
+        onPreferChat={assistant.startChatQuote}
       />
     );
   }

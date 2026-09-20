@@ -154,15 +154,91 @@ This maps directly onto how Vercel works once the repo is connected there
   (`src/components/DemoDisclaimer.tsx`), and worth restating out loud in
   any demo.
 
+## Stage 2 — the support assistant
+
+A floating chat widget (`src/components/assistant/AssistantWidget.tsx`) sits
+on the `/quote` page alongside the step-by-step form, backed by a React
+context (`AssistantProvider.tsx`) that owns the message thread, a
+one-nudge-at-a-time dedupe set, and a handful of timers/listeners. It has
+two jobs: rescue moments where someone might stall or leave, and
+optionally complete an entire quote through open conversation.
+
+### Rescue triggers
+
+| Trigger | How it's detected | Where |
+|---|---|---|
+| Inactivity on a question | 20s timer reset on every step change, one nudge per question per session | `QuoteWizard` calls `reportStep()` on each step |
+| Free text that won't classify cleanly | Classification returns a catch-all `other_*` category, or the user rejects a classification a second time | `FreeTextClassifyStep` calls `reportClassifyStruggle()` |
+| "Not sure" / "doesn't apply" / "skip" typed anywhere | A regex match on the free-text answer, checked before it's ever sent for classification | `FreeTextClassifyStep` calls `reportConfusion()` |
+| Extended inactivity or an attempt to leave | Global idle timer (45s) + `visibilitychange` (tab hidden) + a desktop exit-intent listener (`mouseout` at `clientY <= 0`) — offered once per session | `AssistantProvider`'s own page-level effect |
+| Quote just completed | Fires once, right after the price is shown | `QuoteWizard` calls `reportQuoteCompleted()` |
+
+Each nudge's text comes from `POST /api/assistant/nudge` (a short Claude
+call per trigger kind, each with its own offline fallback template) and is
+pushed into the same message thread as an assistant message — there's no
+separate "nudge" UI, just messages that happen to be dismissible and that
+the provider is careful never to repeat once shown for a given
+question/trigger.
+
+Every trigger firing (and every dismissal) is logged via
+`POST /api/assistant/event` to `data/assistant-events.jsonl`
+(`src/lib/store/assistantEventLog.ts`), keyed by a client-generated
+`sessionId`, so Stage 3's admin view can later compute things like "how
+many inactivity nudges led to a completed quote vs. an abandoned one."
+
+### Completing a quote entirely by chat
+
+Clicking "Prefer to just chat instead?" (or just typing into the widget at
+any point) opens a conversation backed by `POST /api/assistant/chat`. This
+route runs one Claude call per turn with two kinds of tools:
+
+- `select_vertical` — once Claude is confident whether the person is a
+  tradesperson or a consultant/freelancer.
+- `submit_trades_quote_answers` / `submit_consultants_quote_answers` —
+  called once Claude has gathered everything the step-by-step form would
+  have asked. Both tools use `strict: true` with enum-constrained fields,
+  so Claude can only submit values that are actually valid — the server
+  re-validates defensively anyway (`src/lib/assistant/tools.ts`), since
+  this is a public endpoint.
+
+When a submit tool is called, the route runs the **exact same**
+`calculateTradesPremium` / `calculateConsultantsPremium` functions the
+form uses, then the same `explainPremium()` helper — so a quote finished
+by chat and a quote finished by clicking through produce identical prices
+for identical answers, by construction, not by coincidence. The result
+flows back to `QuoteWizard` (`AssistantProvider`'s `chatQuoteResult`),
+which renders it through the same `ResultScreen` component either way.
+
+The assistant's persona and guardrails
+(`src/lib/assistant/systemPrompt.ts`) are explicit that it is not a
+licensed adviser, never invents coverage/exclusion details, and never
+implies a real, bindable quote or payment.
+
+### Save and resume — a real data-collection point
+
+The "leave intent" offer captures an email
+(`POST /api/assistant/save-progress` → `src/lib/store/leadLog.ts`,
+`data/lead-log.jsonl`). This is the one piece of genuinely real personal
+data the app collects from Stage 2 onward, even though everything else is
+a demo — worth treating with the same care Stage 4 describes, starting
+now rather than waiting for Stage 4 to formally arrive. **No email is
+actually sent** — there's no email provider wired up yet, and the UI says
+so honestly rather than pretending a link was delivered.
+
 ## Logging and data — current limitation
 
-Completed quotes are logged to `data/quote-log.jsonl`, a local
-append-only file (`src/lib/store/quoteLog.ts`). This works for local
-development and for a single long-running server, but **Vercel's
-serverless functions have an ephemeral, mostly read-only filesystem**, so
-in a real Vercel deployment these writes will not reliably persist between
-invocations. If someone asks "where's this data stored" in a backend demo,
-the honest answer today is: nowhere durable yet on Vercel — that's flagged
-as Stage 3/4 work (swapping in a real datastore such as Vercel KV,
-Postgres, or Supabase) before the admin dashboard or any real lead data
-can rely on it.
+Three local JSONL files, all under the same limitation:
+
+- `data/quote-log.jsonl` (`src/lib/store/quoteLog.ts`) — every completed quote, anonymised
+- `data/assistant-events.jsonl` (`src/lib/store/assistantEventLog.ts`) — every rescue trigger fired/dismissed
+- `data/lead-log.jsonl` (`src/lib/store/leadLog.ts`) — the optional save-and-resume email, real contact data
+
+This works for local development and for a single long-running server, but
+**Vercel's serverless functions have an ephemeral, mostly read-only
+filesystem**, so in a real Vercel deployment these writes will not
+reliably persist between invocations. If someone asks "where's this data
+stored" in a backend demo, the honest answer today is: nowhere durable yet
+on Vercel — that's flagged as Stage 3/4 work (swapping in a real datastore
+such as Vercel KV, Postgres, or Supabase) before the admin dashboard or any
+real lead data can rely on it. This matters more for `lead-log.jsonl` than
+the others, since it's the one file holding real personal data.

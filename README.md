@@ -37,6 +37,23 @@ Architecture is hybrid by design — pricing is never calculated by the LLM:
   `data/quote-log.jsonl` via `src/lib/store/quoteLog.ts` — **local/dev only**,
   see the note in that file about Vercel's ephemeral filesystem.
 
+## Stage 2 — the support assistant
+
+A floating chat widget on `/quote` (`src/components/assistant/`) that
+proactively rescues moments where someone might stall or leave — an
+inactivity nudge on the current question, help when free text won't
+classify cleanly or reads as confused/wanting to skip, a one-time
+save-and-resume offer on extended inactivity or an attempt to leave, and
+a proactive offer to help once a quote completes. It can also complete an
+entire quote through open conversation (`POST /api/assistant/chat`,
+Claude tool calls into the **same** `calculateTradesPremium` /
+`calculateConsultantsPremium` functions Stage 1 built — chat and
+click-through always produce identical prices for identical answers).
+Every trigger fire/dismissal is logged (`data/assistant-events.jsonl`) for
+a future "how many stalls did the assistant recover" metric. See
+[ARCHITECTURE.md](./ARCHITECTURE.md#stage-2--the-support-assistant) for
+the full design.
+
 ## Getting started
 
 ```bash

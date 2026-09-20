@@ -1,8 +1,9 @@
 type VerticalPickerProps = {
   onSelect: (vertical: "trades" | "consultants") => void;
+  onPreferChat: () => void;
 };
 
-export function VerticalPicker({ onSelect }: VerticalPickerProps) {
+export function VerticalPicker({ onSelect, onPreferChat }: VerticalPickerProps) {
   return (
     <div>
       <h1 className="text-2xl font-semibold text-brand-navy-900">What kind of work do you do?</h1>
@@ -33,6 +34,13 @@ export function VerticalPicker({ onSelect }: VerticalPickerProps) {
           </p>
         </button>
       </div>
+      <button
+        type="button"
+        onClick={onPreferChat}
+        className="mt-4 text-sm text-brand-neutral-500 underline decoration-dotted hover:text-brand-navy-900"
+      >
+        Prefer to just chat instead?
+      </button>
     </div>
   );
 }
