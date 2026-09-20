@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { BreakdownFactor } from "@/lib/pricing/types";
 import { explainPremium } from "@/lib/pricing/explain";
+import { guardClaudeCall } from "@/lib/claudeGuard";
 
 // Purely about generating the "why this price" text — logging a completed
 // quote is owned by /api/quote and the assistant chat route (via
@@ -14,6 +15,9 @@ type ExplainBody = {
 };
 
 export async function POST(req: Request) {
+  const limited = await guardClaudeCall("explain", req);
+  if (limited) return limited;
+
   let body: Partial<ExplainBody>;
   try {
     body = (await req.json()) as Partial<ExplainBody>;

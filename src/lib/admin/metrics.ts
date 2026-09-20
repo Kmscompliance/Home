@@ -1,6 +1,7 @@
 import "server-only";
 import { readQuoteLog } from "@/lib/store/quoteLog";
 import { readAssistantEvents, type AssistantEventKind } from "@/lib/store/assistantEventLog";
+import { readApiUsage, type ApiUsageRoute } from "@/lib/store/apiUsageLog";
 
 export type AdminMetrics = {
   quotesToday: number;
@@ -21,6 +22,12 @@ export type AdminMetrics = {
     abandoned: number;
     nudgesByKind: Partial<Record<AssistantEventKind, number>>;
   };
+  apiUsage: {
+    callsToday: number;
+    callsTotal: number;
+    rateLimitedToday: number;
+    byRoute: Partial<Record<ApiUsageRoute, number>>;
+  };
 };
 
 // A "rescue" nudge is one that tries to save a stalling session; the
@@ -35,7 +42,7 @@ const RESCUE_KINDS: AssistantEventKind[] = [
 const COMPLETION_KINDS: AssistantEventKind[] = ["post_quote_offer", "chat_quote_completed"];
 
 export async function getAdminMetrics(): Promise<AdminMetrics> {
-  const [entries, events] = await Promise.all([readQuoteLog(), readAssistantEvents()]);
+  const [entries, events, usage] = await Promise.all([readQuoteLog(), readAssistantEvents(), readApiUsage()]);
 
   const quoted = entries.filter((e) => e.status === "quoted");
   const referred = entries.filter((e) => e.status === "referred");
@@ -43,6 +50,13 @@ export async function getAdminMetrics(): Promise<AdminMetrics> {
 
   const todayStr = new Date().toISOString().slice(0, 10);
   const quotesToday = quoted.filter((q) => q.timestamp.slice(0, 10) === todayStr).length;
+
+  const usageByRoute: Partial<Record<ApiUsageRoute, number>> = {};
+  let rateLimitedToday = 0;
+  for (const u of usage) {
+    usageByRoute[u.route] = (usageByRoute[u.route] ?? 0) + 1;
+    if (u.rateLimited && u.timestamp.slice(0, 10) === todayStr) rateLimitedToday += 1;
+  }
 
   const byVertical = { trades: 0, consultants: 0 };
   let annualSum = 0;
@@ -93,6 +107,12 @@ export async function getAdminMetrics(): Promise<AdminMetrics> {
       recovered,
       abandoned: sessionsWithNudge - recovered,
       nudgesByKind,
+    },
+    apiUsage: {
+      callsToday: usage.filter((u) => u.timestamp.slice(0, 10) === todayStr).length,
+      callsTotal: usage.length,
+      rateLimitedToday,
+      byRoute: usageByRoute,
     },
   };
 }

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type Anthropic from "@anthropic-ai/sdk";
 import { claude, CLAUDE_MODEL } from "@/lib/anthropic/client";
+import { guardClaudeCall } from "@/lib/claudeGuard";
 
 type SkipCheckBody = {
   vertical: "trades" | "consultants";
@@ -19,6 +20,9 @@ function isToolUseBlock(block: Anthropic.ContentBlock): block is Anthropic.ToolU
 }
 
 export async function POST(req: Request) {
+  const limited = await guardClaudeCall("skip-check", req);
+  if (limited) return limited;
+
   let body: Partial<SkipCheckBody>;
   try {
     body = (await req.json()) as Partial<SkipCheckBody>;

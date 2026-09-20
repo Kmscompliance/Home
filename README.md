@@ -73,6 +73,31 @@ the full design.
 - Mobile-responsive pass across the whole app (verified at 375px width:
   no horizontal overflow anywhere, including the assistant panel).
 
+## Stage 4 — security & compliance hardening
+
+- **Real admin auth** — `/admin` is now behind a real login page and a
+  signed, expiring session cookie (`src/lib/adminAuth.ts` +
+  `src/proxy.ts`), not the browser's Basic Auth popup. Needs both
+  `ADMIN_PASSWORD` and `AUTH_SECRET` set, or it refuses to load.
+- **Rate limiting + usage visibility** — every Claude-calling route is
+  capped per client IP (`src/lib/claudeGuard.ts`, `RATE_LIMIT_MAX` /
+  `RATE_LIMIT_WINDOW_MS`), and every attempt is logged
+  (`data/api-usage.jsonl`) and surfaced on `/admin` — the direct answer
+  to "how much is this calling Claude" before real spend is on the line.
+- **`/privacy` and `/terms`** — draft policy pages describing what this
+  app actually collects and does, each clearly marked as a draft, not a
+  final legal document.
+- **`COMPLIANCE_REVIEW.md`** — a written, non-binding list of places the
+  current copy could plausibly read as regulated financial advice or a
+  financial promotion, for your and Marc's own FCA judgement — findings
+  only, no rewording done unilaterally.
+- **Secrets audit** — confirmed (by building with real values and
+  grepping the client bundle) that `ANTHROPIC_API_KEY`, `ADMIN_PASSWORD`,
+  and `AUTH_SECRET` never reach the browser.
+
+See [ARCHITECTURE.md](./ARCHITECTURE.md#stage-4--security--compliance-hardening)
+for the full design.
+
 ## Insurer integration seam (Acturis-ready)
 
 Quotes now go through `POST /api/quote`, which delegates to whichever

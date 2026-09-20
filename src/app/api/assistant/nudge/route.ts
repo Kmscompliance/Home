@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { claude, CLAUDE_MODEL } from "@/lib/anthropic/client";
+import { guardClaudeCall } from "@/lib/claudeGuard";
 
 export type NudgeKind = "inactivity" | "clarify" | "confusion" | "post_quote" | "leave_intent";
 
@@ -35,6 +36,9 @@ const INSTRUCTIONS: Record<NudgeKind, string> = {
 };
 
 export async function POST(req: Request) {
+  const limited = await guardClaudeCall("nudge", req);
+  if (limited) return limited;
+
   let body: Partial<NudgeBody>;
   try {
     body = (await req.json()) as Partial<NudgeBody>;

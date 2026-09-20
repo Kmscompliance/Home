@@ -12,6 +12,7 @@ import {
   type ConsultingCategory,
 } from "@/lib/pricing/consultants";
 import { fallbackClassifyTrade, fallbackClassifyConsulting } from "@/lib/classify/fallback";
+import { guardClaudeCall } from "@/lib/claudeGuard";
 
 type ClassifyBody = {
   vertical: "trades" | "consultants";
@@ -23,6 +24,9 @@ function isToolUseBlock(block: Anthropic.ContentBlock): block is Anthropic.ToolU
 }
 
 export async function POST(req: Request) {
+  const limited = await guardClaudeCall("classify", req);
+  if (limited) return limited;
+
   let body: Partial<ClassifyBody>;
   try {
     body = (await req.json()) as Partial<ClassifyBody>;

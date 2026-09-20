@@ -387,23 +387,102 @@ explanations, and full conversational quote-taking) vs. simulated (the
 price itself) — the long-form version of the disclaimer that's on every
 page in short form.
 
+## Stage 4 — security & compliance hardening
+
+### Real admin authentication
+
+`/admin` is gated by a session, not the browser's Basic Auth popup:
+`src/app/admin/login/page.tsx` posts to `POST /api/admin/login`, which
+checks the password against `ADMIN_PASSWORD` and, on success, issues a
+signed, expiring cookie (`src/lib/adminAuth.ts`, HMAC-SHA256 via the
+**separate** `AUTH_SECRET` env var, 12-hour expiry). `src/proxy.ts`
+verifies that cookie on every request to `/admin/:path*` (except the
+login page itself) and redirects to `/admin/login` if it's missing or
+invalid; `/admin` also has a **Log out** button
+(`POST /api/admin/logout`) clearing the cookie. Both `ADMIN_PASSWORD`
+and `AUTH_SECRET` must be set or `/admin` refuses to load at all (503),
+the same fail-closed pattern as before.
+
+**Why not NextAuth**, which the original build guide suggested: for a
+single shared admin account, NextAuth's provider/adapter machinery buys
+little, and it's a heavier, faster-moving dependency to carry through a
+Next.js 16 / React 19 setup than the ~80 lines in `adminAuth.ts`. If
+there's ever more than one admin, or real SSO is needed, that file (and
+the two routes that call it) is exactly what to replace — nothing else
+in the app knows how a session is represented.
+
+### Rate limiting + usage visibility
+
+Every route that calls Claude — `classify`, `skip-check`, `nudge`,
+`explain`, `assistant-chat` — is guarded by
+`guardClaudeCall()` (`src/lib/claudeGuard.ts`): an in-memory, per-client-IP,
+fixed-window rate limit (`RATE_LIMIT_MAX` / `RATE_LIMIT_WINDOW_MS`, 20
+per 60s by default) that returns `429` once exceeded, and logs every
+attempt either way to `data/api-usage.jsonl`
+(`src/lib/store/apiUsageLog.ts`). The admin login route has its own,
+stricter limit (10 attempts per 15 minutes per IP) as brute-force
+protection. `/admin`'s new "Claude API usage" card surfaces calls
+today/total and how many were rate-limited — the direct answer to "is
+something calling Claude more than it should be" before real spend is
+on the line.
+
+Same limitation as every other local store: in-memory and file-based,
+fine for local dev or a single long-running server, **not** shared
+across Vercel serverless instances — a real production deployment needs
+a shared store (e.g. Upstash Redis) for the limiter to hold across cold
+starts.
+
+### Privacy Policy, Terms of Use, and the compliance review
+
+`/privacy` and `/terms` (`src/app/privacy/page.tsx`,
+`src/app/terms/page.tsx`) are draft copy describing what this app
+*actually* collects and does today, each carrying a prominent "this is a
+draft, not a final legal document" banner
+(`src/components/legal/LegalPageShell.tsx`) and linked from the footer
+disclaimer on every page. They are not reviewed by a lawyer or
+compliance professional, and say so.
+
+`COMPLIANCE_REVIEW.md` (repo root) is a separate, plain-English list of
+places in the current copy and product design that could plausibly read
+as regulated financial advice or a financial promotion under FCA rules —
+written as flags with file references, not verdicts, and not acted on
+unilaterally. It's meant to be read alongside this file, not folded into
+it, since it needs a different kind of review (yours and Marc's FCA
+judgement, not engineering).
+
+### Secrets audit
+
+Confirmed, not assumed: `ANTHROPIC_API_KEY`, `ADMIN_PASSWORD`, and
+`AUTH_SECRET` never reach the client bundle. Verified by building with
+real (test) values set and grepping the entire `.next/static` output for
+both the env var names and the literal secret values — zero matches
+either way. Every module that reads these lives behind either
+`import "server-only"` or is itself inherently server-only (a Route
+Handler or `src/proxy.ts`), and no client component (`"use client"`)
+imports any of them outside a type-only import (which TypeScript erases
+at compile time and never ships any code).
+
 ## Logging and data — current limitation
 
-Three local JSONL files, all under the same limitation:
+Four local JSONL files, all under the same limitation:
 
-- `data/quote-log.jsonl` (`src/lib/store/quoteLog.ts`) — every completed quote, anonymised
+- `data/quote-log.jsonl` (`src/lib/store/quoteLog.ts`) — every quote decision (quoted/referred/declined), anonymised
 - `data/assistant-events.jsonl` (`src/lib/store/assistantEventLog.ts`) — every rescue trigger fired/dismissed
 - `data/lead-log.jsonl` (`src/lib/store/leadLog.ts`) — the shared lead record (name/email, save-and-resume or post-quote), real contact data
+- `data/api-usage.jsonl` (`src/lib/store/apiUsageLog.ts`) — every attempted Claude call, rate-limited or not
 
 This works for local development and for a single long-running server, but
 **Vercel's serverless functions have an ephemeral, mostly read-only
 filesystem**, so in a real Vercel deployment these writes will not
-reliably persist between invocations. If someone asks "where's this data
-stored" in a backend demo, the honest answer today is: nowhere durable yet
-on Vercel — that's flagged as Stage 3/4 work (swapping in a real datastore
-such as Vercel KV, Postgres, or Supabase) before the admin dashboard or any
-real lead data can rely on it. This matters more for `lead-log.jsonl` than
-the others, since it's the one file holding real personal data.
+reliably persist between invocations — and the in-memory rate limiter
+(`src/lib/rateLimit.ts`) has the same limitation, resetting on every cold
+start. If someone asks "where's this data stored" in a backend demo, the
+honest answer today is: nowhere durable yet on Vercel — swapping in a
+real datastore (Vercel KV, Postgres, Supabase, or Upstash Redis for the
+rate limiter specifically) before any of this needs to hold up in
+production is real work still ahead, Stage 4's admin-auth and
+rate-limiting additions notwithstanding. This matters most for
+`lead-log.jsonl`, the one file holding real personal data.
 
 ## Planned / not yet built
 

@@ -12,6 +12,7 @@ import {
 import { getQuoteProvider } from "@/lib/quoteProvider";
 import { logQuoteResult } from "@/lib/quoteProvider/logResult";
 import { explainPremium } from "@/lib/pricing/explain";
+import { guardClaudeCall } from "@/lib/claudeGuard";
 import type { QuoteProviderResult, Vertical } from "@/lib/quoteProvider/types";
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
@@ -25,6 +26,9 @@ const FALLBACK_REPLY =
   "Sorry, I'm having trouble thinking right now — you're welcome to keep going with the step-by-step form instead, or try me again in a moment.";
 
 export async function POST(req: Request) {
+  const limited = await guardClaudeCall("assistant-chat", req);
+  if (limited) return limited;
+
   let body: Partial<ChatBody>;
   try {
     body = (await req.json()) as Partial<ChatBody>;

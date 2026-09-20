@@ -11,6 +11,14 @@ const NUDGE_LABELS: Record<string, string> = {
   leave_intent_offer: "Save-and-resume offers",
 };
 
+const ROUTE_LABELS: Record<string, string> = {
+  classify: "Classify free text",
+  "skip-check": "Skip-question check",
+  nudge: "Assistant nudges",
+  explain: "“Why this price”",
+  "assistant-chat": "Assistant chat",
+};
+
 function StatTile({ label, value }: { label: string; value: string | number }) {
   return (
     <Card className="text-center">
@@ -23,6 +31,7 @@ function StatTile({ label, value }: { label: string; value: string | number }) {
 export default async function AdminPage() {
   const metrics = await getAdminMetrics();
   const nudgeEntries = Object.entries(metrics.rescue.nudgesByKind);
+  const usageEntries = Object.entries(metrics.apiUsage.byRoute);
 
   return (
     <div className="flex min-h-full flex-col">
@@ -131,6 +140,53 @@ export default async function AdminPage() {
             </div>
           ) : null}
         </Card>
+
+        <Card className="mt-6">
+          <p className="text-sm font-medium text-brand-neutral-700">Claude API usage</p>
+          <p className="mt-1 text-xs text-brand-neutral-500">
+            Every attempted call to Claude, rate-limited or not — see{" "}
+            <span className="font-medium">src/lib/claudeGuard.ts</span> for the limits
+            (<span className="font-medium">RATE_LIMIT_MAX</span> /{" "}
+            <span className="font-medium">RATE_LIMIT_WINDOW_MS</span>).
+          </p>
+          <div className="mt-4 flex flex-wrap gap-8">
+            <div>
+              <p className="text-2xl font-semibold text-brand-navy-900">{metrics.apiUsage.callsToday}</p>
+              <p className="text-sm text-brand-neutral-500">Calls today</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-brand-navy-900">{metrics.apiUsage.callsTotal}</p>
+              <p className="text-sm text-brand-neutral-500">Calls total</p>
+            </div>
+            <div>
+              <p className="text-2xl font-semibold text-amber-600">{metrics.apiUsage.rateLimitedToday}</p>
+              <p className="text-sm text-brand-neutral-500">Rate-limited today</p>
+            </div>
+          </div>
+
+          {usageEntries.length > 0 ? (
+            <div className="mt-6 border-t border-brand-neutral-200 pt-4">
+              <p className="text-xs font-medium text-brand-neutral-500">Calls by route (all time)</p>
+              <ul className="mt-2 flex flex-col gap-1">
+                {usageEntries.map(([route, count]) => (
+                  <li key={route} className="flex justify-between text-sm text-brand-navy-900">
+                    <span>{ROUTE_LABELS[route] ?? route}</span>
+                    <span className="font-medium">{count}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </Card>
+
+        <form action="/api/admin/logout" method="post" className="mt-6">
+          <button
+            type="submit"
+            className="text-sm text-brand-neutral-500 underline decoration-dotted hover:text-brand-navy-900"
+          >
+            Log out
+          </button>
+        </form>
       </main>
     </div>
   );

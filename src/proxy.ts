@@ -1,32 +1,32 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { SESSION_COOKIE_NAME, verifySessionToken } from "@/lib/adminAuth";
 
-// Lightweight password gate for the Stage 3 admin dashboard — a shared
-// password via HTTP Basic Auth, not a real user/session auth system.
-// Stage 4 replaces this with proper per-admin authentication (e.g.
-// NextAuth) before any real user data goes near it.
-export function proxy(req: NextRequest) {
-  const password = process.env.ADMIN_PASSWORD;
-  if (!password) {
-    return new NextResponse("Admin dashboard is not configured (ADMIN_PASSWORD is not set).", {
-      status: 503,
-    });
+// Session-based gate for the admin dashboard (src/lib/adminAuth.ts) — a
+// real login page and a signed, expiring cookie, not the browser's native
+// Basic Auth popup this replaced. Still a single shared admin account,
+// not per-admin identity; see src/lib/adminAuth.ts for why NextAuth
+// wasn't used here and what upgrading to it would look like.
+export async function proxy(req: NextRequest) {
+  // The login page (and its own API route) must stay reachable even when
+  // there's no valid session yet — otherwise nobody could ever log in.
+  if (req.nextUrl.pathname === "/admin/login") {
+    return NextResponse.next();
   }
 
-  const authHeader = req.headers.get("authorization");
-  if (authHeader?.startsWith("Basic ")) {
-    const decoded = atob(authHeader.slice("Basic ".length));
-    const separatorIndex = decoded.indexOf(":");
-    const suppliedPassword = separatorIndex >= 0 ? decoded.slice(separatorIndex + 1) : "";
-    if (suppliedPassword === password) {
-      return NextResponse.next();
-    }
+  if (!process.env.ADMIN_PASSWORD || !process.env.AUTH_SECRET) {
+    return new NextResponse(
+      "Admin dashboard is not configured (ADMIN_PASSWORD and AUTH_SECRET must both be set).",
+      { status: 503 },
+    );
   }
 
-  return new NextResponse("Authentication required", {
-    status: 401,
-    headers: { "WWW-Authenticate": 'Basic realm="Admin"' },
-  });
+  const token = req.cookies.get(SESSION_COOKIE_NAME)?.value;
+  if (await verifySessionToken(token)) {
+    return NextResponse.next();
+  }
+
+  return NextResponse.redirect(new URL("/admin/login", req.url));
 }
 
 export const config = {
