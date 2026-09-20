@@ -82,8 +82,8 @@ export async function POST(req: Request) {
     if (typeof input?.skip === "boolean") {
       return NextResponse.json({ skip: input.skip, reason: input.reason ?? "" });
     }
-  } catch {
-    // fall through to the safe fallback below
+  } catch (error) {
+    console.error("[skip-check] Claude call failed:", error);
   }
 
   return NextResponse.json(fallback);

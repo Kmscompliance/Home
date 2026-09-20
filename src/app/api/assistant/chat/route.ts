@@ -110,7 +110,11 @@ export async function POST(req: Request) {
       vertical: resolvedVertical,
       quoteCompleted,
     });
-  } catch {
+  } catch (error) {
+    // Surfaced in the terminal running `next dev` so a real failure (bad/
+    // missing ANTHROPIC_API_KEY, rate limit, network issue) is visible
+    // instead of silently vanishing behind the fallback reply below.
+    console.error("[assistant/chat] Claude call failed:", error);
     return NextResponse.json({ reply: FALLBACK_REPLY });
   }
 }

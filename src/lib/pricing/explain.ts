@@ -35,8 +35,8 @@ export async function explainPremium(annualGBP: number, breakdown: BreakdownFact
     const textBlock = response.content.find((b) => b.type === "text");
     const text = textBlock?.type === "text" ? textBlock.text.trim() : "";
     if (text) return text;
-  } catch {
-    // fall through to the offline fallback below
+  } catch (error) {
+    console.error("[explain] Claude call failed:", error);
   }
   return explainFallback(annualGBP, breakdown);
 }

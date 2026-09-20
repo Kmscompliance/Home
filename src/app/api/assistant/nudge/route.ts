@@ -80,8 +80,8 @@ async function generateNudge(kind: NudgeKind, body: Partial<NudgeBody>): Promise
     const textBlock = response.content.find((b) => b.type === "text");
     const text = textBlock?.type === "text" ? textBlock.text.trim() : "";
     if (text) return text;
-  } catch {
-    // fall through to the offline fallback below
+  } catch (error) {
+    console.error("[assistant/nudge] Claude call failed:", error);
   }
   return FALLBACKS[kind];
 }

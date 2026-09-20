@@ -82,7 +82,8 @@ async function classifyTrade(text: string): Promise<TradeCategory> {
     if (category && (TRADE_CATEGORIES as string[]).includes(category)) {
       return category as TradeCategory;
     }
-  } catch {
+  } catch (error) {
+    console.error("[classify (trade)] Claude call failed:", error);
     // fall through to the offline fallback below
   }
   return fallbackClassifyTrade(text);
@@ -124,8 +125,8 @@ async function classifyConsulting(text: string): Promise<ConsultingCategory> {
     if (category && (CONSULTING_CATEGORIES as string[]).includes(category)) {
       return category as ConsultingCategory;
     }
-  } catch {
-    // fall through to the offline fallback below
+  } catch (error) {
+    console.error("[classify (consulting)] Claude call failed:", error);
   }
   return fallbackClassifyConsulting(text);
 }
