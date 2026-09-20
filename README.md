@@ -54,6 +54,25 @@ a future "how many stalls did the assistant recover" metric. See
 [ARCHITECTURE.md](./ARCHITECTURE.md#stage-2--the-support-assistant) for
 the full design.
 
+## Stage 3 — investor-demo polish
+
+- **`/admin`** — a lightweight dashboard (quotes today/total, split by
+  vertical, average premium, and how many stalled sessions the assistant
+  recovered vs. left incomplete), gated by a shared password
+  (`ADMIN_PASSWORD` env var, HTTP Basic Auth via `src/middleware.ts` —
+  not a real per-admin login yet).
+- **Reset demo** button (in the header, every page) — clears the current
+  browser's state and returns to the homepage, so the same laptop can be
+  handed to the next person. Doesn't touch the server-side logs the admin
+  dashboard reads.
+- **Post-quote lead capture** — an optional name+email card on the result
+  screen, writing to the same `data/lead-log.jsonl` record Stage 2's
+  save-and-resume offer already uses (one shared lead store, not two).
+- **`/about`** — plain-English "what's real vs. simulated" page, linked
+  from the header.
+- Mobile-responsive pass across the whole app (verified at 375px width:
+  no horizontal overflow anywhere, including the assistant panel).
+
 ## Getting started
 
 ```bash

@@ -334,10 +334,15 @@ export function AssistantProvider({ children }: { children: ReactNode }) {
   );
 
   const submitSaveAndResume = useCallback(async (email: string) => {
-    await fetch("/api/assistant/save-progress", {
+    await fetch("/api/lead/capture", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, vertical: currentVerticalRef.current, step: formStartedRef.current ? 1 : 0 }),
+      body: JSON.stringify({
+        email,
+        source: "save_and_resume",
+        vertical: currentVerticalRef.current,
+        step: formStartedRef.current ? 1 : 0,
+      }),
     }).catch(() => {});
     setShowSaveAndResume(false);
     setMessages((m) => [

@@ -114,7 +114,7 @@ export function AssistantWidget() {
               onClick={handleSend}
               disabled={!draft.trim()}
               className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-brand-green-600 text-white disabled:opacity-40"
-              aria-label="Send"
+              aria-label="Send message"
             >
               →
             </button>

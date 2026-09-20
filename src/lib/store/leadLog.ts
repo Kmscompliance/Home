@@ -1,12 +1,17 @@
 import "server-only";
-import { mkdir, appendFile } from "fs/promises";
+import { mkdir, appendFile, readFile } from "fs/promises";
 import path from "path";
 
-// Captures the ONE piece of real personal data Stage 2 collects: an
-// optional email for "save and resume". Kept in its own file, separate
-// from the anonymised quoteLog, because — unlike that log — this one is
-// real contact data from the moment someone submits it, even though the
-// whole app is a demo. Treat it with the same care described in
+// The one place real contact data is captured, from wherever it comes in:
+// Stage 2's "save and resume" offer (email only, mid-form) and Stage 3's
+// optional post-quote capture (name + email). Both write here as the same
+// kind of lead record rather than two separate stores, per the product
+// decision to treat every contact point the same way. A future phone-
+// number capture step (see ARCHITECTURE.md -> Planned / not yet built)
+// would write here too.
+//
+// This is real personal data the moment someone submits it, even though
+// the whole app is a demo — treat it with the same care described in
 // ARCHITECTURE.md / the build guide's Stage 4 notes from day one, not just
 // once Stage 4 is built.
 //
@@ -16,13 +21,19 @@ import path from "path";
 const LOG_DIR = path.join(process.cwd(), "data");
 const LOG_FILE = path.join(LOG_DIR, "lead-log.jsonl");
 
+export type LeadSource = "save_and_resume" | "quote_complete";
+
 export type LeadLogEntry = {
   id: string;
   timestamp: string;
+  name: string | null;
   email: string;
-  source: "save_and_resume";
+  source: LeadSource;
   vertical: "trades" | "consultants" | null;
-  stepAtCapture: number;
+  /** Present for save_and_resume (which form step they were on). */
+  stepAtCapture: number | null;
+  /** Present for quote_complete (their simulated annual price). */
+  annualGBP: number | null;
 };
 
 export async function appendLeadLog(entry: LeadLogEntry): Promise<void> {
@@ -31,5 +42,17 @@ export async function appendLeadLog(entry: LeadLogEntry): Promise<void> {
     await appendFile(LOG_FILE, `${JSON.stringify(entry)}\n`, "utf8");
   } catch {
     // Logging is best-effort — never let it break the flow for the user.
+  }
+}
+
+export async function readLeadLog(): Promise<LeadLogEntry[]> {
+  try {
+    const contents = await readFile(LOG_FILE, "utf8");
+    return contents
+      .split("\n")
+      .filter(Boolean)
+      .map((line) => JSON.parse(line) as LeadLogEntry);
+  } catch {
+    return [];
   }
 }

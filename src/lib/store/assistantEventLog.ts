@@ -1,5 +1,5 @@
 import "server-only";
-import { mkdir, appendFile } from "fs/promises";
+import { mkdir, appendFile, readFile } from "fs/promises";
 import path from "path";
 
 // Tracks how often each rescue trigger fires, keyed by a client-generated
@@ -35,5 +35,17 @@ export async function appendAssistantEvent(entry: AssistantEventEntry): Promise<
     await appendFile(LOG_FILE, `${JSON.stringify(entry)}\n`, "utf8");
   } catch {
     // Logging is best-effort — never let it break the flow for the user.
+  }
+}
+
+export async function readAssistantEvents(): Promise<AssistantEventEntry[]> {
+  try {
+    const contents = await readFile(LOG_FILE, "utf8");
+    return contents
+      .split("\n")
+      .filter(Boolean)
+      .map((line) => JSON.parse(line) as AssistantEventEntry);
+  } catch {
+    return [];
   }
 }

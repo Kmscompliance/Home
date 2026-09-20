@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
+import { LeadCaptureCard } from "./LeadCaptureCard";
 import type { PremiumResult } from "@/lib/pricing/types";
 
 type ResultScreenProps = {
@@ -92,6 +93,8 @@ export function ResultScreen({ vertical, result, onRestart }: ResultScreenProps)
           </ul>
         </div>
       </Card>
+
+      <LeadCaptureCard vertical={vertical} annualGBP={result.annualGBP} />
 
       <div className="mt-6 flex justify-center">
         <Button variant="ghost" onClick={onRestart}>

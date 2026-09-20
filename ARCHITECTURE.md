@@ -217,13 +217,66 @@ implies a real, bindable quote or payment.
 ### Save and resume — a real data-collection point
 
 The "leave intent" offer captures an email
-(`POST /api/assistant/save-progress` → `src/lib/store/leadLog.ts`,
+(`POST /api/lead/capture` → `src/lib/store/leadLog.ts`,
 `data/lead-log.jsonl`). This is the one piece of genuinely real personal
 data the app collects from Stage 2 onward, even though everything else is
 a demo — worth treating with the same care Stage 4 describes, starting
 now rather than waiting for Stage 4 to formally arrive. **No email is
 actually sent** — there's no email provider wired up yet, and the UI says
-so honestly rather than pretending a link was delivered.
+so honestly rather than pretending a link was delivered. (Stage 3 below
+extends this into a single, shared lead record.)
+
+## Stage 3 — investor-demo polish
+
+### One shared lead record
+
+Stage 2's save-and-resume offer and Stage 3's new post-quote "want us to
+follow up?" card (`src/components/quote/LeadCaptureCard.tsx`, shown on
+`ResultScreen`) both write to the same endpoint,
+`POST /api/lead/capture` → `src/lib/store/leadLog.ts`
+(`data/lead-log.jsonl`) — one `LeadLogEntry` shape with a `source` field
+(`"save_and_resume"` or `"quote_complete"`) rather than two separate
+capture systems, per the product decision to treat every contact point
+as the same kind of record. It already has a `name` field alongside
+`email`, ready for the planned phone-number step (see "Planned / not yet
+built" below) to extend the same record rather than start a third one.
+
+### Admin dashboard
+
+`/admin` (`src/app/admin/page.tsx`) is a server component that reads
+`quoteLog` and `assistantEventLog` directly (no API round-trip needed —
+Server Components can just call the server-only lib functions) via
+`src/lib/admin/metrics.ts`, and shows: quotes completed today/total, split
+by vertical, average simulated premium, and the assistant's recovery rate
+— how many sessions that got a rescue nudge (inactivity, clarify,
+confusion, or leave-intent) went on to complete a quote vs. were left
+incomplete. That last number comes from grouping `assistant-events.jsonl`
+by the client-generated `sessionId` and checking whether a completion
+signal (`post_quote_offer` or `chat_quote_completed`) appears in the same
+session as a rescue nudge — no separate tracking needed, it falls out of
+the Stage 2 event log for free.
+
+It's gated by `src/middleware.ts`: plain HTTP Basic Auth against a single
+`ADMIN_PASSWORD` env var (any username works), which is deliberately not
+a real per-admin login — Stage 4 replaces this with proper authentication
+(e.g. NextAuth) before any real user data goes near it. If
+`ADMIN_PASSWORD` isn't set, `/admin` refuses to load at all (503) rather
+than defaulting to open.
+
+### Reset demo / About this demo
+
+`ResetDemoButton` (in `SiteHeader`, on every page) clears browser storage
+and does a hard navigation back to `/`, so the same laptop can be handed
+to the next person with a completely fresh client-side state — it does
+**not** touch the server-side logs, since those are the point of the
+admin dashboard and should accumulate across a whole demo day, not reset
+per visitor.
+
+`/about` is a plain page (linked from `SiteHeader`) spelling out, for a
+non-technical audience, what's real (the LLM classification, skip-logic,
+explanations, and full conversational quote-taking) vs. simulated (the
+price itself) — the long-form version of the disclaimer that's on every
+page in short form.
 
 ## Logging and data — current limitation
 
@@ -231,7 +284,7 @@ Three local JSONL files, all under the same limitation:
 
 - `data/quote-log.jsonl` (`src/lib/store/quoteLog.ts`) — every completed quote, anonymised
 - `data/assistant-events.jsonl` (`src/lib/store/assistantEventLog.ts`) — every rescue trigger fired/dismissed
-- `data/lead-log.jsonl` (`src/lib/store/leadLog.ts`) — the optional save-and-resume email, real contact data
+- `data/lead-log.jsonl` (`src/lib/store/leadLog.ts`) — the shared lead record (name/email, save-and-resume or post-quote), real contact data
 
 This works for local development and for a single long-running server, but
 **Vercel's serverless functions have an ephemeral, mostly read-only
@@ -247,7 +300,15 @@ the others, since it's the one file holding real personal data.
 
 - **Phone-contact capture as a final questionnaire step.** Ask for name,
   email, and phone number as the last step of the quote flow itself (not
-  just the Stage 2 leave-intent offer, which only captures an optional
-  email), so that if someone drops off before finishing, there's a real
-  phone number to follow up on rather than only an email. Deliberately
-  deferred — noted here so it isn't lost, not yet implemented.
+  just the optional captures that exist today — Stage 2's leave-intent
+  offer and Stage 3's post-quote card, both email-only), so that if
+  someone drops off before finishing, there's a real phone number to
+  follow up on. Would extend the same `LeadLogEntry` shape
+  (`src/lib/store/leadLog.ts`) with a `phone` field and a third `source`
+  value, rather than a new store. Deliberately deferred — noted here so
+  it isn't lost, not yet implemented.
+- **Middleware → proxy rename.** Next.js 16 deprecates the `middleware.ts`
+  convention in favour of `proxy.ts` (same behaviour, new file name/
+  export). `src/middleware.ts` still works — it's a build-time warning,
+  not an error — but should be migrated via
+  `npx @next/codemod@canary middleware-to-proxy .` on a clean tree.
