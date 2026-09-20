@@ -5,7 +5,7 @@ import type { NextRequest } from "next/server";
 // password via HTTP Basic Auth, not a real user/session auth system.
 // Stage 4 replaces this with proper per-admin authentication (e.g.
 // NextAuth) before any real user data goes near it.
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const password = process.env.ADMIN_PASSWORD;
   if (!password) {
     return new NextResponse("Admin dashboard is not configured (ADMIN_PASSWORD is not set).", {

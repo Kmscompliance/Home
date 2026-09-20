@@ -256,7 +256,7 @@ signal (`post_quote_offer` or `chat_quote_completed`) appears in the same
 session as a rescue nudge — no separate tracking needed, it falls out of
 the Stage 2 event log for free.
 
-It's gated by `src/middleware.ts`: plain HTTP Basic Auth against a single
+It's gated by `src/proxy.ts`: plain HTTP Basic Auth against a single
 `ADMIN_PASSWORD` env var (any username works), which is deliberately not
 a real per-admin login — Stage 4 replaces this with proper authentication
 (e.g. NextAuth) before any real user data goes near it. If
@@ -307,8 +307,5 @@ the others, since it's the one file holding real personal data.
   (`src/lib/store/leadLog.ts`) with a `phone` field and a third `source`
   value, rather than a new store. Deliberately deferred — noted here so
   it isn't lost, not yet implemented.
-- **Middleware → proxy rename.** Next.js 16 deprecates the `middleware.ts`
-  convention in favour of `proxy.ts` (same behaviour, new file name/
-  export). `src/middleware.ts` still works — it's a build-time warning,
-  not an error — but should be migrated via
-  `npx @next/codemod@canary middleware-to-proxy .` on a clean tree.
+- ~~Middleware → proxy rename~~ — done (`src/proxy.ts`, migrated via
+  `npx @next/codemod@canary middleware-to-proxy .`).

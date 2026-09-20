@@ -59,8 +59,8 @@ the full design.
 - **`/admin`** — a lightweight dashboard (quotes today/total, split by
   vertical, average premium, and how many stalled sessions the assistant
   recovered vs. left incomplete), gated by a shared password
-  (`ADMIN_PASSWORD` env var, HTTP Basic Auth via `src/middleware.ts` —
-  not a real per-admin login yet).
+  (`ADMIN_PASSWORD` env var, HTTP Basic Auth via `src/proxy.ts` — not a
+  real per-admin login yet).
 - **Reset demo** button (in the header, every page) — clears the current
   browser's state and returns to the homepage, so the same laptop can be
   handed to the next person. Doesn't touch the server-side logs the admin
