@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract illustration representing FCA Guard">
+  <defs>
+    <linearGradient id="gd-navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11304F"/>
+      <stop offset="1" stop-color="#1B4A78"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="#F4F5F7"/>
+  <circle cx="320" cy="60" r="100" fill="#068A53" opacity="0.06"/>
+  <path d="M200 55 C 240 55, 250 65, 250 90 L 250 140 C 250 175, 225 195, 200 205 C 175 195, 150 175, 150 140 L 150 90 C 150 65, 160 55, 200 55 Z" fill="url(#gd-navy)"/>
+  <path d="M200 75 C 228 75, 235 82, 235 100 L 235 138 C 235 163, 218 178, 200 187 C 182 178, 165 163, 165 138 L 165 100 C 165 82, 172 75, 200 75 Z" fill="none" stroke="#068A53" stroke-width="3" opacity="0.6"/>
+  <path d="M178 128 L 195 145 L 226 108" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="120" cy="200" r="6" fill="#068A53"/>
+  <circle cx="290" cy="190" r="4" fill="#11304F"/>
+  <path d="M60 60 C 90 50, 110 70, 100 100" stroke="#11304F" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.25"/>
+</svg>
