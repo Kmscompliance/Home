@@ -6,14 +6,17 @@
     </linearGradient>
   </defs>
   <rect width="400" height="250" fill="#F4F5F7"/>
-  <circle cx="80" cy="190" r="120" fill="#11304F" opacity="0.06"/>
-  <path d="M60 210 C 110 210, 130 160, 170 140 C 210 120, 230 90, 270 70" stroke="#11304F" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 10" opacity="0.35"/>
-  <g>
-    <ellipse cx="150" cy="175" rx="46" ry="34" fill="#11304F"/>
-    <ellipse cx="235" cy="120" rx="60" ry="44" fill="url(#lp-green)"/>
-  </g>
-  <path d="M255 95 L 300 60 L 295 100 L 330 95 L 275 135 Z" fill="#11304F"/>
-  <circle cx="300" cy="60" r="6" fill="#FFFFFF"/>
-  <circle cx="110" cy="205" r="5" fill="#068A53"/>
-  <circle cx="90" cy="185" r="3" fill="#11304F"/>
+  <circle cx="320" cy="200" r="90" fill="#11304F" opacity="0.05"/>
+  <path d="M70 210 C 110 200, 140 175, 165 150 C 190 125, 210 100, 235 80" stroke="#11304F" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 11" opacity="0.3"/>
+
+  <circle cx="200" cy="130" r="80" fill="url(#lp-green)"/>
+
+  <path d="M200 78 C 224 100, 232 128, 224 158 L 176 158 C 168 128, 176 100, 200 78 Z" fill="#11304F"/>
+  <path d="M176 145 L 148 168 L 176 163 Z" fill="#11304F"/>
+  <path d="M224 145 L 252 168 L 224 163 Z" fill="#11304F"/>
+  <circle cx="200" cy="112" r="10" fill="#FFFFFF"/>
+  <path d="M188 158 L 176 182 L 200 172 L 224 182 L 212 158 Z" fill="#FFFFFF" opacity="0.9"/>
+
+  <circle cx="90" cy="190" r="5" fill="#068A53"/>
+  <circle cx="330" cy="90" r="4" fill="#11304F"/>
 </svg>
