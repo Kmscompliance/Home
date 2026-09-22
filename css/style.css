@@ -359,10 +359,11 @@ p { margin: 0 0 1em; }
 }
 
 .card__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: var(--color-green);
+  width: 72px;
+  height: 45px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
   margin-bottom: 16px;
 }
 
