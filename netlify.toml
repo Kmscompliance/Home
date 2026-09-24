@@ -1,0 +1,10 @@
+# No build step needed for the site itself (plain static HTML/CSS/JS),
+# so no [build] command/publish settings here - those stay as configured
+# in the Netlify UI (blank build command, root publish directory).
+
+[functions]
+  # Bundles the real document files alongside the fulfill-order function
+  # so it can read and attach them at send time. These files are never
+  # served as part of the public website - Netlify treats the functions
+  # directory separately from the site's published static files.
+  included_files = ["netlify/functions/documents/**"]

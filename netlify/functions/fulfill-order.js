@@ -1,89 +1,96 @@
 // Stripe webhook handler: fires when a Payment Link purchase completes,
 // looks up which pack was bought (via the `package_id` metadata set on
-// each Payment Link), and emails the buyer their documents via Resend.
+// each Payment Link), and emails the buyer their documents as real file
+// attachments via Resend.
 //
 // No Stripe or Resend npm packages used on purpose - this keeps the
 // function dependency-free (Node's built-in `crypto` covers signature
-// verification), so there's nothing to `npm install` and no build step
-// needed. Both API calls are plain HTTPS requests.
+// verification, `fs` reads the attached files), so there's nothing to
+// `npm install` and no build step needed. Both API calls are plain
+// HTTPS requests.
+//
+// The actual document files live in ./documents (bundled with this
+// function via netlify.toml's `included_files` - they are never part
+// of the public website, only this function can read them).
 
 const crypto = require("crypto");
+const fs = require("fs");
+const path = require("path");
+
+const DOCS_DIR = path.join(__dirname, "documents");
 
 // ---------------------------------------------------------------------
 // Package catalogue - one entry per Payment Link's `package_id`.
-// Swap the placeholder `files` links for the real ones once the actual
-// documents are ready.
+// `files` are attached for real. `pending` lists documents still being
+// finalised for that pack - named in the email so buyers know it's
+// coming, not silently missing.
 // ---------------------------------------------------------------------
 const PACKAGES = {
   "aml-pack": {
     name: "AML Pack",
-    files: [
-      { label: "Anti Money Laundering Incident Register", url: "https://example.com/REPLACE-aml-incident-register" },
-      { label: "Anti Money Laundering Policy", url: "https://example.com/REPLACE-aml-policy" },
-    ],
+    files: ["Anti_Money_Laundering_Incident_Register_v1.0.docx", "Anti_Money_Laundering_Policy_v1.0.docx"],
+    pending: [],
   },
   "complaints-pack": {
     name: "Complaints Pack",
-    files: [
-      { label: "Complaints Procedure", url: "https://example.com/REPLACE-complaints-procedure" },
-      { label: "Compliance Breach Log", url: "https://example.com/REPLACE-compliance-breach-log" },
-    ],
+    files: ["Complaint_Proceedure_v1.0.docx", "Compliance_Breach_Log_v1.0.xlsx"],
+    pending: [],
   },
   "compliance-monitoring-pack": {
     name: "Compliance Monitoring Pack",
-    files: [
-      { label: "Compliance Monitoring Plan", url: "https://example.com/REPLACE-compliance-monitoring-plan" },
-      { label: "Compliance Monitoring Policy", url: "https://example.com/REPLACE-compliance-monitoring-policy" },
-    ],
+    files: ["Compliance_Monitoring_Plan_v1.0.docx", "Compliance_Monitoring_Programme_Policy_v1.0.docx"],
+    pending: [],
   },
   "customer-due-diligence-pack": {
     name: "Customer Due Diligence Pack",
     files: [
-      { label: "Customer Due Diligence Checklist", url: "https://example.com/REPLACE-cdd-checklist" },
-      { label: "Customer Due Diligence Policy", url: "https://example.com/REPLACE-cdd-policy" },
-      { label: "Customer Vulnerability Policy", url: "https://example.com/REPLACE-customer-vulnerability-policy" },
+      "Customer_Due_Diligence_Checklist_v1.0.xlsx",
+      "Customer_Due_Diligence_Policy_v1.0.docx",
+      "Customer_Vulnerability_Policy_v1.0.docx",
     ],
-  },
-  "financials-pack": {
-    name: "Financials Pack",
-    files: [
-      { label: "Data Processing Policy", url: "https://example.com/REPLACE-data-processing-policy" },
-      { label: "Financial Forecasts", url: "https://example.com/REPLACE-financial-forecasts" },
-      { label: "Financial Promotion Strategy", url: "https://example.com/REPLACE-financial-promotion-strategy" },
-    ],
+    pending: [],
   },
   "senior-management-pack": {
     name: "Senior Management Pack",
-    files: [
-      { label: "FIT and Proper Questionnaire", url: "https://example.com/REPLACE-fit-and-proper-questionnaire" },
-      { label: "SMR Statement of Responsibility", url: "https://example.com/REPLACE-smr-statement-of-responsibility" },
-    ],
+    files: ["FIT_and_Proper_Questionnaire_v1.0.docx", "Senior_Management_Regime_Statement_of_Responsibility_v1.0.docx"],
+    pending: [],
   },
   "consumer-duty-pack": {
     name: "Consumer Duty Pack",
-    files: [
-      { label: "Implementation Plan - Consumer Duty", url: "https://example.com/REPLACE-consumer-duty-implementation-plan" },
-    ],
+    files: ["Implementation_Plan_Consumer_Duty_v1.0.docx"],
+    pending: [],
   },
   "risk-management-pack": {
     name: "Risk Management Pack",
-    files: [
-      { label: "Risk Assessment Log", url: "https://example.com/REPLACE-risk-assessment-log" },
-      { label: "Risk Management Framework Policy", url: "https://example.com/REPLACE-risk-management-framework-policy" },
-    ],
+    files: ["Risk_Assessment_Log_v1.0.xlsx", "Risk_Management_Framework_Policy_v1.0.docx"],
+    pending: [],
   },
   "training-pack": {
     name: "Training Pack",
-    files: [
-      { label: "Training Log", url: "https://example.com/REPLACE-training-log" },
-      { label: "Training Policy", url: "https://example.com/REPLACE-training-policy" },
-    ],
+    files: ["Training_Log_v1.0.xlsx", "Training_Policy_v1.0.docx"],
+    pending: [],
   },
   "complete-bundle": {
-    name: "Complete Authorisation Pack (all 9 packs)",
+    name: "Complete Authorisation Pack (all 8 packs)",
     files: [
-      { label: "Download the complete bundle (all documents)", url: "https://example.com/REPLACE-complete-bundle" },
+      "Anti_Money_Laundering_Incident_Register_v1.0.docx",
+      "Anti_Money_Laundering_Policy_v1.0.docx",
+      "Complaint_Proceedure_v1.0.docx",
+      "Compliance_Breach_Log_v1.0.xlsx",
+      "Compliance_Monitoring_Plan_v1.0.docx",
+      "Compliance_Monitoring_Programme_Policy_v1.0.docx",
+      "Customer_Due_Diligence_Checklist_v1.0.xlsx",
+      "Customer_Due_Diligence_Policy_v1.0.docx",
+      "Customer_Vulnerability_Policy_v1.0.docx",
+      "FIT_and_Proper_Questionnaire_v1.0.docx",
+      "Senior_Management_Regime_Statement_of_Responsibility_v1.0.docx",
+      "Implementation_Plan_Consumer_Duty_v1.0.docx",
+      "Risk_Assessment_Log_v1.0.xlsx",
+      "Risk_Management_Framework_Policy_v1.0.docx",
+      "Training_Log_v1.0.xlsx",
+      "Training_Policy_v1.0.docx",
     ],
+    pending: [],
   },
 };
 
@@ -122,16 +129,24 @@ function verifyStripeSignature(rawBody, sigHeader, secret, toleranceSeconds = 30
   return true;
 }
 
-function buildEmailHtml(packageName, files) {
-  const linksHtml = files
-    .map((f) => `<li style="margin-bottom:8px;"><a href="${f.url}" style="color:#068A53;">${f.label}</a></li>`)
+function buildEmailHtml(packageName, fileNames, pending) {
+  const fileListHtml = fileNames
+    .map((f) => `<li style="margin-bottom:6px;">${prettifyFilename(f)}</li>`)
     .join("");
+
+  const pendingHtml =
+    pending && pending.length
+      ? `<p style="color:#5B616B;font-size:0.9rem;">
+           Still being finalised, on the way separately: ${pending.join(", ")}.
+         </p>`
+      : "";
 
   return `
     <div style="font-family: Arial, sans-serif; color: #23262B; max-width: 560px; margin: 0 auto;">
       <h1 style="color:#11304F; font-size:1.4rem;">Thanks for your purchase!</h1>
-      <p>Here's your <strong>${packageName}</strong> from KMS Compliance Ltd:</p>
-      <ul style="padding-left:20px;">${linksHtml}</ul>
+      <p>Here's your <strong>${packageName}</strong> from KMS Compliance Ltd, attached to this email:</p>
+      <ul style="padding-left:20px;">${fileListHtml}</ul>
+      ${pendingHtml}
       <p style="color:#5B616B; font-size:0.9rem;">
         Questions about these documents? Just reply to this email or reach us at
         admin@kmscompliance.com.
@@ -140,7 +155,19 @@ function buildEmailHtml(packageName, files) {
   `;
 }
 
-async function sendEmail({ to, subject, html }) {
+function prettifyFilename(filename) {
+  return filename.replace(/_v\d+(\.\d+)?\.(docx|xlsx)$/i, "").replace(/_/g, " ");
+}
+
+function loadAttachments(fileNames) {
+  return fileNames.map((filename) => {
+    const filePath = path.join(DOCS_DIR, filename);
+    const content = fs.readFileSync(filePath).toString("base64");
+    return { filename, content };
+  });
+}
+
+async function sendEmail({ to, subject, html, attachments }) {
   const resendApiKey = process.env.RESEND_API_KEY;
   const fromAddress = process.env.RESEND_FROM_EMAIL || "admin@kmscompliance.com";
 
@@ -155,6 +182,7 @@ async function sendEmail({ to, subject, html }) {
       to: [to],
       subject,
       html,
+      attachments,
     }),
   });
 
@@ -214,10 +242,12 @@ exports.handler = async (event) => {
   const pkg = PACKAGES[packageId];
 
   try {
+    const attachments = loadAttachments(pkg.files);
     await sendEmail({
       to: customerEmail,
       subject: `Your ${pkg.name} from KMS Compliance`,
-      html: buildEmailHtml(pkg.name, pkg.files),
+      html: buildEmailHtml(pkg.name, pkg.files, pkg.pending),
+      attachments,
     });
   } catch (err) {
     console.error("Failed to send fulfillment email:", err.message);
