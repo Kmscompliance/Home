@@ -25,70 +25,92 @@ const DOCS_DIR = path.join(__dirname, "documents");
 // finalised for that pack - named in the email so buyers know it's
 // coming, not silently missing.
 // ---------------------------------------------------------------------
+const AML_PACK_FILES = [
+  "Anti_Money_Laundering_Policy_v2.0_Template.docx",
+  "Anti_Money_Laundering_Incident_Register_v2.0_Template.docx",
+  "AML_Business_Wide_Risk_Assessment_v2.0_Template.xlsx",
+  "Sanctions_Screening_Log_v2.0_Template.xlsx",
+  "Conflicts_of_Interest_Register_v2.0_Template.xlsx",
+  "Gifts_and_Hospitality_Register_v2.0_Template.xlsx",
+];
+
+const COMPLAINTS_PACK_FILES = [
+  "Complaints_Procedure_v2.0_Template.docx",
+  "Complaints_Register_v2.0_Template.xlsx",
+  "Compliance_Breach_Log_v2.0_Template.xlsx",
+];
+
+const COMPLIANCE_MONITORING_PACK_FILES = [
+  "Compliance_Monitoring_Plan_v2.0_Template.docx",
+  "Compliance_Monitoring_Programme_Policy_v2.0_Template.docx",
+  "Compliance_Monitoring_Schedule_v2.0_Template.xlsx",
+  "File_Review_Record_v2.0_Template.xlsx",
+  "Corrective_Action_Log_v2.0_Template.xlsx",
+  "Compliance_Universe_Register_v2.0_Template.xlsx",
+  "Data_Processing_Policy_v2.0_Template.docx",
+  "Record_of_Processing_Activities_v2.0_Template.xlsx",
+  "Data_Rights_Request_Log_v2.0_Template.xlsx",
+  "Data_Breach_Log_v2.0_Template.xlsx",
+  "Data_Protection_Complaints_Log_v2.0_Template.xlsx",
+  "Data_Retention_Schedule_v2.0_Template.xlsx",
+  "DPIA_Register_v2.0_Template.xlsx",
+];
+
+const CUSTOMER_DUE_DILIGENCE_PACK_FILES = [
+  "Customer_Due_Diligence_Policy_v2.0_Template.docx",
+  "Customer_Vulnerability_Policy_v2.0_Template.docx",
+  "Customer_Due_Diligence_Checklist_v2.0_Template.xlsx",
+  "Enhanced_Due_Diligence_Checklist_v2.0_Template.xlsx",
+  "Customer_Due_Diligence_Register_v2.0_Template.xlsx",
+];
+
+const SENIOR_MANAGEMENT_PACK_FILES = [
+  "SMCR_Statement_of_Responsibilities_v2.0_Template.docx",
+  "FIT_and_Proper_Questionnaire_v1.0.docx",
+];
+
+const CONSUMER_DUTY_PACK_FILES = [
+  "Consumer_Duty_Implementation_Plan_v2.0_Template.docx",
+  "Consumer_Duty_Outcome_MI_v2.0_Template.xlsx",
+  "Target_Market_Register_v2.0_Template.xlsx",
+  "Fair_Value_Register_v2.0_Template.xlsx",
+  "Consumer_Duty_Board_Report_Actions_v2.0_Template.xlsx",
+  "Financial_Promotions_Policy_v2.0_Template.docx",
+  "Financial_Promotions_Log_v2.0_Template.xlsx",
+  "Financial_Promotion_Approval_Checklist_v2.0_Template.xlsx",
+];
+
+const RISK_MANAGEMENT_PACK_FILES = ["Risk_Management_Framework_v2.0_Template.docx", "Risk_Assessment_Log_v2.0_Template.xlsx"];
+
+const TRAINING_PACK_FILES = [
+  "Training_and_Competence_Policy_v2.0_Template.docx",
+  "Training_Matrix_v2.0_Template.xlsx",
+  "Training_Log_v2.0_Template.xlsx",
+  "Competence_Register_v2.0_Template.xlsx",
+  "CPD_Log_v2.0_Template.xlsx",
+  "Individual_Training_Record_v2.0_Template.xlsx",
+];
+
 const PACKAGES = {
-  "aml-pack": {
-    name: "AML Pack",
-    files: ["Anti_Money_Laundering_Incident_Register_v1.0.docx", "Anti_Money_Laundering_Policy_v1.0.docx"],
-    pending: [],
-  },
-  "complaints-pack": {
-    name: "Complaints Pack",
-    files: ["Complaint_Proceedure_v1.0.docx", "Compliance_Breach_Log_v1.0.xlsx"],
-    pending: [],
-  },
-  "compliance-monitoring-pack": {
-    name: "Compliance Monitoring Pack",
-    files: ["Compliance_Monitoring_Plan_v1.0.docx", "Compliance_Monitoring_Programme_Policy_v1.0.docx"],
-    pending: [],
-  },
-  "customer-due-diligence-pack": {
-    name: "Customer Due Diligence Pack",
-    files: [
-      "Customer_Due_Diligence_Checklist_v1.0.xlsx",
-      "Customer_Due_Diligence_Policy_v1.0.docx",
-      "Customer_Vulnerability_Policy_v1.0.docx",
-    ],
-    pending: [],
-  },
-  "senior-management-pack": {
-    name: "Senior Management Pack",
-    files: ["FIT_and_Proper_Questionnaire_v1.0.docx", "Senior_Management_Regime_Statement_of_Responsibility_v1.0.docx"],
-    pending: [],
-  },
-  "consumer-duty-pack": {
-    name: "Consumer Duty Pack",
-    files: ["Implementation_Plan_Consumer_Duty_v1.0.docx"],
-    pending: [],
-  },
-  "risk-management-pack": {
-    name: "Risk Management Pack",
-    files: ["Risk_Assessment_Log_v1.0.xlsx", "Risk_Management_Framework_Policy_v1.0.docx"],
-    pending: [],
-  },
-  "training-pack": {
-    name: "Training Pack",
-    files: ["Training_Log_v1.0.xlsx", "Training_Policy_v1.0.docx"],
-    pending: [],
-  },
+  "aml-pack": { name: "AML Pack", files: AML_PACK_FILES, pending: [] },
+  "complaints-pack": { name: "Complaints Pack", files: COMPLAINTS_PACK_FILES, pending: [] },
+  "compliance-monitoring-pack": { name: "Compliance Monitoring Pack", files: COMPLIANCE_MONITORING_PACK_FILES, pending: [] },
+  "customer-due-diligence-pack": { name: "Customer Due Diligence Pack", files: CUSTOMER_DUE_DILIGENCE_PACK_FILES, pending: [] },
+  "senior-management-pack": { name: "Senior Management Pack", files: SENIOR_MANAGEMENT_PACK_FILES, pending: [] },
+  "consumer-duty-pack": { name: "Consumer Duty Pack", files: CONSUMER_DUTY_PACK_FILES, pending: [] },
+  "risk-management-pack": { name: "Risk Management Pack", files: RISK_MANAGEMENT_PACK_FILES, pending: [] },
+  "training-pack": { name: "Training Pack", files: TRAINING_PACK_FILES, pending: [] },
   "complete-bundle": {
     name: "Complete Authorisation Pack (all 8 packs)",
     files: [
-      "Anti_Money_Laundering_Incident_Register_v1.0.docx",
-      "Anti_Money_Laundering_Policy_v1.0.docx",
-      "Complaint_Proceedure_v1.0.docx",
-      "Compliance_Breach_Log_v1.0.xlsx",
-      "Compliance_Monitoring_Plan_v1.0.docx",
-      "Compliance_Monitoring_Programme_Policy_v1.0.docx",
-      "Customer_Due_Diligence_Checklist_v1.0.xlsx",
-      "Customer_Due_Diligence_Policy_v1.0.docx",
-      "Customer_Vulnerability_Policy_v1.0.docx",
-      "FIT_and_Proper_Questionnaire_v1.0.docx",
-      "Senior_Management_Regime_Statement_of_Responsibility_v1.0.docx",
-      "Implementation_Plan_Consumer_Duty_v1.0.docx",
-      "Risk_Assessment_Log_v1.0.xlsx",
-      "Risk_Management_Framework_Policy_v1.0.docx",
-      "Training_Log_v1.0.xlsx",
-      "Training_Policy_v1.0.docx",
+      ...AML_PACK_FILES,
+      ...COMPLAINTS_PACK_FILES,
+      ...COMPLIANCE_MONITORING_PACK_FILES,
+      ...CUSTOMER_DUE_DILIGENCE_PACK_FILES,
+      ...SENIOR_MANAGEMENT_PACK_FILES,
+      ...CONSUMER_DUTY_PACK_FILES,
+      ...RISK_MANAGEMENT_PACK_FILES,
+      ...TRAINING_PACK_FILES,
     ],
     pending: [],
   },
@@ -156,7 +178,7 @@ function buildEmailHtml(packageName, fileNames, pending) {
 }
 
 function prettifyFilename(filename) {
-  return filename.replace(/_v\d+(\.\d+)?\.(docx|xlsx)$/i, "").replace(/_/g, " ");
+  return filename.replace(/_v\d+(\.\d+)?(_Template)?\.(docx|xlsx)$/i, "").replace(/_/g, " ");
 }
 
 function loadAttachments(fileNames) {
