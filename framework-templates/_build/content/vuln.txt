@@ -1,0 +1,148 @@
+HOWTO: policy
+
+# Purpose
+[Insert firm legal name] (“we”, “the firm”) is committed to making sure that customers in vulnerable circumstances receive outcomes that are as good as those of other customers. This policy explains how we understand, identify, support and monitor customers with characteristics of vulnerability across everything we do.
+Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for]. We deal with customers through: [Insert your channels, e.g. face-to-face, telephone, website, email, app].
+This policy is designed to meet:
+- the **Consumer Duty** (PRIN 2A), which requires us to act to deliver good outcomes for retail customers and to consider the needs of customers with characteristics of vulnerability in product and service design, communications, customer support and outcome monitoring;
+- the FCA’s **Guidance for firms on the fair treatment of vulnerable customers (FG21/1)**, which remains the FCA’s core guidance on vulnerability, read with the FCA’s March 2025 review of firms’ treatment of customers in vulnerable circumstances;
+- the activity-specific rules that apply to us (see section 7);
+- the **Equality Act 2010**, including the duty to make reasonable adjustments for disabled customers;
+- the **Mental Capacity Act 2005** (England and Wales) [and the Adults with Incapacity (Scotland) Act 2000 – delete if you do not serve customers in Scotland]; and
+- the **UK GDPR and Data Protection Act 2018**, which govern how we record and use information about a customer’s circumstances.
+
+# 1. What we mean by vulnerability
+We use the FCA’s definition: a vulnerable customer is **someone who, due to their personal circumstances, is especially susceptible to harm, particularly when a firm is not acting with appropriate levels of care**.
+The FCA identifies four key drivers of vulnerability. A customer may be affected by more than one:
+TABLE: 22,78
+| Driver | Examples |
+| Health | Physical disability; long-term illness; mental health conditions; cognitive impairment, including dementia; addiction; hearing or visual impairment. |
+| Life events | Bereavement; relationship breakdown; job loss or reduced income; caring responsibilities; becoming a victim of crime, fraud or domestic or economic abuse; leaving care; retirement. |
+| Resilience | Low or erratic income; over-indebtedness; little or no savings; low emotional resilience. |
+| Capability | Low knowledge of, or confidence in, financial matters; low literacy or numeracy; low digital skills; English not being a first language; learning difficulties. |
+Vulnerability is often temporary and can change over time. Many customers will not tell us about their circumstances, and some will not see themselves as vulnerable. A characteristic of vulnerability does not automatically mean a customer will suffer harm, but it increases the risk – especially if we do not respond appropriately. The FCA’s research indicates that around half of UK adults show one or more characteristics of vulnerability at any time, so this policy applies to everyday business, not exceptional cases.
+
+# 2. Understanding our customers
+NOTE: The FCA expects you to understand the nature and scale of vulnerability in your own customer base, not just in general. Describe your customers briefly here. If you are not yet trading, base this on your target market and your business plan, and explain how you will gather data once you start.
+We have assessed the characteristics of vulnerability most likely to affect our customers. Our target market is [Insert description of your target customers]. Based on [Insert sources, e.g. our business plan, FCA Financial Lives survey data, complaints and feedback], the characteristics most likely to be present are: [Insert, e.g. low financial resilience, low confidence with credit products, recent life events such as job loss]. We consider how these could affect customers’ ability to understand our products, make decisions, and engage with us, and we have designed our processes accordingly. We review this assessment at least annually using our own data.
+
+# 3. Identifying vulnerability
+Everyone who deals with customers is trained to be alert to signs that a customer may be in vulnerable circumstances. We aim to create an environment in which customers feel comfortable telling us about their needs, including by asking open questions and making clear that we can offer support.
+NOTE: Keep the channel options that match how you deal with customers and delete the others. Each stands alone.
+OPT: 3A | Face-to-face contact | your firm meets customers in person (for example in a showroom, shop, office or at the customer’s home).
+**Signs to look for** include: difficulty following explanations or repeating questions; confusion about payments, costs or the commitment involved; unusual hesitation, distress or agitation; over-reliance on staff (“what would you do?”); someone else appearing to control the conversation or the customer’s decisions; or disclosures such as a recent bereavement, job loss, illness or memory difficulties.
+**What staff do:** slow down; use plain language; check understanding with open questions (for example “Can you tell me in your own words what you would pay each month?”); offer a quiet space, more time, or the chance to come back with someone they trust; and, if someone else seems to be pressuring the customer, speak to the customer alone where appropriate.
+ENDOPT: 3A | Face-to-face contact
+OPT: 3B | Telephone contact | your firm speaks to customers by telephone.
+**Signs to look for** include: slow, inconsistent or confused responses; asking for things to be repeated; answers that contradict earlier information; audible distress; background voices prompting the customer; a caller managing someone else’s affairs without authority; or disclosures about health, money worries or life events.
+**What staff do:** speak clearly and at a steady pace; summarise and check understanding; offer to call back at a better time or with a trusted person present; offer to send information in writing or another format; and never rush a customer to a decision on the call.
+ENDOPT: 3B | Telephone contact
+OPT: 3C | Online and digital contact | your firm deals with customers by website, app, email, web chat or social media.
+**Signs to look for** include: incomplete or inconsistent applications; repeated attempts or unusual patterns of use; messages showing confusion about basic terms; expressions of urgency or desperation (“I need this today”); indications that someone else is completing the process; or disclosures in free-text fields, emails or chat.
+**What we do:** make it easy to tell us about support needs at any point in the journey; offer a way to speak to a person; follow up by telephone or email where there are signs of vulnerability; design journeys that meet accessibility standards [Insert standard, e.g. WCAG 2.2 AA]; and test journeys with customers who have a range of needs.
+ENDOPT: 3C | Online and digital contact
+**When a customer tells us about their circumstances**, staff follow a simple approach: thank the customer for telling us; explain how we will use the information; ask for explicit consent before recording health or other sensitive information; ask what would help them; and signpost to other support where appropriate (for example free debt advice, Samaritans, or specialist charities). [Insert your list of signposting organisations.]
+
+# 4. Supporting customers
+We adapt what we do to meet customers’ needs. The support we offer includes:
+- **Clear communication.** We use plain English as standard, explain technical terms, and provide key information in writing so customers can take their time. We offer alternative formats (for example large print, audio, braille, or easy-read) and adjustments such as relay services or interpreters on request.
+- **Time and no pressure.** We never pressure a customer into a decision. We offer time to think, and we do not use time-limited offers or sales tactics that could push a vulnerable customer into a decision.
+- **Trusted third parties.** Customers can involve a family member, friend or adviser. We accept properly authorised representatives, including those acting under a lasting or enduring power of attorney, a Court of Protection order or a third-party mandate, and we check authority proportionately. We stay alert to the risk that a third party may be exploiting the customer.
+- **Choice of channels.** Customers who cannot, or prefer not to, use digital channels can deal with us in another way.
+- **Pausing or stopping.** Any member of staff can pause or stop a sale, application or process if they believe the customer does not understand, is under pressure, lacks capacity to make the decision, or could be harmed. There are no targets or incentives that override this. The member of staff records why and refers the case to [Insert name or role].
+- **Mental capacity.** We start from the presumption that a customer has capacity. Where there are signs that a customer may lack capacity to make a particular decision at a particular time, we will not proceed with that decision, will consider whether it can be made later or with support, and will follow the Mental Capacity Act 2005 principles.
+- **Economic abuse and coercion.** Where we suspect a customer is being coerced or financially abused, we will speak to the customer privately where it is safe to do so, avoid actions that could increase the risk to them, and signpost to specialist support such as Surviving Economic Abuse.
+
+# 5. Recording and using information about vulnerability
+We record information only where it will help us to support the customer, and only as much as we need.
+- **Where we record it:** in [Insert system, e.g. our CRM system / the customer file], in a dedicated field that is visible to staff who need it and flags the support the customer needs.
+- **What we record:** short, factual notes describing the customer’s needs and the adjustments agreed (for example “Customer asked for all information by email and a call-back after 5pm”). We record the need, not a diagnosis, unless the customer has asked us to and it is relevant.
+- **Health and other special category data.** Information about a customer’s health is special category data under the UK GDPR. We normally record it only with the customer’s **explicit consent**. Where consent cannot reasonably be obtained and recording is necessary to protect the economic well-being of a customer at economic risk, we may rely on the relevant condition in Schedule 1 of the Data Protection Act 2018, in which case we maintain the “appropriate policy document” it requires. [Confirm this with your Data Processing Policy.]
+- **Sharing information.** We share information about a customer’s needs with another firm (for example a lender, insurer or product provider) only where it will help the customer, and normally only with their consent. We tell the customer what we will share and why, and that they can withdraw consent.
+- **Keeping it up to date.** We check support needs are still correct when we next contact the customer, and remove information that is no longer needed, in line with our Data Processing Policy.
+We do not use information about a customer’s vulnerability to their detriment.
+
+# 6. Designing products, services and communications
+Under the Consumer Duty, we consider the needs of customers with characteristics of vulnerability at every stage:
+- **Products and services:** when we design or distribute a product or service, we consider whether it meets the needs of customers in our target market who have characteristics of vulnerability, and whether any features could cause them harm.
+- **Price and value:** we consider whether any customer groups, including vulnerable customers, receive worse value (for example because they are more likely to pay charges).
+- **Communications:** we test key communications for understanding, including with customers who have characteristics of vulnerability where practicable, and adapt them based on the results.
+- **Customer support:** we make sure support is accessible and that customers can get help, change their mind or complain without unreasonable barriers.
+
+# 7. Activity-specific requirements
+NOTE: The FCA’s rules on vulnerability differ between activities. Keep every option below that matches a permission you hold or are applying for, and delete the rest.
+OPT: 7A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+**7A.1 How vulnerability shows up.** Customers may be under time pressure at the point of sale (for example when buying a car or household goods), may not understand that they are taking on credit, or may be seeking credit because of financial difficulty. Some may be pressured by a partner or family member.
+**7A.2 What the rules require.** CONC requires us to give adequate explanations of the credit so that the customer can assess whether it meets their needs and financial situation (CONC 4.2), and not to use high-pressure selling. CONC 2.10 sets out how we must take account of mental capacity. Under the Consumer Duty we must avoid causing foreseeable harm, including by introducing customers to credit that is clearly unsuitable for them.
+**7A.3 What we do.** We explain that we are a broker, not the lender, and what the lender will check. We never encourage a customer to proceed where they appear not to understand, appear to lack capacity for the decision, or appear to be under pressure; in those cases we pause the application. With the customer’s consent we tell the lender about any support needs so that the lender can make adjustments. We signpost customers who appear to be in financial difficulty to free debt advice (for example MoneyHelper).
+ENDOPT: 7A | Credit broking firms
+OPT: 7B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling.
+**7B.1 How vulnerability shows up.** Almost all our customers are in financial difficulty, and financial difficulty and poor mental health are closely linked. Customers may be anxious, ashamed or in crisis, and some may be at risk of self-harm.
+**7B.2 What the rules require.** CONC 8 requires us to give suitable advice based on a full understanding of the customer’s circumstances, to take particular care with customers in vulnerable circumstances, and to tell customers that free debt advice is available. The Debt Respite Scheme (Breathing Space) regulations, including the mental health crisis breathing space, give customers legal protection from creditor action.
+**7B.3 What we do.** We allow extra time; use the Debt and Mental Health Evidence Form where helpful; consider whether a standard or mental health crisis breathing space is appropriate and explain it; make sure recommended solutions are sustainable given the customer’s circumstances; and follow our crisis procedure where a customer discloses suicidal thoughts [Insert reference to your crisis procedure, including emergency contacts]. We never recommend a fee-charging solution where a free alternative would be more suitable.
+ENDOPT: 7B | Debt adjusting and debt counselling firms
+OPT: 7C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+**7C.1 How vulnerability shows up.** Customers in arrears are likely to be in financial difficulty and may be experiencing poor mental health, illness, job loss, bereavement or abuse. Collection activity can make these worse.
+**7C.2 What the rules require.** CONC 7 requires us to treat customers in default or arrears with forbearance and due consideration, and – since the changes made by PS24/2 in November 2024 – to consider a range of forbearance options suited to the customer’s circumstances, provide information about free debt advice, and take particular care with customers who may have characteristics of vulnerability or mental capacity limitations. We must suspend collection during a Breathing Space and must not pursue customers in ways that are oppressive.
+**7C.3 What we do.** Collectors are trained to recognise vulnerability and to pause collection and refer cases to [Insert name or role] when a customer discloses a serious illness, mental health crisis, bereavement or abuse. We agree affordable repayment arrangements using [Insert method, e.g. the Standard Financial Statement]; consider suspending interest and charges; accept the Debt and Mental Health Evidence Form; action Breathing Space notifications immediately; and adapt contact frequency, timing and channel to the customer’s needs.
+ENDOPT: 7C | Debt collecting and debt administration firms
+OPT: 7D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+**7D.1 How vulnerability shows up.** Customers may contact us because they have been refused credit, are anxious about their finances, have been a victim of identity fraud, or have been financially linked to an abusive former partner.
+**7D.2 What the rules require.** Customers have statutory rights to see their credit information and to have inaccurate information corrected (sections 158–159 of the Consumer Credit Act 1974 and the UK GDPR). Under the Consumer Duty, we must not exploit customers’ anxiety or lack of knowledge – for example by overstating what a paid service can do.
+**7D.3 What we do.** We make free statutory access easy to find; explain clearly what can and cannot change a credit file; help victims of fraud to correct records and signpost them to protective services; help customers to request a financial disassociation where a financial link has ended; and do not upsell paid services to customers who are distressed or in crisis.
+ENDOPT: 7D | Firms providing credit information services or credit references
+OPT: 7E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+**7E.1 How vulnerability shows up.** Investors may not understand that their capital is at risk, may be investing money they cannot afford to lose (for example savings intended for retirement), or may be older investors who are more susceptible to persuasive marketing. Borrowers may be in financial difficulty.
+**7E.2 What the rules require.** The rules on restricted mass market investments (COBS 4.12A) require risk warnings, a cooling-off period for first-time investors and appropriateness assessments (COBS 10). Borrowers in arrears must be treated with forbearance under CONC 7.
+**7E.3 What we do.** We look for signs of vulnerability in the appropriateness process and do not allow investors to continue where they do not understand the risks; we monitor investment patterns that suggest an investor is putting too much of their savings at risk; and we handle borrowers in difficulty in line with CONC 7.
+ENDOPT: 7E | Peer-to-peer lending platforms
+OPT: 7F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender (including deferred payment credit / “buy now, pay later”).
+**7F.1 How vulnerability shows up.** Applicants may already be in financial difficulty, may be borrowing to meet essential costs, may have gambling or other addictions, or may be pressured by someone else. Customers can become vulnerable during the agreement through job loss, illness or other life events.
+**7F.2 What the rules require.** CONC 5 requires a reasonable and proportionate creditworthiness assessment, including whether the customer can repay without significant adverse impact on their financial situation. CONC 2.10 covers mental capacity. CONC 7, as strengthened by PS24/2, requires forbearance and due consideration for customers in financial difficulty, a range of suitable forbearance options and signposting to free debt advice.
+**7F.3 What we do.** Our affordability assessment takes account of information about vulnerability that is relevant to the customer’s ability to repay, without excluding customers unfairly. We contact customers early when we see signs of financial difficulty; offer forbearance suited to their circumstances (for example reduced payments, freezing interest and charges, or payment holidays); support customers who ask us to block further borrowing where we offer that; and adapt our arrears process for customers with characteristics of vulnerability.
+ENDOPT: 7F | Consumer credit lenders
+OPT: 7G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements.
+**7G.1 How vulnerability shows up.** Portfolios we acquire often include a high proportion of customers in arrears or default, many with characteristics of vulnerability that may not have been recorded.
+**7G.2 What the rules require.** CONC 7, as strengthened by PS24/2, applies to us as the owner of the agreements, including forbearance and due consideration, signposting to free debt advice and compliance with Breathing Space. Under the Consumer Duty we are responsible for the outcomes of customers whose agreements we hold.
+**7G.3 What we do.** On acquisition we request the seller’s vulnerability records (where they can lawfully be transferred) and review arrears cases for missing information; we make first contact carefully, explaining who we are and how customers can get support; and we require any third-party servicer to follow this policy.
+ENDOPT: 7G | Firms exercising a lender’s rights and duties
+OPT: 7H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements.
+**7H.1 How vulnerability shows up.** Customers may depend on hired goods for daily life (for example a vehicle, mobility equipment or household appliances), so losing them through arrears or repossession can cause serious harm.
+**7H.2 What the rules require.** CONC 7 applies to hire arrears and requires forbearance and due consideration, including before goods are repossessed. The Consumer Duty requires us to avoid foreseeable harm, including through end-of-hire charges.
+**7H.3 What we do.** Before any repossession, [Insert name or role] reviews whether the customer has characteristics of vulnerability and whether the goods are essential to them, and considers alternatives. We explain end-of-hire charges clearly at the start and apply them fairly.
+ENDOPT: 7H | Consumer hire firms
+OPT: 7I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+**7I.1 How vulnerability shows up.** Customers may have health conditions that affect the cover they can get, may not understand exclusions, or may be making a claim at a difficult time (for example after a bereavement, accident or theft).
+**7I.2 What the rules require.** ICOBS requires us to identify the customer’s demands and needs and to give appropriate information about the policy. For travel insurance, ICOBS 6A.4 requires us to signpost customers with medical conditions to a directory of specialist providers where cover is excluded, limited or expensive. PROD 4 and the Consumer Duty require us to consider whether products offer fair value and meet the needs of customers in the target market, including those with characteristics of vulnerability.
+**7I.3 What we do.** We explain significant exclusions and limitations in plain language; ask about medical conditions clearly where relevant; follow the travel insurance signposting rule [delete if you do not sell travel insurance]; give extra support to customers making claims in difficult circumstances; and pass support needs to the insurer with consent.
+ENDOPT: 7I | Insurance distribution firms
+OPT: 7J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+**7J.1 How vulnerability shows up.** Customers may be consolidating debts into their mortgage, borrowing into later life, dealing with relationship breakdown or bereavement, or relying on family members to help them decide.
+**7J.2 What the rules require.** MCOB 4 requires suitable advice based on the customer’s needs and circumstances, including specific considerations for debt consolidation and longer terms. Lenders’ arrears rules in MCOB 13 were strengthened by PS24/2. The Consumer Duty requires us to consider customers’ vulnerability throughout.
+**7J.3 What we do.** We allow extra time; involve trusted third parties where the customer wants this; take particular care with later-life lending and cognitive decline; explain clearly the risks of securing debts on the home; and, with the customer’s consent, tell the lender about any support needs.
+ENDOPT: 7J | Mortgage intermediaries
+OPT: 7K | Payment services firms | your firm provides payment services or issues electronic money.
+**7K.1 How vulnerability shows up.** Customers with characteristics of vulnerability can be more susceptible to scams (including authorised push payment fraud), coercion and account takeover, and some may struggle with digital authentication.
+**7K.2 What the rules require.** The Payment Services Regulations 2017 set out customers’ rights for unauthorised and incorrectly executed payments. Strong customer authentication must be applied in a way that does not exclude customers who cannot use particular methods. Where the APP scam reimbursement requirements apply to us, a customer’s vulnerability can affect how the consumer standard of caution is applied.
+**7K.3 What we do.** We offer authentication methods that do not depend on a smartphone where practicable; use warnings and interventions that are clear and proportionate; take extra care where a payment pattern suggests coercion or a scam; and make it easy for customers to report fraud and get help quickly.
+ENDOPT: 7K | Payment services firms
+OPT: 7L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+**7L.1 How vulnerability shows up.** Clients may be older or experiencing cognitive decline, may be recently bereaved or divorced and managing money for the first time, or may be targets of investment and pension scams.
+**7L.2 What the rules require.** COBS 9 (or 9A) requires advice to be suitable for the client’s circumstances, including their capacity for loss. The rules on high-risk investments (COBS 4.12A–4.12B) restrict how these can be promoted. The Consumer Duty requires us to consider vulnerability in our advice and ongoing service.
+**7L.3 What we do.** We record relevant circumstances in the fact-find; consider whether the client would benefit from involving a trusted person; allow extra time between meetings and decisions; check understanding before any transaction; and watch for signs that a client may be the target of a scam.
+ENDOPT: 7L | Investment advice and arranging firms
+
+# 8. Training and culture
+All customer-facing staff complete vulnerability training at induction, before they deal with customers unsupervised, and at least annually after that. Training covers: the FCA’s definition and drivers of vulnerability; how vulnerability shows up in our business; how to respond to disclosures; recording and consent; mental capacity; economic abuse; our activity-specific requirements; and when to pause, escalate or signpost. Staff who handle complex cases (for example [Insert role]) receive additional training.
+We discuss real cases (anonymised) in [Insert forum, e.g. monthly team meetings] so that everyone learns from them. We recognise and reward good support for customers, and staff incentives never reward outcomes that could harm vulnerable customers.
+
+# 9. Oversight and monitoring outcomes
+[Insert name of senior manager] is responsible for this policy and for making sure it works in practice. We monitor whether customers with characteristics of vulnerability receive outcomes as good as other customers, using:
+- file reviews of cases where vulnerability was identified (see our Compliance Monitoring Plan);
+- management information such as complaints, arrears, cancellations and customer feedback, split between customers with and without recorded characteristics of vulnerability where possible;
+- call listening or observation [delete if not applicable]; and
+- feedback from staff about barriers they see.
+The results are reported to [Insert: the board / the directors / the business owner] at least [Insert frequency] and included in our annual Consumer Duty board report. Where we find that vulnerable customers are getting worse outcomes, we act to fix the cause.
+
+# Review
+This policy is reviewed at least annually, and sooner if the FCA publishes new rules or guidance, our business changes, or our monitoring shows it is not working well. Changes are approved by [Insert: the board / the directors / the business owner].

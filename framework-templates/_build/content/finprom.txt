@@ -1,0 +1,154 @@
+HOWTO: policy
+
+# 1. Purpose and scope
+This policy sets out how [Insert firm legal name] (“we”, “the firm”) makes sure that every financial promotion and customer communication it produces, approves or communicates is fair, clear and not misleading, meets the FCA’s rules for our activities, and supports good outcomes for customers under the Consumer Duty.
+Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for].
+This policy applies to every communication that promotes our products or services, or those of the firms we work with, in any format and through any channel, including:
+- our website, landing pages, calculators and comparison tools;
+- social media (organic posts, paid adverts, stories, videos and live streams) on [Insert the platforms you use, e.g. Facebook, Instagram, TikTok, LinkedIn, X];
+- third-party websites, marketplaces and comparison sites [Insert names, or delete];
+- email, text message, messaging apps and direct mail;
+- printed material, signage and point-of-sale displays [delete if not applicable];
+- telephone and face-to-face conversations (real-time promotions); and
+- content produced for us by affiliates, introducers, lead generators or social media influencers [delete if not applicable].
+NOTE: List only the channels you actually use or plan to use in the first 12 months. For each channel you list, section 6 must describe how you control it.
+
+# 2. Regulatory framework
+- **Section 21 of the Financial Services and Markets Act 2000 (FSMA)** makes it a criminal offence for a person, in the course of business, to communicate an invitation or inducement to engage in investment activity (which includes entering into regulated credit agreements, insurance and mortgages, and investing) unless they are FCA-authorised, the content is approved by an authorised person with the right permission, or an exemption applies.
+- **The section 21 approver regime.** Since 7 February 2024 (PS23/13), an authorised firm must have specific FCA permission before approving financial promotions for unauthorised persons, unless an exemption applies (for example promotions of its own appointed representatives or, in some cases, relating to its own products). We [Insert: do not approve promotions for unauthorised persons / hold the section 21 approver permission – delete as appropriate].
+- **The Consumer Duty (PRIN 2A)** – in particular the consumer understanding outcome (PRIN 2A.5), which requires communications to meet customers’ information needs, be likely to be understood by the customers they are aimed at, and equip them to make effective, timely and properly informed decisions. The Duty applies to communications that are not financial promotions as well as to those that are.
+- **Activity-specific rules** – set out in section 7.
+- **FG24/1**, the FCA’s finalised guidance on financial promotions on social media (March 2024), which replaced FG15/4 and covers the use of social media and influencers.
+- **Consumer protection law** – the Digital Markets, Competition and Consumers Act 2024 (which replaced the Consumer Protection from Unfair Trading Regulations 2008 from April 2025 and is enforced by the CMA and Trading Standards), and the Advertising Standards Authority’s CAP and BCAP Codes.
+- **The Privacy and Electronic Communications Regulations 2003** – for email, text and telephone marketing (see our Data Processing Policy).
+
+# 3. What is a financial promotion?
+A financial promotion is any communication, in the course of business, that invites or induces someone to engage in investment activity – for our purposes, to take out or use a regulated product or service. It does not have to mention a price or rate to be a promotion: an image, a short video, a slogan, a sponsored post or a comment from a member of staff can all be promotions.
+Examples include: “Finance available – apply now”; an advert showing a monthly payment; a social media post about our service; a comparison of products on our website; and a salesperson describing the benefits of a product in a conversation.
+**Communications that are not promotions** (for example account letters, statements, arrears letters and complaint responses) must still be clear, fair and not misleading and meet the consumer understanding outcome.
+**Every promotion must comply on its own.** Each stage of the customer journey, and each individual social media post, must comply by itself – for example, an advert cannot rely on information that the customer would only see after clicking through.
+
+# 4. Governance and approval
+**4.1 Approver.** Every financial promotion must be approved in writing before it is published or used by [Insert name and role of approver]. The approver must be competent in the rules that apply to our activities and must be independent of the person who created the promotion where our size allows. [If only one person creates and approves promotions, explain how you get independent challenge, e.g. periodic review by an external compliance consultant.]
+**4.2 What the approver checks.** The approver uses our Financial Promotion Checklist [Insert location], which covers: whether the communication is a promotion; the target audience; fair, clear and not misleading content; balance and prominence of risks and benefits; required information and warnings for our activities (section 7); channel requirements (section 6); consumer understanding and vulnerability; and consistency with the product and its target market.
+**4.3 Financial Promotions Log.** We record every promotion in our Financial Promotions Log, including: a copy of the final version; the approver and approval date; the channel(s) and dates used; the target audience; the evidence supporting any claims or figures (for example the basis of a representative APR); any expiry or review date; and the date it was withdrawn.
+**4.4 Review and withdrawal.** Live promotions are reviewed at least [Insert frequency, e.g. quarterly] and whenever the product, rates or rules change. If a promotion no longer complies, it is withdrawn immediately from every channel, and we consider whether customers who acted on it have been treated unfairly.
+**4.5 Third parties.** Where affiliates, introducers, lead generators or influencers promote our products or services, we: check they are authorised or exempt, or that we can lawfully approve their promotions; give them approved content only and prohibit them from altering it; monitor what they publish at least [Insert frequency]; and end the relationship if they publish non-compliant content. [If you have appointed representatives, add: we approve and monitor all promotions of our appointed representatives.]
+
+# 5. Core standards for every promotion
+Every promotion and customer communication must:
+- be **fair, clear and not misleading**, judged from the perspective of the customers it is aimed at;
+- give a **balanced** impression: benefits must not be emphasised without an equally prominent indication of any relevant risks, costs or limitations;
+- make key information (for example costs, risks and the nature of our role) **prominent** – it must not be hidden in small print, footnotes or behind links;
+- use **plain language** and explain any technical terms;
+- **identify the firm** clearly, including our name and, where required, our FCA status;
+- not **exploit** customers’ behavioural biases, lack of knowledge or vulnerability, or use pressure selling (for example false urgency or countdown timers);
+- make only claims that are **accurate and can be evidenced** at the time the promotion is used;
+- be **consistent** with the product or service, its target market and our fair value assessment; and
+- be **tested** for understanding where appropriate (for example key customer journeys), in line with the Consumer Duty.
+
+# 6. Channel-specific standards
+NOTE: Delete any channel below that you do not use. The channels are universal to all activities, so they are not split into options.
+**6.1 Website and apps.** Required information and warnings appear with the promotional content they relate to, not only on a separate page. Calculators and comparison tools are accurate, use realistic assumptions and make clear any limitations. [Insert who checks the website and how often.]
+**6.2 Social media.** In line with FG24/1, each post must comply on its own, taking account of the space and format constraints of the platform; if a compliant promotion cannot be made within the format, that format is not used. Required information and warnings must be in the post itself (not only in a linked page or a comment). Shared or reposted content is treated as a new communication by us. Paid promotions are clearly labelled as adverts.
+**6.3 Influencers and affiliates.** Influencers who promote our products are communicating a financial promotion. We only work with influencers under a written agreement, give them approved wording only, check their content before and after publication, and make sure promotions are labelled as adverts.
+**6.4 Third-party platforms.** Listings and adverts on third-party platforms (for example marketplaces and comparison sites) meet the same standards as our own promotions, including required information. We check them at least [Insert frequency].
+**6.5 Real-time promotions (telephone and face-to-face).** Staff use approved scripts or key messages, do not make claims that are not in our approved materials, and are trained on the required information for our activities. We do not make unsolicited real-time promotions unless the rules for our activities specifically permit them.
+**6.6 Print and point of sale.** Printed material and signage is approved before printing and withdrawn when out of date.
+
+# 7. Activity-specific rules
+NOTE: Keep every option below that matches a permission you hold or are applying for, and delete the rest. Each option sets out the specific rules for promoting that activity.
+OPT: 7A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+**7A.1 The rules.** Promotions relating to credit must comply with **CONC 3**, which applies to credit brokers as well as lenders. In particular:
+- **Broker status.** Promotions must indicate the extent to which we are acting as a credit broker and that we are not a lender, and whether we work with a limited number of lenders. Any fee the customer must pay us must be disclosed.
+- **Representative example and APR.** If a promotion includes an interest rate or any amount relating to the cost of credit, it must include a representative example with the information CONC 3.5 requires, shown together and more prominently than the trigger information. The representative APR must be the rate at or below which we reasonably expect at least 51% of agreements entered into as a result of the promotion to be made.
+- **Prohibited claims.** Promotions must not suggest credit is available regardless of the customer’s financial circumstances or credit history, or describe credit as “pre-approved” or “guaranteed” unless the rules allow it.
+- **High-cost short-term credit.** Promotions of high-cost short-term credit must include the prescribed risk warning. [Delete if you do not broker high-cost short-term credit.]
+**7A.2 Commission and point-of-sale promotions.** Where we are also a retailer, finance offers presented alongside goods (for example “£199 a month”) are credit promotions and must meet CONC 3. Our promotions must not give a misleading impression of whether we are independent or of the range of lenders we use.
+**7A.3 Deferred payment credit.** Since 15 July 2026, deferred payment credit (“buy now, pay later”) offered by third-party lenders has been regulated, but broking of deferred payment credit is not itself regulated. Promotions we communicate for regulated deferred payment credit must still comply with section 21 of FSMA. [Delete if not applicable.]
+ENDOPT: 7A | Credit broking firms
+OPT: 7B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling.
+**7B.1 The rules.** Promotions of debt solutions must comply with **CONC 3**, including the specific rules for debt counselling and debt adjusting. In particular:
+- **Free debt advice.** Promotions must state that free debt advice is available and how to find it (for example through MoneyHelper).
+- **No misleading claims.** Promotions must not claim or imply that debts can be written off, that a solution is government-backed, or that it is free, unless that is true and the promotion explains any conditions and costs clearly.
+- **Fees.** Any fees must be disclosed clearly, including when they are payable and how they affect the money going to creditors.
+**7B.2 Lead generation.** We only accept customer leads from firms that are authorised or exempt for the activity, and we check how leads were generated (including any social media advertising) before accepting them. We do not pay or receive referral fees where the rules prohibit it. [Insert the lead sources you use, or state that you use none.]
+ENDOPT: 7B | Debt adjusting and debt counselling firms
+OPT: 7C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+**7C.1 Promotions.** We rarely make financial promotions to consumers. Any promotion of our services to consumers must comply with CONC 3. Promotions of our services to business clients (for example lenders) are generally outside the consumer credit promotion rules but must still be fair, clear and not misleading.
+**7C.2 Collection communications.** Our main customer communications are collection letters, emails, texts and calls. Under **CONC 7** and the Consumer Duty, these must not be misleading or threatening. In particular they must not: misrepresent our authority or the legal position; falsely state or imply that court action, enforcement or other consequences will follow; use official-looking documents designed to intimidate; or put pressure on customers in financial difficulty. They must tell customers where they can get free debt advice. Templates are approved by [Insert name or role] before use and reviewed at least annually.
+ENDOPT: 7C | Debt collecting and debt administration firms
+OPT: 7D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+**7D.1 The rules.** Promotions of credit information services must comply with **CONC 3** and the Consumer Duty. In particular they must not overstate what the service can achieve – for example claiming that it will “fix” or “repair” a credit rating, remove accurate information, or guarantee access to credit.
+**7D.2 Free access and subscriptions.** Promotions must make clear that individuals have a statutory right to obtain their credit file, and must not give the impression that they need to pay to see it. Free trials that convert to paid subscriptions must state the price, when payment starts and how to cancel, with the same prominence as the free offer.
+WATCH: The subscription contracts regime in the Digital Markets, Competition and Consumers Act 2024 will add further requirements for subscription services (for example reminder notices and easy cancellation). The Government announced in April 2026 that the regime is now expected to commence in spring 2027. Check the current commencement date before relying on 7D.2.
+ENDOPT: 7D | Firms providing credit information services or credit references
+OPT: 7E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+**7E.1 Investor promotions.** Peer-to-peer agreements are **restricted mass market investments**. Under **COBS 4.12A**, promotions to retail investors must:
+- include the prescribed risk warning, prominently: “Don’t invest unless you’re prepared to lose money. This is a high-risk investment. You may not be able to access your money easily and are unlikely to be protected if something goes wrong. Take 2 mins to learn more.” – with the link to the fuller risk summary;
+- not offer incentives to invest (for example cash bonuses or refer-a-friend rewards); and
+- only be communicated to investors who have been categorised as restricted, certified high net worth or certified sophisticated investors, and – for direct offer promotions – who have passed an appropriateness assessment, with a 24-hour cooling-off period for first-time investors and a personalised risk warning.
+**7E.2 Returns and past performance.** Any target or past returns must be presented fairly with defaults and losses, and must not be more prominent than the risk warning.
+**7E.3 Borrower promotions.** Promotions to consumer borrowers must comply with **CONC 3**, including the representative example requirements where a rate or cost is stated.
+ENDOPT: 7E | Peer-to-peer lending platforms
+OPT: 7F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender (including deferred payment credit / “buy now, pay later”).
+**7F.1 The rules.** Our promotions must comply with **CONC 3**. In particular:
+- **Representative example and APR.** If a promotion includes an interest rate or any amount relating to the cost of credit, it must include a representative example with the information CONC 3.5 requires, more prominent than the trigger information. The representative APR must reflect the rate at or below which we reasonably expect at least 51% of agreements resulting from the promotion to be made, and we keep the evidence.
+- **Prohibited claims.** Promotions must not suggest credit is available regardless of financial circumstances, or describe credit as “pre-approved” unless the rules allow it.
+- **High-cost short-term credit.** Promotions must include the prescribed risk warning. [Delete if you do not provide high-cost short-term credit.]
+**7F.2 Promotions communicated by others.** Where brokers, retailers or other partners communicate promotions of our credit, we provide approved content, check whether the section 21 approver regime applies to us, and monitor what they publish.
+**7F.3 Deferred payment credit.** Since 15 July 2026, deferred payment credit offered by third-party lenders has been regulated. Our promotions of deferred payment credit must comply with section 21 of FSMA and the CONC promotion rules that apply to it, and must not present “buy now, pay later” as free of risk. [Delete if not applicable.]
+ENDOPT: 7F | Consumer credit lenders
+OPT: 7G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements.
+**7G.1 Promotions.** We rarely make promotions to consumers. Any offer we make – for example a settlement discount or a new payment arrangement – must be clear about its terms, conditions and consequences (including the effect on the customer’s credit file), and must not create false urgency.
+**7G.2 Communications.** Letters and messages to customers must comply with **CONC 7** and the Consumer Duty: they must be clear about who we are and why we hold the agreement, must not misrepresent the legal position or threaten action we do not intend or are not entitled to take, and must tell customers where to get free debt advice.
+ENDOPT: 7G | Firms exercising a lender’s rights and duties
+OPT: 7H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements.
+**7H.1 The rules.** Promotions of consumer hire must comply with **CONC 3**, including the information required when a promotion states a cost or charge for the hire. They must make clear that the customer will not own the goods, and must present the total cost, the hire period and any significant additional charges (for example end-of-hire, excess-use or damage charges) fairly and prominently.
+ENDOPT: 7H | Consumer hire firms
+OPT: 7I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+**7I.1 The rules.** Our communications must comply with **ICOBS 2.2** (communications must be clear, fair and not misleading) and the Consumer Duty. In particular:
+- cover, key exclusions and limitations must be presented fairly, and not hidden behind the headline benefits;
+- price claims (for example “from £x”) must be achievable by a meaningful proportion of customers, and comparisons must be fair;
+- for home and motor insurance, promotions and renewal communications must reflect the pricing practices rules (ICOBS 6B), and must not use incentives that undermine fair value; and
+- promotions of add-on products (for example GAP insurance) must not give the impression that they are compulsory.
+**7I.2 Product information.** Promotions must be consistent with the information in the policy documentation and the Insurance Product Information Document for general insurance.
+ENDOPT: 7I | Insurance distribution firms
+OPT: 7J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+**7J.1 The rules.** Promotions of regulated mortgage contracts must comply with **MCOB 3A**. In particular:
+- promotions must include the risk warning “Your home may be repossessed if you do not keep up repayments on your mortgage” (or the other forms MCOB 3A allows), and promotions of debt consolidation must include the additional warning about securing debts on the home;
+- where a promotion includes an interest rate or any figure relating to the cost of credit, it must include a representative example with the information MCOB 3A requires, including the APRC;
+- promotions must make clear any fee we charge and whether we consider products from the whole of the market or a limited range of lenders.
+**7J.2 Related promotions.** Promotions of insurance we arrange alongside mortgages must also comply with ICOBS, and any investment-related promotions with COBS.
+ENDOPT: 7J | Mortgage intermediaries
+OPT: 7K | Payment services firms | your firm provides payment services or issues electronic money.
+**7K.1 The rules.** Payment services and e-money are not controlled investments, so section 21 of FSMA generally does not apply to promotions of our payment services. Our communications must nevertheless meet the **Consumer Duty** (including PRIN 2A.5) and consumer protection law, and must be consistent with the information we must provide under the Payment Services Regulations 2017 (and, for e-money, the Electronic Money Regulations 2011).
+**7K.2 Specific points.** Our promotions must:
+- not describe e-money or safeguarded funds as a deposit or a bank account, or imply that customers’ money is protected by the Financial Services Compensation Scheme when it is not;
+- explain safeguarding accurately if we refer to it;
+- show fees and exchange rates (including mark-ups) clearly and fairly; and
+- not overstate speed, security or fraud protection.
+ENDOPT: 7K | Payment services firms
+OPT: 7L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+**7L.1 The rules.** Our promotions must comply with **COBS 4**. In particular:
+- promotions must be fair, clear and not misleading, give a fair and prominent indication of relevant risks, and meet the specific rules on past performance, simulated or future performance, comparisons and tax treatment;
+- promotions of high-risk investments must comply with the restrictions for restricted mass market investments (COBS 4.12A) and non-mass market investments (COBS 4.12B), including the prescribed risk warnings and restrictions on who they can be communicated to; and
+- we must be clear about the nature of our advice service (independent or restricted) and our charges.
+**7L.2 Social media and influencers.** We follow FG24/1 closely: investment promotions on social media must be balanced within each post, and we do not use influencers to promote investments unless the promotion has been approved and the influencer is under our control.
+ENDOPT: 7L | Investment advice and arranging firms
+
+# 8. Targeting and vulnerable customers
+Promotions are aimed only at customers within the target market for the product or service. We do not target customers who are likely to be harmed by the product – for example, we do not direct credit promotions at customers we know to be in financial difficulty, and we do not use data about customers’ vulnerability to target them with promotions. We consider how customers with characteristics of vulnerability are likely to understand each promotion, in line with our Customer Vulnerability Policy.
+
+# 9. Record keeping
+We keep a copy of every promotion, its approval record, the evidence for its claims and the dates and channels it was used in our Financial Promotions Log, for at least [Insert period – at least the minimum required by the rules for your activities; we suggest six years] after it was last used. This includes promotions that have been withdrawn. Records of social media content include screenshots of posts as they appeared.
+
+# 10. Monitoring and review
+Our Compliance Monitoring Plan includes regular checks that every promotion was approved before use, that live promotions (including those published by third parties) remain compliant, and that customers understand our key communications. Complaints and customer feedback about promotions are reviewed as part of our root cause analysis. Findings are reported to [Insert: the board / the directors / the business owner].
+This policy is reviewed at least annually and whenever FCA rules or guidance on promotions change, and approved by [Insert: the board / the directors / the business owner].
+
+# 11. Training
+Everyone who creates, approves or communicates promotions – including staff who speak to customers – is trained at induction and at least annually on this policy, the rules for our activities, social media and influencer rules, and the Consumer Duty. The approver receives more detailed training. Completion is recorded in our Training Log.
+
+# 12. Related policies
+This policy should be read with our: Consumer Duty Implementation Plan; Customer Vulnerability Policy; Compliance Monitoring Plan; Data Processing Policy (for marketing consent and PECR); and Training and Competence Policy. [Delete any you do not have.]

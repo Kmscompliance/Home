@@ -1,0 +1,159 @@
+HOWTO: plan
+NOTE: **What this plan is for.** The Consumer Duty has applied to open products since 31 July 2023 and to closed products since 31 July 2024, so a new firm must comply from its first day of trading. The FCA expects applicants to show, not just state, how the Duty shapes their business model, products, communications, support, governance and monitoring. Use this plan to explain what you have already built into your business and what you will do, by when, to embed and evidence it. Replace every target date and owner with real ones.
+
+# Introduction
+This plan sets out how [Insert firm legal name] (“we”, “the firm”) meets and embeds the FCA’s Consumer Duty across its business. Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for]. Our retail customers are: [Insert a short description of your target customers].
+The Duty sets a higher standard of care than the previous Principles 6 and 7 for our dealings with retail customers. It requires us to put customers’ interests at the heart of our business, to focus on the outcomes they actually experience, and to be able to evidence that those outcomes are good – including for customers with characteristics of vulnerability.
+The Duty is made up of:
+- **the Consumer Principle** (Principle 12): a firm must act to deliver good outcomes for retail customers;
+- **the cross-cutting rules** (PRIN 2A.2): we must act in good faith towards retail customers; avoid causing foreseeable harm to them; and enable and support them to pursue their financial objectives; and
+- **the four outcomes**: products and services (PRIN 2A.3); price and value (PRIN 2A.4); consumer understanding (PRIN 2A.5); and consumer support (PRIN 2A.6),
+supported by requirements on governance, culture, monitoring of outcomes and an annual board report. We also follow the FCA’s non-Handbook guidance on the Duty (FG22/5) and the FCA’s published findings and good practice.
+
+# 1. What each part of the Duty means for us
+## Acting in good faith
+We deal with customers honestly, fairly and openly, consistent with their reasonable expectations. We do not exploit customers’ lack of knowledge, behavioural biases or vulnerability, and we do not use practices (for example hidden charges, confusing choice architecture or unreasonable barriers to leaving) that work against customers’ interests.
+## Avoiding foreseeable harm
+We think ahead about how our products, services, communications and processes could harm customers – including through our own actions and through features that only affect some groups – and we design them to prevent that harm. Where harm happens, we act to put things right and stop it happening again.
+## Enabling and supporting customers
+We make sure customers have what they need to make good decisions – the right information at the right time, products that meet their needs, and support that is easy to access – and we remove unnecessary barriers.
+## Applying the Duty proportionately
+The Duty applies in a way that reflects our size, our role and the nature of our products. As a [Insert description, e.g. “small firm with one director”], we meet it through simple, well-documented processes that are built into our day-to-day work, rather than through large-scale programmes.
+WATCH: In CP26/23 (June 2026), the FCA consulted on clarifying the scope of the Duty – including how responsibilities are shared in distribution chains, that a firm can generally rely on information from other firms, and that a standalone board report may not be needed where the content is covered elsewhere in board reporting. The consultation closed on 18 September 2026 and final rules are expected in the first quarter of 2027. Until then, the current rules apply in full. Update sections 2 and 7 when the final rules are published.
+
+# 2. Our role in the distribution chain
+NOTE: Under the Duty, every firm in a distribution chain is responsible for its own role. Keep the option(s) that match your permissions and delete the rest. Each option explains your role and the outcome-specific points that matter most for that activity.
+OPT: 2A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+**2A.1 Our role.** We are a **distributor** of credit products manufactured by the lenders on our panel. If we charge customers a fee, we are also the **manufacturer** of our own broking service.
+**2A.2 Products and services.** We obtain from each lender the information we need about its products’ target market, characteristics and distribution strategy, and we only introduce customers for whom the product is likely to be suitable. We share information with lenders about the outcomes we see (for example complaints and cancellations) when they ask, and proactively where we identify harm.
+**2A.3 Price and value.** We assess the value of our own fees. We consider the effect of the commission we receive on the overall value of the product to the customer, and we obtain lenders’ fair value assessments. Commission structures must not create an incentive to introduce customers to more expensive credit.
+**2A.4 Understanding and support.** Customers must understand that we are a broker, the extent of our lender panel, whether and how we are paid commission, and the key features and costs of the credit. We make it easy for customers to contact the lender after the agreement is made.
+ENDOPT: 2A | Credit broking firms
+OPT: 2B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling.
+**2B.1 Our role.** We are the **manufacturer** of the debt advice and debt solution services we provide.
+**2B.2 Products and services.** Our target market is customers in financial difficulty, many of whom have characteristics of vulnerability. Our services must deliver solutions that are sustainable and genuinely in customers’ interests, and we consider free-to-client and statutory alternatives in every case.
+**2B.3 Price and value.** We assess whether our fees are reasonable relative to the benefit customers receive, taking account of the availability of free debt advice and the effect of fees on how quickly debts are repaid.
+**2B.4 Understanding and support.** Customers must understand the consequences of each option (including the effect on their credit file and assets), the fees they will pay, and that free debt advice is available. We support customers when their circumstances change, including through Breathing Space.
+ENDOPT: 2B | Debt adjusting and debt counselling firms
+OPT: 2C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+**2C.1 Our role.** We provide collection or administration services on behalf of [Insert: lenders / debt owners]. We are responsible for the outcomes our own activities cause for the customers we deal with, even though the credit product was manufactured by another firm.
+**2C.2 Products and services.** Our collection strategies and processes are designed to avoid foreseeable harm, particularly to customers in financial difficulty.
+**2C.3 Price and value.** Any charges we add to customers’ accounts, or that our clients add on our recommendation, must be fair and reflect costs reasonably incurred.
+**2C.4 Understanding and support.** Customers must understand who we are, what they owe and why, and what options are available to them. Consumer support is our most important outcome: customers must be able to contact us easily, agree affordable arrangements and get help, including free debt advice. We share outcome information with our clients.
+ENDOPT: 2C | Debt collecting and debt administration firms
+OPT: 2D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+**2D.1 Our role.** Where we provide credit information services directly to consumers, we are the **manufacturer** of those services. Where we supply credit references to lenders, the accuracy of our data directly affects outcomes for retail customers, even though they are not our direct customers.
+**2D.2 Products and services.** Our services must meet a genuine need and must not encourage customers to pay for things they can get free (for example their statutory credit report).
+**2D.3 Price and value.** We assess whether subscriptions and paid services provide fair value, including the non-financial costs of cancelling.
+**2D.4 Understanding and support.** Customers must understand what a credit score is and what affects it, what our service can and cannot do, and how to dispute information. Disputes and corrections must be handled quickly and fairly.
+ENDOPT: 2D | Firms providing credit information services or credit references
+OPT: 2E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+**2E.1 Our role.** We are the **manufacturer** of our platform’s services for both investors and borrowers.
+**2E.2 Products and services.** We define separate target markets for investors (for example restricted, high net worth or sophisticated investors who can bear losses) and borrowers, and design our credit assessment, pricing and loan monitoring to avoid foreseeable harm to both.
+**2E.3 Price and value.** We assess the value of our fees to investors against realistic, risk-adjusted returns, and to borrowers against the cost of comparable credit.
+**2E.4 Understanding and support.** Investors must understand the risk of loss, the lack of FSCS protection and how easily they can access their money. Borrowers must understand their obligations. Both must receive support if things change, including if the platform winds down.
+ENDOPT: 2E | Peer-to-peer lending platforms
+OPT: 2F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender (including deferred payment credit / “buy now, pay later”).
+**2F.1 Our role.** We are the **manufacturer** of our credit products. Where brokers or retailers introduce customers, they are our **distributors**.
+**2F.2 Products and services.** We run a product approval process that defines the target market, tests how products perform for different customer groups (including in stressed scenarios) and sets a distribution strategy. We give our distributors the information they need and monitor the outcomes customers receive through each channel.
+**2F.3 Price and value.** Our fair value assessment considers interest, fees and charges (including default charges), the commission we pay to distributors, and whether any groups of customers – for example those who fall into arrears – receive poor value.
+**2F.4 Understanding and support.** Customers must understand the total cost, the consequences of missing payments and their rights. We support customers in financial difficulty in line with CONC 7, and make it easy to repay early, get statements and complain.
+ENDOPT: 2F | Consumer credit lenders
+OPT: 2G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements.
+**2G.1 Our role.** We hold agreements that were manufactured by another firm. As the owner, we are responsible for the outcomes customers receive from the date we acquire the agreements, and the Duty applies to these closed products.
+**2G.2 Products and services.** We review each portfolio on acquisition for features that could cause harm (for example high ongoing charges or unsustainable repayment arrangements).
+**2G.3 Price and value.** We assess the fair value of the agreements we hold on an ongoing basis and change features that do not offer fair value where we can.
+**2G.4 Understanding and support.** Customers must understand who we are and how the transfer affects them. We provide accessible support and treat customers in arrears with forbearance.
+ENDOPT: 2G | Firms exercising a lender’s rights and duties
+OPT: 2H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements.
+**2H.1 Our role.** We are the **manufacturer** of our hire agreements.
+**2H.2 Products and services.** Our hire products are designed for a defined target market, and we consider whether hire (rather than purchase) meets the needs of the customers we serve.
+**2H.3 Price and value.** Our fair value assessment covers the total cost of hire compared with alternatives, and end-of-hire, damage and excess-use charges.
+**2H.4 Understanding and support.** Customers must understand that they will not own the goods, the total cost and any end-of-hire charges. We provide support with maintenance, early termination and arrears.
+ENDOPT: 2H | Consumer hire firms
+OPT: 2I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+**2I.1 Our role.** We are normally a **distributor** of insurance products manufactured by insurers. We may be a **co-manufacturer** if we have a significant role in designing a product (for example setting cover or price). The product governance rules in **PROD 4** apply alongside the Duty.
+**2I.2 Products and services.** As a distributor, we obtain the manufacturer’s product information, understand the target market and only distribute to customers within it. [If you are a co-manufacturer, describe your product approval process here.]
+**2I.3 Price and value.** We obtain insurers’ fair value assessments, and we make sure our own remuneration (including commission and any fees) does not undermine fair value. We pay particular attention to add-on products and premium finance.
+**2I.4 Understanding and support.** Customers must understand the cover, key exclusions and the claims process. We support customers at renewal and when they claim, and pass relevant information to insurers.
+ENDOPT: 2I | Insurance distribution firms
+OPT: 2J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+**2J.1 Our role.** We are a **distributor** of mortgage products manufactured by lenders, and the **manufacturer** of our own advice service.
+**2J.2 Products and services.** We use lenders’ target market information in our research and recommendations, and make sure our advice process leads to suitable outcomes.
+**2J.3 Price and value.** We assess whether our fees provide fair value for the service we provide, and consider how procuration fees could influence recommendations.
+**2J.4 Understanding and support.** Customers must understand our fees, the scope of our service, the key features and risks of the mortgage, and the consequences of any choices (for example longer terms or debt consolidation). We support customers until completion and at product expiry where we offer that service.
+ENDOPT: 2J | Mortgage intermediaries
+OPT: 2K | Payment services firms | your firm provides payment services or issues electronic money.
+**2K.1 Our role.** We are the **manufacturer** of our payment services. Our retail customers include consumers and, for payment services, micro-enterprises and small charities.
+**2K.2 Products and services.** We design our services, including fraud controls and authentication, to meet the needs of our target market without excluding customers unnecessarily.
+**2K.3 Price and value.** Our fair value assessment covers all fees and exchange rate mark-ups, including for different customer groups.
+**2K.4 Understanding and support.** Customers must understand fees, exchange rates, how their money is protected (safeguarding, not FSCS) and what to do if something goes wrong. We support customers quickly when they are victims of fraud or cannot access their money.
+ENDOPT: 2K | Payment services firms
+OPT: 2L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+**2L.1 Our role.** We are a **distributor** of investment products manufactured by providers, and the **manufacturer** of our own advice service. The product governance rules in PROD apply where relevant, alongside the Duty.
+**2L.2 Products and services.** We only recommend products within their target market and design our advice service (including any ongoing service) to meet clients’ needs.
+**2L.3 Price and value.** We assess the value of our initial and ongoing charges, including whether clients paying for ongoing advice actually receive it, and the combined cost of our charges with product and platform charges.
+**2L.4 Understanding and support.** Clients must understand the risks, costs and nature of our service. We make it easy for clients to change or stop an ongoing service.
+ENDOPT: 2L | Investment advice and arranging firms
+
+# 3. Products and services outcome
+- We define the **target market** for each product or service we manufacture – the customers whose needs, characteristics and objectives it is designed to meet, including any customers with characteristics of vulnerability – and any customers it is not suitable for.
+- We **approve** new products and significant changes through a documented process that is signed off by [Insert name or role], including testing how the product is likely to perform for customers.
+- As a distributor, we obtain the information we need from manufacturers and **only distribute** to customers in the target market.
+- We **review** each product and service at least [Insert frequency] and when outcome data or complaints suggest a problem, and take action where it is not delivering good outcomes.
+
+# 4. Price and value outcome
+- We carry out a documented **fair value assessment** for every product and service we manufacture, comparing the total price customers pay (including fees, charges and non-financial costs such as time and effort) with the benefits they receive.
+- We consider whether any **groups of customers** – including those with characteristics of vulnerability – receive worse value.
+- As a distributor, we obtain manufacturers’ fair value assessments and make sure our own **remuneration** does not undermine value.
+- We **review** fair value at least annually, and sooner if prices, costs or outcome data change. Where a product does not provide fair value, we act – for example by changing the price or features, withdrawing it, or providing redress.
+
+# 5. Consumer understanding outcome
+- Our communications are clear, relevant, well-timed and in plain language, and give customers the information they need to make decisions, including key risks, costs and consequences of inaction.
+- We apply at least the same care to post-sale communications (for example how to cancel or complain) as to sales communications.
+- We **test** key communications (for example with a sample of customers or through [Insert method]) and use the results and outcome data to improve them.
+- Where we deal with customers one-to-one, we check understanding and tailor explanations to the customer’s needs.
+- We make communications **accessible**, including reasonable adjustments for disabled customers.
+
+# 6. Consumer support outcome
+- Customers can contact us easily through [Insert channels], and it is **as easy to get help, switch, cancel or complain as it was to buy**.
+- We avoid unreasonable barriers (“sludge”), such as long waiting times, complicated processes to cancel, or requiring customers to use a channel that does not suit them.
+- We provide appropriate support to customers with characteristics of vulnerability, in line with our Customer Vulnerability Policy.
+- We handle complaints fairly and use them to improve, in line with our Complaints Procedure.
+
+# 7. Governance, culture and accountability
+- **Accountability.** [Insert name], a [Insert: director / SMF holder], is responsible for the Duty. [If you have a board or governing body, add: our Consumer Duty champion is [Insert name]. The FCA expects firms with a board to appoint a champion, ideally a non-executive director, to help the chair and CEO raise the Duty regularly. A sole trader or firm without a board should explain how it gets challenge instead.]
+- **Culture and incentives.** Our culture, objectives, remuneration and performance management encourage staff to deliver good customer outcomes. No incentive rewards outcomes that could harm customers.
+- **Board report.** At least annually, [Insert: the board / the directors / the business owner] reviews and approves a report on whether we are delivering good outcomes for customers consistent with the Duty, what actions we have taken and what we plan to do (PRIN 2A.8). The report draws conclusions from our data rather than simply presenting it, records the challenge given and the decisions made, covers outcomes for customers with characteristics of vulnerability, and covers outcomes delivered through any distribution chain, in line with the FCA’s April 2026 observations on firms’ board reports. Our first report will be approved by [Insert date].
+- **Training.** All staff are trained on the Duty and how it applies to their role (see our Training and Competence Policy).
+
+# 8. Monitoring outcomes
+We monitor the outcomes our customers receive using management information (MI) that is proportionate to our size. Our key indicators are:
+TABLE: 25,50,25
+| Outcome | Examples of MI we will use | Owner and frequency |
+| Products and services | Sales outside the target market; cancellations and early exits; product performance; customer feedback | [Insert owner and frequency] |
+| Price and value | Total cost paid; fees and charges by customer group; commission levels; value assessments | [Insert owner and frequency] |
+| Consumer understanding | Communication testing results; questions and misunderstandings raised by customers; complaints about unclear information | [Insert owner and frequency] |
+| Consumer support | Response and wait times; time to resolve queries; complaint volumes, themes and outcomes; ease of cancelling | [Insert owner and frequency] |
+| Vulnerability (all outcomes) | Outcomes for customers with recorded characteristics of vulnerability compared with other customers | [Insert owner and frequency] |
+Where MI shows customers are not getting good outcomes, we find the cause, act to fix it, and consider whether to put right any harm to customers. Monitoring is carried out through our Compliance Monitoring Plan.
+
+# 9. Implementation and embedding plan
+NOTE: Adapt the actions to your firm, add a named owner and a real target date for each, and record evidence as each action is completed. If you are applying for authorisation, show which actions are complete before submission and which will be completed before you start trading.
+TABLE: 22,36,12,12,18
+| Area | Actions | Owner | Target date | Evidence |
+| Governance and accountability | Appoint the individual responsible for the Duty (and a champion, if you have a board); set the governance calendar, including the annual board report. | [Insert owner] | [Insert date] | Minutes; Statement of Responsibilities |
+| Target market and product approval | Define the target market for each product and service; document the product approval process; obtain manufacturers’ information where we distribute. | [Insert owner] | [Insert date] | Target market statements; approval records |
+| Fair value | Complete fair value assessments for our products and services; obtain manufacturers’ assessments; review remuneration. | [Insert owner] | [Insert date] | Fair value assessments |
+| Customer journey review | Map each customer journey from first contact to exit and remove barriers, including for customers with characteristics of vulnerability. | [Insert owner] | [Insert date] | Journey maps; changes made |
+| Communications | Review and test key communications and promotions; create a plain-English glossary. | [Insert owner] | [Insert date] | Test results; approved templates |
+| Consumer support | Set service standards for response times and channels; test cancellation and complaint journeys. | [Insert owner] | [Insert date] | Service standards; test results |
+| Vulnerability | Implement the Customer Vulnerability Policy; train staff; set up recording and flags. | [Insert owner] | [Insert date] | Policy; training records |
+| Culture and incentives | Review objectives, remuneration and performance measures for conflicts with good outcomes. | [Insert owner] | [Insert date] | Remuneration review |
+| Training | Deliver Duty training to all staff, tailored to their roles. | [Insert owner] | [Insert date] | Training Log |
+| MI and monitoring | Build the MI set in section 8 into the Compliance Monitoring Plan. | [Insert owner] | [Insert date] | MI pack; monitoring reports |
+| Distribution chain | Agree information-sharing arrangements with the firms we work with. | [Insert owner] | [Insert date] | Agreements; information received |
+| Board report | Prepare and approve the first annual board report. | [Insert owner] | [Insert date] | Approved board report |
+
+# 10. Review
+This plan is reviewed at least annually, alongside the annual board report, and whenever our products, customers or the rules change. Progress against section 9 is reported to [Insert: the board / the directors / the business owner] at least [Insert frequency] until every action is complete, after which the Duty is monitored through business-as-usual governance.

@@ -1,0 +1,105 @@
+HOWTO: statement
+NOTE: **How the options work in this document.** A Statement of Responsibilities depends on your firm’s **SM&CR category**, not on your regulated activities, so the options in this document are by category: **Limited Scope** or **Core**. Keep the option for your firm’s category in sections 3 and 4 and delete the other. (This template does not cover **Enhanced** firms, which have additional requirements such as a Management Responsibilities Map and “overall responsibility” for every business area.)
+NOTE: **Which category is my firm?** In broad terms: firms whose only regulated activities are consumer credit activities under a **limited permission** (for example credit broking as a secondary activity, or not-for-profit debt advice) are usually **Limited Scope**, as are sole traders and some other specialist firms. Most other solo-regulated firms – including full-permission consumer credit firms, insurance intermediaries whose principal business is insurance distribution, mortgage intermediaries and investment advisers – are **Core**. **Payment institutions, e-money institutions and registered account information service providers are not within SM&CR at all** and do not need this document. Check your category against the FCA’s SM&CR categorisation guidance and SUP 10C before completing it.
+NOTE: **What this document is for.** Every person performing a Senior Management Function (SMF) must have a Statement of Responsibilities (SoR) setting out clearly and succinctly what they are responsible for. The FCA’s own SoR form is submitted through FCA Connect with the individual’s application for approval (Form A) and whenever the individual’s responsibilities change significantly. Use this template to prepare and agree the content internally, keep it as your firm’s record, and then transfer the content to the FCA’s form. Since PS26/6 (April 2026), firms must submit applications within 12 weeks of the need arising, and have more time to submit updated SoRs after changes – check SUP 10C for the current deadlines.
+WATCH: HM Treasury’s April 2026 response on SM&CR reform includes legislative changes (through the Financial Services and Markets Bill) that would let regulators replace pre-approval with notification for some senior manager roles and remove the Certification Regime from legislation. The FCA expects to consult on “phase 2” changes, which may affect SoRs, once the legislation is in place. Check the current position before submitting.
+
+# Personal identification details
+NOTE: Complete this section using the individual’s details exactly as they appear on their identity documents and on the FCA Register.
+TABLE: 10,45,45
+| Ref | Detail | Response |
+| 1.01 | Individual Reference Number (IRN) | [Insert IRN, if the individual already has one on the FCA Register] |
+| 1.02 | Title (e.g. Mr, Mrs, Ms, Mx, Dr) | [Insert title] |
+| 1.03 | Surname | [Insert surname] |
+| 1.04 | All forenames | [Insert all forenames] |
+| 1.05 | Date of birth | [Insert date of birth] |
+| 1.06 | National Insurance number | [Insert National Insurance number] |
+
+# Firm identification details
+TABLE: 10,45,45
+| Ref | Detail | Response |
+| 2.01 | Name of firm | [Insert firm legal name] |
+| 2.02 | Firm Reference Number (FRN) | [Insert FRN, or ‘application pending’] |
+| 2.03 | SM&CR category | [Insert: Limited Scope / Core] |
+| 2.04 | Name of the person the FCA should contact about this statement | [Insert name] |
+| 2.05 | Position | [Insert position] |
+| 2.06 | Telephone | [Insert telephone number] |
+| 2.07 | Email | [Insert email address] |
+
+# Senior Management Functions
+NOTE: Keep the option that matches your firm’s SM&CR category and delete the other. Tick only the function(s) this individual holds or is applying for, and delete the rows that do not apply.
+OPT: 3A | Limited Scope firms | your firm is a Limited Scope SM&CR firm.
+TABLE: 12,43,20,25
+| SMF | Function | Applied for / held (tick) | Effective date |
+| SMF29 | Limited Scope Function – the person with significant responsibility for the firm’s regulated activities (in a limited permission consumer credit firm, this is normally the director, partner or other person responsible for the firm’s regulated activities) | [Tick] | [Insert date] |
+| SMF16 | Compliance Oversight – only if your firm is required to have this function (for example some limited scope firms that are not limited permission consumer credit firms) [Delete if not applicable] | [Tick] | [Insert date] |
+| SMF17 | Money Laundering Reporting Officer – only if your firm is subject to the MLRO requirements in SYSC 6.3 [Delete if not applicable] | [Tick] | [Insert date] |
+**Sole traders.** [If your firm is a sole trader, check SUP 10C to confirm whether you need to apply for any SMF – the answer depends on your activities and whether you have employees. Delete this paragraph if your firm is not a sole trader.]
+ENDOPT: 3A | Limited Scope firms
+OPT: 3B | Core firms | your firm is a Core SM&CR firm.
+TABLE: 12,43,20,25
+| SMF | Function | Applied for / held (tick) | Effective date |
+| SMF1 | Chief Executive | [Tick] | [Insert date] |
+| SMF3 | Executive Director (for example an executive director of a company) | [Tick] | [Insert date] |
+| SMF9 | Chair of the governing body | [Tick] | [Insert date] |
+| SMF16 | Compliance Oversight | [Tick] | [Insert date] |
+| SMF17 | Money Laundering Reporting Officer (for firms subject to SYSC 6.3) | [Tick] | [Insert date] |
+| SMF27 | Partner (for partnerships and LLPs) | [Tick] | [Insert date] |
+[Some firms have additional functions (for example SMF19 or SMF21 for branches, or functions specific to insurers or authorised fund managers). Add them if they apply to your firm.]
+ENDOPT: 3B | Core firms
+
+# Prescribed Responsibilities
+NOTE: Keep the option that matches your firm’s SM&CR category and delete the other.
+OPT: 4A | Limited Scope firms | your firm is a Limited Scope SM&CR firm.
+**Limited Scope firms are not required to allocate Prescribed Responsibilities.** Record “Not applicable” in this section of the FCA’s form.
+The individual is still subject to the **Duty of Responsibility** – if the firm breaches a requirement in an area for which the individual is responsible, the FCA can take action against them if they did not take reasonable steps to prevent or stop the breach. Their responsibilities should therefore be described clearly in the “Other responsibilities” section below.
+ENDOPT: 4A | Limited Scope firms
+OPT: 4B | Core firms | your firm is a Core SM&CR firm.
+Each Prescribed Responsibility that applies to a Core firm must be allocated to a Senior Manager. Mark whether each applies to this individual and whether it is shared.
+TABLE: 8,52,20,20
+| Ref | Prescribed Responsibility | Does it apply to this individual? | Is it shared? |
+| (a) | Responsibility for the firm’s performance of its obligations under the Senior Managers Regime | [Yes / No] | [Yes / No] |
+| (b) | Responsibility for the firm’s performance of its obligations under the Certification Regime | [Yes / No] | [Yes / No] |
+| (b-1) | Responsibility for the firm’s performance of its obligations in relation to Conduct Rules training and reporting | [Yes / No] | [Yes / No] |
+| (d) | Responsibility for the firm’s policies and procedures for countering the risk that the firm might be used to further financial crime [If your firm is not subject to SYSC 6.3, check SYSC 24.2.6R to confirm whether this applies] | [Yes / No] | [Yes / No] |
+| (z) | Responsibility for the firm’s compliance with CASS [Only if your firm holds client money or assets subject to CASS – delete otherwise] | [Yes / No] | [Yes / No] |
+[Authorised fund managers have additional Prescribed Responsibilities (za) and (zb). Add them if they apply to your firm.]
+Prescribed Responsibilities should normally be allocated to one person. Where a responsibility is genuinely shared, every person sharing it is fully responsible for it, and it must be described in the same way in each of their statements.
+ENDOPT: 4B | Core firms
+
+# Additional information about Prescribed Responsibilities
+NOTE: Complete this section only if your firm is a Core firm and you need to explain how a Prescribed Responsibility applies. Limited Scope firms should delete this section.
+If necessary, give additional information about each Prescribed Responsibility, including:
+- a breakdown of the different components and tasks the responsibility covers; and
+- where the responsibility is shared, the name(s), IRN(s) and job title(s) of the other individual(s) sharing it.
+Additional information must be relevant and succinct, and must not dilute or undermine the Prescribed Responsibility.
+TABLE: 10,30,60
+| Ref | Prescribed Responsibility | Further relevant detail |
+| [e.g. (d)] | [Insert responsibility] | [Insert detail] |
+| [Insert] | [Insert] | [Insert] |
+
+# Other responsibilities
+NOTE: Use this section to describe clearly any other responsibilities this individual has for the firm’s activities, business areas or management functions. This is especially important in Limited Scope firms, which have no Prescribed Responsibilities. The examples below are suggestions – keep only those that apply to this individual, rewrite them to fit your firm, and add any others. Describe responsibilities, not tasks, and use plain language. None of these examples is a Prescribed Responsibility.
+TABLE: 30,50,20
+| Responsibility | Description | Shared? If yes, with whom (name, IRN and job title) |
+| Overall management of the firm’s regulated activities | Responsible for [Insert description, e.g. the management and oversight of the firm’s [Insert regulated activities], including making sure they are carried on in line with FCA requirements]. | [No / details] |
+| Consumer Duty | Responsible for [Insert, e.g. overseeing the firm’s compliance with the Consumer Duty, including monitoring customer outcomes and approving the annual board report]. [If your firm has a board, the FCA expects a Consumer Duty “champion” – ideally a non-executive director. Record that role here if this individual holds it.] | [No / details] |
+| Complaints handling oversight | Responsible for oversight of the firm’s compliance with DISP 1 (complaints handling), as DISP 1.3.7R requires. | [No / details] |
+| Financial promotions | Responsible for [Insert, e.g. the firm’s financial promotions approval process and oversight of promotions communicated by third parties]. | [No / details] |
+| Risk management and financial resources | Responsible for [Insert, e.g. the firm’s risk management framework, maintaining adequate financial resources and the wind-down plan]. | [No / details] |
+| Customer vulnerability | Responsible for [Insert, e.g. the firm’s approach to identifying and supporting customers in vulnerable circumstances]. | [No / details] |
+| Training and competence | Responsible for [Insert, e.g. making sure staff are trained and competent for their roles]. | [No / details] |
+| [Insert, e.g. client money / outsourcing / data protection / appointed representatives] | [Insert description] | [No / details] |
+
+# Declaration
+I confirm that this Statement of Responsibilities accurately and completely describes the responsibilities that I have, or will have, as a senior manager of [Insert firm legal name], and that I understand that I am subject to the Duty of Responsibility and the Conduct Rules in relation to these responsibilities.
+Signed (individual): [Insert signature]   Name: [Insert name]   Date: [Insert date]
+Signed on behalf of the firm: [Insert signature]   Name and position: [Insert name and position]   Date: [Insert date]
+
+#! Guidance on writing a good Statement of Responsibilities
+NOTE: Delete this section before submitting.
+- **Be clear and specific.** The FCA and the individual must be able to tell, from the statement alone, exactly what the individual is accountable for. Avoid vague words such as “supporting”, “assisting” or “involved in”.
+- **Be succinct.** Describe responsibilities, not day-to-day tasks or job descriptions.
+- **Be consistent.** The responsibilities must match your governance arrangements, organisation chart, policies and business plan. If you are a Core firm, every Prescribed Responsibility must be allocated to someone.
+- **Avoid gaps and unnecessary overlaps.** Every key area of the business should be the responsibility of someone. Only share responsibilities where that genuinely reflects how the firm is run.
+- **Keep it up to date.** Review each statement at least annually and whenever responsibilities change. Submit a revised statement to the FCA when there is a significant change, within the time allowed by SUP 10C.

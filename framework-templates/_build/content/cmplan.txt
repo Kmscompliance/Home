@@ -1,0 +1,200 @@
+HOWTO: plan
+NOTE: **How this plan fits with your other documents.** Your Compliance Monitoring Programme (the policy) explains why and how you monitor. This Compliance Monitoring Plan is the practical schedule: what you will check, how often and who will do it. Part A of the schedule applies to every firm. Part B contains one table per regulated activity – keep the table(s) for your permissions and delete the rest. In every table, replace the “Owner” column with a named person or role in your firm.
+
+# 1. Purpose of this plan
+This Compliance Monitoring Plan sets out how [Insert firm legal name] (“we”, “the firm”) checks, on an ongoing basis, that it is complying with the FCA’s rules and its own policies, and that its customers are getting good outcomes.
+It supports our obligations under SYSC 6.1.1R (adequate policies and procedures to ensure compliance), the Principles for Businesses, the Consumer Duty (PRIN 2A, including the requirement to monitor and regularly review the outcomes customers receive) and the Threshold Conditions. It is the operational schedule that puts our Compliance Monitoring Programme into practice.
+Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for]. The plan covers those activities, the way we sell and support them, and the functions that underpin them (governance, financial crime, data, training and financial resources).
+
+# 2. Our monitoring approach
+Our monitoring is **risk-based and proportionate**. We focus most effort on the areas where customers could suffer the most harm and where things are most likely to go wrong. As a [Insert description, e.g. “small firm with two staff”] we carry out most monitoring in-house, supported by [Insert: an external compliance consultant / no external support – delete as appropriate].
+We use five types of check:
+TABLE: 25,75
+| Type of check | What it involves |
+| File reviews | Reviewing a sample of customer files end-to-end against the rules and our procedures (for example information given, suitability or affordability where relevant, records, and outcome). |
+| Outcome and MI reviews | Analysing management information (MI) – for example complaints, cancellations, arrears, call data or customer feedback – to see whether customers are getting good outcomes, including customers with characteristics of vulnerability. |
+| Thematic reviews | A deeper review of one topic across the business (for example how we support customers in financial difficulty). |
+| Control checks | Testing that a control operates as designed (for example that every financial promotion was approved before publication, or that reconciliations are completed on time). |
+| Regulatory change reviews | Checking that new or changed FCA rules and guidance have been identified, assessed and implemented. |
+**Sampling.** For file reviews we select at least [Insert number, e.g. 5] files, or [Insert percentage, e.g. 10%] of files, per review period, whichever is greater, weighted towards higher-risk cases (for example new staff, vulnerable customers, complaints, large transactions). Where there are fewer files than this, we review them all. Where a review finds problems, we increase the sample.
+
+# 3. How we rate risk and set frequency
+Each monitoring area is given a risk rating, which sets how often we check it. We review the ratings at least annually and whenever monitoring, complaints or regulatory change suggest the risk has changed.
+TABLE: 18,52,30
+| Risk rating | What it means | Minimum frequency |
+| High | Failure could cause significant harm to customers or the market, or the area has a history of problems or regulatory focus. | Monthly |
+| Medium | Failure could cause moderate harm, or the area is changing. | Quarterly |
+| Low | Failure is unlikely to cause significant harm and controls are stable and well-evidenced. | Six-monthly or annually |
+
+# 4. Monitoring schedule
+The schedule is set out in the tables on the following landscape pages. Part A applies to every firm. Part B contains the activity-specific options.
+SECTIONBREAK: portrait
+WIDTH: 13958
+## Part A – Areas that apply to every firm
+NOTE: Delete any row that genuinely does not apply (for example row A13 if you have no appointed representatives, or row A7 if you are a payment or e-money institution outside SM&CR). Do not delete rows just to make the plan shorter – the FCA expects to see all of these areas covered.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| A1 | Consumer Duty – customer outcomes | High | Review outcome MI for each of the four outcomes (products and services; price and value; consumer understanding; consumer support), comparing outcomes for customers with characteristics of vulnerability against other customers. Check actions from the previous review have been completed. Prepare the annual board report. | Quarterly; board report annually | [Insert owner] | PRIN 2A; FG22/5 |
+| A2 | Financial promotions and customer communications | High | Check every promotion published in the period was approved before use and logged. Review a sample of live promotions (website, social media, third-party sites, printed material) against the rules. Test key customer communications for clarity. | Monthly for social media; quarterly otherwise | [Insert owner] | FSMA s21; PRIN 2A.5; activity rules (see Part B) |
+| A3 | Complaints handling | Medium | Review the Complaints Register: acknowledgement and final response timeliness, final response content, fairness of outcomes and redress, root cause analysis and action taken. | Quarterly | [Insert owner] | DISP 1 |
+| A4 | Customers with characteristics of vulnerability | High | Review a sample of files where vulnerability was identified: was it recorded appropriately, were adjustments offered and made, and was the outcome as good as for other customers? Check that staff can identify vulnerability. | Quarterly | [Insert owner] | PRIN 2A; FG21/1 |
+| A5 | Financial crime – due diligence, screening and reporting | Medium | Sample customer files for complete due diligence; check sanctions screening is carried out and alerts cleared; review the internal suspicion report log for timely MLRO decisions. | Quarterly | [Insert owner – normally the MLRO] | SYSC 6.1.1R; SYSC 6.3 and MLRs (where applicable); POCA; sanctions law |
+| A6 | Training and competence | Medium | Check the Training Log: induction completed before customer contact, annual refreshers up to date, competence assessments carried out, any qualification or CPD requirements met. | Six-monthly | [Insert owner] | SYSC 5.1.1R; TC (where applicable) |
+| A7 | Governance and SM&CR | Low | Check Statements of Responsibilities and the FCA Register are accurate; annual fitness and propriety assessments and certification completed; Conduct Rules training delivered; any Conduct Rules breaches recorded and notified. | Annually | [Insert owner] | SYSC 22–27; SUP 10C; COCON; FIT |
+| A8 | Data protection and record keeping | Medium | Sample records for accuracy, security and retention; review data breach log and subject access request timeliness; check data protection complaints are handled within 30 days. | Quarterly | [Insert owner] | UK GDPR; DPA 2018; SYSC 9 |
+| A9 | Conflicts of interest and remuneration | Medium | Review the conflicts register; check commission, fee and incentive arrangements (including staff pay) do not create a risk of poor customer outcomes, and that disclosures are made. | Six-monthly | [Insert owner] | PRIN 2.1 Principle 8; SYSC 10 (where applicable); PRIN 2A |
+| A10 | Outsourcing and third parties | Low | Check due diligence and contracts for key suppliers and outsourced providers are current, performance is monitored, and exit plans exist. | Annually | [Insert owner] | SYSC 8 |
+| A11 | Regulatory reporting and notifications | Medium | Check every RegData return was submitted accurately and on time; FCA fees paid; notifications (for example changes in controllers, close links or key individuals) made; firm details on the FCA Register correct. | Quarterly; Register annually | [Insert owner] | SUP 15; SUP 16 |
+| A12 | Financial resources and wind-down | Medium | Check financial resources meet our Threshold Conditions and any prudential requirement; review cash-flow forecasts against actuals; review the wind-down plan. | Quarterly; wind-down plan annually | [Insert owner] | COND 2.4; activity prudential rules (see Part B) |
+| A13 | Appointed representatives | High | Review each appointed representative’s activities, complaints, promotions and financial position; complete the annual review and self-assessment. [Delete this row if you have no appointed representatives.] | Quarterly; annual review | [Insert owner] | SUP 12 |
+## Part B – Activity-specific monitoring
+NOTE: Keep the table(s) for the permissions you hold or are applying for, and delete the rest. Each table stands alone.
+OPT: B-A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BA1 | Pre-contract explanations | High | Sample files: were the key features of the credit explained adequately, including costs, consequences of missed payments and whether the product was appropriate to the customer’s needs? | Monthly | [Insert owner] | CONC 4.2 |
+| BA2 | Status and commission disclosure | High | Check customers were told we are a broker not a lender, the extent of our lender panel, whether we receive commission and its nature, and (where required) its amount. | Monthly | [Insert owner] | CONC 3.7; CONC 4.4; CONC 4.5 |
+| BA3 | Accuracy of applications | High | Compare information submitted to lenders with customer evidence; look for signs of altered income, employment or address. | Monthly | [Insert owner] | CONC 2; SYSC 6.1.1R |
+| BA4 | Broker fees | Medium | Check any fee was disclosed before the customer was committed, and that fee refunds due under section 155 of the Consumer Credit Act 1974 were paid. | Quarterly | [Insert owner] | CONC 4.4; CCA s155 |
+| BA5 | Lender panel and commission structures | Medium | Review whether commission arrangements could influence which lender customers are introduced to, and whether customers get fair value. | Six-monthly | [Insert owner] | CONC 4.5; PRIN 2A.4 |
+ENDOPT: B-A | Credit broking firms
+OPT: B-B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BB1 | Suitability of debt advice | High | Sample files: full and accurate information gathered; all suitable options considered, including free-to-client alternatives and statutory solutions; advice suitable and clearly explained. | Monthly | [Insert owner] | CONC 8 |
+| BB2 | Fees and value | High | Check fees were disclosed clearly, are fair value, and that customers were told free debt advice is available. | Quarterly | [Insert owner] | CONC 8; PRIN 2A.4 |
+| BB3 | Client money | High | Check daily reconciliations, timely distribution of payments to creditors, and client money audit arrangements. | Monthly | [Insert owner] | CASS 11 |
+| BB4 | Ongoing plan reviews | Medium | Check each debt management plan is reviewed at least annually and when circumstances change, and that Breathing Space and other protections were considered. | Quarterly | [Insert owner] | CONC 8; Debt Respite Scheme |
+| BB5 | Prudential resources | Medium | Check financial resources meet the prudential requirement for debt management firms. | Quarterly | [Insert owner] | CONC 10 |
+ENDOPT: B-B | Debt adjusting and debt counselling firms
+OPT: B-C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BC1 | Forbearance and due consideration | High | Sample calls and files: were customers in financial difficulty offered appropriate forbearance, signposted to free debt advice, and not pressured? | Monthly | [Insert owner] | CONC 7 (as amended by PS24/2) |
+| BC2 | Contact and communications | High | Check frequency and timing of contact, tone of letters and calls, and that no misleading or threatening statements were made. | Monthly | [Insert owner] | CONC 7 |
+| BC3 | Disputed and statute-barred debts | High | Check disputes led to collection being suspended, and statute-barred debts were not pursued improperly. | Quarterly | [Insert owner] | CONC 7 |
+| BC4 | Breathing Space and vulnerability | High | Check Breathing Space notifications were actioned on time and vulnerable customers treated appropriately. | Quarterly | [Insert owner] | Debt Respite Scheme; FG21/1 |
+| BC5 | Charges and data accuracy | Medium | Check any charges were fair and permitted, and that information reported to credit reference agencies is accurate. | Quarterly | [Insert owner] | CONC 7; UK GDPR |
+ENDOPT: B-C | Debt collecting and debt administration firms
+OPT: B-D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BD1 | Data accuracy | High | Sample records and disputes: were errors corrected promptly and data providers contacted? | Monthly | [Insert owner] | UK GDPR Art. 5; CCA s159 |
+| BD2 | Consumer rights requests | High | Check requests for credit files, corrections and notices of correction were handled within statutory timescales. | Monthly | [Insert owner] | CCA ss158–159; UK GDPR |
+| BD3 | Identity verification before disclosure | High | Test that information was only disclosed after robust identity checks. | Quarterly | [Insert owner] | UK GDPR; SYSC 6.1.1R |
+| BD4 | Service claims and value | Medium | Check promotions do not overstate what can be achieved (for example “improve your score”), and that subscriptions are fair value and easy to cancel. | Quarterly | [Insert owner] | CONC 3; PRIN 2A.4 |
+ENDOPT: B-D | Firms providing credit information services or credit references
+OPT: B-E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BE1 | Investor promotions and onboarding | High | Check risk warnings, investor categorisation, the 24-hour cooling-off period for new investors, and appropriateness assessments. | Monthly | [Insert owner] | COBS 4.12A; COBS 10 |
+| BE2 | Credit risk assessment and pricing | High | Review a sample of loans for the quality of credit risk assessment and whether pricing reflects risk; compare outcomes to expectations. | Monthly | [Insert owner] | COBS 18.12; SYSC 4 |
+| BE3 | Client money | High | Check reconciliations and segregation of investor and borrower money. | Monthly | [Insert owner] | CASS 7 |
+| BE4 | Borrower treatment | Medium | Sample borrower files for creditworthiness assessment and arrears handling. | Quarterly | [Insert owner] | CONC 5; CONC 7 |
+| BE5 | Capital and wind-down | Medium | Check capital resources and that the wind-down plan remains workable. | Quarterly; wind-down plan annually | [Insert owner] | IPRU-INV 12; SYSC 4 |
+ENDOPT: B-E | Peer-to-peer lending platforms
+OPT: B-F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BF1 | Creditworthiness and affordability | High | Sample approved and declined applications: was the assessment reasonable and proportionate, based on sufficient information, and did it consider affordability without significant adverse impact? | Monthly | [Insert owner] | CONC 5.2A |
+| BF2 | Pre-contract information and agreements | High | Check pre-contract information, adequate explanations and agreement documents meet the Consumer Credit Act and CONC requirements. | Quarterly | [Insert owner] | CCA; CONC 4 |
+| BF3 | Arrears and financial difficulty | High | Sample arrears files for forbearance, signposting to debt advice, fair charges and required statutory notices. | Monthly | [Insert owner] | CONC 7 (as amended by PS24/2); CCA ss86B–86E |
+| BF4 | Post-contract obligations | Medium | Check statements, notices and information requests were issued correctly and on time. | Quarterly | [Insert owner] | CONC 6; CCA ss77–78 |
+| BF5 | Price and value | Medium | Review fair value assessment against outcome data (for example default and charge levels); check any applicable price cap is met. | Six-monthly | [Insert owner] | PRIN 2A.4; CONC 5A (if applicable) |
+ENDOPT: B-F | Consumer credit lenders
+OPT: B-G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BG1 | Portfolio on-boarding | High | Check data migrated on acquisition is complete and accurate (balances, arrears history, notices), and customers were notified of the assignment. | Each acquisition | [Insert owner] | CONC 7; CCA |
+| BG2 | Arrears and forbearance | High | Sample arrears files for forbearance, signposting to debt advice and fair treatment. | Monthly | [Insert owner] | CONC 7 (as amended by PS24/2) |
+| BG3 | Statutory notices and enforceability | High | Check required notices were sent and that we do not enforce agreements that are unenforceable. | Quarterly | [Insert owner] | CCA; CONC 6 |
+| BG4 | Servicer oversight | Medium | Review performance and compliance MI from any third-party servicer. | Quarterly | [Insert owner] | SYSC 8 |
+ENDOPT: B-G | Firms exercising a lender’s rights and duties
+OPT: B-H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BH1 | Pre-contract information | High | Sample files: were key features, total cost and the customer’s rights and obligations (including end-of-hire charges) explained adequately? | Monthly | [Insert owner] | CONC 4; CCA |
+| BH2 | End-of-hire and damage charges | High | Review charges applied: were they fair, evidenced and in line with the agreement? | Quarterly | [Insert owner] | PRIN 2A.4; CONC 7 |
+| BH3 | Arrears and repossession | High | Sample arrears files for forbearance and fair treatment before any repossession. | Monthly | [Insert owner] | CONC 7 |
+| BH4 | Goods and service quality | Medium | Review complaints and maintenance records for goods not fit for purpose. | Quarterly | [Insert owner] | PRIN 2A.3; Consumer Rights Act 2015 |
+ENDOPT: B-H | Consumer hire firms
+OPT: B-I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BI1 | Demands and needs and advice | High | Sample files: was a demands and needs statement completed, and was any personal recommendation suitable? | Monthly | [Insert owner] | ICOBS 5 |
+| BI2 | Product information | High | Check the policy information (including the Insurance Product Information Document for general insurance) and remuneration disclosures were provided in good time. | Monthly | [Insert owner] | ICOBS 4; ICOBS 6 |
+| BI3 | Product governance and fair value | High | Check we hold manufacturer product information, sell within the target market, and our remuneration does not undermine fair value. | Six-monthly | [Insert owner] | PROD 4 |
+| BI4 | Renewal pricing | Medium | For home and motor insurance, check renewal prices are no higher than equivalent new-business prices, and auto-renewal options are clear. [Delete if not applicable.] | Quarterly | [Insert owner] | ICOBS 6B |
+| BI5 | Client money and prudential requirements | Medium | Check client money reconciliations (if we hold client money), capital resources and professional indemnity insurance. | Monthly / annually | [Insert owner] | CASS 5; MIPRU 3 and 4 |
+ENDOPT: B-I | Insurance distribution firms
+OPT: B-J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BJ1 | Suitability of advice | High | Sample files: needs and circumstances gathered, product suitable, reasons recorded, and debt consolidation or longer terms justified where relevant. | Monthly | [Insert owner] | MCOB 4.7A |
+| BJ2 | Disclosure and illustrations | High | Check initial disclosure, fee disclosure and mortgage illustrations were given in good time. | Monthly | [Insert owner] | MCOB 4; MCOB 5A |
+| BJ3 | Accuracy of applications | High | Compare application data with customer evidence for signs of mortgage fraud. | Monthly | [Insert owner] | SYSC 6.1.1R |
+| BJ4 | Fees and value | Medium | Review fees, procuration fees and product panel for fair value and conflicts. | Six-monthly | [Insert owner] | PRIN 2A.4 |
+| BJ5 | Prudential requirements | Low | Check capital resources and professional indemnity insurance. | Annually | [Insert owner] | MIPRU 3 and 4 |
+ENDOPT: B-J | Mortgage intermediaries
+OPT: B-K | Payment services firms | your firm provides payment services or issues electronic money.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BK1 | Safeguarding | High | Check segregation by the end of the next business day, internal and external reconciliations, the resolution pack, the monthly safeguarding return and the annual safeguarding audit. [Delete if you provide only payment initiation and/or account information services.] | Daily reconciliations checked monthly | [Insert owner] | CASS 15; CASS 10A; SUP 16.14A; SUP 3A |
+| BK2 | Operational and security risk | High | Review incidents, the annual operational and security risk assessment, and strong customer authentication performance. | Quarterly | [Insert owner] | PSRs 2017 regs 98–100; SCA-RTS |
+| BK3 | Information and contract requirements | Medium | Check framework contracts, pre-contract information and charges disclosures. | Quarterly | [Insert owner] | PSRs 2017 Part 6 |
+| BK4 | Fraud and refunds | High | Review unauthorised transaction refunds, fraud reporting and any APP reimbursement decisions. | Monthly | [Insert owner] | PSRs 2017 Part 7 |
+| BK5 | Agents and outsourcing | Medium | Check agents are registered and supervised, and outsourcing notified. | Six-monthly | [Insert owner] | PSRs 2017 regs 25 and 34 |
+ENDOPT: B-K | Payment services firms
+OPT: B-L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+TABLE: 4,15,6,45,10,10,10
+| Ref | Area | Risk | What we check | Frequency | Owner | Key rules |
+| BL1 | Suitability | High | Sample advice files: know-your-customer information, risk profile and capacity for loss, recommendation suitable and explained in a suitability report. | Monthly | [Insert owner] | COBS 9 or COBS 9A |
+| BL2 | Costs, charges and ongoing services | High | Check costs and charges disclosure, and that ongoing advice services paid for were actually delivered. | Quarterly | [Insert owner] | COBS 6; PRIN 2A.4 |
+| BL3 | High-risk investments | High | Check any high-risk investment promotions and sales met the restrictions and appropriateness requirements. [Delete if not applicable.] | Quarterly | [Insert owner] | COBS 4.12A–4.12B; COBS 10 |
+| BL4 | Product governance | Medium | Check products recommended are within their target market. | Six-monthly | [Insert owner] | PROD 3 or PRIN 2A.3 |
+| BL5 | Prudential and client assets | Medium | Check capital resources, professional indemnity insurance, and client assets arrangements if applicable. | Quarterly | [Insert owner] | IPRU-INV 13 or MIFIDPRU; CASS |
+ENDOPT: B-L | Investment advice and arranging firms
+SECTIONBREAK: landscape
+WIDTH: 9026
+
+# 5. How we carry out monitoring
+**Step 1 – Plan.** At the start of each [Insert period, e.g. quarter], [Insert owner] confirms which checks are due under the schedule and any additional reviews prompted by complaints, incidents or regulatory change.
+**Step 2 – Select the sample.** Files are selected as described in section 2, with the selection method recorded.
+**Step 3 – Review using a checklist.** Each check uses a standard checklist linked to the relevant rules, so that reviews are consistent and can be repeated. [Insert where checklists are kept.]
+**Step 4 – Record findings and evidence.** Findings are recorded against each checklist question, with evidence kept in the Monitoring Evidence Folder [Insert location]. Each finding is rated: **Red** (breach of a rule or risk of customer harm), **Amber** (weakness that could lead to a breach) or **Green** (satisfactory).
+**Step 5 – Act on findings.** Every Red or Amber finding is entered in the Corrective Action Log with an owner and deadline (section 8).
+**Step 6 – Escalate serious matters.** Serious issues are escalated immediately (section 7), not held for the next report.
+**Step 7 – Retain records.** Monitoring records are kept for at least [Insert period, e.g. six years].
+**Independence.** Where possible, reviews are carried out by someone who did not do the work being reviewed. Where our size makes that impossible, [Insert how you get independent challenge – e.g. an annual review by an external compliance consultant].
+
+# 6. Reporting and oversight
+[Insert owner] prepares a **Compliance Monitoring Report** every [Insert frequency, e.g. quarter] for [Insert: the board / the directors / the business owner]. It includes:
+- the checks completed and any that were missed, with reasons;
+- findings and their ratings, and any trends;
+- complaints volumes, themes and root causes;
+- Consumer Duty outcome MI, including outcomes for customers with characteristics of vulnerability;
+- open corrective actions and progress;
+- breaches and any notifications made to the FCA; and
+- relevant regulatory developments and our response.
+The report is discussed at [Insert meeting, e.g. the quarterly directors’ meeting]. Decisions and actions are minuted. The findings also feed into our annual Consumer Duty board report.
+
+# 7. Breaches, escalation and notifications
+Any member of staff who identifies a possible breach of FCA rules or our policies must report it immediately to [Insert name or role]. We record every breach in our **Breach Register**, including what happened, the cause, whether customers were harmed, the remedial action and whether the FCA was notified.
+We consider whether each breach must be notified to the FCA. Under Principle 11 and SUP 15.3 we must tell the FCA promptly about anything it would reasonably expect notice of, including significant rule breaches, matters that could affect our ability to meet the Threshold Conditions, and significant events such as fraud or serious operational failures. SM&CR firms must also notify Conduct Rules breaches as SUP 15.11 requires. Where we are unsure, we will notify.
+WATCH: The FCA’s new operational incident and third-party reporting rules (PS26/2, March 2026) will apply to almost all FCA-regulated firms from 18 March 2027, introducing standard incident report requirements. Update this section, and your incident procedure, before that date.
+Serious issues – such as systemic mis-selling, harm to vulnerable customers, a suspected fraud, or a failure of client money controls – are escalated to [Insert name of senior manager] the same day and may be referred to our external compliance adviser.
+
+# 8. Corrective action and continuous improvement
+Identifying a problem is the start of the process, not the end. For every Red or Amber finding, breach or significant complaint theme:
+- **Record** the issue in the Corrective Action Log: what was found, who found it, the rule or principle affected and the proposed fix.
+- **Assign** an owner and a deadline proportionate to the risk ([Insert standard, e.g. Red within 30 days, Amber within 90 days]).
+- **Fix the root cause**, not just the symptom – for example retraining, changing a process or script, updating a policy, or changing a system.
+- **Put customers right** where they have been harmed or disadvantaged, including customers who have not complained.
+- **Verify and close** the action only when [Insert name or role] is satisfied that the root cause has been addressed and the fix has worked (usually by re-testing).
+- **Look for trends** across the Log each quarter, and report them in the Compliance Monitoring Report.
+
+# 9. Review of this plan
+This plan is reviewed at least annually, and also when we add a new product, activity, channel or significant partner; when staff roles change; after a significant complaint, breach or FCA communication; and when relevant FCA rules change. The review considers whether risk ratings and frequencies remain right, whether any area is missing, and whether monitoring is finding issues before customers are harmed. Changes are approved by [Insert: the board / the directors / the business owner].
+
+# 10. Summary
+This plan is how we make sure our policies work in practice and our customers get good outcomes. Our aim is not simply to tick boxes, but to find problems early, fix them properly and keep improving.

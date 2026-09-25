@@ -1,0 +1,139 @@
+HOWTO: policy
+
+# 1. Introduction and purpose
+This Training and Competence Policy sets out how [Insert firm legal name] (“we”, “the firm”) makes sure that everyone who works for us – directors, employees, temporary staff and contractors [and appointed representatives – delete if you have none] – has, and keeps, the knowledge, skills and behaviours needed to do their job competently, ethically and in line with our regulatory obligations.
+Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for].
+This policy is designed to meet:
+- the **competent employees rule** (SYSC 5.1.1R), which applies to every firm and requires us to employ personnel with the skills, knowledge and expertise necessary for the responsibilities allocated to them;
+- the **Training and Competence sourcebook (TC)**, where it applies to our activities (see section 7);
+- the **Senior Managers and Certification Regime** and the **Conduct Rules** (COCON), where they apply to us;
+- the **Consumer Duty**, which requires us to make sure staff understand how their role affects customer outcomes; and
+- the training requirements in our other policies, including anti-money laundering (regulation 24 of the Money Laundering Regulations 2017, where they apply), data protection, customer vulnerability, complaints and financial promotions.
+**Policy objectives.** This policy aims to: set minimum training standards for each role; make sure no one carries out a regulated or customer-facing activity until they are competent to do so (or are properly supervised); measure, record and maintain competence; and build a culture of continuous learning and good customer outcomes.
+
+# 2. Scope
+This policy applies to everyone acting on our behalf, whatever their contract or seniority, including anyone who:
+- deals with customers or potential customers;
+- carries out, supervises or oversees a regulated activity;
+- designs, approves or communicates financial promotions;
+- carries out customer due diligence or handles payments;
+- handles personal data or complaints; or
+- performs a senior management or certification function.
+The training each person needs depends on their role. Our training matrix is below.
+NOTE: Replace these roles with the actual roles in your firm. In a sole trader firm, one person may hold every role – list the training you will complete yourself.
+TABLE: 28,72
+| Role | Core training |
+| [Insert role, e.g. customer-facing / sales staff] | Our products and permissions; the rules for our activities (section 7); Consumer Duty; customer vulnerability; complaints recognition; financial promotions (including verbal); anti-money laundering and fraud awareness; data protection. |
+| [Insert role, e.g. administration / operations] | Customer due diligence procedures; data protection and records; complaints recognition; anti-money laundering and fraud awareness. |
+| [Insert role, e.g. marketing] | Financial promotions rules and our approval process; social media and influencer rules; Consumer Duty consumer understanding; data protection and marketing consent. |
+| [Insert role, e.g. managers / supervisors] | All of the above for the teams they supervise; supervision and competence assessment; escalation; monitoring. |
+| Senior management / SMF holders | Senior managers’ duties and the Conduct Rules; the Duty of Responsibility; Consumer Duty governance and board reporting; risk management; financial resources; overseeing compliance. |
+
+# 3. Roles and responsibilities
+**3.1 Senior management** – [Insert name(s)]. Senior management is accountable for making sure the firm’s staff are competent. It approves this policy and the annual training plan, makes sure there are enough resources for training, and receives reports on training completion and competence at least [Insert frequency]. [For SM&CR firms, record which senior manager is responsible for training and competence in their Statement of Responsibilities.]
+**3.2 Training and competence lead** – [Insert name or role]. Maintains the training matrix and Training Log; identifies training needs from regulatory change, monitoring, complaints and incidents; approves training content (internal and external); and reports on completion and competence.
+**3.3 Line managers and supervisors** – [Insert roles, or delete if not applicable]. Make sure their team members complete required training before starting relevant work; supervise staff who are not yet assessed as competent; carry out competence assessments; and arrange extra support where gaps are found. Supervisors must themselves be competent to supervise.
+**3.4 All staff.** Complete required training on time; apply what they learn; ask for help when unsure; and tell their manager if they believe they need more training.
+**3.5 External training providers.** Where we use external training (for example e-learning), we check that the content is accurate, up to date and relevant to our activities, and keep evidence of completion. We remain responsible for our staff’s competence.
+
+# 4. Training programme
+**4.1 Induction.** Everyone completes induction training before they carry out any customer-facing or regulated activity. Induction covers: our business, permissions and customers; the FCA’s Principles, the Consumer Duty and (where applicable) the Conduct Rules; our key policies (anti-money laundering and financial crime, customer due diligence, data protection, customer vulnerability, complaints and financial promotions); role-specific procedures; and information security.
+**4.2 Role-specific training.** Staff complete the training in section 2 and section 7 for their role before they work unsupervised.
+**4.3 Annual refresher training.** Everyone completes refresher training at least annually on anti-money laundering and financial crime, data protection, the Consumer Duty and customer vulnerability, and on the rules for their role.
+**4.4 Regulatory change and targeted training.** We provide additional training when rules or our procedures change, and when monitoring, complaints, incidents or performance reviews show a gap.
+**4.5 Development.** We support staff to develop further, for example through professional qualifications or supervisory training.
+**4.6 Delivery methods.** Training is delivered through [Insert methods, e.g. e-learning, face-to-face sessions, shadowing, coaching, policy walkthroughs and case studies]. Each module ends with a knowledge check or declaration of understanding.
+
+# 5. Assessing and maintaining competence
+**5.1 Before working unsupervised.** Before anyone carries out a regulated or customer-facing activity without supervision, they must: complete induction and role-specific training; pass any required knowledge assessments; attain any qualification the rules require for their activity (section 7); and be assessed as competent by [Insert name or role] through observation or file review.
+**5.2 Supervision.** Until assessed as competent, staff work under supervision. The level of supervision depends on their experience and the risk of the activity [Insert, e.g. 100% file checking for the first X cases].
+**5.3 Ongoing competence.** We check competence at least [Insert frequency, e.g. quarterly] using file reviews, call or conversation monitoring, customer outcome data (for example complaints and errors) and one-to-one reviews.
+**5.4 When competence falls short.** Where competence gaps are identified, we may increase supervision, provide additional training or coaching, restrict the activities the person can carry out, or – where appropriate – use our disciplinary procedures. We consider whether any customers were affected and need to be contacted.
+
+# 6. Senior Managers and Certification Regime
+NOTE: Delete this section if your firm is a payment institution, e-money institution or registered account information service provider, which are not within SM&CR.
+- **Conduct Rules.** Everyone within the Conduct Rules (other than ancillary staff) receives training on the Conduct Rules and how they apply to their role, at induction and when their role changes. Senior managers also receive training on the Senior Manager Conduct Rules.
+- **Fitness and propriety.** We assess the fitness and propriety of senior managers and certified staff before appointment and at least annually after that, including competence, honesty and financial soundness, and regulatory references and criminal record checks where required.
+- **Certification.** [Core and enhanced firms: we certify staff who perform certification functions at least annually and record this on the FCA Directory. Limited scope firms: describe any certification functions you have, or state that you have none.] Since PS26/6 (April 2026), the FCA has removed duplication where one person holds more than one certification function and given additional guidance on the annual certification process.
+WATCH: HM Treasury has announced its intention to remove the Certification Regime from legislation through the Financial Services and Markets Bill, after which the FCA expects to consult on a replacement framework in its own rules (“phase 2” of the SM&CR reforms). Until those changes are made, the current certification requirements continue to apply. Check the current position before relying on this section.
+- **Conduct Rules breaches.** Breaches that lead to disciplinary action are notified to the FCA as SUP 15.11 requires.
+
+# 7. Activity-specific competence requirements
+NOTE: Keep every option below that matches a permission you hold or are applying for, and delete the rest. Some activities have specific qualification and continuing professional development (CPD) requirements under TC; others rely on the competent employees rule and your own standards.
+OPT: 7A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+**7A.1 Regulatory requirement.** TC does not set a specific qualification for credit broking. The competent employees rule (SYSC 5.1.1R) and the Consumer Duty require staff to be competent for their role.
+**7A.2 What staff must know.** Anyone who introduces customers to credit must understand: the credit products we broker and their key features and costs; how to give adequate explanations (CONC 4.2); our status and commission disclosures (CONC 4.4 and 4.5); the financial promotion rules for credit, including verbal promotions (CONC 3); recognising customers who may be vulnerable or in financial difficulty; and fraud warning signs.
+**7A.3 Our standard.** Staff are assessed as competent through [Insert, e.g. observed sales and review of their first X files] before introducing customers unsupervised. [Insert any qualification you require, or state that none is required.]
+ENDOPT: 7A | Credit broking firms
+OPT: 7B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling.
+**7B.1 Regulatory requirement.** TC does not prescribe a qualification for debt advice, but the FCA expects debt advisers to be highly competent because of the significant risk of harm to customers in financial difficulty. CONC 8 sets out the standards our advice must meet.
+**7B.2 What staff must know.** Debt advisers must understand: all debt solutions (including statutory and free-to-client options) and their consequences; how to gather and assess a full financial statement (for example using the Standard Financial Statement); priority and non-priority debts; the Breathing Space regulations; how to support customers with mental health problems and other vulnerability; and client money procedures.
+**7B.3 Our standard.** Advisers must hold, or be working towards, [Insert qualification, e.g. a recognised money advice qualification] and are supervised until assessed as competent. Each adviser completes at least [Insert number] hours of CPD per year.
+ENDOPT: 7B | Debt adjusting and debt counselling firms
+OPT: 7C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+**7C.1 Regulatory requirement.** TC does not set a specific qualification. The competent employees rule and CONC 7 require collectors to be competent to treat customers fairly, including customers in financial difficulty.
+**7C.2 What staff must know.** Collectors must understand: CONC 7, including forbearance and due consideration and the changes made by PS24/2; affordability assessment (for example using the Standard Financial Statement); recognising and responding to vulnerability; Breathing Space; disputed and statute-barred debts; what they can and cannot say about legal action; data protection and identity checks before discussing a debt.
+**7C.3 Our standard.** Collectors complete [Insert training programme] and are assessed through call monitoring of at least [Insert number] calls before working unsupervised, and [Insert number] calls per month after that.
+ENDOPT: 7C | Debt collecting and debt administration firms
+OPT: 7D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+**7D.1 Regulatory requirement.** TC does not set a specific qualification. The competent employees rule and the Consumer Duty apply.
+**7D.2 What staff must know.** Staff must understand: the statutory rights to access and correct credit information (sections 158–159 of the Consumer Credit Act 1974) and UK GDPR rights; how to handle disputes and verify information with data providers; robust identity verification and fraud warning signs; and how to explain credit information clearly without overstating what our services can do.
+**7D.3 Our standard.** [Insert your competence assessment approach.]
+ENDOPT: 7D | Firms providing credit information services or credit references
+OPT: 7E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+**7E.1 Regulatory requirement.** TC does not set a specific qualification for operating a peer-to-peer platform, unless staff give personal recommendations to retail investors (in which case the retail investment adviser requirements apply). The competent employees rule applies.
+**7E.2 What staff must know.** Staff must understand, according to their role: credit risk assessment and pricing (COBS 18.12); the restricted mass market investment rules and appropriateness assessments (COBS 4.12A and COBS 10); client money (CASS 7); borrower treatment under CONC; and our wind-down arrangements.
+**7E.3 Our standard.** Credit risk staff must have [Insert experience or qualification]. [Insert your competence assessment approach.]
+ENDOPT: 7E | Peer-to-peer lending platforms
+OPT: 7F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender.
+**7F.1 Regulatory requirement.** TC does not set a specific qualification for consumer credit lending. The competent employees rule and the Consumer Duty apply.
+**7F.2 What staff must know.** Staff must understand, according to their role: creditworthiness and affordability assessment (CONC 5); pre-contract and agreement requirements (CONC 4 and the Consumer Credit Act 1974); post-contract obligations (CONC 6); arrears, forbearance and the PS24/2 changes (CONC 7); recognising vulnerability; and fraud prevention.
+**7F.3 Our standard.** Underwriters have defined lending mandates and are assessed through review of [Insert number] decisions before working unsupervised. Collections staff meet the standard in our collections procedures.
+ENDOPT: 7F | Consumer credit lenders
+OPT: 7G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements.
+**7G.1 Regulatory requirement.** TC does not set a specific qualification. The competent employees rule and the Consumer Duty apply.
+**7G.2 What staff must know.** Staff must understand: CONC 7 and forbearance (including PS24/2); Consumer Credit Act requirements for notices and enforceability; handling of acquired data and portfolios; vulnerability; and oversight of third-party servicers.
+**7G.3 Our standard.** [Insert your competence assessment approach.]
+ENDOPT: 7G | Firms exercising a lender’s rights and duties
+OPT: 7H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements.
+**7H.1 Regulatory requirement.** TC does not set a specific qualification. The competent employees rule and the Consumer Duty apply.
+**7H.2 What staff must know.** Staff must understand: explaining hire agreements, including total cost and end-of-hire charges; CONC 7 for arrears and repossession; assessing damage and charges fairly; and recognising vulnerability.
+**7H.3 Our standard.** [Insert your competence assessment approach.]
+ENDOPT: 7H | Consumer hire firms
+OPT: 7I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+**7I.1 Regulatory requirement.** TC sets requirements for insurance distribution. Employees directly involved in insurance distribution must have appropriate knowledge and ability for the products they distribute and must complete at least **15 hours** of professional training and development each year. The persons responsible for insurance distribution within the firm must meet the same standard.
+**7I.2 What staff must know.** Staff must understand, according to their role: the products we distribute and their terms and exclusions; ICOBS (including demands and needs, product information and, for home and motor, the pricing practices rules); PROD 4 product governance and fair value; claims handling support; and the Consumer Duty.
+**7I.3 Our standard.** We record each person’s CPD hours and review them [Insert frequency]. [Insert any qualification you require, e.g. a recognised insurance qualification.] [If you give advice on long-term care insurance, add the TC qualification requirement for that activity.]
+ENDOPT: 7I | Insurance distribution firms
+OPT: 7J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+**7J.1 Regulatory requirement.** Advising on regulated mortgage contracts is a TC activity. Advisers must not advise without appropriate supervision until they have been assessed as competent, and must attain an **appropriate qualification** (listed in the FCA’s Appropriate Qualification tables in TC) within the time limit TC allows. Advising on equity release (lifetime mortgages and home reversion plans) requires an additional appropriate qualification. Advisers must maintain competence through CPD.
+**7J.2 What staff must know.** Advisers must understand: MCOB 4 (advice and suitability, including debt consolidation and longer terms), MCOB 5A (disclosure), affordability and lender criteria, later-life lending and vulnerability, protection needs, and mortgage fraud.
+**7J.3 Our standard.** All advisers hold [Insert qualification, e.g. CeMAP or equivalent] before advising unsupervised. [Insert equity release qualification, or delete.] Each adviser completes at least [Insert number] hours of CPD per year, and supervisors are competent to supervise.
+ENDOPT: 7J | Mortgage intermediaries
+OPT: 7K | Payment services firms | your firm provides payment services or issues electronic money.
+**7K.1 Regulatory requirement.** TC and SM&CR do not apply to payment institutions and e-money institutions for their payment services. The individuals responsible for managing our payment services must be of good repute and have appropriate knowledge and experience, and our staff must be competent to operate our governance, safeguarding and risk controls.
+**7K.2 What staff must know.** Staff must understand, according to their role: our obligations under the Payment Services Regulations 2017 (and the Electronic Money Regulations 2011, where applicable); safeguarding (CASS 15); strong customer authentication; fraud and authorised push payment scam prevention; anti-money laundering and sanctions; and incident reporting.
+**7K.3 Our standard.** [Insert your competence assessment approach, including for safeguarding and reconciliation staff.]
+ENDOPT: 7K | Payment services firms
+OPT: 7L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+**7L.1 Regulatory requirement.** Advising retail clients on retail investment products is a TC activity. Advisers must attain an **appropriate qualification** (at least level 4) before advising without supervision, hold a current **Statement of Professional Standing** from an accredited body, and complete at least **35 hours of CPD** each year, of which at least **21 hours** must be structured. Pension transfer advice requires a specialist appropriate qualification.
+**7L.2 What staff must know.** Advisers must understand: COBS 9 or 9A (suitability), COBS 6 (costs and charges), high-risk investment rules, product governance, the Consumer Duty, vulnerability, and scams.
+**7L.3 Our standard.** We check each adviser’s qualifications, Statement of Professional Standing and CPD at least annually. Supervisors are competent to supervise. [Insert any additional requirements, e.g. for pension transfers.]
+ENDOPT: 7L | Investment advice and arranging firms
+
+# 8. Records and evidence
+**8.1 Training Log.** [Insert name or role] maintains a Training Log recording, for each person: training completed (type, content, date, delivery method and provider); assessment results and declarations of understanding; competence assessments and the date they were assessed as competent; qualifications, CPD and (where applicable) Statements of Professional Standing; and supervision arrangements.
+**8.2 Evidence.** We keep evidence such as certificates, attendance records, assessment results and supervisor sign-offs.
+**8.3 Retention.** We keep training and competence records for [Insert period, e.g. six years after the person leaves], and for at least the minimum period TC requires where it applies (including indefinitely for pension transfer specialists). Records are held securely in line with our Data Processing Policy.
+
+# 9. Oversight and continuous improvement
+- [Insert name or role] reviews the Training Log at least [Insert frequency] to identify overdue training and competence gaps, and reports to [Insert: the board / the directors / the business owner].
+- We assess whether training is working using knowledge checks, file reviews, complaints and customer outcome data, and staff feedback, and update training when it is not effective.
+- We carry out an annual training needs analysis linked to our business plan, risk register, compliance monitoring results and regulatory change, and use it to set the annual training plan.
+- Training and competence is included in our Compliance Monitoring Plan.
+
+# 10. Failure to complete training or maintain competence
+Missing mandatory training, failing assessments, or falling below required competence standards is taken seriously. Depending on the circumstances, we may set new deadlines, provide extra support, increase supervision, restrict the person from certain activities until the issue is resolved, or take disciplinary action in line with our HR procedures. For SM&CR firms, persistent failure may affect a person’s fitness and propriety assessment.
+
+# 11. Review of this policy
+This policy is reviewed at least annually, and sooner if our activities, the rules or our monitoring results change. Changes are approved by [Insert: the board / the directors / the business owner] and communicated to all staff.

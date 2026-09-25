@@ -1,0 +1,81 @@
+HOWTO: programme
+NOTE: **How this programme fits with your other documents.** This document is the policy: it explains why and how your firm monitors compliance, and who is responsible. The practical schedule of checks sits in your separate Compliance Monitoring Plan. Keep the two consistent – if you change a responsibility or frequency in one, change it in the other.
+
+# 1. Introduction
+This Compliance Monitoring Programme (CMP) sets out how [Insert firm legal name] (“we”, “the firm”) makes sure, on an ongoing basis, that it complies with the requirements of the Financial Conduct Authority (FCA), the law, and its own policies, and that its customers receive good outcomes.
+We are [Insert: applying for authorisation / authorised] by the FCA as a principal firm with the following permissions: [Specify the regulated activities / permissions your firm holds or is applying for]. [If you have appointed representatives, add: “We are also responsible for the regulated activities of our appointed representatives, which are covered by this programme.” Otherwise delete this sentence.]
+The CMP is how we meet the requirement in SYSC 6.1.1R to establish, implement and maintain adequate policies and procedures sufficient to ensure compliance with our regulatory obligations, and to detect and minimise the risk of failing to meet them. It also supports our obligation under the Consumer Duty (PRIN 2A) to monitor, regularly review and act on the outcomes our customers receive, and our continuing ability to meet the Threshold Conditions.
+
+# 2. Objectives
+The objectives of our CMP are to:
+- identify the rules and obligations that apply to our business (our “compliance universe”) and keep that list up to date;
+- test, on a risk-based schedule, whether our controls work in practice and whether customers are getting good outcomes;
+- identify breaches, weaknesses and poor outcomes early, and make sure they are fixed at the root and that affected customers are put right;
+- give senior management accurate, timely information so they can oversee compliance and make decisions; and
+- promote a culture in which everyone in the firm understands their compliance responsibilities and feels able to raise concerns.
+
+# 3. Our compliance universe
+Our compliance universe is the full set of requirements that apply to us. It is recorded in our Compliance Universe Register [Insert location] and reviewed at least annually and whenever the rules or our business change.
+**3.1 Requirements that apply to every firm.** These include:
+- the Threshold Conditions (COND), the Principles for Businesses (PRIN) and the Consumer Duty (PRIN 2A);
+- Senior Management Arrangements, Systems and Controls (SYSC), including record keeping, outsourcing and conflicts of interest where they apply;
+- the Senior Managers and Certification Regime and the Conduct Rules (COCON), for firms within the regime;
+- the Fit and Proper test (FIT) and Training and Competence (TC, where it applies);
+- Dispute Resolution: Complaints (DISP);
+- the financial promotion restriction in section 21 of the Financial Services and Markets Act 2000 and the rules for our activities;
+- Supervision (SUP), including notifications and regulatory reporting;
+- financial crime law and rules, including the Money Laundering Regulations where they apply, and UK sanctions; and
+- data protection law (UK GDPR, the Data Protection Act 2018 and the Privacy and Electronic Communications Regulations).
+**3.2 Activity-specific requirements.** Keep the option(s) below that match your permissions and delete the rest.
+OPT: 3A | Consumer credit firms | your firm holds, or is applying for, any consumer credit permission (credit broking; debt adjusting; debt counselling; debt collecting; debt administration; providing credit information services; providing credit references; entering into regulated credit agreements as lender; exercising the lender’s rights; or consumer hire).
+Our compliance universe includes the **Consumer Credit sourcebook (CONC)** and the **Consumer Credit Act 1974** and its regulations, as they apply to our specific consumer credit activities. The key areas are:
+- financial promotions and communications (CONC 3);
+- pre-contractual requirements and adequate explanations (CONC 4), including commission disclosure for credit brokers (CONC 4.5);
+- responsible lending and creditworthiness assessment for lenders (CONC 5 and 5.2A), and any applicable price caps (CONC 5A);
+- post-contractual requirements (CONC 6);
+- arrears, default and recovery, including forbearance and treatment of customers in financial difficulty (CONC 7, as strengthened by PS24/2);
+- debt advice and debt management (CONC 8) and the prudential rules for debt management firms (CONC 10), where applicable;
+- client money for debt management firms (CASS 11), where applicable; and
+- the Debt Respite Scheme (“Breathing Space”) regulations, for firms dealing with customers’ debts.
+[Delete any bullet that does not apply to your specific consumer credit activities.]
+ENDOPT: 3A | Consumer credit firms
+OPT: 3B | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+Our compliance universe includes the specific rules for operators of electronic systems in relation to lending: COBS 18.12 (including credit risk assessment, pricing and outcomes disclosure), the restrictions on promoting restricted mass market investments (COBS 4.12A), appropriateness assessments (COBS 10), client money rules (CASS 7), capital requirements (IPRU-INV 12), wind-down arrangements for loans on the platform, and – for borrowers who are consumers – the relevant parts of CONC.
+ENDOPT: 3B | Peer-to-peer lending platforms
+OPT: 3C | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+Our compliance universe includes the Insurance: Conduct of Business sourcebook (**ICOBS**), including demands and needs, product information and, for home and motor insurance, the pricing practices rules (ICOBS 6B); product governance and fair value for insurance products (**PROD 4**); client money (**CASS 5**) where we hold it; the prudential and professional indemnity insurance requirements for intermediaries (**MIPRU**); and the continuing professional development requirements for insurance distribution staff (**TC**).
+ENDOPT: 3C | Insurance distribution firms
+OPT: 3D | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+Our compliance universe includes the Mortgages and Home Finance: Conduct of Business sourcebook (**MCOB**) – in particular MCOB 3A (financial promotions), MCOB 4 (advising and selling standards), and MCOB 5A (disclosure) – the prudential and professional indemnity insurance requirements for intermediaries (**MIPRU**), and the qualification requirements for mortgage advisers (**TC**).
+ENDOPT: 3D | Mortgage intermediaries
+OPT: 3E | Payment services firms | your firm provides payment services or issues electronic money.
+Our compliance universe includes the **Payment Services Regulations 2017** (and the Electronic Money Regulations 2011 for e-money issuers), the FCA’s Approach Document for payment services and e-money, safeguarding requirements (**CASS 15**, in force since 7 May 2026, together with the resolution pack in CASS 10A, the monthly safeguarding return and annual safeguarding audit), operational and security risk and incident reporting requirements, strong customer authentication, the Consumer Duty, and the complaints rules in DISP. As a payment institution or e-money institution we are not within the Senior Managers and Certification Regime, but the individuals responsible for managing our payment services must be fit and proper. [Delete the last sentence if your firm is FCA-authorised under Part 4A FSMA for other activities.]
+ENDOPT: 3E | Payment services firms
+OPT: 3F | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+Our compliance universe includes the Conduct of Business sourcebook (**COBS**) – in particular client categorisation, communications and financial promotions (COBS 4, including the rules for high-risk investments), disclosure of costs and charges (COBS 6), and suitability (COBS 9 or 9A) – product governance (**PROD**), client assets (**CASS**) where applicable, the prudential rules that apply to us (**IPRU-INV 13** or **MIFIDPRU**), and the qualification and Statement of Professional Standing requirements for retail investment advisers (**TC**).
+ENDOPT: 3F | Investment advice and arranging firms
+
+# 4. How the programme works
+**4.1 Risk-based approach.** We prioritise monitoring according to the risk of harm to customers and the market, and the likelihood of things going wrong. We take into account the complexity of each activity, volumes, the vulnerability of our customers, complaints and past findings, and the FCA’s current priorities for our sector.
+**4.2 Monitoring plan.** Our Compliance Monitoring Plan sets out the areas we check, the risk rating, what we check, how often and who is responsible. It is approved by [Insert: the board / the directors / the business owner] each year.
+**4.3 Monitoring activities.** Monitoring includes file reviews, reviews of outcome data and management information, thematic reviews, control testing and reviews of regulatory change. Each review uses a documented checklist and is evidenced.
+**4.4 Consumer Duty outcome monitoring.** We collect and analyse data on the outcomes customers receive under each of the four Consumer Duty outcomes, including outcomes for different groups of customers such as those with characteristics of vulnerability. Our findings inform the annual Consumer Duty board report required by PRIN 2A.8.
+**4.5 Breaches and corrective action.** Breaches are recorded in the Breach Register and assessed for FCA notification under Principle 11 and SUP 15. Every finding is tracked through the Corrective Action Log to closure, including putting affected customers right.
+**4.6 Reporting and escalation.** Monitoring results are reported to [Insert: the board / the directors / the business owner] at least [Insert frequency]. Serious issues are escalated immediately.
+
+# 5. Responsibilities
+NOTE: Replace the roles below with the actual people and roles in your firm. In a sole-trader or very small firm, one person may hold several roles – say so, and explain how you get independent challenge (for example an annual review by an external compliance consultant).
+## 5.1 Senior management – [Insert name(s)]
+Senior management is ultimately responsible for compliance. It approves this programme and the monitoring plan, makes sure there are enough resources and expertise to carry them out, receives and challenges monitoring reports, and makes sure findings are acted on. [For SM&CR firms: the individual responsible for compliance oversight – for example the SMF16 Compliance Oversight holder, or the SMF29 Limited Scope Function holder in a limited scope firm – is [Insert name].]
+## 5.2 Compliance function – [Insert name or role]
+The compliance function develops and carries out the monitoring plan, keeps the compliance universe up to date, advises the business on regulatory requirements, reports findings and tracks corrective actions. It must have the authority, resources, expertise and access to information it needs, and should be as independent from the activities it monitors as our size allows.
+## 5.3 External compliance support – [Insert name of consultancy, or delete]
+[Describe what external support you use – for example an annual independent review, file checking, or regulatory updates – and how its findings are reported.]
+## 5.4 All staff [and appointed representatives]
+Everyone must follow our policies and procedures, cooperate with monitoring, report breaches, complaints and concerns promptly, and complete required training.
+
+# 6. Review and evaluation
+This programme is reviewed at least annually, and sooner if the rules, our business model, our risks or the results of monitoring suggest it needs to change. The review considers whether the programme is finding problems before customers are harmed, whether the compliance universe is complete, and whether the compliance function has the resources it needs. Changes are approved by [Insert: the board / the directors / the business owner].
+
+# 7. Conclusion
+[Insert firm legal name] is committed to maintaining an effective compliance monitoring programme that protects our customers, supports good outcomes and meets our obligations as an FCA-regulated firm. By following this programme, we aim to make compliance part of how we run the business every day, not an exercise carried out for its own sake.

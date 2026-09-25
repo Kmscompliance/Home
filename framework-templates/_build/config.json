@@ -1,0 +1,129 @@
+{
+  "complaints": {
+    "src": "Complaint_Proceedure_v1.0", "out": "Complaints_Procedure_v2.0_Template.docx",
+    "start": "Complaint", "h": ["Heading1", "Heading2", "Heading3", "Heading3"], "bullet": "4", "list_style": "ListParagraph",
+    "meta": [
+      ["Last Reviewed By", "Last reviewed by: [Insert name and role of the person who last reviewed this document]"],
+      ["Last Reviewed Date", "Last reviewed date: [Insert date]"],
+      ["Scheduled Review Date", "Scheduled review date: [Insert date – no later than 12 months after the last review]"],
+      ["Version", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Version: [Insert version number, e.g. 1.0]"]]
+    ]
+  },
+  "aml": {
+    "src": "Anti_Money_Laundering_Policy_v1.0", "out": "Anti_Money_Laundering_Policy_v2.0_Template.docx",
+    "start": "1. Purpose and Scope", "h": ["Heading20", "Heading10", "Heading3", "Heading4"], "bullet": "1",
+    "meta": [
+      ["Anti Money Laundering Policy", "Anti-Money Laundering and Financial Crime Policy"],
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Written by: [Insert name and role of the person who prepared this document]"]],
+      ["Reviewed by", "Approved by: [Insert name and role of the director or senior manager who approved this document]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – no later than 12 months after approval]"]
+    ]
+  },
+  "cdd": {
+    "src": "Customer_Due_Diligence_Policy_v1.0", "out": "Customer_Due_Diligence_Policy_v2.0_Template.docx",
+    "start": "1. Purpose and Scope", "h": ["Heading10", "Heading30", "Heading3", "Heading4"], "bullet": "1",
+    "meta": [
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Written by: [Insert name and role of the person who prepared this document]"]],
+      ["Reviewed by", "Approved by: [Insert name and role of the director or senior manager who approved this document]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – no later than 12 months after approval]"]
+    ]
+  },
+  "cmplan": {
+    "src": "Compliance_Monitoring_Plan_v1.0", "out": "Compliance_Monitoring_Plan_v2.0_Template.docx",
+    "start": "1. Purpose of This Plan", "h": ["Heading10", "Heading2", "Heading3", "Heading4"], "bullet": "1",
+    "meta": [
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Written by: [Insert name and role of the person who prepared this document]"]],
+      ["Reviewed by", "Approved by: [Insert name and role of the director or senior manager who approved this document]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – no later than 12 months after approval]"]
+    ]
+  },
+  "cmp": {
+    "src": "Compliance_Monitoring_Programme_Policy_v1.0", "out": "Compliance_Monitoring_Programme_Policy_v2.0_Template.docx",
+    "start": "1. Introduction", "h": ["Heading10", "Heading20", "Heading3", "Heading4"], "bullet": "3", "list_style": "ListParagraph",
+    "meta": [
+      ["Compliance Management Framework", "Compliance Monitoring Programme"],
+      ["Version", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Version: [Insert version number, e.g. 1.0]"]],
+      ["Updated by", "Updated by: [Insert name and role]"],
+      ["Updated:", "Updated: [Insert date]"],
+      ["Next review date", "Next review date: [Insert date – no later than 12 months after the last update]"]
+    ]
+  },
+  "vuln": {
+    "src": "Customer_Vulnerabilty_Policy_v1.0", "out": "Customer_Vulnerability_Policy_v2.0_Template.docx",
+    "start": "Purpose", "h": ["Heading1", "Heading2", "Heading3", "Heading4"], "bullet": "1",
+    "meta": [
+      ["YOUR FIRM", "[Insert firm legal name]"],
+      ["Vulnerability Policy", "Customer Vulnerability Policy"],
+      ["Last Reviewed By", "Last reviewed by: [Insert name and role of the person who last reviewed this document]"],
+      ["Last Reviewed Date", "Last reviewed date: [Insert date]"],
+      ["Scheduled Review Date", "Scheduled review date: [Insert date – no later than 12 months after the last review]"],
+      ["Version", ["FRN: [Insert FRN, or ‘application pending’]", "Version: [Insert version number, e.g. 1.0]"]]
+    ]
+  },
+  "data": {
+    "src": "Data_Processing_Policy_v1.0", "out": "Data_Processing_Policy_v2.0_Template.docx",
+    "start": "1. Introduction", "h": ["Heading10", "Heading21", "Heading3", "Heading4"], "bullet": "1",
+    "meta": [
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’]; ICO registration number: [Insert ICO registration number])", "Written by: [Insert name and role of the person who prepared this document]"]],
+      ["Reviewed by", "Approved by: [Insert name and role of the director or senior manager who approved this document]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – no later than 12 months after approval]"]
+    ]
+  },
+  "finprom": {
+    "src": "Financial_Promotions_Policy_v1.0", "out": "Financial_Promotions_Policy_v2.0_Template.docx",
+    "start": "1. Purpose and Scope", "h": ["Heading10", "Heading2", "Heading3", "Heading4"], "bullet": "1",
+    "meta": [
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Written by: [Insert name and role of the person who prepared this document]"]],
+      ["Reviewed by", "Approved by: [Insert name and role of the director or senior manager who approved this document]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – no later than 12 months after approval]"]
+    ]
+  },
+  "cduty": {
+    "src": "Implemention_Plan_-_Consumer_Duty_v1.0", "out": "Consumer_Duty_Implementation_Plan_v2.0_Template.docx",
+    "start": "Introduction", "h": ["Heading1", "Heading2", "Heading3", "Heading4"], "bullet": "1", "list_style": "ListParagraph",
+    "meta": [
+      ["Consumer Duty", "Consumer Duty – Implementation and Embedding Plan"],
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Written by: [Insert name and role of the person who prepared this document]"]],
+      ["Reviewed by", "Approved by: [Insert name of the director or senior manager who approved this plan – ideally your Consumer Duty champion]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – no later than 12 months after approval]"]
+    ]
+  },
+  "risk": {
+    "src": "Risk_Management_Framework_Policy_v1.0", "out": "Risk_Management_Framework_v2.0_Template.docx",
+    "start": "Risk Management Framework", "start_occurrence": 2, "h": ["Heading2", "Heading3", "Heading4", "Heading4"], "bullet": "2", "list_style": "ListParagraph",
+    "meta": [
+      ["Version", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Version: [Insert version number, e.g. 1.0]"]],
+      ["Updated by", "Updated by: [Insert name and role]"],
+      ["Updated:", "Updated: [Insert date]"],
+      ["Next review date", "Next review date: [Insert date – no later than 12 months after the last update]"]
+    ]
+  },
+  "sor": {
+    "src": "Senior_Management_Regime_Statement_of_Responsbility_v1.0", "out": "SMCR_Statement_of_Responsibilities_v2.0_Template.docx",
+    "start": "Personal identifications details", "h": ["Heading1", "Heading2", "Heading2", "Heading2"], "bullet": "8", "th_fill": "E2EFD9",
+    "meta": [
+      ["Statement of Responsibility", "Statement of Responsibilities"],
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Prepared by: [Insert name and role of the person who prepared this statement]"]],
+      ["Reviewed by", "Approved by: [Insert name – the firm must approve this statement before it is submitted]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – and whenever this individual’s responsibilities change significantly]"]
+    ]
+  },
+  "training": {
+    "src": "Training_Policy_v1.0", "out": "Training_and_Competence_Policy_v2.0_Template.docx",
+    "start": "1. Introduction and Purpose", "h": ["Heading1", "Heading2", "Heading3", "Heading4"], "bullet": "1",
+    "meta": [
+      ["Training Policy", "Training and Competence Policy"],
+      ["Written by", ["Firm: [Insert firm legal name] (FRN: [Insert FRN, or ‘application pending’])", "Written by: [Insert name and role of the person who prepared this document]"]],
+      ["Reviewed by", "Approved by: [Insert name and role of the director or senior manager who approved this document]"],
+      ["Review Date", "Date approved: [Insert date]"],
+      ["Next Review Date", "Next review date: [Insert date – no later than 12 months after approval]"]
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+HOWTO: policy
+NOTE: **Read this with your Anti-Money Laundering Policy.** Whether the Money Laundering Regulations 2017 (MLRs) apply to your firm decides whether the checks in this policy are a legal requirement or a firm-policy control against fraud and financial crime. Section 3 contains one option per activity that explains who you check, when and why. Firms outside the MLRs should still verify identity – lenders, insurers and banks will expect it, and SYSC 6.1.1R requires you to counter the risk of being used for financial crime – but can apply sections 6, 7 and 9 proportionately. Each of those sections says where this applies.
+
+# 1. Purpose and scope
+This policy sets out how [Insert firm legal name] (“we”, “us”, “the firm”) identifies and verifies its customers, understands the purpose of each relationship, assesses customer risk, and keeps customer information up to date. Together, these steps are called **customer due diligence** (CDD).
+CDD protects our customers, our firm and the wider financial system. It helps us to prevent money laundering, terrorist financing, sanctions breaches, identity theft and fraud, and it gives us the information we need to treat customers fairly.
+This policy is written to meet:
+- the MLRs (where they apply to us – see our Anti-Money Laundering Policy), including the amendments made by SI 2026/621, most of which came into force on 30 June 2026;
+- SYSC 6.1.1R and, where it applies to us, SYSC 6.3 of the FCA Handbook, and the FCA’s Financial Crime Guide;
+- HM Treasury-approved JMLSG guidance for our sector, where relevant;
+- UK sanctions law; and
+- the UK GDPR and Data Protection Act 2018, which govern how we use and keep the personal data we collect.
+It applies to all staff [and appointed representatives – delete if you have none] who onboard customers, handle customer information or process payments. Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for].
+
+# 2. Key terms
+- **Customer due diligence (CDD):** identifying the customer and verifying their identity using documents, data or information from a reliable and independent source; identifying and verifying any beneficial owner; and understanding the purpose and intended nature of the relationship or transaction.
+- **Simplified due diligence (SDD):** reduced measures that a firm within the MLRs may apply where it has assessed a relationship or transaction as presenting a low risk (regulation 37 of the MLRs).
+- **Enhanced due diligence (EDD):** additional measures applied where the risk is higher (regulation 33 of the MLRs), such as further verification, establishing source of funds or wealth, senior management approval and closer monitoring.
+- **Beneficial owner:** for a company, any individual who ultimately owns or controls more than 25% of the shares or voting rights, or who otherwise exercises control; for other entities, the individuals who ultimately own or control them.
+- **Politically exposed person (PEP):** an individual entrusted with a prominent public function, in the UK or abroad, together with their family members and known close associates.
+- **Business relationship:** a business, professional or commercial relationship which is expected, when contact is first made, to have an element of duration.
+- **Occasional transaction:** a one-off transaction outside a business relationship.
+- **Source of funds:** where the money for a particular transaction comes from. **Source of wealth:** how the customer came to have their overall wealth.
+
+# 3. Who we check, when, and why
+NOTE: Keep the option(s) that match your permissions and delete the rest. Each option explains who your “customers” are for CDD purposes, when checks must be completed, and whether the requirement comes from the MLRs or from firm policy.
+OPT: 3A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+**3A.1 Legal basis.** Credit broking does not bring a firm within the MLRs. We carry out identity checks because they are essential to prevent application fraud and identity theft, because the lenders we work with require accurate customer information, and because SYSC 6.1.1R requires us to counter the risk of being used for financial crime. The lender carries out its own CDD before entering into any credit agreement.
+**3A.2 Who we check.** Every customer we introduce to a lender (or another broker), and any person who is to be jointly liable (for example a joint applicant) or a guarantor. Where a third party pays a deposit or fee, we also identify the payer.
+**3A.3 When.** Before we submit any application or pass any customer information to a lender. We never submit an application where we have not verified the customer’s identity, or where information does not appear to be genuine.
+**3A.4 Our standard.** We apply the standard verification measures in section 4 to every applicant. We check that the information in the application – name, date of birth, address, employment and income – is consistent with what we have verified, and we never alter, add to or “improve” information the customer gives us.
+ENDOPT: 3A | Credit broking firms
+OPT: 3B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling (including debt management plans).
+**3B.1 Legal basis.** These activities do not bring a firm within the MLRs. We verify identity to protect customers and creditors from fraud, to make sure we deal only with the customer (or their authorised representative), to protect client money, and because SYSC 6.1.1R requires us to counter the risk of being used for financial crime.
+**3B.2 Who we check.** Every customer to whom we give debt advice or for whom we set up a debt solution, any joint debtor, and any third party authorised to act for them (checking that person’s authority).
+**3B.3 When.** Before we contact creditors on the customer’s behalf, before we set up a plan and before we receive any money from the customer.
+**3B.4 Our standard.** We apply the verification measures in section 4 proportionately. Because many of our customers are in vulnerable circumstances, we accept a wider range of evidence where standard documents are not available, and we record why.
+ENDOPT: 3B | Debt adjusting and debt counselling firms
+OPT: 3C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+**3C.1 Legal basis.** These activities do not bring a firm within the MLRs. Before discussing a debt, we must be satisfied we are dealing with the right person, both to protect customers’ personal data (UK GDPR) and to avoid pursuing the wrong individual. We also verify payers to reduce the risk of our collections being used to launder money.
+**3C.2 Who we check.** The customer who owes the debt, any person claiming to act for them (checking their authority), and anyone paying on the customer’s behalf.
+**3C.3 When.** Before we discuss account details with anyone, and before we accept a lump-sum or third-party payment above [Insert threshold].
+**3C.4 Our standard.** We use proportionate security questions based on data we hold, supplemented by independent verification where the answers are not conclusive or the risk is higher. We also verify that the customer is the person who owes the debt (for example where there are disputes about identity or signs of identity fraud) and suspend collection while we investigate.
+ENDOPT: 3C | Debt collecting and debt administration firms
+OPT: 3D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+**3D.1 Legal basis.** These activities do not bring a firm within the MLRs. We verify identity rigorously because the information we hold or help customers obtain is highly valuable to fraudsters, and because the UK GDPR requires us to disclose personal data only to the person it relates to or someone authorised to receive it.
+**3D.2 Who we check.** Every individual who asks for access to credit information about themselves, and anyone acting on their behalf. [If you supply credit references to businesses, also describe how you check that each business client is who it says it is and has a lawful basis to receive the data.]
+**3D.3 When.** Before any credit information is disclosed, and before any change is made to a credit record.
+**3D.4 Our standard.** We use multi-factor verification (for example knowledge-based questions drawn from the credit file combined with document or electronic verification). We apply extra checks where a request comes from a new device, location or contact detail, or asks for information to be sent somewhere new.
+ENDOPT: 3D | Firms providing credit information services or credit references
+OPT: 3E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending (a peer-to-peer or loan-based crowdfunding platform).
+**3E.1 Legal basis.** We apply the MLR standard of CDD to everyone who uses our platform, whether or not the MLRs apply to us as a matter of law (see our Anti-Money Laundering Policy).
+**3E.2 Who we check.** Both groups of customers: **investors** (lenders) and **borrowers**. For business borrowers and investors, we also identify and verify beneficial owners and the individuals authorised to act for the business.
+**3E.3 When.** Before an investor can transfer money to the platform or make a loan, and before a borrower’s loan request is listed.
+**3E.4 Our standard.** Standard CDD (section 4) for all users, plus source of funds checks for investors depositing more than [Insert threshold] in any [Insert period], and EDD where section 7 applies. Withdrawals are paid only to a verified account in the investor’s own name.
+ENDOPT: 3E | Peer-to-peer lending platforms
+OPT: 3F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender (including deferred payment credit / “buy now, pay later”).
+**3F.1 Legal basis.** Lending is within the MLRs. CDD is a legal requirement (regulations 27 and 28 of the MLRs).
+**3F.2 Who we check.** Every borrower, every joint borrower and every guarantor. For business borrowers (for example sole traders or small partnerships within consumer credit protection), we also identify and verify the individuals who own and control the business.
+**3F.3 When.** Before we enter into the credit agreement. The MLRs allow verification to be completed during the establishment of a business relationship only where this is necessary not to interrupt the normal conduct of business and there is little risk of money laundering; any such case must be approved by [Insert name or role] and completed before funds are released.
+**3F.4 Our standard.** Standard CDD (section 4) for all customers; SDD only where our business-wide risk assessment supports it (section 6); EDD where section 7 applies. CDD is separate from, and does not replace, our creditworthiness assessment under CONC 5. Where customers are introduced by brokers or merchants, we remain responsible for our CDD even if we use information they collect (see section 9).
+ENDOPT: 3F | Consumer credit lenders
+OPT: 3G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements (for example as a debt purchaser or owner of a loan book).
+**3G.1 Legal basis.** [State whether your firm is within the MLRs, as concluded in your Anti-Money Laundering Policy.] Whether or not the MLRs apply, we apply risk-based CDD to the customers whose agreements we hold.
+**3G.2 Who we check.** The customers under each agreement we acquire and, before purchase, the seller of each portfolio.
+**3G.3 When.** Before purchase, we review the quality of the seller’s CDD records. After purchase, we refresh or complete CDD when we first make contact with a customer, when records are incomplete or unreliable, and before accepting any lump-sum settlement above [Insert threshold].
+**3G.4 Our standard.** Where the seller’s records meet our standard, we may rely on them for existing customers and record that we have done so. Where they do not, we verify identity using the measures in section 4 when the customer next engages with us.
+ENDOPT: 3G | Firms exercising a lender’s rights and duties
+OPT: 3H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements, or is applying to do so.
+**3H.1 Legal basis.** Consumer hire is generally not within the MLRs (see our Anti-Money Laundering Policy for our confirmed position). We verify identity to prevent the fraudulent hire of goods and to comply with SYSC 6.1.1R.
+**3H.2 Who we check.** Every hirer, any joint hirer or guarantor, and anyone paying on the hirer’s behalf.
+**3H.3 When.** Before goods are released to the hirer.
+**3H.4 Our standard.** Standard verification (section 4). For higher-value goods [Insert value], we also verify the delivery address and, where goods are collected, check photographic ID at collection.
+ENDOPT: 3H | Consumer hire firms
+OPT: 3I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+**3I.1 Legal basis.** The MLRs apply only to the distribution of life insurance and other investment-related insurance. [State which applies.] For general insurance, identity checks are firm policy to prevent “ghost broking”, premium fraud and claims fraud and to meet insurers’ requirements.
+**3I.2 Who we check.** The policyholder, any named insured person where relevant, anyone paying the premium, and – for business customers – the business and the individuals who control it.
+**3I.3 When.** Before the policy is placed. For life or investment-related insurance within the MLRs, CDD must be completed before the business relationship is established, and beneficiaries must be identified before any payout.
+**3I.4 Our standard.** General insurance: proportionate verification (electronic checks or a single document), with extra checks where warning signs appear. Life and investment-related insurance: full CDD (section 4), including source of funds for single premiums above [Insert threshold], and EDD where section 7 applies.
+ENDOPT: 3I | Insurance distribution firms
+OPT: 3J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts, or is applying to do so.
+**3J.1 Legal basis.** Mortgage intermediaries are not within the MLRs. Lenders carry out their own CDD, but they rely on us to submit accurate information and many require us to collect and certify identity documents. Identity checks are also essential to prevent mortgage fraud.
+**3J.2 Who we check.** Every applicant, every person who will be named on the mortgage, and anyone providing a gifted deposit (including confirming the gift is genuinely non-repayable).
+**3J.3 When.** Before we submit an application to any lender.
+**3J.4 Our standard.** Standard verification (section 4), plus verification of income and of the source of the deposit. We follow each lender’s own identity and certification requirements and never submit information we know or suspect to be inaccurate.
+ENDOPT: 3J | Mortgage intermediaries
+OPT: 3K | Payment services firms | your firm provides payment services (including payment initiation services) or issues electronic money.
+**3K.1 Legal basis.** Payment services and e-money are within the MLRs, so CDD is a legal requirement – except that a firm whose only payment service is an account information service is outside the MLRs (see our Anti-Money Laundering Policy). [State which applies.]
+**3K.2 Who we check.** Every customer with whom we establish a business relationship and, for business customers, their beneficial owners. For occasional transactions, we apply CDD where the MLRs require it, including where we suspect money laundering or terrorist financing, and for transfers of funds within the scope of the Transfer of Funds provisions.
+**3K.3 When.** Before we establish the business relationship or carry out the transaction.
+**3K.4 Our standard.** Standard CDD (section 4); SDD only where our risk assessment supports it and the MLRs permit it (including the specific conditions for e-money); EDD where section 7 applies. We also collect and check the payer and payee information the Transfer of Funds provisions require. [Account information service providers outside the MLRs: describe your proportionate identity checks instead.]
+ENDOPT: 3K | Payment services firms
+OPT: 3L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments, or is applying to do so.
+**3L.1 Legal basis.** We treat ourselves as within the MLRs (see our Anti-Money Laundering Policy), so CDD is a legal requirement.
+**3L.2 Who we check.** Every client, including joint clients; for trusts, companies and other entities, the entity, its beneficial owners and the individuals authorised to act for it.
+**3L.3 When.** Before we provide advice that leads to a transaction or arrange any transaction.
+**3L.4 Our standard.** Standard CDD (section 4) including source of funds for every investment, and source of wealth for higher-risk clients and all PEPs. The information we collect for suitability (COBS 9 or COBS 9A) supports, but does not replace, our CDD.
+ENDOPT: 3L | Investment advice and arranging firms
+
+# 4. Standard verification measures
+**4.1 Information we collect.** For individuals we collect, at a minimum: full name; date of birth; residential address; and contact details. For business customers we also collect: registered name and number; registered office and principal place of business; the names of directors or partners; and details of beneficial owners.
+**4.2 How we verify identity.** We verify using one of the following methods, chosen according to risk:
+- **Electronic verification** through [Insert provider name], which checks identity against multiple independent data sources. Where available, we use a provider certified under the UK digital identity and attributes trust framework. We set the matching standard at [Insert standard, e.g. “two independent sources matching name and address, and one matching name and date of birth”].
+- **Documentary verification** using one document from each list in Appendix A. Documents must be current (or, for address documents, dated within the last three months) and must be originals or certified copies. Where we see documents remotely, we use [Insert method, e.g. an identity verification app with liveness checks, or a video call].
+**4.3 Checking documents.** Staff check that documents appear genuine and unaltered, that photographs are a true likeness, that details are consistent across documents and with what the customer has told us, and that the customer’s behaviour does not suggest impersonation.
+**4.4 Customers who cannot provide standard evidence.** Some customers, including people in vulnerable circumstances, may not have standard documents. We will not exclude them unreasonably. [Insert name or role] may approve alternative evidence (for example a letter from a care home manager, a benefits award letter, or a letter from a recognised professional), and records the reason.
+**4.5 Purpose and intended nature.** We record why the customer is using our service and what we expect their activity to look like, so that we can recognise activity that is unusual for them.
+**4.6 Sanctions screening.** Every customer (and, where relevant, beneficial owners and third-party payers) is screened against the UK sanctions list before onboarding, as our Anti-Money Laundering Policy requires.
+**4.7 Third-party payments.** Where someone other than the customer pays us, or funds a deposit or transaction, we identify the payer, establish their relationship to the customer, and record a credible explanation. We do not accept third-party payments where we cannot do so.
+
+# 5. Customer risk assessment
+We give every customer a risk rating – **low**, **standard** or **high** – when we onboard them, using the factors in our business-wide risk assessment, including:
+- the customer (for example whether they are a PEP, have an unusual profile, or are acting for someone else);
+- the product or service and the value of the transaction;
+- how we deal with the customer (face-to-face, remote, or through an introducer);
+- geography (where the customer lives or where funds come from); and
+- any warning signs identified during onboarding.
+The rating decides whether SDD, standard CDD or EDD applies and how closely we monitor the relationship. It is recorded in the Customer Due Diligence Register and reviewed when circumstances change.
+
+# 6. Simplified due diligence
+NOTE: SDD is a concept in the MLRs. If your firm is outside the MLRs, delete this section – you already apply proportionate measures under section 3.
+Where our business-wide risk assessment shows that a relationship or transaction presents a low risk of money laundering and terrorist financing, we may apply simplified due diligence (regulation 37 of the MLRs). This means adjusting the extent, timing or type of CDD measures – it never means doing no CDD at all. We still identify every customer and monitor the relationship. We record why SDD was appropriate, and we move the customer to standard or enhanced measures if anything suggests the risk is higher. We never apply SDD where we suspect money laundering or terrorist financing, or where any EDD trigger in section 7 is present.
+
+# 7. Enhanced due diligence
+NOTE: Firms within the MLRs must apply EDD in the situations regulation 33 requires. Firms outside the MLRs should keep this section as firm policy but may simplify the measures in 7.2 to match their risks.
+**7.1 When EDD applies.** We apply EDD where:
+- a customer, beneficial owner or third-party payer is a **PEP**, or a family member or known close associate of a PEP. For domestic (UK) PEPs, the starting point is a lower level of risk than for foreign PEPs, and the EDD we apply reflects that unless other risk factors are present;
+- the customer or transaction involves a **high-risk third country** – since 30 June 2026 this mandatory requirement covers jurisdictions subject to a FATF “call for action”. Links to jurisdictions under increased FATF monitoring are assessed as part of our risk rating;
+- a transaction is **unusually complex or unusually large**, or part of an unusual pattern of transactions, or has no apparent economic or legal purpose;
+- we have assessed the customer as **high risk** for any other reason (for example unexplained third-party involvement, inconsistent information, or adverse media); or
+- we have identified information that suggests a higher risk of fraud.
+Dealing with a customer remotely is a risk factor we take into account, not an automatic trigger for EDD; we manage it through the verification methods in section 4.2.
+**7.2 EDD measures.** Depending on the risk, EDD may include:
+- additional verification of identity or address from further independent sources;
+- establishing and verifying the **source of funds** (for example bank statements, payslips, a completion statement for a property sale, or a solicitor’s letter for an inheritance) and, where appropriate, the **source of wealth**;
+- obtaining **senior management approval** before establishing or continuing the relationship (always required for PEPs, for firms within the MLRs);
+- more frequent and closer monitoring of the relationship; and
+- reviewing the relationship at least [Insert frequency].
+**7.3 Recording decisions.** All EDD decisions, the evidence obtained and the approver’s name are recorded in the Customer Due Diligence Register.
+
+# 8. Where CDD cannot be completed
+If we cannot complete the CDD this policy requires, we must not establish the relationship, carry out the transaction, or submit the application. Where a relationship already exists, we will take steps to end it. In each case, the member of staff must consider whether the circumstances give rise to knowledge or suspicion of money laundering, terrorist financing or fraud, and if so report it to the MLRO. We will not tell the customer anything that could tip them off.
+We will not refuse or end relationships simply because a customer falls into a higher-risk category (for example because they are a PEP) without assessing their individual risk, and we will be mindful of our obligations to treat customers fairly and not to discriminate.
+
+# 9. Reliance and outsourcing
+**9.1 Reliance.** [Firms within the MLRs: keep 9.1 if you rely on another regulated firm’s CDD; otherwise delete.] Where regulation 39 of the MLRs permits, we may rely on another regulated firm to carry out CDD measures on our behalf. We remain legally responsible for any failure. We only rely on a firm after [Insert name or role] has confirmed in writing that the firm is subject to equivalent requirements and has agreed to provide copies of the CDD information and evidence immediately on request.
+**9.2 Outsourcing.** Where we use a third-party provider (for example electronic verification or screening), we carry out due diligence on the provider, have a written agreement, understand how its checks work, and test its output periodically. We remain responsible for the result, as SYSC 8 requires.
+
+# 10. Ongoing monitoring and keeping information up to date
+We monitor each relationship to make sure activity is consistent with what we know about the customer and to keep CDD information up to date. We refresh CDD:
+- when there is a material change in the customer’s circumstances or activity;
+- when we have doubts about information previously obtained;
+- when a customer’s risk rating changes;
+- for high-risk customers, at least [Insert frequency, e.g. annually]; and for other customers, [Insert trigger or frequency, e.g. before any new product or transaction, or at least every three years for ongoing relationships].
+Monitoring is carried out by [Insert name or role] and supervised by the MLRO. Unusual activity is reported to the MLRO.
+
+# 11. Records
+We keep, in the Customer Due Diligence Register and customer files:
+- copies of, or references to, the evidence used to verify identity, the date and method of verification and the name of the person who carried it out;
+- the customer risk rating and the reasons for it;
+- records of SDD and EDD decisions, including approvals;
+- records of reliance, where used; and
+- screening results.
+We keep these records for **five years** after the end of the business relationship or the date of an occasional transaction (regulation 40 of the MLRs, for firms within the MLRs; firm policy for others), then delete them securely unless we must keep them longer. Records are stored securely and can be produced promptly to the FCA, HMRC or law enforcement on lawful request.
+
+# 12. Responsibilities
+NOTE: Replace the roles below with the actual roles in your firm. In a sole trader firm, one person may hold all of them.
+TABLE: 30,70
+| Role | Responsibilities |
+| [Insert role, e.g. customer-facing staff] | Collect CDD information and evidence; complete verification; record the risk rating; escalate concerns. |
+| [Insert role, e.g. operations / onboarding manager] | Check that CDD is complete before any application, transaction or payment proceeds; approve alternative evidence under section 4.4. |
+| [Insert name or role of senior manager] | Approve EDD cases and PEP relationships; approve any exception to the timing of CDD. |
+| MLRO – [Insert name] | Owns this policy; reviews escalations; decides on external reports; monitors the quality of CDD. |
+Staff are not expected to be investigators, but they are expected to notice, record and report anything that does not add up.
+
+# 13. Training
+All staff involved in onboarding or payments receive CDD training at induction and at least annually, covering how to verify identity, recognise forged or altered documents, apply the risk rating, recognise EDD triggers and warning signs, support customers who cannot provide standard documents, and report concerns. Completion is recorded in our Training Log.
+
+# 14. Oversight and review
+The quality of our CDD is tested under our Compliance Monitoring Plan through file reviews of at least [Insert number] customer files every [Insert frequency]. This policy is owned by the MLRO, reviewed at least annually and whenever the law, FCA rules or our business change, and approved by [Insert: the board / the directors / the business owner].
+
+# Appendix A – Acceptable documents
+NOTE: Adjust these lists to match your risk assessment and any lender, insurer or partner requirements. Biometric residence permits and cards expired on 31 December 2024 and are no longer accepted as proof of identity; people with immigration status now use an eVisa, which is proof of immigration status rather than identity, so use a passport or other identity document instead.
+TABLE: 50,50
+| Proof of identity (one, with photograph) | Proof of address (one, dated within the last three months unless stated) |
+| Current signed passport (any nationality) | Utility bill (not a mobile phone bill) |
+| Current UK photocard driving licence (full or provisional) | Bank, building society or credit card statement |
+| Current EEA national identity card | Council tax bill for the current year |
+| Current UK Armed Forces identity card | HMRC tax notification or DWP benefit letter for the current tax year |
+| [Insert any other document your firm accepts] | Current UK photocard driving licence (if not already used as proof of identity) |

@@ -1,0 +1,212 @@
+HOWTO: policy
+NOTE: **Only commit to what you actually do.** Data protection policies are often copied from larger firms and promise controls (for example 24/7 monitoring or ISO 27001 certification) that a small firm does not have. The ICO and the FCA will judge you against what your policy says. Where this template describes a control you do not yet have, either put it in place before you submit or change the wording to describe your real arrangements.
+
+# 1. Introduction
+This policy explains how [Insert firm legal name] (“we”, “the firm”) collects, uses, shares, protects and deletes personal data. We are a **data controller** for the personal data we process for our own purposes, and we are registered with the Information Commissioner’s Office (ICO) under registration number [Insert ICO registration number].
+This policy is designed to meet:
+- the **UK General Data Protection Regulation** (UK GDPR) and the **Data Protection Act 2018**, as amended by the **Data (Use and Access) Act 2025**, whose changes have been brought into force in stages since 2025;
+- the **Privacy and Electronic Communications Regulations 2003** (PECR), which govern electronic marketing and cookies;
+- the FCA’s requirements on record keeping (SYSC 9), systems and controls (SYSC), outsourcing (SYSC 8) and the **Consumer Duty**, which requires us to use customer data to support – and never to exploit – our customers; and
+- the activity-specific rules that apply to us (see section 8).
+WATCH: The Data (Use and Access) Act 2025 amendments are being commenced in stages, and the ICO is still updating several guidance products (for example on recognised legitimate interests, automated decision-making, complaints handling and cookies). Before relying on sections 5, 7 and 13, check the ICO website for the current commencement position and final guidance.
+
+# 2. Scope
+This policy applies to all personal data we process, in any format (paper, electronic, audio or video), about:
+- **customers and prospective customers**, including joint applicants, guarantors and their representatives;
+- **employees, directors, contractors and job applicants**;
+- **suppliers, business partners and introducers** (for example contact details of individuals at those organisations);
+- **people who interact with our marketing and website**; and
+- **other individuals** whose data we receive in the course of business (for example people named in documents customers give us).
+It applies to all directors, employees, temporary staff, contractors [and appointed representatives – delete if you have none], wherever they work.
+
+# 3. Data protection principles
+We comply with the principles in Article 5 of the UK GDPR. Personal data must be:
+- processed **lawfully, fairly and transparently**;
+- collected for **specified, explicit and legitimate purposes** and not used in ways incompatible with those purposes;
+- **adequate, relevant and limited** to what is necessary;
+- **accurate** and, where necessary, kept up to date;
+- kept for **no longer than necessary**; and
+- kept **secure**.
+We are responsible for, and must be able to demonstrate, compliance with these principles (**accountability**). We keep a Record of Processing Activities [Insert location], carry out data protection impact assessments where required (section 12), and keep records of our decisions.
+
+# 4. Roles and responsibilities
+TABLE: 30,70
+| Role | Responsibilities |
+| [Insert name of director / senior manager] | Overall responsibility for data protection; approves this policy; receives reports on data protection risks, breaches and complaints. |
+| Data protection lead – [Insert name] | Day-to-day responsibility for this policy, the Record of Processing Activities, privacy notices, rights requests, breaches, data protection complaints and training. [If you have appointed a Data Protection Officer (DPO), name them here and describe their independence and reporting line – see section 8 for whether your activities require one.] |
+| All staff | Follow this policy; only access data they need for their role; report breaches and rights requests immediately. |
+
+# 5. Lawful basis for processing
+We only process personal data where we have a lawful basis under Article 6 of the UK GDPR. We identify and record the lawful basis for each purpose before we start processing. The bases we use are:
+- **Contract** – where processing is necessary to perform a contract with the individual or to take steps at their request before entering into one (for example processing an application).
+- **Legal obligation** – where we must process data to comply with the law (for example anti-money laundering checks, FCA record-keeping requirements, or tax law).
+- **Legitimate interests** – where processing is necessary for our legitimate interests or those of a third party, and those interests are not overridden by the individual’s interests, rights and freedoms. We complete and record a legitimate interests assessment before relying on this basis.
+- **Recognised legitimate interests** – the Data (Use and Access) Act 2025 created a limited list of “recognised legitimate interests” (for example certain processing for crime prevention, safeguarding vulnerable individuals and responding to emergencies) for which a balancing test is not required. We will only rely on this basis where the processing clearly falls within the list, and we record our reasoning.
+- **Consent** – where we ask for the individual’s freely given, specific, informed and unambiguous agreement (for example for some marketing). Consent must be as easy to withdraw as to give.
+- **Vital interests** – only where processing is necessary to protect someone’s life.
+**Special category and criminal offence data.** Information about health, ethnicity, religion, sex life or orientation, biometric or genetic data is **special category data**, and information about criminal convictions and offences is **criminal offence data**. We only process it where we also meet a condition in Article 9 or Article 10 of the UK GDPR and, where required, Schedule 1 of the Data Protection Act 2018. The conditions we rely on are: [Insert, e.g. explicit consent; the Schedule 1 condition for safeguarding the economic well-being of certain individuals; preventing or detecting unlawful acts]. Where we rely on a Schedule 1 condition we keep an **appropriate policy document** [Insert location]. Information about customers’ vulnerability is handled in line with our Customer Vulnerability Policy.
+
+# 6. Transparency
+We tell individuals how we use their data through privacy notices that are concise, clear and easy to find:
+- our customer privacy notice, available at [Insert web address] and provided at the point we collect data;
+- our employee privacy notice [Insert location]; and
+- any additional notices required for our activities (see section 8).
+We review our privacy notices at least annually and whenever our processing changes.
+
+# 7. Individuals’ rights
+We respect individuals’ rights and have procedures to recognise and respond to requests, which can be made in any form (including verbally or through social media).
+TABLE: 26,74
+| Right | What it means and how we respond |
+| To be informed | We explain how we use personal data through our privacy notices. |
+| Of access | Individuals can ask for a copy of their personal data and information about how we use it. We make reasonable and proportionate searches and respond without undue delay and within one month. |
+| To rectification | Individuals can ask us to correct inaccurate data or complete incomplete data. |
+| To erasure | Individuals can ask us to delete data in certain circumstances. This is not absolute – we may need to keep data to meet legal or regulatory obligations (for example anti-money laundering or FCA record-keeping requirements). |
+| To restrict processing | Individuals can ask us to limit how we use their data while, for example, accuracy is checked. |
+| To data portability | Where processing is based on consent or contract and carried out by automated means, individuals can receive their data in a structured, machine-readable format or have it sent to another controller. |
+| To object | Individuals can object to processing based on legitimate interests. They have an absolute right to object to direct marketing, and we will stop immediately. |
+| Automated decision-making | Where we make significant decisions based solely on automated processing, we tell individuals, and they can make representations, obtain human intervention and contest the decision. We do not make such decisions using special category data unless the law specifically allows it. [Describe any automated decisions you make, or state that you make none.] |
+**Timescales.** We respond without undue delay and within **one month** of receipt. We may extend this by up to two further months for complex or numerous requests, telling the individual within the first month. Where we reasonably need information to identify the individual or clarify the request, the time limit is paused until we receive it.
+**Verification and third parties.** We verify identity proportionately before releasing data. We act for a third party (for example a solicitor, relative or claims management company) only where they provide evidence of their authority.
+**Fees and refusals.** We do not charge a fee, except where a request is manifestly unfounded or excessive, in which case we may charge a reasonable fee or refuse, explaining why and telling the individual of their right to complain to the ICO.
+**Logging.** All requests are recorded in our Data Rights Request Log [Insert location].
+
+# 8. Activity-specific processing
+NOTE: Keep every option below that matches a permission you hold or are applying for, and delete the rest. Each option describes the typical data, sharing, specific rules and retention for that activity. Adjust the details so they match what you actually do.
+OPT: 8A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+**8A.1 What we process and why.** Identity, contact, employment, income and expenditure details, and any other information lenders need to consider an application; information about the product or goods being financed; and records of what we told the customer. Lawful bases: contract (to arrange credit at the customer’s request), legal obligation (FCA record keeping and financial crime rules) and legitimate interests (fraud prevention and complaint handling).
+**8A.2 Who we share with.** The lenders on our panel (and other brokers where relevant), who will usually search credit reference agencies and fraud prevention agencies. Our privacy notice explains this and refers customers to the Credit Reference Agency Information Notice (CRAIN) and to lenders’ own privacy notices. We only send an application to the lenders the customer has agreed to.
+**8A.3 Specific requirements.** We must not submit personal data to lenders the customer has not agreed to, and we must not use application data for marketing without a lawful basis and, for electronic marketing, compliance with PECR.
+**8A.4 Retention.** We keep application records and records of explanations and disclosures for [Insert period, e.g. six years] after our last interaction with the customer. We do not delete records that may be relevant to complaints about motor finance commission while FCA requirements to retain such records apply. [Delete the last sentence if you have never brokered motor finance.]
+ENDOPT: 8A | Credit broking firms
+OPT: 8B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling.
+**8B.1 What we process and why.** Detailed financial information (income, expenditure, debts, creditors), identity and contact details, and often information about health, household circumstances and vulnerability. Lawful bases: contract, legal obligation and legitimate interests; for health information, explicit consent or another Schedule 1 condition recorded in our appropriate policy document.
+**8B.2 Who we share with.** Creditors (to negotiate and make payments), the Insolvency Service and insolvency practitioners where a statutory solution is used, and the Breathing Space service where relevant. We only share information about a customer’s health with creditors where it will help the customer and the customer agrees.
+**8B.3 Specific requirements.** Because we process sensitive information about people in financial difficulty, we apply strict access controls and carry out a data protection impact assessment on our core processes. We keep client money records as CASS 11 requires.
+**8B.4 Retention.** Case files for [Insert period, e.g. six years] after the end of the customer’s plan or our last advice; client money records for the period CASS requires.
+ENDOPT: 8B | Debt adjusting and debt counselling firms
+OPT: 8C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+**8C.1 What we process and why.** Debt and account data received from our clients, contact and tracing data, records of contact and payments, and information about customers’ circumstances. We usually process data for our own purposes as a controller (for example contact strategy and complaints), and may process some data as a processor for our clients. [Describe your controller/processor position for each client relationship.]
+**8C.2 Who we share with.** Our clients (the debt owners), credit reference agencies (for tracing and reporting, where permitted), tracing agents, solicitors and enforcement agents (where legal action is taken), and debt advice agencies with the customer’s agreement.
+**8C.3 Specific requirements.** We verify identity before discussing any debt. We use tracing data only to find the right person and take care not to disclose a debt to anyone else (including family members) without the customer’s consent. Customers must be told how we obtained their data.
+**8C.4 Retention.** Records for [Insert period, e.g. six years] after the account is closed, settled or returned to the client, taking into account limitation periods.
+ENDOPT: 8C | Debt collecting and debt administration firms
+OPT: 8D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+**8D.1 What we process and why.** Credit information about large numbers of individuals, including account data, public records and search history, and (for credit information services) customers’ own credit files. Credit reference agency activity involves large-scale, systematic processing of personal data about people who are not our direct customers.
+**8D.2 Who we share with.** Lenders and other organisations with a lawful reason to receive credit information, under data sharing agreements; and the individuals themselves.
+**8D.3 Specific requirements.** Transparency is critical because most individuals whose data we hold have no direct relationship with us: we publish or contribute to the Credit Reference Agency Information Notice (CRAIN) and our own notices. Individuals have statutory rights to their credit file and to add a notice of correction (sections 158–159 of the Consumer Credit Act 1974) in addition to their UK GDPR rights. We must consider whether our processing requires us to appoint a Data Protection Officer (required where our core activities involve large-scale regular and systematic monitoring of individuals) [State your conclusion]. We carry out data protection impact assessments on scoring and any new use of data.
+**8D.4 Retention.** Credit information is held in line with industry standards and our documented retention rules [Insert, e.g. account records for six years from the date of settlement or default]. Access and correction records for [Insert period].
+ENDOPT: 8D | Firms providing credit information services or credit references
+OPT: 8E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+**8E.1 What we process and why.** Identity, financial and due diligence data about investors and borrowers; creditworthiness and credit risk assessment data about borrowers; and transaction data. Lawful bases: contract, legal obligation (FCA and anti-money laundering rules) and legitimate interests (fraud prevention and credit risk management).
+**8E.2 Who we share with.** Credit reference and fraud prevention agencies; our banking and payment providers; collections agents; and, to the limited extent necessary, investors (who must not receive more borrower data than they need).
+**8E.3 Specific requirements.** We explain clearly in our privacy notices what investors can see about borrowers. We keep data needed for the administration of loans available under our wind-down arrangements, so loans can continue to be administered if we stop trading.
+**8E.4 Retention.** Loan records for the life of the loan plus [Insert period, e.g. six years]; investor records for [Insert period] after the investor’s account is closed.
+ENDOPT: 8E | Peer-to-peer lending platforms
+OPT: 8F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender.
+**8F.1 What we process and why.** Application, identity, affordability and credit reference data; account and payment data; and records of contact, arrears and forbearance. Lawful bases: contract, legal obligation (FCA, Consumer Credit Act and anti-money laundering rules) and legitimate interests (credit risk, fraud prevention, collections).
+**8F.2 Who we share with.** Credit reference agencies (searches and reporting of account performance in line with the industry’s data sharing principles), fraud prevention agencies, brokers who introduced the customer, debt collection agencies and debt purchasers.
+**8F.3 Specific requirements.** Our privacy notice links to the Credit Reference Agency Information Notice (CRAIN) and any fraud prevention agency notice. Where we make credit decisions based solely on automated processing, we tell applicants and provide the safeguards in section 7. We carry out a data protection impact assessment on our credit decisioning. We report accurate data to credit reference agencies and correct errors promptly.
+**8F.4 Retention.** Agreement and account records for the life of the agreement plus [Insert period, e.g. six years]; declined application records for [Insert period, e.g. 12 months, or longer if needed for complaints and fraud prevention]; anti-money laundering records for five years after the relationship ends.
+ENDOPT: 8F | Consumer credit lenders
+OPT: 8G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements.
+**8G.1 What we process and why.** Account data received on acquisition of agreements, together with contact, payment and arrears records. We process this as the controller from the date of acquisition.
+**8G.2 Who we share with.** Credit reference agencies, third-party servicers acting as our processors, collection agents, and debt advice agencies with the customer’s agreement.
+**8G.3 Specific requirements.** We make sure customers are told about the transfer and how we will use their data. On acquisition we check the data we receive is accurate and complete, and we only take the data we need.
+**8G.4 Retention.** Account records for the life of the agreement plus [Insert period, e.g. six years].
+ENDOPT: 8G | Firms exercising a lender’s rights and duties
+OPT: 8H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements.
+**8H.1 What we process and why.** Identity, credit and contact data; hire agreement and payment data; and, for some goods, data about the goods’ location or use (for example telematics in vehicles).
+**8H.2 Who we share with.** Credit reference and fraud prevention agencies, maintenance and delivery providers, and collection agents.
+**8H.3 Specific requirements.** Where goods collect location or usage data, we tell customers clearly, use it only for the purposes we have explained, and complete a data protection impact assessment.
+**8H.4 Retention.** Hire records for the life of the agreement plus [Insert period, e.g. six years].
+ENDOPT: 8H | Consumer hire firms
+OPT: 8I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+**8I.1 What we process and why.** Information needed to arrange cover and support claims, which may include health data (for example for travel, life or protection insurance) and criminal offence data (for example motoring convictions). Lawful bases: contract and legal obligation; for special category and criminal offence data, the Schedule 1 insurance condition or explicit consent, recorded in our appropriate policy document.
+**8I.2 Who we share with.** Insurers, other intermediaries in the distribution chain, premium finance providers, claims handlers, and industry fraud and claims databases.
+**8I.3 Specific requirements.** Where we collect data about people other than the customer (for example named drivers or family members), we make sure they are told how their data will be used.
+**8I.4 Retention.** Policy and advice records for [Insert period, e.g. six years after the policy ends], and longer where claims could be made later (for example liability policies) [Insert period].
+ENDOPT: 8I | Insurance distribution firms
+OPT: 8J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+**8J.1 What we process and why.** Detailed financial, employment and property information, identity documents, and sometimes health information (for example where it affects affordability or protection advice). Lawful bases: contract, legal obligation and legitimate interests; for health data, explicit consent or another recorded condition.
+**8J.2 Who we share with.** Lenders, packagers or mortgage clubs, surveyors and conveyancers (with the customer’s agreement), and protection or general insurers where we also arrange insurance.
+**8J.3 Specific requirements.** We only share information with lenders the customer has agreed to, and our privacy notice refers to the Credit Reference Agency Information Notice (CRAIN).
+**8J.4 Retention.** Advice and suitability records for at least the minimum period MCOB requires, and in practice for [Insert period, e.g. six years] after the advice to cover the limitation period and complaints.
+ENDOPT: 8J | Mortgage intermediaries
+OPT: 8K | Payment services firms | your firm provides payment services or issues electronic money.
+**8K.1 What we process and why.** Identity and due diligence data, payment and transaction data (including payer and payee information) and, for account information and payment initiation services, data accessed from customers’ accounts at other providers.
+**8K.2 Who we share with.** Banks and other payment service providers, payment systems, fraud prevention services, and – for account information services – only the recipients the customer has authorised.
+**8K.3 Specific requirements.** The Payment Services Regulations 2017 limit how we may access and use payment data: we only access, process and retain the personal data necessary to provide our payment services with the customer’s explicit consent, and we only use data obtained through account access for the service the customer requested. We carry out a data protection impact assessment on transaction monitoring and fraud controls.
+**8K.4 Retention.** Transaction and due diligence records for at least five years (as the Money Laundering Regulations require, where they apply to us) and [Insert other periods].
+ENDOPT: 8K | Payment services firms
+OPT: 8L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+**8L.1 What we process and why.** Detailed financial, family and employment information, attitude to risk and capacity for loss, and sometimes health information (for example for retirement or protection advice). Lawful bases: contract, legal obligation and legitimate interests; for health data, explicit consent or another recorded condition.
+**8L.2 Who we share with.** Product providers and platforms, other advisers (with the client’s agreement), and our compliance consultants.
+**8L.3 Specific requirements.** Where we record telephone calls or electronic communications (as COBS 11.8 requires for certain MiFID business), we tell clients and keep recordings securely.
+**8L.4 Retention.** Suitability records for the periods COBS requires (including indefinitely for pension transfer advice); recorded communications for five years where COBS 11.8 applies; other client records for [Insert period].
+ENDOPT: 8L | Investment advice and arranging firms
+
+# 9. Data sharing, processors and international transfers
+**9.1 Processors.** Where a supplier processes personal data on our behalf (for example IT, cloud, CRM or identity verification providers), we carry out due diligence before appointing them and have a written contract containing the terms Article 28 of the UK GDPR requires, including security, confidentiality, breach notification and deletion at the end of the contract. Our key processors are: [Insert list or reference to your supplier register].
+**9.2 Sharing with other controllers.** Where we share data with another controller (for example a lender or insurer), we make sure the sharing is lawful, fair and transparent, share only what is needed, and use a data sharing agreement where appropriate.
+**9.3 International transfers.** We only transfer personal data outside the UK where the transfer is covered by UK adequacy regulations, or by appropriate safeguards such as the ICO’s International Data Transfer Agreement or the UK Addendum to the EU Standard Contractual Clauses, supported by a transfer risk assessment. Our current international transfers are: [Insert details, or state “none”].
+**9.4 We do not sell personal data.**
+
+# 10. Security
+We protect personal data with technical and organisational measures appropriate to the risk (Article 32 of the UK GDPR). Our measures include:
+- **access control** – unique user accounts, access limited to what each role needs, multi-factor authentication for [Insert systems, e.g. email and customer systems], and prompt removal of access when staff leave;
+- **device and network security** – up-to-date software and operating systems, firewall and anti-malware protection, encryption of laptops and mobile devices, and secure configuration [Insert any certification you hold, e.g. Cyber Essentials, or delete];
+- **data in transit and at rest** – encrypted connections and storage for customer data;
+- **physical security** – locked storage for paper records and a clear-desk approach [delete if fully paperless];
+- **back-ups** – regular, tested back-ups held separately from live systems;
+- **secure disposal** – confidential shredding for paper and secure deletion for electronic data and devices; and
+- **people** – training, confidentiality obligations and awareness of phishing and social engineering.
+
+# 11. Personal data breaches
+A personal data breach is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data. Examples include sending an email to the wrong person, a lost laptop or a cyber attack.
+- **Report immediately.** Anyone who discovers or suspects a breach must report it immediately to [Insert name of data protection lead], however minor it seems.
+- **Contain and assess.** The data protection lead contains the breach and assesses the likely risk to individuals.
+- **Notify the ICO.** Where a breach is likely to result in a risk to individuals’ rights and freedoms, we notify the ICO without undue delay and, where feasible, within **72 hours** of becoming aware of it.
+- **Tell individuals.** Where a breach is likely to result in a high risk to individuals, we tell them without undue delay, explaining what happened and what they can do to protect themselves.
+- **Consider the FCA.** We consider whether the breach must also be notified to the FCA under Principle 11 and SUP 15 (for example a significant cyber incident or a breach affecting many customers).
+- **Record every breach** in our Data Breach Log, including those we do not report, with the facts, effects, remedial action and lessons learned.
+WATCH: The FCA’s new operational incident reporting rules (PS26/2, March 2026) apply to almost all FCA-regulated firms from 18 March 2027. Significant cyber incidents and data breaches may then need to be reported to the FCA using the new standard incident report. Update this section before that date.
+
+# 12. Data protection impact assessments
+Before we start any processing that is likely to result in a high risk to individuals – for example large-scale processing of special category data, credit scoring or profiling, systematic monitoring, new technology (including artificial intelligence tools), or significant new data sharing – we carry out a data protection impact assessment (DPIA). The DPIA describes the processing, assesses necessity and proportionality, identifies risks and sets out how we will reduce them. Where a high risk remains, we consult the ICO before starting. DPIAs are approved by [Insert name or role] and kept at [Insert location].
+
+# 13. Marketing and cookies
+- We only send electronic marketing (email, text and similar) where we have the individual’s consent or, for existing customers, where the “soft opt-in” applies (similar products and services, with a simple opt-out at collection and in every message).
+- We screen telephone marketing against the Telephone Preference Service unless the individual has specifically consented to calls from us. [Delete if you do not make marketing calls.]
+- We never use information about a customer’s financial difficulty or vulnerability to target them with marketing for credit or other products that could harm them.
+- We obtain consent for non-essential cookies and similar technologies, except where the law provides an exemption, and our cookie banner makes refusing as easy as accepting.
+- Our marketing also complies with our Financial Promotions Policy.
+Since the Data (Use and Access) Act 2025, breaches of PECR can attract fines at the same level as the UK GDPR.
+
+# 14. Data retention and deletion
+We keep personal data only for as long as we need it for the purposes we collected it for, including to meet legal, regulatory and accounting requirements and to deal with complaints and legal claims. Our retention periods are set out below and, for activity-specific records, in section 8. At the end of each period we securely delete or anonymise the data, unless we must keep it longer because of an ongoing complaint, investigation, legal hold or regulatory requirement.
+TABLE: 38,24,38
+| Record | Retention period | Reason |
+| Customer due diligence (anti-money laundering) records | Five years after the business relationship ends or the occasional transaction | Money Laundering Regulations (where they apply). After five years, the Regulations require deletion unless the law, legal proceedings or the individual’s consent allow longer retention. |
+| Complaint records | [Insert period – at least three years from receipt; we suggest six years] | DISP 1.9; Ombudsman time limits |
+| General customer and contract records | [Insert period, e.g. six years after the relationship ends] | Limitation Act 1980; FCA record keeping (SYSC 9) |
+| Financial promotion approval records | [Insert period – at least the minimum your activity rules require] | FCA rules for your activity |
+| Marketing consent records | For as long as we rely on the consent, plus [Insert period] | UK GDPR accountability; PECR |
+| Employee records | [Insert period, e.g. six years after employment ends] | Employment law; limitation periods |
+| Payroll and tax records | [Insert period – at least the period HMRC requires] | Tax law |
+| CCTV (if used) | [Insert period, e.g. 30 days] | Security; proportionality |
+| Website analytics | [Insert period] | Consent and data minimisation |
+Our Data Retention Schedule [Insert location] gives more detail and is reviewed annually. We keep a record of the deletion of significant data sets.
+
+# 15. Training and awareness
+All staff complete data protection training at induction and at least annually, covering this policy, recognising rights requests and complaints, security and phishing, and reporting breaches. Staff with specific responsibilities (for example the data protection lead) receive additional training. Completion is recorded in our Training Log.
+
+# 16. Data protection complaints
+Since 19 June 2026, the Data Protection Act 2018 (as amended by the Data (Use and Access) Act 2025) has required us to have a process for handling complaints about our use of personal data. We:
+- accept data protection complaints through any channel and make it easy to complain (for example through [Insert, e.g. an online form or email address]);
+- acknowledge each complaint within **30 days** of receiving it;
+- take appropriate steps to respond without undue delay, including making appropriate enquiries and keeping the complainant informed; and
+- tell the complainant the outcome and that they can complain to the ICO.
+Where a data protection complaint is also a complaint about our financial services, we also handle it under our Complaints Procedure and meet whichever deadline is shorter.
+
+# 17. Review
+This policy is reviewed at least annually by [Insert name of data protection lead], and sooner if the law, ICO guidance, FCA rules or our processing change. Changes are approved by [Insert: the board / the directors / the business owner].

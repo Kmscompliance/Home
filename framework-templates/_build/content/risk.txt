@@ -1,0 +1,145 @@
+HOWTO: framework
+NOTE: **What the FCA looks for.** At authorisation, the FCA wants to see that you have identified the specific risks your business model creates (for customers, the market and your firm), that you have realistic controls for each, that you have enough financial and non-financial resources, and that you could wind down in an orderly way if you had to. A generic framework with no firm-specific risks is a common weakness – complete the risk register in Appendix A with your own risks.
+
+# 1. Introduction
+This Risk Management Framework (RMF) sets out how [Insert firm legal name] (“we”, “the firm”) identifies, assesses, controls, monitors and reports the risks arising from its business. Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for].
+The RMF supports our obligations under SYSC 4.1.1R (robust governance arrangements and effective processes to identify, manage, monitor and report risks), SYSC 7 (risk control, where it applies to us), the Principles for Businesses, the Consumer Duty, and the Threshold Conditions – in particular the requirements to have appropriate resources (COND 2.4) and to be capable of being effectively supervised and managed in a sound and prudent way (COND 2.5).
+It is proportionate to our size and complexity: [Insert short description, e.g. “we are a small firm with two directors and three staff”].
+
+# 2. Objectives
+Our risk management objectives are to:
+- identify the risks that could cause harm to our customers, the market or the firm, including emerging risks;
+- assess those risks consistently, and decide how much risk we are prepared to accept (our risk appetite);
+- put in place and maintain controls that keep risks within appetite;
+- monitor risks and controls, and report clearly to decision-makers;
+- hold enough financial and non-financial resources to meet our obligations and absorb losses; and
+- be able to wind down our business in an orderly way, without causing undue harm to customers, if we needed to.
+
+# 3. Risk categories
+We consider the following categories of risk. Section 8 adds the risks that are specific to our regulated activities.
+TABLE: 25,75
+| Category | Examples |
+| Conduct and customer harm | Unsuitable products or advice; poor communications; failing customers with characteristics of vulnerability; poor value; unfair treatment in arrears or claims. |
+| Regulatory and legal | Breach of FCA rules or the law; failure to implement regulatory change; inaccurate reporting; failing to meet the Threshold Conditions. |
+| Financial crime | Money laundering, fraud, sanctions breaches, bribery and tax evasion facilitation. |
+| Operational | Failure of people, processes or systems; key person dependency; errors; outsourcing and supplier failure; business disruption. |
+| Technology, cyber and data | Cyber attack; data breach; system outage; loss of data. |
+| Financial and prudential | Insufficient capital or liquidity; income concentration (for example reliance on one lender, insurer or introducer); bad debts; unexpected costs, including redress. |
+| Strategic and business model | Changes in the market, competition or regulation that affect the viability of our business model. |
+| Reputational | Loss of trust from customers, partners or the FCA. |
+
+# 4. Risk appetite
+Our risk appetite describes how much risk we are willing to accept in pursuit of our objectives. It is approved by [Insert: the board / the directors / the business owner] and reviewed at least annually.
+TABLE: 25,20,55
+| Risk category | Appetite | Statement |
+| Conduct and customer harm | Very low | We will not accept risks that could cause foreseeable harm to customers. [Insert any measurable limits, e.g. complaint uphold rate, file review pass rate.] |
+| Regulatory and legal | Very low | We aim to comply fully with all rules. Breaches are escalated and remedied promptly. |
+| Financial crime | Very low | We will not knowingly accept business that could facilitate financial crime. |
+| Operational | Low | We accept minor operational errors that are identified and corrected quickly, but not those that affect customers. [Insert tolerances, e.g. maximum system downtime.] |
+| Technology, cyber and data | Low | [Insert statement.] |
+| Financial and prudential | Low | We will hold at least [Insert amount or measure, e.g. the prudential requirement plus a buffer of X%, or at least X months of fixed costs] at all times. |
+| Strategic | Moderate | [Insert statement, e.g. we accept moderate risk in growing the business provided growth does not outpace our controls.] |
+
+# 5. The risk management process
+**5.1 Identify.** We identify risks through: business planning; changes to products, channels or partners; complaints and customer feedback; compliance monitoring and incidents; regulatory developments and FCA publications; and a formal risk review at least [Insert frequency, e.g. quarterly]. All identified risks are recorded in our Risk Register (Appendix A).
+**5.2 Assess.** Each risk is scored for **impact** (1 to 5) and **likelihood** (1 to 5) before controls (inherent risk) and after controls (residual risk). Impact considers harm to customers, the market and the firm (financial, regulatory and reputational). Residual scores of 15 or more are **high**, 8 to 14 are **medium**, and 1 to 7 are **low**.
+**5.3 Control.** For each risk we decide whether to reduce it (through controls such as policies, procedures, checks, systems, training, insurance or contractual protections), avoid it (by not doing the activity), transfer it (for example through insurance), or accept it within appetite. Each control has a named owner.
+**5.4 Monitor.** Risk owners monitor their risks using key risk indicators [Insert examples, e.g. complaint volumes, arrears rates, overdue training, system downtime]. Controls are tested through our Compliance Monitoring Plan.
+**5.5 Report and escalate.** A risk report is presented to [Insert: the board / the directors / the business owner] at least [Insert frequency], covering high and increasing risks, breaches of appetite, incidents, key risk indicators and actions. Any risk that moves outside appetite is escalated immediately to [Insert name].
+
+# 6. Financial resources and wind-down planning
+**6.1 Adequate financial resources.** We assess our financial resources at least [Insert frequency] to make sure we can meet our liabilities as they fall due, meet any prudential requirement for our activities (see section 8), absorb losses in a severe but plausible stress, and fund an orderly wind-down. We follow the FCA’s guidance on assessing adequate financial resources. Our current position and projections are set out in [Insert reference to your financial projections / business plan].
+**6.2 Stress testing.** At least annually we test the effect of severe but plausible scenarios on our finances – for example [Insert scenarios, e.g. loss of our main lender relationship; a 50% fall in income; a large redress payment; the loss of a key person].
+**6.3 Wind-down plan.** We maintain a wind-down plan that sets out the triggers that would lead us to consider winding down, the steps we would take, the time and cost involved, how we would treat customers (including any money or assets we hold for them) and how we would communicate with the FCA. It follows the FCA’s Wind-down Planning Guide and is reviewed at least annually. [Insert reference.]
+
+# 7. Operational resilience, outsourcing and business continuity
+- **Business continuity.** We maintain a business continuity plan covering loss of premises, systems, key suppliers and key people. It is tested at least annually. [Insert reference.]
+- **Key person risk.** [Describe your arrangements, e.g. who covers if the director is unavailable.]
+- **Outsourcing and suppliers.** We carry out due diligence on critical suppliers, have written agreements, monitor performance and have exit plans, as SYSC 8 requires. We remain responsible for outsourced activities.
+- **Cyber security.** We maintain the security controls set out in our Data Processing Policy.
+- **Incident management.** Incidents are recorded, managed and reviewed for lessons learned, and assessed for notification to the FCA under Principle 11 and SUP 15.
+WATCH: The FCA’s new operational incident and third-party reporting rules (PS26/2, March 2026) apply to almost all FCA-regulated firms from 18 March 2027, introducing standard incident reports and notification of material third-party arrangements. Update this section, and your incident and outsourcing procedures, before that date.
+
+# 8. Activity-specific risks and prudential requirements
+NOTE: Keep every option below that matches a permission you hold or are applying for, and delete the rest. Each option sets out the key risks and any prudential or resilience requirements specific to that activity.
+OPT: 8A | Credit broking firms | your firm carries on, or is applying for, the credit broking permission.
+**8A.1 Key risks.** Poor explanations or pressure selling at point of sale; inadequate commission disclosure; submission of inaccurate or fraudulent applications; dependence on a small number of lenders; introducer and staff misconduct; and redress exposure from historic commission arrangements (for example in motor finance).
+**8A.2 Prudential requirements.** There is no specific capital requirement for credit brokers, but we must have adequate financial resources under the Threshold Conditions, including to meet potential redress liabilities. [State your approach, e.g. a minimum cash buffer.]
+**8A.3 Resilience considerations.** Our income depends on lender relationships: we assess the impact of losing our main lender(s) and have a plan to replace them or wind down.
+ENDOPT: 8A | Credit broking firms
+OPT: 8B | Debt adjusting and debt counselling firms | your firm carries on, or is applying for, debt adjusting and/or debt counselling.
+**8B.1 Key risks.** Unsuitable debt advice; customers’ financial difficulty or vulnerability being made worse; fees that do not offer fair value; lead generation risks; and loss or misuse of client money.
+**8B.2 Prudential requirements.** Debt management firms are subject to the prudential rules in CONC 10, which set a minimum level of financial resources (based on the client money we hold). Where we hold client money, we must comply with CASS 11, including reconciliations and audit requirements.
+**8B.3 Resilience considerations.** Our wind-down plan explains how customers’ plans would be transferred or closed, how client money would be returned or distributed, and how customers would be supported, if we stopped trading.
+ENDOPT: 8B | Debt adjusting and debt counselling firms
+OPT: 8C | Debt collecting and debt administration firms | your firm carries on, or is applying for, debt collecting and/or debt administration.
+**8C.1 Key risks.** Unfair treatment of customers in arrears; collection activity that harms vulnerable customers; inaccurate data received from clients; pursuing the wrong person or statute-barred debts; and loss or delay of collected funds.
+**8C.2 Prudential requirements.** There is no specific capital requirement, but we must have adequate financial resources under the Threshold Conditions. Where we hold money collected for clients, we protect it in [Insert: a designated client account / other arrangement] and reconcile it [Insert frequency].
+**8C.3 Resilience considerations.** Our contracts with clients set out how accounts and collected money would be returned if we stopped trading.
+ENDOPT: 8C | Debt collecting and debt administration firms
+OPT: 8D | Firms providing credit information services or credit references | your firm provides credit information services and/or credit references.
+**8D.1 Key risks.** Inaccurate data causing customers to be refused credit or charged more; data breaches and cyber attacks; misuse of data; misleading promotion of services; and failure to handle disputes and corrections properly.
+**8D.2 Prudential requirements.** There is no specific capital requirement, but we must have adequate financial resources under the Threshold Conditions.
+**8D.3 Resilience considerations.** Because lenders and consumers rely on our data, system availability and data integrity are critical. We set impact tolerances for outages and test our recovery arrangements.
+ENDOPT: 8D | Firms providing credit information services or credit references
+OPT: 8E | Peer-to-peer lending platforms | your firm operates, or is applying to operate, an electronic system in relation to lending.
+**8E.1 Key risks.** Poor credit risk assessment or pricing; investors not understanding the risk of loss; conflicts between the platform’s interests and those of investors; loss of client money; and platform failure.
+**8E.2 Prudential requirements.** We must meet the capital requirements in IPRU-INV 12 and hold client money in line with CASS 7.
+**8E.3 Resilience considerations.** We must have arrangements to ensure that loans continue to be administered if the platform ceases to carry on its business (for example a back-up servicer). Our wind-down plan sets out how this would work and is tested at least annually.
+ENDOPT: 8E | Peer-to-peer lending platforms
+OPT: 8F | Consumer credit lenders | your firm enters into, or is applying to enter into, regulated credit agreements as lender.
+**8F.1 Key risks.** Irresponsible lending; poor treatment of customers in arrears; credit losses higher than expected; funding risk (dependence on a single funder); fraud; errors in agreements or statutory notices that can make agreements unenforceable or require redress; and redress exposure from historic practices.
+**8F.2 Prudential requirements.** There is no specific capital requirement for consumer credit lenders, but we must have adequate financial resources under the Threshold Conditions. Our assessment covers expected and stressed credit losses, funding maturity and covenants, and potential redress.
+**8F.3 Resilience considerations.** Our wind-down plan explains how existing agreements would continue to be serviced (for example through a sale of the loan book or a back-up servicer) so that customers are not harmed if we stop lending.
+ENDOPT: 8F | Consumer credit lenders
+OPT: 8G | Firms exercising a lender’s rights and duties | your firm exercises, or has the right to exercise, the lender’s rights and duties under regulated credit agreements.
+**8G.1 Key risks.** Inheriting poor practices or data from the seller; enforcing agreements that are unenforceable; unfair treatment of customers in arrears; servicer failure; and funding and valuation risk on purchased portfolios.
+**8G.2 Prudential requirements.** There is no specific capital requirement, but we must have adequate financial resources under the Threshold Conditions, including for potential redress on acquired agreements.
+**8G.3 Resilience considerations.** We carry out due diligence before each purchase and have arrangements for servicing to continue if our servicer or our firm fails.
+ENDOPT: 8G | Firms exercising a lender’s rights and duties
+OPT: 8H | Consumer hire firms | your firm hires out goods under regulated consumer hire agreements.
+**8H.1 Key risks.** Unclear or unfair end-of-hire charges; poor treatment of customers in arrears and repossession; goods not fit for purpose; residual value risk on goods; and fraud.
+**8H.2 Prudential requirements.** There is no specific capital requirement, but we must have adequate financial resources under the Threshold Conditions, including for residual value losses.
+**8H.3 Resilience considerations.** Our wind-down plan explains how hire agreements and goods would be managed if we stopped trading.
+ENDOPT: 8H | Consumer hire firms
+OPT: 8I | Insurance distribution firms | your firm carries on, or is applying for, insurance distribution.
+**8I.1 Key risks.** Unsuitable sales or failure to identify demands and needs; poor value products (including add-ons); remuneration that creates conflicts; claims support failures; and loss of client money.
+**8I.2 Prudential requirements.** We must meet the capital resources requirement in MIPRU 4 and hold professional indemnity insurance that meets MIPRU 3. Where we hold client money, we comply with CASS 5 (or hold it under a risk transfer agreement with the insurer).
+**8I.3 Resilience considerations.** Our wind-down plan explains how customers’ policies and any client money would be handled, and how customers would be told who to contact for claims and renewals.
+ENDOPT: 8I | Insurance distribution firms
+OPT: 8J | Mortgage intermediaries | your firm advises on and/or arranges regulated mortgage contracts.
+**8J.1 Key risks.** Unsuitable advice (including debt consolidation and longer terms); mortgage fraud; fees that do not offer fair value; dependence on a network, club or small number of lenders; and redress liabilities.
+**8J.2 Prudential requirements.** We must meet the capital resources requirement in MIPRU 4 and hold professional indemnity insurance that meets MIPRU 3.
+**8J.3 Resilience considerations.** Our wind-down plan explains how cases in progress would be completed or transferred.
+ENDOPT: 8J | Mortgage intermediaries
+OPT: 8K | Payment services firms | your firm provides payment services or issues electronic money.
+**8K.1 Key risks.** Safeguarding failures; operational and security incidents; fraud (including authorised push payment fraud); financial crime; dependence on a bank or payment scheme; and outsourcing failure.
+**8K.2 Prudential requirements.** Authorised payment institutions and e-money institutions must meet the initial capital and own funds requirements of the Payment Services Regulations 2017 or the Electronic Money Regulations 2011. [State whether you are a small payment institution, registered account information service provider, authorised payment institution or e-money institution, and your requirement.] Firms holding relevant funds must safeguard them under CASS 15 (in force since 7 May 2026), including daily reconciliations, a resolution pack, monthly safeguarding returns and an annual safeguarding audit.
+**8K.3 Resilience considerations.** We must manage operational and security risks and report major incidents as the Payment Services Regulations require. Payment and e-money institutions are also subject to the FCA’s operational resilience rules in SYSC 15A, which require us to identify important business services, set impact tolerances and test that we can remain within them. [Confirm whether SYSC 15A applies to your firm.]
+ENDOPT: 8K | Payment services firms
+OPT: 8L | Investment advice and arranging firms | your firm advises on and/or arranges deals in investments.
+**8L.1 Key risks.** Unsuitable advice; ongoing services not delivered; high-risk investments; conflicts of interest; poor value charges; and redress liabilities (including for historic advice).
+**8L.2 Prudential requirements.** [Keep the sentence that applies.] Personal investment firms must meet the capital requirements in IPRU-INV 13 and hold professional indemnity insurance. MiFID investment firms must meet the requirements in MIFIDPRU, including an Internal Capital Adequacy and Risk Assessment (ICARA). Where we hold client money or assets, we comply with CASS.
+**8L.3 Resilience considerations.** Our wind-down plan explains how clients would be transferred to another adviser and how ongoing service arrangements would end fairly.
+ENDOPT: 8L | Investment advice and arranging firms
+
+# 9. Roles and responsibilities
+NOTE: Name real people. In a small firm, one person may hold several roles.
+- **[Insert: the board / the directors / the business owner]** – owns this framework; sets risk appetite; reviews risk reports; approves the wind-down plan and financial resources assessment.
+- **[Insert name] – responsible for risk management** – maintains the Risk Register; coordinates risk reviews; reports on risk; challenges risk owners. [For SM&CR firms, record this responsibility in the individual’s Statement of Responsibilities.]
+- **Risk owners** – named for each risk in the Risk Register; monitor their risks and controls and report changes.
+- **All staff** – follow policies and procedures; report incidents, errors, complaints and concerns promptly; complete training.
+
+# 10. Review and evaluation
+This framework, the risk appetite and the Risk Register are reviewed at least annually, and sooner if our business model, products, partners or the regulatory environment change significantly, or if an incident or monitoring shows the framework is not working. Changes are approved by [Insert: the board / the directors / the business owner].
+
+# 11. Conclusion
+[Insert firm legal name] is committed to managing risk in a way that protects our customers, supports good outcomes and keeps our business sound. By following this framework, we aim to identify and deal with risks early, before they cause harm.
+
+# Appendix A – Risk Register template
+NOTE: Complete the register with your own risks – aim for the 10 to 20 risks that matter most to your business. The example row shows the level of detail expected. Delete it once you have added your own.
+TABLE: 5,17,8,8,26,8,14,14
+| Ref | Risk description | Inherent score (I×L) | Residual score | Key controls | Appetite met? | Owner | Actions / next review |
+| R1 | [Example: Customers are introduced to credit they cannot afford because staff focus on completing sales] | [e.g. 4×4 = 16] | [e.g. 4×2 = 8] | [e.g. sales training; commission not linked to lender choice; monthly file reviews] | [Yes / No] | [Insert owner] | [Insert action and date] |
+| R2 | [Insert risk] | | | | | | |
+| R3 | [Insert risk] | | | | | | |
