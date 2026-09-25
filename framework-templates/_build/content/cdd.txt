@@ -105,7 +105,7 @@ ENDOPT: 3L | Investment advice and arranging firms
 **4.3 Checking documents.** Staff check that documents appear genuine and unaltered, that photographs are a true likeness, that details are consistent across documents and with what the customer has told us, and that the customer’s behaviour does not suggest impersonation.
 **4.4 Customers who cannot provide standard evidence.** Some customers, including people in vulnerable circumstances, may not have standard documents. We will not exclude them unreasonably. [Insert name or role] may approve alternative evidence (for example a letter from a care home manager, a benefits award letter, or a letter from a recognised professional), and records the reason.
 **4.5 Purpose and intended nature.** We record why the customer is using our service and what we expect their activity to look like, so that we can recognise activity that is unusual for them.
-**4.6 Sanctions screening.** Every customer (and, where relevant, beneficial owners and third-party payers) is screened against the UK sanctions list before onboarding, as our Anti-Money Laundering Policy requires.
+**4.6 Sanctions screening.** Every customer (and, where relevant, beneficial owners and third-party payers) is screened against the UK sanctions list before onboarding, as our Anti-Money Laundering Policy requires. Results are recorded in the Sanctions Screening Log.
 **4.7 Third-party payments.** Where someone other than the customer pays us, or funds a deposit or transaction, we identify the payer, establish their relationship to the customer, and record a credible explanation. We do not accept third-party payments where we cannot do so.
 
 # 5. Customer risk assessment
@@ -115,7 +115,7 @@ We give every customer a risk rating – **low**, **standard** or **high** – w
 - how we deal with the customer (face-to-face, remote, or through an introducer);
 - geography (where the customer lives or where funds come from); and
 - any warning signs identified during onboarding.
-The rating decides whether SDD, standard CDD or EDD applies and how closely we monitor the relationship. It is recorded in the Customer Due Diligence Register and reviewed when circumstances change.
+The rating decides whether SDD, standard CDD or EDD applies and how closely we monitor the relationship. It is recorded in the CDD Register (in the Customer Due Diligence Checklist workbook) and reviewed when circumstances change. Each customer’s checks are recorded on the CDD Checklist and, where enhanced due diligence applies, the EDD Checklist.
 
 # 6. Simplified due diligence
 NOTE: SDD is a concept in the MLRs. If your firm is outside the MLRs, delete this section – you already apply proportionate measures under section 3.
@@ -136,7 +136,7 @@ Dealing with a customer remotely is a risk factor we take into account, not an a
 - obtaining **senior management approval** before establishing or continuing the relationship (always required for PEPs, for firms within the MLRs);
 - more frequent and closer monitoring of the relationship; and
 - reviewing the relationship at least [Insert frequency].
-**7.3 Recording decisions.** All EDD decisions, the evidence obtained and the approver’s name are recorded in the Customer Due Diligence Register.
+**7.3 Recording decisions.** All EDD decisions, the evidence obtained and the approver’s name are recorded on the EDD Checklist and in the CDD Register.
 
 # 8. Where CDD cannot be completed
 If we cannot complete the CDD this policy requires, we must not establish the relationship, carry out the transaction, or submit the application. Where a relationship already exists, we will take steps to end it. In each case, the member of staff must consider whether the circumstances give rise to knowledge or suspicion of money laundering, terrorist financing or fraud, and if so report it to the MLRO. We will not tell the customer anything that could tip them off.
@@ -155,7 +155,7 @@ We monitor each relationship to make sure activity is consistent with what we kn
 Monitoring is carried out by [Insert name or role] and supervised by the MLRO. Unusual activity is reported to the MLRO.
 
 # 11. Records
-We keep, in the Customer Due Diligence Register and customer files:
+We keep, in the CDD Checklist, EDD Checklist, CDD Register and customer files:
 - copies of, or references to, the evidence used to verify identity, the date and method of verification and the name of the person who carried it out;
 - the customer risk rating and the reasons for it;
 - records of SDD and EDD decisions, including approvals;
@@ -188,3 +188,15 @@ TABLE: 50,50
 | Current EEA national identity card | Council tax bill for the current year |
 | Current UK Armed Forces identity card | HMRC tax notification or DWP benefit letter for the current tax year |
 | [Insert any other document your firm accepts] | Current UK photocard driving licence (if not already used as proof of identity) |
+
+# 15. Supporting registers
+The KMS registers below support this policy. They are an essential part of it, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,32,40
+| Register | KMS file | What it evidences |
+| CDD Checklist and EDD Checklist | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx | Due diligence completed for each customer before onboarding |
+| CDD Register | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx (CDD Register tab) | Every customer’s verification, risk rating, screening, review and deletion dates |
+| Sanctions Screening Log | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx (Sanctions Screening Log tab) | Sanctions screening, potential matches and decisions, and OFSI reports |
+| AML Incident Register | Anti_Money_Laundering_Incident_Register_v2.0_Template.docx | Every internal suspicious activity report, the MLRO’s reasoning and decision, SARs and DAML requests |
+| AML Business-Wide Risk Assessment | AML_Business_Wide_Risk_Assessment_v2.0_Template.xlsx | The firm-wide assessment of financial crime risk that drives our controls |
+| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |

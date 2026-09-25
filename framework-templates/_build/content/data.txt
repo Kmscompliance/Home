@@ -27,7 +27,7 @@ We comply with the principles in Article 5 of the UK GDPR. Personal data must be
 - **accurate** and, where necessary, kept up to date;
 - kept for **no longer than necessary**; and
 - kept **secure**.
-We are responsible for, and must be able to demonstrate, compliance with these principles (**accountability**). We keep a Record of Processing Activities [Insert location], carry out data protection impact assessments where required (section 12), and keep records of our decisions.
+We are responsible for, and must be able to demonstrate, compliance with these principles (**accountability**). We keep a Record of Processing Activities (the ROPA tab in the Data Protection Registers workbook), carry out data protection impact assessments where required (section 12), and keep records of our decisions.
 
 # 4. Roles and responsibilities
 TABLE: 30,70
@@ -68,7 +68,7 @@ TABLE: 26,74
 **Timescales.** We respond without undue delay and within **one month** of receipt. We may extend this by up to two further months for complex or numerous requests, telling the individual within the first month. Where we reasonably need information to identify the individual or clarify the request, the time limit is paused until we receive it.
 **Verification and third parties.** We verify identity proportionately before releasing data. We act for a third party (for example a solicitor, relative or claims management company) only where they provide evidence of their authority.
 **Fees and refusals.** We do not charge a fee, except where a request is manifestly unfounded or excessive, in which case we may charge a reasonable fee or refuse, explaining why and telling the individual of their right to complain to the ICO.
-**Logging.** All requests are recorded in our Data Rights Request Log [Insert location].
+**Logging.** All requests are recorded in our Data Rights Request Log (in the Data Protection Registers workbook).
 
 # 8. Activity-specific processing
 NOTE: Keep every option below that matches a permission you hold or are applying for, and delete the rest. Each option describes the typical data, sharing, specific rules and retention for that activity. Adjust the details so they match what you actually do.
@@ -172,7 +172,7 @@ A personal data breach is a breach of security leading to the accidental or unla
 WATCH: The FCA’s new operational incident reporting rules (PS26/2, March 2026) apply to almost all FCA-regulated firms from 18 March 2027. Significant cyber incidents and data breaches may then need to be reported to the FCA using the new standard incident report. Update this section before that date.
 
 # 12. Data protection impact assessments
-Before we start any processing that is likely to result in a high risk to individuals – for example large-scale processing of special category data, credit scoring or profiling, systematic monitoring, new technology (including artificial intelligence tools), or significant new data sharing – we carry out a data protection impact assessment (DPIA). The DPIA describes the processing, assesses necessity and proportionality, identifies risks and sets out how we will reduce them. Where a high risk remains, we consult the ICO before starting. DPIAs are approved by [Insert name or role] and kept at [Insert location].
+Before we start any processing that is likely to result in a high risk to individuals – for example large-scale processing of special category data, credit scoring or profiling, systematic monitoring, new technology (including artificial intelligence tools), or significant new data sharing – we carry out a data protection impact assessment (DPIA). The DPIA describes the processing, assesses necessity and proportionality, identifies risks and sets out how we will reduce them. Where a high risk remains, we consult the ICO before starting. DPIAs are approved by [Insert name or role], kept at [Insert location] and listed in the DPIA Register.
 
 # 13. Marketing and cookies
 - We only send electronic marketing (email, text and similar) where we have the individual’s consent or, for existing customers, where the “soft opt-in” applies (similar products and services, with a simple opt-out at collection and in every message).
@@ -195,7 +195,7 @@ TABLE: 38,24,38
 | Payroll and tax records | [Insert period – at least the period HMRC requires] | Tax law |
 | CCTV (if used) | [Insert period, e.g. 30 days] | Security; proportionality |
 | Website analytics | [Insert period] | Consent and data minimisation |
-Our Data Retention Schedule [Insert location] gives more detail and is reviewed annually. We keep a record of the deletion of significant data sets.
+Our Data Retention Schedule (in the Data Protection Registers workbook) gives more detail and is reviewed annually. We keep a record of the deletion of significant data sets.
 
 # 15. Training and awareness
 All staff complete data protection training at induction and at least annually, covering this policy, recognising rights requests and complaints, security and phishing, and reporting breaches. Staff with specific responsibilities (for example the data protection lead) receive additional training. Completion is recorded in our Training Log.
@@ -205,8 +205,18 @@ Since 19 June 2026, the Data Protection Act 2018 (as amended by the Data (Use an
 - accept data protection complaints through any channel and make it easy to complain (for example through [Insert, e.g. an online form or email address]);
 - acknowledge each complaint within **30 days** of receiving it;
 - take appropriate steps to respond without undue delay, including making appropriate enquiries and keeping the complainant informed; and
-- tell the complainant the outcome and that they can complain to the ICO.
+- tell the complainant the outcome and that they can complain to the ICO; and
+- record each data protection complaint in the DP Complaints Log (in the Data Protection Registers workbook).
 Where a data protection complaint is also a complaint about our financial services, we also handle it under our Complaints Procedure and meet whichever deadline is shorter.
 
 # 17. Review
 This policy is reviewed at least annually by [Insert name of data protection lead], and sooner if the law, ICO guidance, FCA rules or our processing change. Changes are approved by [Insert: the board / the directors / the business owner].
+
+# 18. Supporting registers
+The KMS registers below support this policy. They are an essential part of it, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,32,40
+| Register | KMS file | What it evidences |
+| Data Protection Registers (ROPA, Data Rights Request Log, Data Breach Log, DP Complaints Log, Data Retention Schedule, DPIA Register) | Data_Protection_Registers_v2.0_Template.xlsx | Accountability under the UK GDPR: processing, rights requests, breaches, complaints, retention and DPIAs |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
+| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |

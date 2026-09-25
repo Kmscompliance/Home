@@ -1,5 +1,5 @@
 HOWTO: framework
-NOTE: **What the FCA looks for.** At authorisation, the FCA wants to see that you have identified the specific risks your business model creates (for customers, the market and your firm), that you have realistic controls for each, that you have enough financial and non-financial resources, and that you could wind down in an orderly way if you had to. A generic framework with no firm-specific risks is a common weakness – complete the risk register in Appendix A with your own risks.
+NOTE: **What the FCA looks for.** At authorisation, the FCA wants to see that you have identified the specific risks your business model creates (for customers, the market and your firm), that you have realistic controls for each, that you have enough financial and non-financial resources, and that you could wind down in an orderly way if you had to. A generic framework with no firm-specific risks is a common weakness – complete the Risk Assessment Log with your own risks.
 
 # 1. Introduction
 This Risk Management Framework (RMF) sets out how [Insert firm legal name] (“we”, “the firm”) identifies, assesses, controls, monitors and reports the risks arising from its business. Our regulated activities are: [Specify the regulated activities / permissions your firm holds or is applying for].
@@ -41,7 +41,7 @@ TABLE: 25,20,55
 | Strategic | Moderate | [Insert statement, e.g. we accept moderate risk in growing the business provided growth does not outpace our controls.] |
 
 # 5. The risk management process
-**5.1 Identify.** We identify risks through: business planning; changes to products, channels or partners; complaints and customer feedback; compliance monitoring and incidents; regulatory developments and FCA publications; and a formal risk review at least [Insert frequency, e.g. quarterly]. All identified risks are recorded in our Risk Register (Appendix A).
+**5.1 Identify.** We identify risks through: business planning; changes to products, channels or partners; complaints and customer feedback; compliance monitoring and incidents; regulatory developments and FCA publications; and a formal risk review at least [Insert frequency, e.g. quarterly]. All identified risks are recorded in our Risk Assessment Log (see Appendix A).
 **5.2 Assess.** Each risk is scored for **impact** (1 to 5) and **likelihood** (1 to 5) before controls (inherent risk) and after controls (residual risk). Impact considers harm to customers, the market and the firm (financial, regulatory and reputational). Residual scores of 15 or more are **high**, 8 to 14 are **medium**, and 1 to 7 are **low**.
 **5.3 Control.** For each risk we decide whether to reduce it (through controls such as policies, procedures, checks, systems, training, insurance or contractual protections), avoid it (by not doing the activity), transfer it (for example through insurance), or accept it within appetite. Each control has a named owner.
 **5.4 Monitor.** Risk owners monitor their risks using key risk indicators [Insert examples, e.g. complaint volumes, arrears rates, overdue training, system downtime]. Controls are tested through our Compliance Monitoring Plan.
@@ -126,20 +126,27 @@ ENDOPT: 8L | Investment advice and arranging firms
 # 9. Roles and responsibilities
 NOTE: Name real people. In a small firm, one person may hold several roles.
 - **[Insert: the board / the directors / the business owner]** – owns this framework; sets risk appetite; reviews risk reports; approves the wind-down plan and financial resources assessment.
-- **[Insert name] – responsible for risk management** – maintains the Risk Register; coordinates risk reviews; reports on risk; challenges risk owners. [For SM&CR firms, record this responsibility in the individual’s Statement of Responsibilities.]
-- **Risk owners** – named for each risk in the Risk Register; monitor their risks and controls and report changes.
+- **[Insert name] – responsible for risk management** – maintains the Risk Assessment Log; coordinates risk reviews; reports on risk; challenges risk owners. [For SM&CR firms, record this responsibility in the individual’s Statement of Responsibilities.]
+- **Risk owners** – named for each risk in the Risk Assessment Log; monitor their risks and controls and report changes.
 - **All staff** – follow policies and procedures; report incidents, errors, complaints and concerns promptly; complete training.
 
 # 10. Review and evaluation
-This framework, the risk appetite and the Risk Register are reviewed at least annually, and sooner if our business model, products, partners or the regulatory environment change significantly, or if an incident or monitoring shows the framework is not working. Changes are approved by [Insert: the board / the directors / the business owner].
+This framework, the risk appetite and the Risk Assessment Log are reviewed at least annually, and sooner if our business model, products, partners or the regulatory environment change significantly, or if an incident or monitoring shows the framework is not working. Changes are approved by [Insert: the board / the directors / the business owner].
 
 # 11. Conclusion
 [Insert firm legal name] is committed to managing risk in a way that protects our customers, supports good outcomes and keeps our business sound. By following this framework, we aim to identify and deal with risks early, before they cause harm.
 
-# Appendix A – Risk Register template
-NOTE: Complete the register with your own risks – aim for the 10 to 20 risks that matter most to your business. The example row shows the level of detail expected. Delete it once you have added your own.
-TABLE: 5,17,8,8,26,8,14,14
-| Ref | Risk description | Inherent score (I×L) | Residual score | Key controls | Appetite met? | Owner | Actions / next review |
-| R1 | [Example: Customers are introduced to credit they cannot afford because staff focus on completing sales] | [e.g. 4×4 = 16] | [e.g. 4×2 = 8] | [e.g. sales training; commission not linked to lender choice; monthly file reviews] | [Yes / No] | [Insert owner] | [Insert action and date] |
-| R2 | [Insert risk] | | | | | | |
-| R3 | [Insert risk] | | | | | | |
+# Appendix A – Risk Assessment Log
+Our risks are recorded in the KMS Risk Assessment Log (Risk_Assessment_Log_v2.0_Template.xlsx). It applies the scoring in section 5.2, calculates inherent and residual scores and ratings, records controls, appetite, owners and actions, and contains starter risks for every firm and for each regulated activity.
+NOTE: The starter risks are examples, not a finished assessment. Rewrite each in terms of your own business, delete those that do not apply, add your own (aim for the 10 to 20 risks that matter most), and score them. The FCA expects a risk register that is clearly specific to your firm.
+
+# Appendix B – Supporting registers
+The KMS registers below support this framework. They are an essential part of it, not optional extras: the FCA judges whether a framework works in practice by looking at these records, and a framework without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,32,40
+| Register | KMS file | What it evidences |
+| Risk Assessment Log | Risk_Assessment_Log_v2.0_Template.xlsx | Identified risks, inherent and residual scores, controls, appetite and actions |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
+| Compliance Monitoring Tracker (Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register) | Compliance_Monitoring_Tracker_v2.0_Template.xlsx | Checks completed against the plan, file review results, corrective actions to closure, and the requirements that apply to us |
+| AML Business-Wide Risk Assessment | AML_Business_Wide_Risk_Assessment_v2.0_Template.xlsx | The firm-wide assessment of financial crime risk that drives our controls |
+| Consumer Duty Evidence (Outcome MI, Target Market Register, Fair Value Register, Board Report Actions) | Consumer_Duty_Evidence_v2.0_Template.xlsx | Outcome monitoring, target markets, fair value assessments and board report actions |
