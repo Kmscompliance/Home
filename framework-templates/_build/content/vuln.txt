@@ -142,17 +142,17 @@ We discuss real cases (anonymised) in [Insert forum, e.g. monthly team meetings]
 - management information such as complaints, arrears, cancellations and customer feedback, split between customers with and without recorded characteristics of vulnerability where possible;
 - call listening or observation [delete if not applicable]; and
 - feedback from staff about barriers they see.
-The results are recorded in the Outcome MI tab of the Consumer Duty Evidence workbook, reported to [Insert: the board / the directors / the business owner] at least [Insert frequency] and included in our annual Consumer Duty board report. Where we find that vulnerable customers are getting worse outcomes, we act to fix the cause.
+The results are recorded in the Consumer Duty Outcome MI register, reported to [Insert: the board / the directors / the business owner] at least [Insert frequency] and included in our annual Consumer Duty board report. Where we find that vulnerable customers are getting worse outcomes, we act to fix the cause.
 
 # Supporting registers
-The KMS registers below support this policy. They are an essential part of it, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this policy. Each is a separate file. They are an essential part of the policy, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
-| Consumer Duty Evidence (Outcome MI, Target Market Register, Fair Value Register, Board Report Actions) | Consumer_Duty_Evidence_v2.0_Template.xlsx | Outcome monitoring, target markets, fair value assessments and board report actions |
-| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |
+| Consumer Duty Outcome MI | Consumer_Duty_Outcome_MI_v2.0_Template.xlsx | Outcome monitoring for all customers and for vulnerable customers |
+| Training Log | Training_Log_v2.0_Template.xlsx | Every training activity completed, results and next-due dates |
 | Complaints Register | Complaints_Register_v2.0_Template.xlsx | Every complaint, DISP deadlines, outcomes, redress, root causes and Ombudsman referrals |
-| Data Protection Registers (ROPA, Data Rights Request Log, Data Breach Log, DP Complaints Log, Data Retention Schedule, DPIA Register) | Data_Protection_Registers_v2.0_Template.xlsx | Accountability under the UK GDPR: processing, rights requests, breaches, complaints, retention and DPIAs |
+| Record of Processing Activities | Record_of_Processing_Activities_v2.0_Template.xlsx | Our processing activities, lawful bases, sharing and retention (Article 30 UK GDPR) |
 
 # Review
 This policy is reviewed at least annually, and sooner if the FCA publishes new rules or guidance, our business changes, or our monitoring shows it is not working well. Changes are approved by [Insert: the board / the directors / the business owner].

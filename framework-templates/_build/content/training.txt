@@ -19,7 +19,7 @@ This policy applies to everyone acting on our behalf, whatever their contract or
 - carries out customer due diligence or handles payments;
 - handles personal data or complaints; or
 - performs a senior management or certification function.
-The training each person needs depends on their role. Our training matrix is below and is maintained in the Training Matrix tab of the Training Log workbook.
+The training each person needs depends on their role. Our training matrix is below and is maintained in the Training Matrix.
 NOTE: Replace these roles with the actual roles in your firm. In a sole trader firm, one person may hold every role – list the training you will complete yourself.
 TABLE: 28,72
 | Role | Core training |
@@ -31,7 +31,7 @@ TABLE: 28,72
 
 # 3. Roles and responsibilities
 **3.1 Senior management** – [Insert name(s)]. Senior management is accountable for making sure the firm’s staff are competent. It approves this policy and the annual training plan, makes sure there are enough resources for training, and receives reports on training completion and competence at least [Insert frequency]. [For SM&CR firms, record which senior manager is responsible for training and competence in their Statement of Responsibilities.]
-**3.2 Training and competence lead** – [Insert name or role]. Maintains the Training Log workbook, including the Training Matrix, Training Record, Competence Register and CPD Log; identifies training needs from regulatory change, monitoring, complaints and incidents; approves training content (internal and external); and reports on completion and competence.
+**3.2 Training and competence lead** – [Insert name or role]. Maintains the Training Matrix, Training Log, Competence Register and CPD Log; identifies training needs from regulatory change, monitoring, complaints and incidents; approves training content (internal and external); and reports on completion and competence.
 **3.3 Line managers and supervisors** – [Insert roles, or delete if not applicable]. Make sure their team members complete required training before starting relevant work; supervise staff who are not yet assessed as competent; carry out competence assessments; and arrange extra support where gaps are found. Supervisors must themselves be competent to supervise.
 **3.4 All staff.** Complete required training on time; apply what they learn; ask for help when unsure; and tell their manager if they believe they need more training.
 **3.5 External training providers.** Where we use external training (for example e-learning), we check that the content is accurate, up to date and relevant to our activities, and keep evidence of completion. We remain responsible for our staff’s competence.
@@ -122,7 +122,7 @@ OPT: 7L | Investment advice and arranging firms | your firm advises on and/or ar
 ENDOPT: 7L | Investment advice and arranging firms
 
 # 8. Records and evidence
-**8.1 Training Log.** [Insert name or role] maintains the Training Log workbook (Training_Log_v2.0_Template.xlsx), which records, for each person: training completed (type, content, date, delivery method and provider); assessment results and declarations of understanding; competence assessments and the date they were assessed as competent; qualifications, CPD and (where applicable) Statements of Professional Standing; and supervision arrangements.
+**8.1 Training Log.** [Insert name or role] maintains the Training Log, Competence Register and CPD Log, which together record, for each person: training completed (type, content, date, delivery method and provider); assessment results and declarations of understanding; competence assessments and the date they were assessed as competent; qualifications, CPD and (where applicable) Statements of Professional Standing; and supervision arrangements.
 **8.2 Evidence.** We keep evidence such as certificates, attendance records, assessment results and supervisor sign-offs.
 **8.3 Retention.** We keep training and competence records for [Insert period, e.g. six years after the person leaves], and for at least the minimum period TC requires where it applies (including indefinitely for pension transfer specialists). Records are held securely in line with our Data Processing Policy.
 
@@ -139,10 +139,13 @@ Missing mandatory training, failing assessments, or falling below required compe
 This policy is reviewed at least annually, and sooner if our activities, the rules or our monitoring results change. Changes are approved by [Insert: the board / the directors / the business owner] and communicated to all staff.
 
 # 12. Supporting registers
-The KMS registers below support this policy. They are an essential part of it, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this policy. Each is a separate file. They are an essential part of the policy, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
-| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |
-| Compliance Monitoring Tracker (Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register) | Compliance_Monitoring_Tracker_v2.0_Template.xlsx | Checks completed against the plan, file review results, corrective actions to closure, and the requirements that apply to us |
-| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
+| Training Matrix | Training_Matrix_v2.0_Template.xlsx | The training each role must complete and how often |
+| Training Log | Training_Log_v2.0_Template.xlsx | Every training activity completed, results and next-due dates |
+| Competence Register | Competence_Register_v2.0_Template.xlsx | Competence assessments, supervision, qualifications and SM&CR fitness and propriety |
+| CPD Log | CPD_Log_v2.0_Template.xlsx | CPD hours for staff with CPD requirements |
+| Compliance Monitoring Schedule | Compliance_Monitoring_Schedule_v2.0_Template.xlsx | Checks completed against the Compliance Monitoring Plan and their results |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, root cause, customer impact, FCA notification decision and remediation |

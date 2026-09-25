@@ -129,7 +129,7 @@ The BWRA considers:
 - **geography** – where our customers, counterparties and funds come from, including links to high-risk jurisdictions;
 - **transactions** – for example cash, third-party payments, overpayments and early settlements;
 - the UK **National Risk Assessment** of money laundering and terrorist financing, FCA publications and relevant JMLSG sector guidance.
-The BWRA is reviewed at least annually and whenever there is a material change (for example a new product, channel or customer type). Its conclusions decide where we apply enhanced checks, how we target monitoring, and what our training covers. Our BWRA is recorded in the AML Business-Wide Risk Assessment workbook and was last approved by senior management on [Insert date].
+The BWRA is reviewed at least annually and whenever there is a material change (for example a new product, channel or customer type). Its conclusions decide where we apply enhanced checks, how we target monitoring, and what our training covers. Our BWRA is recorded in the AML Business-Wide Risk Assessment and was last approved by senior management on [Insert date].
 
 # 6. Customer due diligence
 Our detailed requirements are in our **Customer Due Diligence Policy**. In summary:
@@ -145,7 +145,7 @@ UK financial sanctions apply to **every** firm and person in the UK, whatever th
 - We screen customers (and, where relevant, beneficial owners, third-party payers and payees) against the UK sanctions list maintained by the Government before we accept them and [Insert frequency, e.g. whenever the list is updated / at least monthly] after that.
 - A potential match is escalated to the MLRO immediately and no further action is taken on the account or transaction until the MLRO has decided it is a false positive.
 - As an FCA-authorised firm we are a “relevant firm” for sanctions reporting purposes. We will report to OFSI as soon as practicable if we know or reasonably suspect that a person is a designated person or has committed a sanctions offence, and report any frozen assets we hold.
-- We keep records of screening, alerts and decisions in our Sanctions Screening Log (in the Customer Due Diligence Checklist workbook).
+- We keep records of screening, alerts and decisions in our Sanctions Screening Log.
 
 # 8. Reporting suspicions
 NOTE: The legal reporting framework differs depending on whether your firm is within the MLRs (the “regulated sector” for POCA purposes). Keep the one option that matches your conclusion in section 2 and delete the other.
@@ -177,7 +177,7 @@ Every warning sign is judged in context. One sign does not automatically mean a 
 
 # 9. Fraud, bribery and tax evasion
 **9.1 Fraud.** We take reasonable steps to prevent fraud against our customers, our firm and the firms we work with. Our controls include verification of identity and key information, segregation of duties over payments, dual authorisation of [Insert: payments above a threshold / changes to bank details], and prompt reporting of suspected fraud. [If your firm or its group meets two of the three size thresholds for a “large organisation” – more than 250 employees, more than £36 million turnover, more than £18 million total assets – the corporate offence of failure to prevent fraud (Economic Crime and Corporate Transparency Act 2023, in force since 1 September 2025) applies and you must describe your reasonable fraud prevention procedures. Otherwise delete this sentence.]
-**9.2 Bribery.** We do not offer, pay, request or accept bribes, and we do not make facilitation payments. Gifts and hospitality given or received above [Insert value, e.g. £50] must be approved in advance by [Insert name or role] and recorded in our Gifts and Hospitality Register (in the Conflicts and Gifts Registers workbook). Our procedures are proportionate to our risks, as the defence to the section 7 offence of the Bribery Act 2010 requires.
+**9.2 Bribery.** We do not offer, pay, request or accept bribes, and we do not make facilitation payments. Gifts and hospitality given or received above [Insert value, e.g. £50] must be approved in advance by [Insert name or role] and recorded in our Gifts and Hospitality Register. Our procedures are proportionate to our risks, as the defence to the section 7 offence of the Bribery Act 2010 requires.
 **9.3 Facilitation of tax evasion.** We do not facilitate tax evasion by customers, suppliers or anyone else, and we have reasonable prevention procedures proportionate to our risk, as the Criminal Finances Act 2017 requires. Staff must report any concern about tax evasion to the MLRO.
 **9.4 Inducements and conflicts.** Commission, fees and other benefits we receive from lenders, insurers or product providers must be disclosed as the relevant FCA rules require and must never be allowed to influence staff to act against a customer’s interests.
 
@@ -204,15 +204,17 @@ Training covers: the law and our obligations; how money laundering, terrorist fi
 **12.4 Review of this policy.** This policy is reviewed at least annually by the MLRO and approved by senior management, and sooner if the law, FCA rules or our business change. The latest approved version is available to all staff at [Insert location].
 
 # 13. Supporting registers
-The KMS registers below support this policy. They are an essential part of it, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this policy. Each is a separate file. They are an essential part of the policy, not optional extras: the FCA judges whether a policy works in practice by looking at these records, and a policy without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
 | AML Incident Register | Anti_Money_Laundering_Incident_Register_v2.0_Template.docx | Every internal suspicious activity report, the MLRO’s reasoning and decision, SARs and DAML requests |
-| CDD Checklist and EDD Checklist | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx | Due diligence completed for each customer before onboarding |
-| CDD Register | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx (CDD Register tab) | Every customer’s verification, risk rating, screening, review and deletion dates |
-| Sanctions Screening Log | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx (Sanctions Screening Log tab) | Sanctions screening, potential matches and decisions, and OFSI reports |
+| Customer Due Diligence Checklist | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx | Due diligence completed for each customer before onboarding |
+| Enhanced Due Diligence Checklist | Enhanced_Due_Diligence_Checklist_v2.0_Template.xlsx | Enhanced checks and approvals for higher-risk customers |
+| Customer Due Diligence Register | Customer_Due_Diligence_Register_v2.0_Template.xlsx | Every customer’s verification, risk rating, screening, review and deletion dates |
+| Sanctions Screening Log | Sanctions_Screening_Log_v2.0_Template.xlsx | Sanctions screening, potential matches, decisions and OFSI reports |
 | AML Business-Wide Risk Assessment | AML_Business_Wide_Risk_Assessment_v2.0_Template.xlsx | The firm-wide assessment of financial crime risk that drives our controls |
-| Conflicts of Interest Register and Gifts and Hospitality Register | Conflicts_and_Gifts_Registers_v2.0_Template.xlsx | Conflicts identified and managed; gifts and hospitality approved and recorded |
-| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
-| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |
+| Conflicts of Interest Register | Conflicts_of_Interest_Register_v2.0_Template.xlsx | Conflicts identified and how they are managed |
+| Gifts and Hospitality Register | Gifts_and_Hospitality_Register_v2.0_Template.xlsx | Gifts and hospitality given, received or declined, and approvals |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, root cause, customer impact, FCA notification decision and remediation |
+| Training Log | Training_Log_v2.0_Template.xlsx | Every training activity completed, results and next-due dates |

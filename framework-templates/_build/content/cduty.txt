@@ -100,14 +100,14 @@ ENDOPT: 2L | Investment advice and arranging firms
 - We define the **target market** for each product or service we manufacture – the customers whose needs, characteristics and objectives it is designed to meet, including any customers with characteristics of vulnerability – and any customers it is not suitable for.
 - We **approve** new products and significant changes through a documented process that is signed off by [Insert name or role], including testing how the product is likely to perform for customers.
 - As a distributor, we obtain the information we need from manufacturers and **only distribute** to customers in the target market.
-- We record target markets and approvals in the Target Market Register (in the Consumer Duty Evidence workbook).
+- We record target markets and approvals in the Target Market Register.
 - We **review** each product and service at least [Insert frequency] and when outcome data or complaints suggest a problem, and take action where it is not delivering good outcomes.
 
 # 4. Price and value outcome
 - We carry out a documented **fair value assessment** for every product and service we manufacture, comparing the total price customers pay (including fees, charges and non-financial costs such as time and effort) with the benefits they receive.
 - We consider whether any **groups of customers** – including those with characteristics of vulnerability – receive worse value.
 - As a distributor, we obtain manufacturers’ fair value assessments and make sure our own **remuneration** does not undermine value.
-- We record each assessment in the Fair Value Register (in the Consumer Duty Evidence workbook).
+- We record each assessment in the Fair Value Register.
 - We **review** fair value at least annually, and sooner if prices, costs or outcome data change. Where a product does not provide fair value, we act – for example by changing the price or features, withdrawing it, or providing redress.
 
 # 5. Consumer understanding outcome
@@ -130,7 +130,7 @@ ENDOPT: 2L | Investment advice and arranging firms
 - **Training.** All staff are trained on the Duty and how it applies to their role (see our Training and Competence Policy).
 
 # 8. Monitoring outcomes
-We monitor the outcomes our customers receive using management information (MI) that is proportionate to our size, recorded in the Outcome MI tab of the Consumer Duty Evidence workbook. Actions are tracked in its Board Report Actions tab. Our key indicators are:
+We monitor the outcomes our customers receive using management information (MI) that is proportionate to our size, recorded in the Consumer Duty Outcome MI register. Actions are tracked in the Consumer Duty Board Report Actions log. Our key indicators are:
 TABLE: 25,50,25
 | Outcome | Examples of MI we will use | Owner and frequency |
 | Products and services | Sales outside the target market; cancellations and early exits; product performance; customer feedback | [Insert owner and frequency] |
@@ -161,12 +161,14 @@ TABLE: 22,36,12,12,18
 This plan is reviewed at least annually, alongside the annual board report, and whenever our products, customers or the rules change. Progress against section 9 is reported to [Insert: the board / the directors / the business owner] at least [Insert frequency] until every action is complete, after which the Duty is monitored through business-as-usual governance.
 
 # 11. Supporting registers
-The KMS registers below support this plan. They are an essential part of it, not optional extras: the FCA judges whether a plan works in practice by looking at these records, and a plan without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this plan. Each is a separate file. They are an essential part of the plan, not optional extras: the FCA judges whether a plan works in practice by looking at these records, and a plan without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
-| Consumer Duty Evidence (Outcome MI, Target Market Register, Fair Value Register, Board Report Actions) | Consumer_Duty_Evidence_v2.0_Template.xlsx | Outcome monitoring, target markets, fair value assessments and board report actions |
+| Consumer Duty Outcome MI | Consumer_Duty_Outcome_MI_v2.0_Template.xlsx | Outcome monitoring for all customers and for vulnerable customers |
+| Target Market Register | Target_Market_Register_v2.0_Template.xlsx | Target markets, our role and distribution strategy |
+| Fair Value Register | Fair_Value_Register_v2.0_Template.xlsx | Fair value assessments and conclusions |
+| Consumer Duty Board Report Actions | Consumer_Duty_Board_Report_Actions_v2.0_Template.xlsx | Actions from outcome monitoring and the board report |
 | Complaints Register | Complaints_Register_v2.0_Template.xlsx | Every complaint, DISP deadlines, outcomes, redress, root causes and Ombudsman referrals |
-| Compliance Monitoring Tracker (Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register) | Compliance_Monitoring_Tracker_v2.0_Template.xlsx | Checks completed against the plan, file review results, corrective actions to closure, and the requirements that apply to us |
 | Risk Assessment Log | Risk_Assessment_Log_v2.0_Template.xlsx | Identified risks, inherent and residual scores, controls, appetite and actions |
-| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |
+| Training Log | Training_Log_v2.0_Template.xlsx | Every training activity completed, results and next-due dates |

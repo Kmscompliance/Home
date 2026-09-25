@@ -180,16 +180,16 @@ Since 19 June 2026, the Data Protection Act 2018 (as amended by the Data (Use an
 This procedure is reviewed at least annually by [Insert name or role], and sooner if the FCA rules change, our business changes, or our complaints data or monitoring shows it is not working well. Changes are approved by [Insert: the board / the directors / the business owner].
 
 # 13. Supporting registers
-The KMS registers below support this procedure. They are an essential part of it, not optional extras: the FCA judges whether a procedure works in practice by looking at these records, and a procedure without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this procedure. Each is a separate file. They are an essential part of the procedure, not optional extras: the FCA judges whether a procedure works in practice by looking at these records, and a procedure without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
 | Complaints Register | Complaints_Register_v2.0_Template.xlsx | Every complaint, DISP deadlines, outcomes, redress, root causes and Ombudsman referrals |
-| Compliance Monitoring Tracker (Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register) | Compliance_Monitoring_Tracker_v2.0_Template.xlsx | Checks completed against the plan, file review results, corrective actions to closure, and the requirements that apply to us |
-| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
-| Consumer Duty Evidence (Outcome MI, Target Market Register, Fair Value Register, Board Report Actions) | Consumer_Duty_Evidence_v2.0_Template.xlsx | Outcome monitoring, target markets, fair value assessments and board report actions |
-| Data Protection Registers (ROPA, Data Rights Request Log, Data Breach Log, DP Complaints Log, Data Retention Schedule, DPIA Register) | Data_Protection_Registers_v2.0_Template.xlsx | Accountability under the UK GDPR: processing, rights requests, breaches, complaints, retention and DPIAs |
-| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |
+| Corrective Action Log | Corrective_Action_Log_v2.0_Template.xlsx | Findings and breaches tracked to verified closure |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, root cause, customer impact, FCA notification decision and remediation |
+| Consumer Duty Outcome MI | Consumer_Duty_Outcome_MI_v2.0_Template.xlsx | Outcome monitoring for all customers and for vulnerable customers |
+| Data Protection Complaints Log | Data_Protection_Complaints_Log_v2.0_Template.xlsx | Data protection complaints and 30-day acknowledgements |
+| Training Log | Training_Log_v2.0_Template.xlsx | Every training activity completed, results and next-due dates |
 
 # Appendix A – Customer-facing complaints summary
 NOTE: Publish this summary on your website and give it to customers on request and when you acknowledge a complaint (DISP 1.2). Delete any lines that do not apply.
@@ -200,18 +200,4 @@ We want to put things right if you are unhappy with our service. You can complai
 **If you need extra support.** Please tell us if you need any adjustments, such as information in a different format or more time.
 
 # Appendix B – Complaints Register
-The fields below are built into the KMS Complaints Register workbook (Complaints_Register_v2.0_Template.xlsx), which also calculates the DISP deadlines and produces a summary for management information. Use that workbook – it is an essential part of this procedure.
-TABLE: 35,65
-| Field | What to record |
-| Reference | Unique complaint reference |
-| Date received | The date the complaint first reached anyone at, or acting for, the firm |
-| Complainant | Name, contact details, and whether they are a customer, representative or other party |
-| Channel | How the complaint was made |
-| Activity / product | The regulated activity and product concerned |
-| Summary | The points complained about, in the complainant’s words where possible |
-| Vulnerability | Any characteristics of vulnerability and adjustments made |
-| Dates | Acknowledgement date, any eight-week (or 15/35 business day) letter date, final response date |
-| Outcome | Upheld, partly upheld, not upheld, or forwarded to another firm (with that firm’s name) |
-| Redress | Amount and type of redress, and date paid |
-| Root cause | The underlying cause and any wider action taken |
-| Ombudsman | Whether referred to the Ombudsman, and the outcome |
+Complaints are recorded in the separate KMS Complaints Register (Complaints_Register_v2.0_Template.xlsx). It records every field DISP requires, calculates the DISP deadlines, and summarises complaints for management information and the FCA complaints return. It is an essential part of this procedure.

@@ -158,11 +158,11 @@ SECTIONBREAK: landscape
 WIDTH: 9026
 
 # 5. How we carry out monitoring
-**Step 1 – Plan.** At the start of each [Insert period, e.g. quarter], [Insert owner] confirms, using the Monitoring Schedule in the Compliance Monitoring Tracker, which checks are due under the schedule and any additional reviews prompted by complaints, incidents or regulatory change.
+**Step 1 – Plan.** At the start of each [Insert period, e.g. quarter], [Insert owner] confirms, using the Compliance Monitoring Schedule, which checks are due under the schedule and any additional reviews prompted by complaints, incidents or regulatory change.
 **Step 2 – Select the sample.** Files are selected as described in section 2, with the selection method recorded.
 **Step 3 – Review using a checklist.** Each check uses a standard checklist linked to the relevant rules, so that reviews are consistent and can be repeated. The result for each file is recorded in the File Review Record, and checklists are kept at [Insert location].
 **Step 4 – Record findings and evidence.** Findings are recorded against each checklist question, with evidence kept in the Monitoring Evidence Folder [Insert location]. Each finding is rated: **Red** (breach of a rule or risk of customer harm), **Amber** (weakness that could lead to a breach) or **Green** (satisfactory).
-**Step 5 – Act on findings.** Every Red or Amber finding is entered in the Corrective Action Log (in the Compliance Monitoring Tracker workbook) with an owner and deadline (section 8).
+**Step 5 – Act on findings.** Every Red or Amber finding is entered in the Corrective Action Log with an owner and deadline (section 8).
 **Step 6 – Escalate serious matters.** Serious issues are escalated immediately (section 7), not held for the next report.
 **Step 7 – Retain records.** Monitoring records are kept for at least [Insert period, e.g. six years].
 **Independence.** Where possible, reviews are carried out by someone who did not do the work being reviewed. Where our size makes that impossible, [Insert how you get independent challenge – e.g. an annual review by an external compliance consultant].
@@ -200,19 +200,25 @@ This plan is reviewed at least annually, and also when we add a new product, act
 This plan is how we make sure our policies work in practice and our customers get good outcomes. Our aim is not simply to tick boxes, but to find problems early, fix them properly and keep improving.
 
 # 11. Supporting registers
-The KMS registers below support this plan. They are an essential part of it, not optional extras: the FCA judges whether a plan works in practice by looking at these records, and a plan without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this plan. Each is a separate file. They are an essential part of the plan, not optional extras: the FCA judges whether a plan works in practice by looking at these records, and a plan without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
-| Compliance Monitoring Tracker (Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register) | Compliance_Monitoring_Tracker_v2.0_Template.xlsx | Checks completed against the plan, file review results, corrective actions to closure, and the requirements that apply to us |
-| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
+| Compliance Monitoring Schedule | Compliance_Monitoring_Schedule_v2.0_Template.xlsx | Checks completed against the Compliance Monitoring Plan and their results |
+| File Review Record | File_Review_Record_v2.0_Template.xlsx | The result of each file reviewed |
+| Corrective Action Log | Corrective_Action_Log_v2.0_Template.xlsx | Findings and breaches tracked to verified closure |
+| Compliance Universe Register | Compliance_Universe_Register_v2.0_Template.xlsx | The requirements that apply to us and where each is covered |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, root cause, customer impact, FCA notification decision and remediation |
 | Complaints Register | Complaints_Register_v2.0_Template.xlsx | Every complaint, DISP deadlines, outcomes, redress, root causes and Ombudsman referrals |
-| Financial Promotions Log and Approval Checklist | Financial_Promotions_Log_v2.0_Template.xlsx | Every promotion approved before use, the checks made, evidence for claims and withdrawal |
+| Financial Promotions Log | Financial_Promotions_Log_v2.0_Template.xlsx | Every promotion approved before use, evidence for claims, review and withdrawal |
 | AML Incident Register | Anti_Money_Laundering_Incident_Register_v2.0_Template.docx | Every internal suspicious activity report, the MLRO’s reasoning and decision, SARs and DAML requests |
-| CDD Register | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx (CDD Register tab) | Every customer’s verification, risk rating, screening, review and deletion dates |
-| Sanctions Screening Log | Customer_Due_Diligence_Checklist_v2.0_Template.xlsx (Sanctions Screening Log tab) | Sanctions screening, potential matches and decisions, and OFSI reports |
-| Training Log (Training Matrix, Training Record, Competence Register, CPD Log) | Training_Log_v2.0_Template.xlsx | Training completed, competence assessed, supervision, qualifications and CPD |
-| Data Protection Registers (ROPA, Data Rights Request Log, Data Breach Log, DP Complaints Log, Data Retention Schedule, DPIA Register) | Data_Protection_Registers_v2.0_Template.xlsx | Accountability under the UK GDPR: processing, rights requests, breaches, complaints, retention and DPIAs |
-| Conflicts of Interest Register and Gifts and Hospitality Register | Conflicts_and_Gifts_Registers_v2.0_Template.xlsx | Conflicts identified and managed; gifts and hospitality approved and recorded |
+| Customer Due Diligence Register | Customer_Due_Diligence_Register_v2.0_Template.xlsx | Every customer’s verification, risk rating, screening, review and deletion dates |
+| Sanctions Screening Log | Sanctions_Screening_Log_v2.0_Template.xlsx | Sanctions screening, potential matches, decisions and OFSI reports |
+| Training Log | Training_Log_v2.0_Template.xlsx | Every training activity completed, results and next-due dates |
+| Competence Register | Competence_Register_v2.0_Template.xlsx | Competence assessments, supervision, qualifications and SM&CR fitness and propriety |
+| Data Breach Log | Data_Breach_Log_v2.0_Template.xlsx | Personal data breaches and ICO notification decisions |
+| Data Rights Request Log | Data_Rights_Request_Log_v2.0_Template.xlsx | Rights requests and response times |
+| Conflicts of Interest Register | Conflicts_of_Interest_Register_v2.0_Template.xlsx | Conflicts identified and how they are managed |
+| Gifts and Hospitality Register | Gifts_and_Hospitality_Register_v2.0_Template.xlsx | Gifts and hospitality given, received or declined, and approvals |
 | Risk Assessment Log | Risk_Assessment_Log_v2.0_Template.xlsx | Identified risks, inherent and residual scores, controls, appetite and actions |
-| Consumer Duty Evidence (Outcome MI, Target Market Register, Fair Value Register, Board Report Actions) | Consumer_Duty_Evidence_v2.0_Template.xlsx | Outcome monitoring, target markets, fair value assessments and board report actions |
+| Consumer Duty Outcome MI | Consumer_Duty_Outcome_MI_v2.0_Template.xlsx | Outcome monitoring for all customers and for vulnerable customers |

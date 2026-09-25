@@ -15,7 +15,7 @@ The objectives of our CMP are to:
 - promote a culture in which everyone in the firm understands their compliance responsibilities and feels able to raise concerns.
 
 # 3. Our compliance universe
-Our compliance universe is the full set of requirements that apply to us. It is recorded in our Compliance Universe Register (in the Compliance Monitoring Tracker workbook) and reviewed at least annually and whenever the rules or our business change.
+Our compliance universe is the full set of requirements that apply to us. It is recorded in our Compliance Universe Register and reviewed at least annually and whenever the rules or our business change.
 **3.1 Requirements that apply to every firm.** These include:
 - the Threshold Conditions (COND), the Principles for Businesses (PRIN) and the Consumer Duty (PRIN 2A);
 - Senior Management Arrangements, Systems and Controls (SYSC), including record keeping, outsourcing and conflicts of interest where they apply;
@@ -60,7 +60,7 @@ ENDOPT: 3F | Investment advice and arranging firms
 **4.2 Monitoring plan.** Our Compliance Monitoring Plan sets out the areas we check, the risk rating, what we check, how often and who is responsible. It is approved by [Insert: the board / the directors / the business owner] each year.
 **4.3 Monitoring activities.** Monitoring includes file reviews, reviews of outcome data and management information, thematic reviews, control testing and reviews of regulatory change. Each review uses a documented checklist and is evidenced.
 **4.4 Consumer Duty outcome monitoring.** We collect and analyse data on the outcomes customers receive under each of the four Consumer Duty outcomes, including outcomes for different groups of customers such as those with characteristics of vulnerability. Our findings inform the annual Consumer Duty board report required by PRIN 2A.8.
-**4.5 Breaches and corrective action.** Breaches are recorded in the Compliance Breach Log and assessed for FCA notification under Principle 11 and SUP 15. Every finding is tracked through the Corrective Action Log (in the Compliance Monitoring Tracker workbook) to closure, including putting affected customers right.
+**4.5 Breaches and corrective action.** Breaches are recorded in the Compliance Breach Log and assessed for FCA notification under Principle 11 and SUP 15. Every finding is tracked through the Corrective Action Log to closure, including putting affected customers right.
 **4.6 Reporting and escalation.** Monitoring results are reported to [Insert: the board / the directors / the business owner] at least [Insert frequency]. Serious issues are escalated immediately.
 
 # 5. Responsibilities
@@ -81,11 +81,14 @@ This programme is reviewed at least annually, and sooner if the rules, our busin
 [Insert firm legal name] is committed to maintaining an effective compliance monitoring programme that protects our customers, supports good outcomes and meets our obligations as an FCA-regulated firm. By following this programme, we aim to make compliance part of how we run the business every day, not an exercise carried out for its own sake.
 
 # 8. Supporting registers
-The KMS registers below support this programme. They are an essential part of it, not optional extras: the FCA judges whether a programme works in practice by looking at these records, and a programme without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this programme. Each is a separate file. They are an essential part of the programme, not optional extras: the FCA judges whether a programme works in practice by looking at these records, and a programme without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
-| Compliance Monitoring Tracker (Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register) | Compliance_Monitoring_Tracker_v2.0_Template.xlsx | Checks completed against the plan, file review results, corrective actions to closure, and the requirements that apply to us |
-| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
+| Compliance Universe Register | Compliance_Universe_Register_v2.0_Template.xlsx | The requirements that apply to us and where each is covered |
+| Compliance Monitoring Schedule | Compliance_Monitoring_Schedule_v2.0_Template.xlsx | Checks completed against the Compliance Monitoring Plan and their results |
+| File Review Record | File_Review_Record_v2.0_Template.xlsx | The result of each file reviewed |
+| Corrective Action Log | Corrective_Action_Log_v2.0_Template.xlsx | Findings and breaches tracked to verified closure |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, root cause, customer impact, FCA notification decision and remediation |
 | Risk Assessment Log | Risk_Assessment_Log_v2.0_Template.xlsx | Identified risks, inherent and residual scores, controls, appetite and actions |
-| Consumer Duty Evidence (Outcome MI, Target Market Register, Fair Value Register, Board Report Actions) | Consumer_Duty_Evidence_v2.0_Template.xlsx | Outcome monitoring, target markets, fair value assessments and board report actions |
+| Consumer Duty Outcome MI | Consumer_Duty_Outcome_MI_v2.0_Template.xlsx | Outcome monitoring for all customers and for vulnerable customers |

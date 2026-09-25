@@ -153,44 +153,75 @@ I proceeded without asking first. Each document's subject made the relevant acti
 | Payment Systems Regulator consolidation into the FCA (APP reimbursement) | Legislation pending | Complaints (7K) |
 | Data (Use and Access) Act 2025 staged commencement and ICO guidance updates | Guidance partly in draft | Data Processing |
 
-## Supporting registers (added after the first review)
+## Supporting registers
 
-The registers are a **mandatory part of the framework**. Each policy now has a "Supporting registers" section listing the KMS registers it relies on, by exact file name. Every "delete the register if you don't have it" instruction has been removed. The "How to use" page of every template now says that a firm adopting a policy without its registers is likely to fail FCA scrutiny. Register names in the policies now match the workbook and tab names exactly.
+**Policies and registers are separate files.** The 12 policies are in `policies/` and the 32 registers are in `registers/`, **one register per file**. No policy contains a register, and no register file contains more than one register. The Complaints Register's Summary tab and the BWRA's Conclusion tab are part of those registers, not separate registers.
 
-**House style.** The registers follow the house style of the v1.0 KMS logs:
-- a light green (accent 6) title and header fill, with dark green text;
-- thin borders, and gridlines turned off;
-- Calibri or Aptos Narrow, as in the original.
+**The registers are mandatory.** Each policy has a "Supporting registers" section listing, by exact file name, the separate register files it relies on. The "How to use" page of every template says that a firm adopting a policy without its registers is likely to fail FCA scrutiny.
 
-**Location.** All 12 registers are in the `registers/` folder.
-
-**Features in every register.** Each has:
+**Features of every register file:**
 - a "How to use" tab;
 - yellow placeholder cells;
 - drop-down lists, held on a hidden "Lists" tab;
 - calculated deadlines and scores;
 - conditional formatting for overdue items and red/amber/green ratings;
-- green OPTION rows for activity-specific content, deleted in the same way as the Word option blocks.
+- green OPTION rows for activity-specific content.
 
-| Register | Status | Tabs | Used by | Key changes from v1.0 |
-|---|---|---|---|---|
-| `Anti_Money_Laundering_Incident_Register_v2.0_Template.docx` | Updated (still Word, landscape) | – | AML, CDD, Monitoring Plan | Now the internal suspicious activity report log: who reported, MLRO reasoning, SAR decision, NCA reference, DAML outcome, status. Adds a confidentiality / tipping-off warning. |
-| `Compliance_Breach_Log_v2.0_Template.xlsx` | Updated | Compliance Breach Log | Monitoring Plan and Programme, Risk, Training, Data | Adds breach type, rule breached, root cause, severity, customer harm and redress, FCA notification decision (Principle 11 / SUP 15), data breach flag and closure sign-off. "All clients informed?" becomes "affected customers contacted?". |
-| `Customer_Due_Diligence_Checklist_v2.0_Template.xlsx` | Updated | CDD Checklist, EDD Checklist, **CDD Register**, **Sanctions Screening Log** | AML, CDD | Removes the dealership items (affordability, credit status, cash buyer), "consent to process" and the old "TCF" wording. Adds beneficial owners, verification method, purpose, third-party payers, domestic/foreign PEP, FATF call-for-action test, risk rating, SDD/EDD decision, activity-specific checks and a 5-year deletion date. |
-| `Risk_Assessment_Log_v2.0_Template.xlsx` | Updated | Risk Assessment | Risk Framework (Appendix A) | Replaces the project-management categories with regulatory ones. Uses 1–5 × 1–5 scoring before and after controls, with thresholds. Adds a controls column (missing in v1.0), appetite, owner, actions and review dates. Includes starter risks for all firms and for each activity. |
-| `Training_Log_v2.0_Template.xlsx` | Updated | Training Matrix, Training Record, Competence Register, CPD Log, Individual Record | Training, AML, Vulnerability, all | Adds mandatory module tracking with next-due dates, assessment results, the date each person was assessed as competent, supervision, TC qualifications, Statement of Professional Standing, CPD hours and SM&CR fitness-and-propriety / certification dates. The original reflective record is kept as an optional tab. |
-| `Complaints_Register_v2.0_Template.xlsx` | New | Complaints Register, Summary | Complaints, Monitoring Plan, Consumer Duty | Calculates DISP deadlines (3 business days, 8 weeks, 15/35 business days for payment services, 30-day data protection acknowledgement). Records redress, forwarding under DISP 1.7, root cause and Ombudsman outcome. The Summary tab gives management information. |
-| `Financial_Promotions_Log_v2.0_Template.xlsx` | New | Financial Promotions Log, Approval Checklist | Financial Promotions, Monitoring Plan | Covers approval, evidence, third-party communicators, review and withdrawal dates. The checklist has universal checks plus activity-specific rule checks (CONC 3, COBS 4.12A, MCOB 3A and so on). |
-| `Data_Protection_Registers_v2.0_Template.xlsx` | New | ROPA, Data Rights Request Log, Data Breach Log, DP Complaints Log, Data Retention Schedule, DPIA Register | Data Processing | Calculates the one-month, 72-hour and 30-day deadlines. Includes starter processing activities and a retention schedule. |
-| `Conflicts_and_Gifts_Registers_v2.0_Template.xlsx` | New | Conflicts of Interest Register, Gifts and Hospitality Register | AML §9, Monitoring Plan | Includes starter commission and staff-incentive conflicts. |
-| `AML_Business_Wide_Risk_Assessment_v2.0_Template.xlsx` | New | Risk Factors, Conclusion | AML §5, CDD | The regulation 18 risk factors, plus activity typologies and sign-off. |
-| `Compliance_Monitoring_Tracker_v2.0_Template.xlsx` | New | Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register | Monitoring Plan and Programme | The schedule is pre-loaded with plan rows A1–A13. The Corrective Action Log tracks actions through to verified closure. |
-| `Consumer_Duty_Evidence_v2.0_Template.xlsx` | New | Outcome MI, Target Market Register, Fair Value Register, Board Report Actions | Consumer Duty Plan, Vulnerability | Records each outcome metric for all customers and separately for vulnerable customers, by quarter. Evidence base for the board report. |
+No formulas link one file to another.
+
+**House style.** The same as the v1.0 KMS logs:
+- a light green (accent 6) title and header fill, with dark green text;
+- thin borders, and gridlines turned off;
+- Calibri or Aptos Narrow, as in the original.
+
+| Register file (`registers/`) | Origin | Used by |
+|---|---|---|
+| `Anti_Money_Laundering_Incident_Register_v2.0_Template.docx` | Updated v1.0 (Word) | AML, CDD, Monitoring Plan |
+| `Compliance_Breach_Log_v2.0_Template.xlsx` | Updated v1.0 | Most policies |
+| `Customer_Due_Diligence_Checklist_v2.0_Template.xlsx` | Updated v1.0 (Basic DD sheet) | AML, CDD |
+| `Enhanced_Due_Diligence_Checklist_v2.0_Template.xlsx` | Updated v1.0 (EDD sheet) | AML, CDD |
+| `Customer_Due_Diligence_Register_v2.0_Template.xlsx` | New | AML, CDD, Monitoring Plan |
+| `Sanctions_Screening_Log_v2.0_Template.xlsx` | New | AML, CDD, Monitoring Plan |
+| `AML_Business_Wide_Risk_Assessment_v2.0_Template.xlsx` | New | AML, CDD, Risk |
+| `Risk_Assessment_Log_v2.0_Template.xlsx` | Updated v1.0 | Risk, Monitoring, Consumer Duty |
+| `Training_Matrix_v2.0_Template.xlsx` | New | Training |
+| `Training_Log_v2.0_Template.xlsx` | Updated v1.0 | All policies |
+| `Competence_Register_v2.0_Template.xlsx` | New | Training, Monitoring Plan (also holds SM&CR fitness-and-propriety and certification dates) |
+| `CPD_Log_v2.0_Template.xlsx` | New | Training |
+| `Individual_Training_Record_v2.0_Template.xlsx` | v1.0 reflective record (optional) | Training |
+| `Complaints_Register_v2.0_Template.xlsx` | New | Complaints, Monitoring, Vulnerability, Consumer Duty, Financial Promotions |
+| `Financial_Promotions_Log_v2.0_Template.xlsx` | New | Financial Promotions, Monitoring Plan |
+| `Financial_Promotion_Approval_Checklist_v2.0_Template.xlsx` | New | Financial Promotions |
+| `Record_of_Processing_Activities_v2.0_Template.xlsx` | New | Data, Vulnerability |
+| `Data_Rights_Request_Log_v2.0_Template.xlsx` | New | Data, Monitoring Plan |
+| `Data_Breach_Log_v2.0_Template.xlsx` | New | Data, Monitoring Plan |
+| `Data_Protection_Complaints_Log_v2.0_Template.xlsx` | New | Data, Complaints |
+| `Data_Retention_Schedule_v2.0_Template.xlsx` | New | Data |
+| `DPIA_Register_v2.0_Template.xlsx` | New | Data |
+| `Conflicts_of_Interest_Register_v2.0_Template.xlsx` | New | AML, Monitoring Plan |
+| `Gifts_and_Hospitality_Register_v2.0_Template.xlsx` | New | AML, Monitoring Plan |
+| `Compliance_Monitoring_Schedule_v2.0_Template.xlsx` | New | Monitoring Plan and Programme, Financial Promotions, Training |
+| `File_Review_Record_v2.0_Template.xlsx` | New | Monitoring Plan and Programme |
+| `Corrective_Action_Log_v2.0_Template.xlsx` | New | Monitoring, Complaints, Risk |
+| `Compliance_Universe_Register_v2.0_Template.xlsx` | New | Monitoring Plan and Programme |
+| `Consumer_Duty_Outcome_MI_v2.0_Template.xlsx` | New | Consumer Duty, Vulnerability, Complaints, Monitoring, Risk |
+| `Target_Market_Register_v2.0_Template.xlsx` | New | Consumer Duty |
+| `Fair_Value_Register_v2.0_Template.xlsx` | New | Consumer Duty |
+| `Consumer_Duty_Board_Report_Actions_v2.0_Template.xlsx` | New | Consumer Duty |
+
+**Main changes to the v1.0 logs:**
+- **AML Incident Register:** now the internal suspicious activity report log, recording MLRO reasoning, the SAR decision, NCA reference and DAML outcome, with a tipping-off warning.
+- **Compliance Breach Log:** adds root cause, customer harm and redress, the FCA notification decision and sign-off.
+- **CDD and EDD Checklists:**
+  - dealership, affordability, consent and "TCF" items removed;
+  - beneficial owners, PEP type, the FATF call-for-action test, risk rating and activity-specific checks added.
+- **Risk Assessment Log:** regulatory categories, 1–5 × 1–5 scoring before and after controls, the missing controls column restored, and starter risks.
+- **Training Log:** mandatory module tracking with next-due dates. The v1.0 per-employee reflective sheet becomes the optional Individual Training Record.
 
 **Points for KMS to check in the registers:**
-- The business-day deadlines use Excel WORKDAY without a bank holiday list. The register guidance tells users to check dates near bank holidays.
-- The Excel files were checked by reloading them programmatically, not in Excel itself; open them once in Excel before release.
-- The Statement of Responsibilities has no register of its own. Fitness-and-propriety and certification dates sit in the Training Log's Competence Register.
+- The business-day deadlines use Excel WORKDAY without a bank holiday list.
+- The files were checked by reloading them programmatically, not in Excel itself; open them once in Excel before release.
+- CPD hours are now entered in the Competence Register by hand, because formulas no longer link to the separate CPD Log.
 
 ## Points for KMS review before release
 
@@ -201,6 +232,9 @@ These are areas where the templates deliberately defer to the buyer's own confir
 4. **Specific CONC rule references** (for example CONC 3.5 and 3.7, 4.4 and 4.5, 5.2A). Worth a quick Handbook cross-check, as these were written without live Handbook access (the FCA website is blocked from this environment).
 
 ## Files
+
+The policies below are in `policies/`; the registers are listed above and are in `registers/`.
+
 
 | v2.0 template | Built from |
 |---|---|
@@ -217,4 +251,4 @@ These are areas where the templates deliberately defer to the buyer's own confir
 | `SMCR_Statement_of_Responsibilities_v2.0_Template.docx` | Senior_Management_Regime_Statement_of_Responsbility_v1.0 |
 | `Training_and_Competence_Policy_v2.0_Template.docx` | Training_Policy_v1.0 |
 
-`_build/` holds the text source for each template and the script that injects it into the v1.0 files. `_build/logs/` holds the register builders, which need the v1.0 log files in `_build/logsrc/`. Use it to make future wording changes consistently. The script needs the v1.0 `.docx` files unzipped into `_build/src/`. All 12 outputs pass Office Open XML schema validation.
+`_build/` holds the text source for each template and the script that injects it into the v1.0 files. `_build/logs/` holds the register builders (`build_logs.py`, then `split_logs.py`), which need the v1.0 log files in `_build/logsrc/`. Use it to make future wording changes consistently. The script needs the v1.0 `.docx` files unzipped into `_build/src/`. All 12 outputs pass Office Open XML schema validation.

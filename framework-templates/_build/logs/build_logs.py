@@ -53,9 +53,9 @@ def breach_log():
         ('p', 'For every breach, decide and record whether it must be notified to the FCA. Under Principle 11 and SUP 15.3 we must tell the FCA promptly about anything it would reasonably expect notice of, including significant rule breaches, matters that could affect our ability to meet the Threshold Conditions, and significant events such as fraud or serious operational failures. SM&CR firms must notify Conduct Rules breaches that lead to disciplinary action (SUP 15.11). If unsure, notify – and record your reasoning either way.'),
         ('watch', 'The FCA’s operational incident and third-party reporting rules (PS26/2) apply from 18 March 2027 and introduce standard incident reports. Review this log and your notification process before that date.'),
         ('h', 'Personal data breaches'),
-        ('p', 'Personal data breaches are recorded in the Data Breach Log in the Data Protection Registers workbook, which covers ICO notification within 72 hours. Where a data breach is also a regulatory breach (for example a significant cyber incident), record it in both and cross-refer.'),
+        ('p', 'Personal data breaches are recorded in the separate Data Breach Log, which covers ICO notification within 72 hours. Where a data breach is also a regulatory breach (for example a significant cyber incident), record it in both and cross-refer.'),
         ('h', 'Putting it right'),
-        ('p', 'Every breach must have remedial action with an owner and a deadline. Larger actions are tracked in the Corrective Action Log (in the Compliance Monitoring Tracker workbook) – record the reference here. Close a breach only when the root cause has been fixed and any affected customers have been put right.'),
+        ('p', 'Every breach must have remedial action with an owner and a deadline. Larger actions are tracked in the separate Corrective Action Log – record the reference here. Close a breach only when the root cause has been fixed and any affected customers have been put right.'),
     ])
     b.add_list('type', ['FCA rule / Principle', 'Consumer Duty outcome', 'Financial crime (AML / sanctions / fraud)', 'Data protection', 'Conduct Rules (SM&CR)', 'Financial promotion', 'Complaints handling (DISP)', 'Client money / safeguarding', 'Regulatory reporting / notification', 'Internal policy or procedure', 'Other'])
     b.add_list('yn', YN); b.add_list('ynna', YNNA)
@@ -144,7 +144,7 @@ def cdd_workbook():
         ('5. Risk decision', 'Level of due diligence', 'SDD (with documented low-risk rationale – MLR firms only), standard CDD, or EDD (complete the EDD Checklist).'),
         ('5. Risk decision', 'Vulnerability noted', 'Any characteristics of vulnerability noted and support recorded in line with the Customer Vulnerability Policy (record needs, not diagnoses).'),
         ('6. Records', 'Privacy notice provided', 'Customer given our privacy notice (and, where relevant, the Credit Reference Agency Information Notice). Note: CDD is carried out to meet a legal obligation or for fraud prevention – do not rely on consent.'),
-        ('6. Records', 'CDD Register updated', 'Customer entered in the CDD Register with risk rating, screening date and next review date.'),
+        ('6. Records', 'Customer Due Diligence Register updated', 'Customer entered in the Customer Due Diligence Register with risk rating, screening date and next review date.'),
         ('6. Records', 'Records stored securely', 'Evidence stored securely with retention date (five years after the relationship ends).'),
     ]
     for sec, item, what in universal:
@@ -171,8 +171,8 @@ def cdd_workbook():
         ('2. Measures', 'Enhanced screening', 'Further PEP / sanctions screening completed where the first result was unclear.'),
         ('3. Approval', 'MLRO consulted', 'MLRO (or nominated person) reviewed the case and recorded their view.'),
         ('3. Approval', 'Senior management approval', 'Approval given by [Insert name / role] before proceeding (mandatory for PEPs in MLR firms). Record decision and reasons.'),
-        ('4. Ongoing', 'Enhanced monitoring', 'Closer monitoring set up and next review date recorded in the CDD Register (at least [Insert frequency]).'),
-        ('4. Ongoing', 'Records', 'All EDD evidence and decisions stored securely; CDD Register updated.'),
+        ('4. Ongoing', 'Enhanced monitoring', 'Closer monitoring set up and next review date recorded in the Customer Due Diligence Register (at least [Insert frequency]).'),
+        ('4. Ongoing', 'Records', 'All EDD evidence and decisions stored securely; Customer Due Diligence Register updated.'),
     ]
     for sec, item, what in edd:
         r = b.data_row(ws, r, [sec, item, what], len(cols), height=48)
@@ -241,7 +241,7 @@ def risk_log():
     b = Book(f'{SRC}/Risk_Assessment_Log_v1.0.xlsx', 'Aptos Narrow')
     b.guide('How to use', 'Risk Assessment Log – how to use', STANDARD_GUIDE + [
         ('h', 'What this log is'),
-        ('p', 'This is the Risk Register referred to in the Risk Management Framework. It records the risks your business model creates for customers, the market and the firm, how you control them, and whether they are within your risk appetite. (The anti-money laundering Business-Wide Risk Assessment is a separate workbook.)'),
+        ('p', 'This is the Risk Assessment Log referred to in the Risk Management Framework. It records the risks your business model creates for customers, the market and the firm, how you control them, and whether they are within your risk appetite. (The AML Business-Wide Risk Assessment is a separate register.)'),
         ('h', 'Scoring (Risk Management Framework, section 5.2)'),
         ('p', 'Score each risk for impact (1–5) and likelihood (1–5), first before controls (inherent) and then after controls (residual). The log multiplies them. Residual scores of 15 or more are HIGH, 8 to 14 MEDIUM and 1 to 7 LOW.'),
         ('p', 'Impact: 1 Very low – negligible effect on customers or the firm; 2 Low – minor, easily corrected; 3 Medium – some customer detriment or regulatory breach; 4 High – significant customer harm, material loss or reportable breach; 5 Very high – widespread harm, threat to the firm’s viability or authorisation.'),
@@ -337,7 +337,7 @@ def training_log():
             if c.value == "FIRM's NAME":
                 c.value = '[Insert firm legal name]'
                 c.fill = PH_FILL
-    ind.cell(2, 1, 'Optional reflective record – copy this sheet for each person if you want to capture what they learned and how it changed their work. The Training Record sheet is the mandatory log.').font = Font(name='Calibri', i=True, sz=10)
+    ind.cell(2, 1, 'Optional reflective record – copy this sheet for each person if you want to capture what they learned and how it changed their work. The Training Log is the mandatory record.').font = Font(name='Calibri', i=True, sz=10)
     b.guide('How to use', 'Training Log – how to use', STANDARD_GUIDE + [
         ('h', 'What this workbook contains'),
         ('p', '1. Training Matrix – the training each role must complete, and how often. This is the training matrix referred to in the Training and Competence Policy.'),
@@ -370,7 +370,7 @@ def training_log():
     # Record
     cols = ['Name', 'Role', 'Training module', 'Type', 'Date completed', 'Method / provider', 'Assessment result', 'Declaration of understanding signed?', 'Refresher due (months)', 'Next due', 'Evidence location', 'What was learned and how it will be applied']
     widths = [18, 16, 36, 16, 12, 20, 16, 13, 11, 12, 20, 40]
-    ws = b.sheet('Training Record', widths, 'Training Record')
+    ws = b.sheet('Training Log', widths, 'Training Log')
     r = b.note(ws, 3, 'One line per training activity completed. Enter the refresher period in months (e.g. 12) and the next-due date calculates automatically; overdue dates turn red.', len(cols))
     r = b.header(ws, r, cols)
     end = b.rows(ws, r, 200, len(cols), height=20, formulas={10: '=IF(OR(E{r}="",I{r}=""),"",EDATE(E{r},I{r}))'})

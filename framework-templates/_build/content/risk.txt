@@ -141,12 +141,12 @@ Our risks are recorded in the KMS Risk Assessment Log (Risk_Assessment_Log_v2.0_
 NOTE: The starter risks are examples, not a finished assessment. Rewrite each in terms of your own business, delete those that do not apply, add your own (aim for the 10 to 20 risks that matter most), and score them. The FCA expects a risk register that is clearly specific to your firm.
 
 # Appendix B – Supporting registers
-The KMS registers below support this framework. They are an essential part of it, not optional extras: the FCA judges whether a framework works in practice by looking at these records, and a framework without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading. The owner and review frequency are recorded in each register.
-NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where one part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
-TABLE: 28,32,40
+The KMS registers below support this framework. Each is a separate file. They are an essential part of the framework, not optional extras: the FCA judges whether a framework works in practice by looking at these records, and a framework without them is unlikely to withstand scrutiny. Keep them up to date from your first day of trading.
+NOTE: Do not delete a register from this list because you have not started using it yet – start using it. Where part of a register genuinely cannot apply to your firm (for example safeguarding when you hold no relevant funds), keep the register and record why that part does not apply.
+TABLE: 28,36,36
 | Register | KMS file | What it evidences |
 | Risk Assessment Log | Risk_Assessment_Log_v2.0_Template.xlsx | Identified risks, inherent and residual scores, controls, appetite and actions |
-| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, its root cause, customer impact, FCA notification decision and remediation |
-| Compliance Monitoring Tracker (Monitoring Schedule, File Review Record, Corrective Action Log, Compliance Universe Register) | Compliance_Monitoring_Tracker_v2.0_Template.xlsx | Checks completed against the plan, file review results, corrective actions to closure, and the requirements that apply to us |
+| Compliance Breach Log | Compliance_Breach_Log_v2.0_Template.xlsx | Every breach, root cause, customer impact, FCA notification decision and remediation |
+| Corrective Action Log | Corrective_Action_Log_v2.0_Template.xlsx | Findings and breaches tracked to verified closure |
 | AML Business-Wide Risk Assessment | AML_Business_Wide_Risk_Assessment_v2.0_Template.xlsx | The firm-wide assessment of financial crime risk that drives our controls |
-| Consumer Duty Evidence (Outcome MI, Target Market Register, Fair Value Register, Board Report Actions) | Consumer_Duty_Evidence_v2.0_Template.xlsx | Outcome monitoring, target markets, fair value assessments and board report actions |
+| Consumer Duty Outcome MI | Consumer_Duty_Outcome_MI_v2.0_Template.xlsx | Outcome monitoring for all customers and for vulnerable customers |
